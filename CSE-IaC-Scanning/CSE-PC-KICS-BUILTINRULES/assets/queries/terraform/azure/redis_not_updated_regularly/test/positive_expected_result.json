@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Redis Not Updated Regularly",
-    "severity": "HIGH",
-    "line": 23,
-    "filename": "positive.json"
-  }
-]

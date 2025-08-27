@@ -1,8 +1,0 @@
-[
-    {
-        "queryName": "cloudfunction is deployed in unapproved locations",
-        "severity": "MEDIUM",
-        "line": 45,
-        "fileName": "positive.json"
-    }
-]

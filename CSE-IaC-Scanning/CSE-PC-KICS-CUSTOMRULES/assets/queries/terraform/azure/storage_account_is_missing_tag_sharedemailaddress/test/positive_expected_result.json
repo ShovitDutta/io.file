@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "storage account is missing tag sharedemailaddress",
-      "severity": "LOW",
-      "line": 57,
-      "filename": "positive.json"
-    }
-  ]

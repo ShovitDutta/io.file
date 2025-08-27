@@ -1,7 +1,0 @@
-[
-	{
-		"queryName": "pubsub topic is missing encrypt decrypt role on cmek",
-		"severity": "HIGH",
-		"line": 8
-	}
-]

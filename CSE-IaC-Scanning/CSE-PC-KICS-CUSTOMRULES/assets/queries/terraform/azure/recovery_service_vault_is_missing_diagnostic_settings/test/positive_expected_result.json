@@ -1,9 +1,0 @@
-[
-  {
-    "queryName": "recovery service vault is missing diagnostic settings",
-    "severity": "HIGH",
-    "line": 35,
-    "fileName": "positive.json"
-  }
-]
-

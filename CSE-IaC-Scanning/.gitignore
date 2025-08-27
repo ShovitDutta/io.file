@@ -1,5 +1,0 @@
-.env
-.terraform/
-.terraform.lock.hcl
-windows_amd64/
-results.json

@@ -1,8 +1,0 @@
-[
-	{
-		"queryName": "BigQuery Dataset Is Public",
-		"severity": "CRITICAL",
-		"line": 24,
-		"fileName": "positive.json"
-	}
-]

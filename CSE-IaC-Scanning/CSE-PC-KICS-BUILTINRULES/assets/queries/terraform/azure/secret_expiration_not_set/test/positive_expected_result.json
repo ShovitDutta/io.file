@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Secret Expiration Not Set",
-    "severity": "HIGH",
-    "line": 16,
-    "filename": "positive.json"
-  }
-]

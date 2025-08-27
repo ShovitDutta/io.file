@@ -1,7 +1,0 @@
-[
-    {
-      "queryName": "OpenAI is missing tag costcenter",
-      "severity": "LOW",
-      "line": 14
-    }
-]

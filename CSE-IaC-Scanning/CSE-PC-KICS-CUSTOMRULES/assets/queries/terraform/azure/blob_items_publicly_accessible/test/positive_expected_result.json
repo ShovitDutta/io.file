@@ -1,8 +1,0 @@
-[
-  {
-		"queryName": "Blob Items Publicly Accessible",
-		"severity": "CRITICAL",
-		"line": 8,
-		"fileName": "positive.json"
-	}
-]

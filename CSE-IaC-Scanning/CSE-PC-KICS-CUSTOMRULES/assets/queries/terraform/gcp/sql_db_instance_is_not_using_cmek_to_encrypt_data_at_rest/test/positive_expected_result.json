@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "sql db instance is not using cmek to encrypt data at rest",
-      "severity": "HIGH",
-      "line": 14,
-      "filename": "positive.json"
-    }
-  ]

@@ -1,9 +1,0 @@
-[
-  {
-    "queryName": "recovery service vault public network access is enabled",
-    "severity": "CRITICAL",
-    "line": 37,
-    "fileName": "positive.json"
-  }
-]
-

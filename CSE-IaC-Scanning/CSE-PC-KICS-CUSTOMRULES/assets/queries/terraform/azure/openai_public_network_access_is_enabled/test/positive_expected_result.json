@@ -1,7 +1,0 @@
-[
-    {
-      "queryName": "OpenAI public network access is enabled",
-      "severity": "CRITICAL",
-      "line": 7
-    }
-]

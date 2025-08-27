@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Lambda Permission Misconfigured",
-    "severity": "LOW",
-    "line": 15,
-    "filename": "positive.json"
-  }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "queryName": "dataproc cluster public endpoints is enabled",
-        "severity": "CRITICAL",
-        "line": 14
-    }
-]

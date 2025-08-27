@@ -1,9 +1,0 @@
-[
-  {
-    "queryName": "mysql flexible server is not using cmek for encryption at rest",
-    "severity": "HIGH",
-    "line": 20,
-    "fileName": "positive.json"
-  }
-]
-

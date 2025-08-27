@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Security Group With Unrestricted Access To SSH",
-    "severity": "MEDIUM",
-    "line": 33,
-    "fileName": "positive.json"
-  }
-]

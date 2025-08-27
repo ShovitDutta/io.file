@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Virtual Network with DDoS Protection Plan disabled",
-    "severity": "LOW",
-    "line": 18,
-    "fileName": "positive.json"
-  }
-]

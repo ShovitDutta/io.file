@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "AKS Private Cluster Disabled",
-    "severity": "HIGH",
-    "line": 87,
-    "fileName": "positive.json"
-  }
-]

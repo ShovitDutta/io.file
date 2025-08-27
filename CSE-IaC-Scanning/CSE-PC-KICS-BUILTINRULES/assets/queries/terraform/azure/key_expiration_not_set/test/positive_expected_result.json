@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Key Expiration Not Set",
-    "severity": "HIGH",
-    "line": 15,
-    "filename":  "positive.json"
-  }
-]

@@ -1,7 +1,0 @@
-[
-    {
-      "queryName": "key vault is not using HSM protected keys",
-      "severity": "HIGH",
-      "line": 22
-    }
-]

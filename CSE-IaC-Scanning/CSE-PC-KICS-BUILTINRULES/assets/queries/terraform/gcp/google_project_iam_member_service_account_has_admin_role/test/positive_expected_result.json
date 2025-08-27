@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Google Project IAM Member Service Account Has Admin Role",
-    "severity": "HIGH",
-    "line": 18,
-    "filename":"positive1.json"
-  }
-]

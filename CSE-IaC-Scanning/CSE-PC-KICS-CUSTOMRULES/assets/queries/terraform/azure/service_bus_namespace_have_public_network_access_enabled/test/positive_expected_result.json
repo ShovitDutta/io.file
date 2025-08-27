@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "service bus namespace have public network access enabled",
-      "severity": "CRITICAL",
-      "line": 29,
-      "fileName": "positive.json"
-    }
-]

@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Log Retention Is Not Set",
-    "severity": "MEDIUM",
-    "line": 19,
-    "filename": "positive.json"
-  }
-]

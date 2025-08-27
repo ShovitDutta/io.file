@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "S3 Bucket Allows Public Policy",
-    "severity": "CRITICAL",
-    "line": 17,
-    "filename": "positive.json"
-  }
-]

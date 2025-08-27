@@ -1,7 +1,0 @@
-[
-    {
-        "queryName": "kms crypto key is not rotated in 90 days",
-        "severity": "HIGH",
-        "line": 21
-    }
-]

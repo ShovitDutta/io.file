@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "mysql flexible server public network access enabled",
-    "severity": "CRITICAL",
-    "line": 44,
-    "fileName": "positive.json"
-  }
-]

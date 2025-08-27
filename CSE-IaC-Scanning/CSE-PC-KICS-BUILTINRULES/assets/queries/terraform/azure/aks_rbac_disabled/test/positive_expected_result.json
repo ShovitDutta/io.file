@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "AKS RBAC Disabled",
-    "severity": "MEDIUM",
-    "line": 90,
-    "fileName": "positive.json"
-  }
-]

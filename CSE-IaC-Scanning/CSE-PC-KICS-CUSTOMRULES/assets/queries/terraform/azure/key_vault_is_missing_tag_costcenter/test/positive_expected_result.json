@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "key vault is missing tag costcenter",
-      "severity": "LOW",
-      "line": 26,
-      "filename":"positive1.json"
-    }
-]

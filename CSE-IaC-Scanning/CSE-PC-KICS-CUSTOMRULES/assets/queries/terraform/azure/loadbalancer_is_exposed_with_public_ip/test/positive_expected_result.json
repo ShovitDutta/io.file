@@ -1,7 +1,0 @@
-[
-    {
-      "queryName": "loadbalancer is exposed_with public ip",
-      "severity": "CRITICAL",
-      "line": 20
-    }
-]

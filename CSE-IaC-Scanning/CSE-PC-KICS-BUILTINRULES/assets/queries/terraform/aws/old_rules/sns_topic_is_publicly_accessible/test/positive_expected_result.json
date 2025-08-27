@@ -1,7 +1,0 @@
-[
-  {
-    "queryName": "SNS Topic is Publicly Accessible",
-    "severity": "CRITICAL",
-    "line": 2
-  }
-]

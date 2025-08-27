@@ -1,8 +1,0 @@
-[
-    {
-        "queryName": "cloud dns zone type is set to public",
-        "severity": "CRITICAL",
-        "line": 73,
-        "fileName": "positive.json"
-    }
-]

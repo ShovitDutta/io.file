@@ -1,8 +1,0 @@
-[
-   {
-    "queryName": "sql server is not configured with private endpoint",
-    "severity": "CRITICAL",
-    "line": 74,
-    "filename": "positive.json"
-   }
-]

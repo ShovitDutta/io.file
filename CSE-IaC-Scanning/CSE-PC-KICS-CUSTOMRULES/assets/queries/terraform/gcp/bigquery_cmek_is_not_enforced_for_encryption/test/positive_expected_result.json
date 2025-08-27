@@ -1,7 +1,0 @@
-[
-    {
-        "queryName": "bigquery cmek is not enforced for encryption",
-        "severity": "HIGH",
-        "line": 7
-    }
-]

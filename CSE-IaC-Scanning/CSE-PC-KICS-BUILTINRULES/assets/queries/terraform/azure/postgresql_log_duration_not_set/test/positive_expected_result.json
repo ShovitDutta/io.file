@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "PostgreSQL Log Duration Not Set",
-    "severity": "MEDIUM",
-    "line": 19,
-    "filename": "positive.json"
-  } 
-]

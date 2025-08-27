@@ -1,8 +1,0 @@
-[
-    {
-        "queryName": "cloudfunction is missing to encrypt with cmek",
-        "severity": "HIGH",
-        "line": 43,
-        "filename": "positive.json"
-    }
-]

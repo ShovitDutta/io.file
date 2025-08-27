@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "search service have local authentication enabled",
-      "severity": "HIGH",
-      "line": 20,
-      "fileName": "positive.json"
-    }
-]

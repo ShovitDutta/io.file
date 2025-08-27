@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "api management is not disabled public network access",
-      "severity": "MEDIUM",
-      "line": 24,
-      "fileName": "positive.json"
-    }
-]

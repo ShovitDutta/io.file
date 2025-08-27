@@ -1,7 +1,0 @@
-[
-    {
-      "queryName": "firewall policy idps mode is not deny",
-      "severity": "HIGH",
-      "line": 28
-    }
-]
