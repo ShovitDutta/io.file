@@ -1,0 +1,146 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_subnet.subnet",
+                    "mode": "managed",
+                    "type": "aws_subnet",
+                    "name": "subnet",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 1,
+                    "values": {
+                        "assign_ipv6_address_on_creation": false,
+                        "cidr_block": "10.0.1.0/24",
+                        "customer_owned_ipv4_pool": null,
+                        "enable_dns64": false,
+                        "enable_lni_at_device_index": null,
+                        "enable_resource_name_dns_a_record_on_launch": false,
+                        "enable_resource_name_dns_aaaa_record_on_launch": false,
+                        "ipv6_cidr_block": null,
+                        "ipv6_native": false,
+                        "map_customer_owned_ip_on_launch": null,
+                        "map_public_ip_on_launch": true,
+                        "outpost_arn": null,
+                        "region": "us-east-1",
+                        "tags": {
+                            "Name": "Negative1"
+                        },
+                        "tags_all": {
+                            "Name": "Negative1"
+                        },
+                        "timeouts": null,
+                        "vpc_id": "vpc_12345678"
+                    },
+                    "sensitive_values": {
+                        "tags": {},
+                        "tags_all": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_subnet.subnet",
+            "mode": "managed",
+            "type": "aws_subnet",
+            "name": "subnet",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "assign_ipv6_address_on_creation": false,
+                    "cidr_block": "10.0.1.0/24",
+                    "customer_owned_ipv4_pool": null,
+                    "enable_dns64": false,
+                    "enable_lni_at_device_index": null,
+                    "enable_resource_name_dns_a_record_on_launch": false,
+                    "enable_resource_name_dns_aaaa_record_on_launch": false,
+                    "ipv6_cidr_block": null,
+                    "ipv6_native": false,
+                    "map_customer_owned_ip_on_launch": null,
+                    "map_public_ip_on_launch": true,
+                    "outpost_arn": null,
+                    "region": "us-east-1",
+                    "tags": {
+                        "Name": "Negative1"
+                    },
+                    "tags_all": {
+                        "Name": "Negative1"
+                    },
+                    "timeouts": null,
+                    "vpc_id": "vpc_12345678"
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "availability_zone": true,
+                    "availability_zone_id": true,
+                    "id": true,
+                    "ipv6_cidr_block_association_id": true,
+                    "owner_id": true,
+                    "private_dns_hostname_type_on_launch": true,
+                    "tags": {},
+                    "tags_all": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "tags": {},
+                    "tags_all": {}
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "full_name": "registry.terraform.io/hashicorp/aws",
+                "version_constraint": "6.4.0",
+                "expressions": {
+                    "profile": {
+                        "constant_value": "saurabh-eis-dev"
+                    },
+                    "region": {
+                        "constant_value": "us-east-1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_subnet.subnet",
+                    "mode": "managed",
+                    "type": "aws_subnet",
+                    "name": "subnet",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "cidr_block": {
+                            "constant_value": "10.0.1.0/24"
+                        },
+                        "map_public_ip_on_launch": {
+                            "constant_value": true
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "Name": "Negative1"
+                            }
+                        },
+                        "vpc_id": {
+                            "constant_value": "vpc_12345678"
+                        }
+                    },
+                    "schema_version": 1
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-08-14T09:42:24Z",
+    "errored": false
+}

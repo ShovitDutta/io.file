@@ -1,0 +1,162 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_kms_crypto_key_iam_policy.negative",
+                    "mode": "managed",
+                    "type": "google_kms_crypto_key_iam_policy",
+                    "name": "negative",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "crypto_key_id": "projects/security-controls-sandbox/locations/us/keyRings/cvs-dev-speech-to-text/cryptoKeys/dev-cvs-speech-to-text",
+                        "policy_data": "{\"bindings\":[{\"members\":[\"allUsers\"],\"role\":\"roles/cloudkms.cryptoKeyEncrypter\"}]}"
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_kms_crypto_key_iam_policy.negative",
+            "mode": "managed",
+            "type": "google_kms_crypto_key_iam_policy",
+            "name": "negative",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "crypto_key_id": "projects/security-controls-sandbox/locations/us/keyRings/cvs-dev-speech-to-text/cryptoKeys/dev-cvs-speech-to-text",
+                    "policy_data": "{\"bindings\":[{\"members\":[\"allUsers\"],\"role\":\"roles/cloudkms.cryptoKeyEncrypter\"}]}"
+                },
+                "after_unknown": {
+                    "etag": true,
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.google_iam_policy.negative",
+                        "mode": "data",
+                        "type": "google_iam_policy",
+                        "name": "negative",
+                        "provider_name": "registry.terraform.io/hashicorp/google",
+                        "schema_version": 0,
+                        "values": {
+                            "audit_config": null,
+                            "binding": [
+                                {
+                                    "condition": [],
+                                    "members": [
+                                        "allUsers"
+                                    ],
+                                    "role": "roles/cloudkms.cryptoKeyEncrypter"
+                                }
+                            ],
+                            "id": "3839323604",
+                            "policy_data": "{\"bindings\":[{\"members\":[\"allUsers\"],\"role\":\"roles/cloudkms.cryptoKeyEncrypter\"}]}"
+                        },
+                        "sensitive_values": {
+                            "binding": [
+                                {
+                                    "condition": [],
+                                    "members": [
+                                        false
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.35.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_kms_crypto_key_iam_policy.negative",
+                    "mode": "managed",
+                    "type": "google_kms_crypto_key_iam_policy",
+                    "name": "negative",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "crypto_key_id": {
+                            "constant_value": "projects/security-controls-sandbox/locations/us/keyRings/cvs-dev-speech-to-text/cryptoKeys/dev-cvs-speech-to-text"
+                        },
+                        "policy_data": {
+                            "references": [
+                                "data.google_iam_policy.negative.policy_data",
+                                "data.google_iam_policy.negative"
+                            ]
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.google_iam_policy.negative",
+                    "mode": "data",
+                    "type": "google_iam_policy",
+                    "name": "negative",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "binding": [
+                            {
+                                "members": {
+                                    "constant_value": [
+                                        "allUsers"
+                                    ]
+                                },
+                                "role": {
+                                    "constant_value": "roles/cloudkms.cryptoKeyEncrypter"
+                                }
+                            }
+                        ]
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "data.google_iam_policy.negative",
+            "attribute": [
+                "policy_data"
+            ]
+        }
+    ],
+    "timestamp": "2025-06-04T09:10:45Z",
+    "errored": false
+}

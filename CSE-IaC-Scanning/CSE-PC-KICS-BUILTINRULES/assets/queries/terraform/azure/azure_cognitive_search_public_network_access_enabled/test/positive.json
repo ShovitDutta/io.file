@@ -1,0 +1,331 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_search_service.cvs_search_service",
+                    "mode": "managed",
+                    "type": "azurerm_search_service",
+                    "name": "cvs_search_service",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "allowed_ips": null,
+                        "authentication_failure_mode": null,
+                        "customer_managed_key_enforcement_enabled": true,
+                        "hosting_mode": "default",
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                                ],
+                                "type": "UserAssigned"
+                            }
+                        ],
+                        "local_authentication_enabled": false,
+                        "location": "eastus2",
+                        "name": "cvs_search_service",
+                        "network_rule_bypass_option": "None",
+                        "partition_count": 1,
+                        "public_network_access_enabled": true,
+                        "replica_count": 1,
+                        "resource_group_name": "security-poc-yogeshd-rg",
+                        "semantic_search_sku": null,
+                        "sku": "standard",
+                        "tags": {
+                            "costcenter": "02045",
+                            "dataclassification": "confidential",
+                            "environmenttype": "dev",
+                            "itpmid": "12345",
+                            "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    false
+                                ]
+                            }
+                        ],
+                        "query_keys": [],
+                        "tags": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_search_service.cvs_search_service",
+            "mode": "managed",
+            "type": "azurerm_search_service",
+            "name": "cvs_search_service",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "allowed_ips": null,
+                    "authentication_failure_mode": null,
+                    "customer_managed_key_enforcement_enabled": true,
+                    "hosting_mode": "default",
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                            ],
+                            "type": "UserAssigned"
+                        }
+                    ],
+                    "local_authentication_enabled": false,
+                    "location": "eastus2",
+                    "name": "cvs_search_service",
+                    "network_rule_bypass_option": "None",
+                    "partition_count": 1,
+                    "public_network_access_enabled": false,
+                    "replica_count": 1,
+                    "resource_group_name": "security-poc-yogeshd-rg",
+                    "semantic_search_sku": null,
+                    "sku": "standard",
+                    "tags": {
+                        "costcenter": "02045",
+                        "dataclassification": "confidential",
+                        "environmenttype": "dev",
+                        "itpmid": "12345",
+                        "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "customer_managed_key_encryption_compliance_status": true,
+                    "id": true,
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ],
+                            "principal_id": true,
+                            "tenant_id": true
+                        }
+                    ],
+                    "primary_key": true,
+                    "query_keys": true,
+                    "secondary_key": true,
+                    "tags": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ]
+                        }
+                    ],
+                    "primary_key": true,
+                    "query_keys": [],
+                    "secondary_key": true,
+                    "tags": {}
+                }
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.azurerm_resource_group.resource_group",
+                        "mode": "data",
+                        "type": "azurerm_resource_group",
+                        "name": "resource_group",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg",
+                            "location": "eastus2",
+                            "managed_by": "",
+                            "name": "security-poc-yogeshd-rg",
+                            "tags": {
+                                "createdondate": "2024-06-26",
+                                "dataclassification": "restrictedD",
+                                "environmentsubtype": "POC",
+                                "environmenttype": "NonProd"
+                            },
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    },
+                    {
+                        "address": "data.azurerm_user_assigned_identity.user_assigned_identity",
+                        "mode": "data",
+                        "type": "azurerm_user_assigned_identity",
+                        "name": "user_assigned_identity",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "client_id": "860e8e4f-6052-4dc5-b3f9-feef98bf1a12",
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi",
+                            "location": "eastus2",
+                            "name": "security-poc-css-mi",
+                            "principal_id": "7e9254ab-e4e6-4fd3-845e-17810afb5f58",
+                            "resource_group_name": "security-poc-yogeshd-rg",
+                            "tags": {
+                                "createdondate": "2024-07-31",
+                                "dataclassification": "restrictedD",
+                                "environmenttype": "NonProd",
+                                "itpmid": "87DB880C626F02E3"
+                            },
+                            "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.26.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_search_service.cvs_search_service",
+                    "mode": "managed",
+                    "type": "azurerm_search_service",
+                    "name": "cvs_search_service",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "customer_managed_key_enforcement_enabled": {
+                            "constant_value": true
+                        },
+                        "identity": [
+                            {
+                                "identity_ids": {
+                                    "references": [
+                                        "data.azurerm_user_assigned_identity.user_assigned_identity.id",
+                                        "data.azurerm_user_assigned_identity.user_assigned_identity"
+                                    ]
+                                },
+                                "type": {
+                                    "constant_value": "UserAssigned"
+                                }
+                            }
+                        ],
+                        "local_authentication_enabled": {
+                            "constant_value": false
+                        },
+                        "location": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.location",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "cvs_search_service"
+                        },
+                        "public_network_access_enabled": {
+                            "constant_value": false
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.name",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "sku": {
+                            "constant_value": "standard"
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "costcenter": "02045",
+                                "dataclassification": "confidential",
+                                "environmenttype": "dev",
+                                "itpmid": "12345",
+                                "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                            }
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_resource_group.resource_group",
+                    "mode": "data",
+                    "type": "azurerm_resource_group",
+                    "name": "resource_group",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_user_assigned_identity.user_assigned_identity",
+                    "mode": "data",
+                    "type": "azurerm_user_assigned_identity",
+                    "name": "user_assigned_identity",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-css-mi"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "data.azurerm_user_assigned_identity.user_assigned_identity",
+            "attribute": [
+                "id"
+            ]
+        },
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "location"
+            ]
+        },
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "name"
+            ]
+        }
+    ],
+    "timestamp": "2025-04-07T02:34:27Z",
+    "errored": false
+}

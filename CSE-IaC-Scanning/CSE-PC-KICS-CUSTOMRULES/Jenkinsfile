@@ -1,0 +1,30 @@
+pipeline{
+    
+    agent{
+        node('CSS-CSE-AWS')
+    }
+    
+    triggers{
+        cron('0 6 * * *')
+    }
+    
+    stages{
+         stage('Run Daily Scan Container'){
+            steps{
+                script{
+                    withCredentials([usernamePassword(credentialsId: 'ciss_scan_access_id', usernameVariable: 'QUAY_USERNAME', passwordVariable: 'QUAY_PASSWORD')]) {
+                    sh '''
+                        echo "Running daily scan report job"
+                        echo $QUAY_PASSWORD | docker login -u $QUAY_USERNAME --password-stdin quay-registry.aetna.com
+                        docker pull quay-registry.aetna.com/cseiac/rhl9-x86_64-gcp-rpt:062024
+                    '''
+                    sh '''    
+                        docker run -w /apps/bin --rm --name rptcontainer quay-registry.aetna.com/cseiac/rhl9-x86_64-gcp-rpt:062024 /bin/sh -c "/apps/bin/run_daily_job.sh execute_scripts"
+                    '''
+                  }
+                }        
+                    
+            }
+        }
+    }
+}

@@ -1,0 +1,292 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_dns_managed_zone.gcp_dns_managed_zone",
+                    "mode": "managed",
+                    "type": "google_dns_managed_zone",
+                    "name": "gcp_dns_managed_zone",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "description": "Example DNS zone",
+                        "dnssec_config": [
+                            {
+                                "default_key_specs": [
+                                    {
+                                        "algorithm": "rsasha256",
+                                        "key_length": null,
+                                        "key_type": null,
+                                        "kind": "dns#dnsKeySpec"
+                                    }
+                                ],
+                                "kind": "dns#managedZoneDnsSecConfig",
+                                "state": "off"
+                            }
+                        ],
+                        "effective_labels": {
+                            "foo": "bar",
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "force_destroy": false,
+                        "forwarding_config": [],
+                        "labels": {
+                            "foo": "bar"
+                        },
+                        "name": "gcp_dns_managed_zone",
+                        "peering_config": [],
+                        "private_visibility_config": [],
+                        "project": "security-controls-sandbox",
+                        "terraform_labels": {
+                            "foo": "bar",
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "timeouts": null,
+                        "visibility": "public"
+                    },
+                    "sensitive_values": {
+                        "cloud_logging_config": [],
+                        "dnssec_config": [
+                            {
+                                "default_key_specs": [
+                                    {}
+                                ]
+                            }
+                        ],
+                        "effective_labels": {},
+                        "forwarding_config": [],
+                        "labels": {},
+                        "name_servers": [],
+                        "peering_config": [],
+                        "private_visibility_config": [],
+                        "terraform_labels": {}
+                    }
+                },
+                {
+                    "address": "random_id.rnd",
+                    "mode": "managed",
+                    "type": "random_id",
+                    "name": "rnd",
+                    "provider_name": "registry.terraform.io/hashicorp/random",
+                    "schema_version": 0,
+                    "values": {
+                        "byte_length": 4,
+                        "keepers": null,
+                        "prefix": null
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_dns_managed_zone.gcp_dns_managed_zone",
+            "mode": "managed",
+            "type": "google_dns_managed_zone",
+            "name": "gcp_dns_managed_zone",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "Example DNS zone",
+                    "dnssec_config": [
+                        {
+                            "default_key_specs": [
+                                {
+                                    "algorithm": "rsasha256",
+                                    "key_length": null,
+                                    "key_type": null,
+                                    "kind": "dns#dnsKeySpec"
+                                }
+                            ],
+                            "kind": "dns#managedZoneDnsSecConfig",
+                            "state": "off"
+                        }
+                    ],
+                    "effective_labels": {
+                        "foo": "bar",
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "force_destroy": false,
+                    "forwarding_config": [],
+                    "labels": {
+                        "foo": "bar"
+                    },
+                    "name": "gcp_dns_managed_zone",
+                    "peering_config": [],
+                    "private_visibility_config": [],
+                    "project": "security-controls-sandbox",
+                    "terraform_labels": {
+                        "foo": "bar",
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "timeouts": null,
+                    "visibility": "public"
+                },
+                "after_unknown": {
+                    "cloud_logging_config": true,
+                    "creation_time": true,
+                    "dns_name": true,
+                    "dnssec_config": [
+                        {
+                            "default_key_specs": [
+                                {}
+                            ],
+                            "non_existence": true
+                        }
+                    ],
+                    "effective_labels": {},
+                    "forwarding_config": [],
+                    "id": true,
+                    "labels": {},
+                    "managed_zone_id": true,
+                    "name_servers": true,
+                    "peering_config": [],
+                    "private_visibility_config": [],
+                    "terraform_labels": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "cloud_logging_config": [],
+                    "dnssec_config": [
+                        {
+                            "default_key_specs": [
+                                {}
+                            ]
+                        }
+                    ],
+                    "effective_labels": {},
+                    "forwarding_config": [],
+                    "labels": {},
+                    "name_servers": [],
+                    "peering_config": [],
+                    "private_visibility_config": [],
+                    "terraform_labels": {}
+                }
+            }
+        },
+        {
+            "address": "random_id.rnd",
+            "mode": "managed",
+            "type": "random_id",
+            "name": "rnd",
+            "provider_name": "registry.terraform.io/hashicorp/random",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "byte_length": 4,
+                    "keepers": null,
+                    "prefix": null
+                },
+                "after_unknown": {
+                    "b64_std": true,
+                    "b64_url": true,
+                    "dec": true,
+                    "hex": true,
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.35.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    }
+                }
+            },
+            "random": {
+                "name": "random",
+                "full_name": "registry.terraform.io/hashicorp/random"
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_dns_managed_zone.gcp_dns_managed_zone",
+                    "mode": "managed",
+                    "type": "google_dns_managed_zone",
+                    "name": "gcp_dns_managed_zone",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "Example DNS zone"
+                        },
+                        "dns_name": {
+                            "references": [
+                                "random_id.rnd.hex",
+                                "random_id.rnd"
+                            ]
+                        },
+                        "dnssec_config": [
+                            {
+                                "default_key_specs": [
+                                    {
+                                        "algorithm": {
+                                            "constant_value": "rsasha256"
+                                        }
+                                    }
+                                ],
+                                "state": {
+                                    "constant_value": "off"
+                                }
+                            }
+                        ],
+                        "labels": {
+                            "constant_value": {
+                                "foo": "bar"
+                            }
+                        },
+                        "name": {
+                            "constant_value": "gcp_dns_managed_zone"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "random_id.rnd",
+                    "mode": "managed",
+                    "type": "random_id",
+                    "name": "rnd",
+                    "provider_config_key": "random",
+                    "expressions": {
+                        "byte_length": {
+                            "constant_value": 4
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "random_id.rnd",
+            "attribute": [
+                "hex"
+            ]
+        }
+    ],
+    "timestamp": "2025-05-22T19:35:15Z",
+    "errored": false
+}

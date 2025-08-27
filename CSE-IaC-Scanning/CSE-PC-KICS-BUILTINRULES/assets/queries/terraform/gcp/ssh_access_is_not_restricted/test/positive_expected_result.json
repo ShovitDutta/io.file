@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "SSH Access Is Not Restricted",
+    "severity": "MEDIUM",
+    "line": 13,
+    "fileName": "positive1.json"
+  },
+  {
+    "queryName": "SSH Access Is Not Restricted",
+    "severity": "MEDIUM",
+    "line": 31,
+    "fileName": "positive2.json"
+  }
+]

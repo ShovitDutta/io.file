@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "PostgreSQL Server Threat Detection Policy Disabled",
+    "severity": "HIGH",
+    "line": 22,
+    "fileName": "positive.json"
+  }
+]

@@ -1,0 +1,322 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_postgresql_configuration.connection_throttling",
+                    "mode": "managed",
+                    "type": "azurerm_postgresql_configuration",
+                    "name": "connection_throttling",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "name": "connection_throttling",
+                        "resource_group_name": "api-rg-pro",
+                        "server_name": "postgresql-server-1",
+                        "timeouts": null,
+                        "value": "off"
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_postgresql_server.example",
+                    "mode": "managed",
+                    "type": "azurerm_postgresql_server",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 1,
+                    "values": {
+                        "administrator_login": "psqladmin",
+                        "administrator_login_password": "H@Sh1CoR3!",
+                        "administrator_login_password_wo": null,
+                        "administrator_login_password_wo_version": null,
+                        "auto_grow_enabled": true,
+                        "backup_retention_days": 7,
+                        "create_mode": "Default",
+                        "creation_source_server_id": null,
+                        "geo_redundant_backup_enabled": false,
+                        "identity": [],
+                        "infrastructure_encryption_enabled": null,
+                        "location": "westeurope",
+                        "name": "postgresql-server-1",
+                        "public_network_access_enabled": true,
+                        "resource_group_name": "api-rg-pro",
+                        "restore_point_in_time": null,
+                        "sku_name": "B_Gen5_2",
+                        "ssl_enforcement_enabled": true,
+                        "ssl_minimal_tls_version_enforced": "TLS1_2",
+                        "storage_mb": 5120,
+                        "tags": null,
+                        "threat_detection_policy": [],
+                        "timeouts": null,
+                        "version": "9.5"
+                    },
+                    "sensitive_values": {
+                        "identity": [],
+                        "threat_detection_policy": []
+                    }
+                },
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "location": "westeurope",
+                        "managed_by": null,
+                        "name": "api-rg-pro",
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_postgresql_configuration.connection_throttling",
+            "mode": "managed",
+            "type": "azurerm_postgresql_configuration",
+            "name": "connection_throttling",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "name": "connection_throttling",
+                    "resource_group_name": "api-rg-pro",
+                    "server_name": "postgresql-server-1",
+                    "timeouts": null,
+                    "value": "off"
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_postgresql_server.example",
+            "mode": "managed",
+            "type": "azurerm_postgresql_server",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "administrator_login": "psqladmin",
+                    "administrator_login_password": "H@Sh1CoR3!",
+                    "administrator_login_password_wo": null,
+                    "administrator_login_password_wo_version": null,
+                    "auto_grow_enabled": true,
+                    "backup_retention_days": 7,
+                    "create_mode": "Default",
+                    "creation_source_server_id": null,
+                    "geo_redundant_backup_enabled": false,
+                    "identity": [],
+                    "infrastructure_encryption_enabled": null,
+                    "location": "westeurope",
+                    "name": "postgresql-server-1",
+                    "public_network_access_enabled": true,
+                    "resource_group_name": "api-rg-pro",
+                    "restore_point_in_time": null,
+                    "sku_name": "B_Gen5_2",
+                    "ssl_enforcement_enabled": true,
+                    "ssl_minimal_tls_version_enforced": "TLS1_2",
+                    "storage_mb": 5120,
+                    "tags": null,
+                    "threat_detection_policy": [],
+                    "timeouts": null,
+                    "version": "9.5"
+                },
+                "after_unknown": {
+                    "fqdn": true,
+                    "id": true,
+                    "identity": [],
+                    "threat_detection_policy": []
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "administrator_login_password": true,
+                    "identity": [],
+                    "threat_detection_policy": []
+                }
+            }
+        },
+        {
+            "address": "azurerm_resource_group.example",
+            "mode": "managed",
+            "type": "azurerm_resource_group",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "location": "westeurope",
+                    "managed_by": null,
+                    "name": "api-rg-pro",
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.26.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_postgresql_configuration.connection_throttling",
+                    "mode": "managed",
+                    "type": "azurerm_postgresql_configuration",
+                    "name": "connection_throttling",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "connection_throttling"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.example.name",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "server_name": {
+                            "references": [
+                                "azurerm_postgresql_server.example.name",
+                                "azurerm_postgresql_server.example"
+                            ]
+                        },
+                        "value": {
+                            "constant_value": "off"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_postgresql_server.example",
+                    "mode": "managed",
+                    "type": "azurerm_postgresql_server",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "administrator_login": {
+                            "constant_value": "psqladmin"
+                        },
+                        "administrator_login_password": {
+                            "constant_value": "H@Sh1CoR3!"
+                        },
+                        "auto_grow_enabled": {
+                            "constant_value": true
+                        },
+                        "backup_retention_days": {
+                            "constant_value": 7
+                        },
+                        "geo_redundant_backup_enabled": {
+                            "constant_value": false
+                        },
+                        "location": {
+                            "references": [
+                                "azurerm_resource_group.example.location",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "postgresql-server-1"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.example.name",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "sku_name": {
+                            "constant_value": "B_Gen5_2"
+                        },
+                        "ssl_enforcement_enabled": {
+                            "constant_value": true
+                        },
+                        "storage_mb": {
+                            "constant_value": 5120
+                        },
+                        "version": {
+                            "constant_value": "9.5"
+                        }
+                    },
+                    "schema_version": 1
+                },
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "location": {
+                            "constant_value": "West Europe"
+                        },
+                        "name": {
+                            "constant_value": "api-rg-pro"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "azurerm_resource_group.example",
+            "attribute": [
+                "location"
+            ]
+        },
+        {
+            "resource": "azurerm_resource_group.example",
+            "attribute": [
+                "name"
+            ]
+        },
+        {
+            "resource": "azurerm_postgresql_server.example",
+            "attribute": [
+                "name"
+            ]
+        }
+    ],
+    "timestamp": "2025-04-21T11:42:22Z",
+    "errored": false
+}

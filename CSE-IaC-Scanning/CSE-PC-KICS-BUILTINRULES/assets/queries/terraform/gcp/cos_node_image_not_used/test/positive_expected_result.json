@@ -1,0 +1,20 @@
+[
+  {
+    "queryName": "COS Node Image Not Used",
+    "severity": "MEDIUM",
+    "line": 14,
+    "filename": "positive.json"
+  },
+  {
+    "queryName": "COS Node Image Not Used",
+    "severity": "MEDIUM",
+    "line": 25,
+    "filename": "positive1.json"
+  },
+  {
+    "queryName": "COS Node Image Not Used",
+    "severity": "MEDIUM",
+    "line": 35,
+    "filename": "positive2.json"
+  }
+]

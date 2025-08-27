@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "Stackdriver Logging Disabled",
+    "severity": "HIGH",
+    "line": 37,
+    "fileName": "positive.json"
+  },
+  {
+    "queryName": "Stackdriver Logging Disabled",
+    "severity": "HIGH",
+    "line": 133,
+    "fileName": "positive.json"
+  }
+]

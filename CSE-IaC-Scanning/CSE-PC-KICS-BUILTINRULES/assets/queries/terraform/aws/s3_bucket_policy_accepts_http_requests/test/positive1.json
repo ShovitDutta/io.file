@@ -1,0 +1,210 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_s3_bucket.s3_bucket",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket",
+                    "name": "s3_bucket",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "bucket": "cvs-s3-bucket",
+                        "force_destroy": false,
+                        "region": "us-east-1",
+                        "tags": {
+                            "Environment": "Dev",
+                            "Name": "My bucket"
+                        },
+                        "tags_all": {
+                            "Environment": "Dev",
+                            "Name": "My bucket"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "cors_rule": [],
+                        "grant": [],
+                        "lifecycle_rule": [],
+                        "logging": [],
+                        "object_lock_configuration": [],
+                        "replication_configuration": [],
+                        "server_side_encryption_configuration": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "versioning": [],
+                        "website": []
+                    }
+                },
+                {
+                    "address": "aws_s3_bucket_policy.bucket_policy_positive1",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket_policy",
+                    "name": "bucket_policy_positive1",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "bucket": "cvs-s3-bucket",
+                        "policy": "{\"Id\":\"MYBUCKETPOLICY\",\"Statement\":[{\"Action\":\"s3:*\",\"Condition\":{\"IpAddress\":{\"aws:SourceIp\":\"8.8.8.8/32\"}},\"Effect\":\"Deny\",\"Principal\":\"*\",\"Resource\":[\"aws_s3_bucket.b.arn\"],\"Sid\":\"IPAllow\"}],\"Version\":\"2012-10-17\"}",
+                        "region": "us-east-1"
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_s3_bucket.s3_bucket",
+            "mode": "managed",
+            "type": "aws_s3_bucket",
+            "name": "s3_bucket",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "bucket": "cvs-s3-bucket",
+                    "force_destroy": false,
+                    "region": "us-east-1",
+                    "tags": {
+                        "Environment": "Dev",
+                        "Name": "My bucket"
+                    },
+                    "tags_all": {
+                        "Environment": "Dev",
+                        "Name": "My bucket"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "acceleration_status": true,
+                    "acl": true,
+                    "arn": true,
+                    "bucket_domain_name": true,
+                    "bucket_prefix": true,
+                    "bucket_region": true,
+                    "bucket_regional_domain_name": true,
+                    "cors_rule": true,
+                    "grant": true,
+                    "hosted_zone_id": true,
+                    "id": true,
+                    "lifecycle_rule": true,
+                    "logging": true,
+                    "object_lock_configuration": true,
+                    "object_lock_enabled": true,
+                    "policy": true,
+                    "replication_configuration": true,
+                    "request_payer": true,
+                    "server_side_encryption_configuration": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "versioning": true,
+                    "website": true,
+                    "website_domain": true,
+                    "website_endpoint": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "cors_rule": [],
+                    "grant": [],
+                    "lifecycle_rule": [],
+                    "logging": [],
+                    "object_lock_configuration": [],
+                    "replication_configuration": [],
+                    "server_side_encryption_configuration": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "versioning": [],
+                    "website": []
+                }
+            }
+        },
+        {
+            "address": "aws_s3_bucket_policy.bucket_policy_positive1",
+            "mode": "managed",
+            "type": "aws_s3_bucket_policy",
+            "name": "bucket_policy_positive1",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "bucket": "cvs-s3-bucket",
+                    "policy": "{\"Id\":\"MYBUCKETPOLICY\",\"Statement\":[{\"Action\":\"s3:*\",\"Condition\":{\"IpAddress\":{\"aws:SourceIp\":\"8.8.8.8/32\"}},\"Effect\":\"Deny\",\"Principal\":\"*\",\"Resource\":[\"aws_s3_bucket.b.arn\"],\"Sid\":\"IPAllow\"}],\"Version\":\"2012-10-17\"}",
+                    "region": "us-east-1"
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "full_name": "registry.terraform.io/hashicorp/aws",
+                "version_constraint": "6.4.0",
+                "expressions": {
+                    "profile": {
+                        "constant_value": "saurabh-eis-dev"
+                    },
+                    "region": {
+                        "constant_value": "us-east-1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_s3_bucket.s3_bucket",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket",
+                    "name": "s3_bucket",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "bucket": {
+                            "constant_value": "cvs-s3-bucket"
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "Environment": "Dev",
+                                "Name": "My bucket"
+                            }
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_s3_bucket_policy.bucket_policy_positive1",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket_policy",
+                    "name": "bucket_policy_positive1",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "bucket": {
+                            "constant_value": "cvs-s3-bucket"
+                        },
+                        "policy": {
+                            "constant_value": "  {\r\n      \"Version\": \"2012-10-17\",\r\n      \"Id\": \"MYBUCKETPOLICY\",\r\n      \"Statement\": [\r\n        {\r\n          \"Sid\": \"IPAllow\",\r\n          \"Effect\": \"Deny\",\r\n          \"Principal\": \"*\",\r\n          \"Action\": \"s3:*\",\r\n          \"Resource\": [\r\n            \"aws_s3_bucket.b.arn\"\r\n          ],\r\n          \"Condition\": {\r\n            \"IpAddress\": {\r\n              \"aws:SourceIp\": \"8.8.8.8/32\"\r\n            }\r\n          }\r\n        }\r\n      ]\r\n  }\r\n"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-24T18:27:47Z",
+    "errored": false
+}

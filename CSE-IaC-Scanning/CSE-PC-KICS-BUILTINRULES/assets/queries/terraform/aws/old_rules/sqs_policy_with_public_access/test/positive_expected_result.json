@@ -1,0 +1,17 @@
+[
+  {
+    "queryName": "SQS Policy With Public Access",
+    "severity": "CRITICAL",
+    "line": 8
+  },
+  {
+    "queryName": "SQS Policy With Public Access",
+    "severity": "CRITICAL",
+    "line": 39
+  },
+  {
+    "queryName": "SQS Policy With Public Access",
+    "severity": "CRITICAL",
+    "line": 64
+  }
+]

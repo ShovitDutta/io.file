@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "Google Storage Bucket Level Access Disabled",
+    "severity": "HIGH",
+    "line": 14,
+    "filename": "positive.json"
+  },
+  {
+    "queryName": "Google Storage Bucket Level Access Disabled",
+    "severity": "HIGH",
+    "line": 60,
+    "filename": "positive1.json"
+  }
+]

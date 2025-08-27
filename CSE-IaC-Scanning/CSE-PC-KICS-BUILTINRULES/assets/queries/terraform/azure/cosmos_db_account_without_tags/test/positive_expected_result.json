@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "Cosmos DB Account Without Tags",
+    "severity": "LOW",
+    "line": 61,
+    "filename": "positive.json"
+  }
+]

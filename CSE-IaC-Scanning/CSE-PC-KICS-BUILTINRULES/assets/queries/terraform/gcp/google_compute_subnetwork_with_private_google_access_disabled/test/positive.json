@@ -1,0 +1,140 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_compute_subnetwork.compute_subnetwork",
+                    "mode": "managed",
+                    "type": "google_compute_subnetwork",
+                    "name": "compute_subnetwork",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "description": null,
+                        "ip_cidr_range": "10.0.1.0/24",
+                        "ip_collection": null,
+                        "ipv6_access_type": null,
+                        "log_config": [],
+                        "name": "log-test-subnetwork",
+                        "network": "vpc_network",
+                        "project": "security-controls-sandbox",
+                        "region": "us-east4",
+                        "reserved_internal_range": null,
+                        "role": null,
+                        "send_secondary_ip_range_if_empty": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "log_config": [],
+                        "secondary_ip_range": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_compute_subnetwork.compute_subnetwork",
+            "mode": "managed",
+            "type": "google_compute_subnetwork",
+            "name": "compute_subnetwork",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": null,
+                    "ip_cidr_range": "10.0.1.0/24",
+                    "ip_collection": null,
+                    "ipv6_access_type": null,
+                    "log_config": [],
+                    "name": "log-test-subnetwork",
+                    "network": "vpc_network",
+                    "project": "security-controls-sandbox",
+                    "region": "us-east4",
+                    "reserved_internal_range": null,
+                    "role": null,
+                    "send_secondary_ip_range_if_empty": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "creation_timestamp": true,
+                    "enable_flow_logs": true,
+                    "external_ipv6_prefix": true,
+                    "fingerprint": true,
+                    "gateway_address": true,
+                    "id": true,
+                    "internal_ipv6_prefix": true,
+                    "ipv6_cidr_range": true,
+                    "ipv6_gce_endpoint": true,
+                    "log_config": [],
+                    "private_ip_google_access": true,
+                    "private_ipv6_google_access": true,
+                    "purpose": true,
+                    "secondary_ip_range": true,
+                    "self_link": true,
+                    "stack_type": true,
+                    "state": true,
+                    "subnetwork_id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "log_config": [],
+                    "secondary_ip_range": []
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.35.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_compute_subnetwork.compute_subnetwork",
+                    "mode": "managed",
+                    "type": "google_compute_subnetwork",
+                    "name": "compute_subnetwork",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "ip_cidr_range": {
+                            "constant_value": "10.0.1.0/24"
+                        },
+                        "name": {
+                            "constant_value": "log-test-subnetwork"
+                        },
+                        "network": {
+                            "constant_value": "vpc_network"
+                        },
+                        "project": {
+                            "constant_value": "security-controls-sandbox"
+                        },
+                        "region": {
+                            "constant_value": "us-east4"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-05-22T18:06:01Z",
+    "errored": false
+}

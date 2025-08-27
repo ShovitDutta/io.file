@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "Legacy Client Certificate Auth Enabled",
+    "severity": "HIGH",
+    "line": 14,
+    "fileName": "positive.json"
+  },
+  {
+    "queryName": "Legacy Client Certificate Auth Enabled",
+    "severity": "HIGH",
+    "line": 51,
+    "fileName": "positive1.json"
+  }
+]

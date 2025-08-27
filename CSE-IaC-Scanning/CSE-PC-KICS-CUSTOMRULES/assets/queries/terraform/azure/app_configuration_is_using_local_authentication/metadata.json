@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-APPCONFIGURATION-1614",
+  "queryName": "app configuration is Using local authentication",
+  "severity": "HIGH",
+  "category": "IAM",
+  "descriptionText": "App Configuration Using Local Authentication",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/app_configuration#local_auth_enabled-1",
+  "platform": "Terraform",
+  "descriptionID": "1.6.1.4",
+  "cloudProvider": "azure"
+}

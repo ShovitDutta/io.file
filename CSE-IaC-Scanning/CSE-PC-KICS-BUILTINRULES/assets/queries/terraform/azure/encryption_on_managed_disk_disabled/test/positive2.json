@@ -1,0 +1,555 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_key_vault.example",
+                    "mode": "managed",
+                    "type": "azurerm_key_vault",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 2,
+                    "values": {
+                        "access_policy": [
+                            {
+                                "application_id": null,
+                                "certificate_permissions": null,
+                                "key_permissions": [
+                                    "Create",
+                                    "Delete",
+                                    "Get",
+                                    "Purge",
+                                    "Recover",
+                                    "Update",
+                                    "GetRotationPolicy",
+                                    "SetRotationPolicy"
+                                ],
+                                "object_id": "3934304b-bbed-4260-9183-a09d07cf3155",
+                                "secret_permissions": [
+                                    "Set"
+                                ],
+                                "storage_permissions": null,
+                                "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                            }
+                        ],
+                        "enable_rbac_authorization": null,
+                        "enabled_for_deployment": null,
+                        "enabled_for_disk_encryption": null,
+                        "enabled_for_template_deployment": null,
+                        "location": "westeurope",
+                        "name": "examplekeyvault",
+                        "public_network_access_enabled": true,
+                        "purge_protection_enabled": null,
+                        "resource_group_name": "example-resources",
+                        "sku_name": "premium",
+                        "soft_delete_retention_days": 7,
+                        "tags": null,
+                        "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "access_policy": [
+                            {
+                                "key_permissions": [
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false,
+                                    false
+                                ],
+                                "secret_permissions": [
+                                    false
+                                ]
+                            }
+                        ],
+                        "contact": [],
+                        "network_acls": []
+                    }
+                },
+                {
+                    "address": "azurerm_managed_disk.negative1",
+                    "mode": "managed",
+                    "type": "azurerm_managed_disk",
+                    "name": "negative1",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 1,
+                    "values": {
+                        "create_option": "Empty",
+                        "disk_access_id": null,
+                        "disk_encryption_set_id": null,
+                        "disk_size_gb": 1,
+                        "edge_zone": null,
+                        "encryption_settings": [
+                            {
+                                "disk_encryption_key": [
+                                    {
+                                        "secret_url": "test"
+                                    }
+                                ],
+                                "enabled": false,
+                                "key_encryption_key": []
+                            }
+                        ],
+                        "gallery_image_reference_id": null,
+                        "hyper_v_generation": null,
+                        "image_reference_id": null,
+                        "location": "westus2",
+                        "name": "acctestmd",
+                        "network_access_policy": null,
+                        "on_demand_bursting_enabled": null,
+                        "optimized_frequent_attach_enabled": false,
+                        "os_type": null,
+                        "performance_plus_enabled": false,
+                        "public_network_access_enabled": true,
+                        "resource_group_name": "example-resources",
+                        "secure_vm_disk_encryption_set_id": null,
+                        "security_type": null,
+                        "source_resource_id": null,
+                        "storage_account_id": null,
+                        "storage_account_type": "Standard_LRS",
+                        "tags": null,
+                        "timeouts": null,
+                        "trusted_launch_enabled": null,
+                        "upload_size_bytes": null,
+                        "zone": null
+                    },
+                    "sensitive_values": {
+                        "encryption_settings": [
+                            {
+                                "disk_encryption_key": [
+                                    {}
+                                ],
+                                "key_encryption_key": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "location": "westeurope",
+                        "managed_by": null,
+                        "name": "example-resources",
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_key_vault.example",
+            "mode": "managed",
+            "type": "azurerm_key_vault",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access_policy": [
+                        {
+                            "application_id": null,
+                            "certificate_permissions": null,
+                            "key_permissions": [
+                                "Create",
+                                "Delete",
+                                "Get",
+                                "Purge",
+                                "Recover",
+                                "Update",
+                                "GetRotationPolicy",
+                                "SetRotationPolicy"
+                            ],
+                            "object_id": "3934304b-bbed-4260-9183-a09d07cf3155",
+                            "secret_permissions": [
+                                "Set"
+                            ],
+                            "storage_permissions": null,
+                            "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                        }
+                    ],
+                    "enable_rbac_authorization": null,
+                    "enabled_for_deployment": null,
+                    "enabled_for_disk_encryption": null,
+                    "enabled_for_template_deployment": null,
+                    "location": "westeurope",
+                    "name": "examplekeyvault",
+                    "public_network_access_enabled": true,
+                    "purge_protection_enabled": null,
+                    "resource_group_name": "example-resources",
+                    "sku_name": "premium",
+                    "soft_delete_retention_days": 7,
+                    "tags": null,
+                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "access_policy": [
+                        {
+                            "key_permissions": [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false
+                            ],
+                            "secret_permissions": [
+                                false
+                            ]
+                        }
+                    ],
+                    "contact": true,
+                    "id": true,
+                    "network_acls": true,
+                    "vault_uri": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "access_policy": [
+                        {
+                            "key_permissions": [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false
+                            ],
+                            "secret_permissions": [
+                                false
+                            ]
+                        }
+                    ],
+                    "contact": [],
+                    "network_acls": []
+                }
+            }
+        },
+        {
+            "address": "azurerm_managed_disk.negative1",
+            "mode": "managed",
+            "type": "azurerm_managed_disk",
+            "name": "negative1",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "create_option": "Empty",
+                    "disk_access_id": null,
+                    "disk_encryption_set_id": null,
+                    "disk_size_gb": 1,
+                    "edge_zone": null,
+                    "encryption_settings": [
+                        {
+                            "disk_encryption_key": [
+                                {
+                                    "secret_url": "test"
+                                }
+                            ],
+                            "enabled": true,
+                            "key_encryption_key": []
+                        }
+                    ],
+                    "gallery_image_reference_id": null,
+                    "hyper_v_generation": null,
+                    "image_reference_id": null,
+                    "location": "westus2",
+                    "name": "acctestmd",
+                    "network_access_policy": null,
+                    "on_demand_bursting_enabled": null,
+                    "optimized_frequent_attach_enabled": false,
+                    "os_type": null,
+                    "performance_plus_enabled": false,
+                    "public_network_access_enabled": true,
+                    "resource_group_name": "example-resources",
+                    "secure_vm_disk_encryption_set_id": null,
+                    "security_type": null,
+                    "source_resource_id": null,
+                    "storage_account_id": null,
+                    "storage_account_type": "Standard_LRS",
+                    "tags": null,
+                    "timeouts": null,
+                    "trusted_launch_enabled": null,
+                    "upload_size_bytes": null,
+                    "zone": null
+                },
+                "after_unknown": {
+                    "disk_iops_read_only": true,
+                    "disk_iops_read_write": true,
+                    "disk_mbps_read_only": true,
+                    "disk_mbps_read_write": true,
+                    "encryption_settings": [
+                        {
+                            "disk_encryption_key": [
+                                {
+                                    "source_vault_id": true
+                                }
+                            ],
+                            "key_encryption_key": []
+                        }
+                    ],
+                    "id": true,
+                    "logical_sector_size": true,
+                    "max_shares": true,
+                    "source_uri": true,
+                    "tier": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "encryption_settings": [
+                        {
+                            "disk_encryption_key": [
+                                {}
+                            ],
+                            "key_encryption_key": []
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "address": "azurerm_resource_group.example",
+            "mode": "managed",
+            "type": "azurerm_resource_group",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "location": "westeurope",
+                    "managed_by": null,
+                    "name": "example-resources",
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.azurerm_client_config.current",
+                        "mode": "data",
+                        "type": "azurerm_client_config",
+                        "name": "current",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "client_id": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+                            "id": "Y2xpZW50Q29uZmlncy9jbGllbnRJZD0wNGIwNzc5NS04ZGRiLTQ2MWEtYmJlZS0wMmY5ZTFiZjdiNDY7b2JqZWN0SWQ9MzkzNDMwNGItYmJlZC00MjYwLTkxODMtYTA5ZDA3Y2YzMTU1O3N1YnNjcmlwdGlvbklkPWVjOGRjNjE4LTQ2ZGQtNDNlMi04NTA2LTMwMDdmMzA0ZDg4NDt0ZW5hbnRJZD1mYWJiNjFiOC0zYWZlLTRlNzUtYjkzNC1hNDdmNzgyYjhjZDc=",
+                            "object_id": "3934304b-bbed-4260-9183-a09d07cf3155",
+                            "subscription_id": "ec8dc618-46dd-43e2-8506-3007f304d884",
+                            "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                            "timeouts": null
+                        },
+                        "sensitive_values": {}
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "3.117.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ]
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_key_vault.example",
+                    "mode": "managed",
+                    "type": "azurerm_key_vault",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access_policy": {
+                            "references": [
+                                "data.azurerm_client_config.current.object_id",
+                                "data.azurerm_client_config.current",
+                                "data.azurerm_client_config.current.tenant_id",
+                                "data.azurerm_client_config.current"
+                            ]
+                        },
+                        "location": {
+                            "references": [
+                                "azurerm_resource_group.example.location",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "examplekeyvault"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.example.name",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "sku_name": {
+                            "constant_value": "premium"
+                        },
+                        "soft_delete_retention_days": {
+                            "constant_value": 7
+                        },
+                        "tenant_id": {
+                            "references": [
+                                "data.azurerm_client_config.current.tenant_id",
+                                "data.azurerm_client_config.current"
+                            ]
+                        }
+                    },
+                    "schema_version": 2
+                },
+                {
+                    "address": "azurerm_managed_disk.negative1",
+                    "mode": "managed",
+                    "type": "azurerm_managed_disk",
+                    "name": "negative1",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "create_option": {
+                            "constant_value": "Empty"
+                        },
+                        "disk_size_gb": {
+                            "constant_value": "1"
+                        },
+                        "encryption_settings": [
+                            {
+                                "disk_encryption_key": [
+                                    {
+                                        "secret_url": {
+                                            "constant_value": "test"
+                                        },
+                                        "source_vault_id": {
+                                            "references": [
+                                                "azurerm_key_vault.example.id",
+                                                "azurerm_key_vault.example"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "location": {
+                            "constant_value": "West US 2"
+                        },
+                        "name": {
+                            "constant_value": "acctestmd"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.example.name",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "storage_account_type": {
+                            "constant_value": "Standard_LRS"
+                        }
+                    },
+                    "schema_version": 1
+                },
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "location": {
+                            "constant_value": "West Europe"
+                        },
+                        "name": {
+                            "constant_value": "example-resources"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_client_config.current",
+                    "mode": "data",
+                    "type": "azurerm_client_config",
+                    "name": "current",
+                    "provider_config_key": "azurerm",
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "data.azurerm_client_config.current",
+            "attribute": [
+                "object_id"
+            ]
+        },
+        {
+            "resource": "azurerm_key_vault.example",
+            "attribute": [
+                "id"
+            ]
+        },
+        {
+            "resource": "azurerm_resource_group.example",
+            "attribute": [
+                "name"
+            ]
+        },
+        {
+            "resource": "data.azurerm_client_config.current",
+            "attribute": [
+                "tenant_id"
+            ]
+        },
+        {
+            "resource": "azurerm_resource_group.example",
+            "attribute": [
+                "location"
+            ]
+        }
+    ],
+    "timestamp": "2025-02-28T21:07:37Z",
+    "errored": false
+}

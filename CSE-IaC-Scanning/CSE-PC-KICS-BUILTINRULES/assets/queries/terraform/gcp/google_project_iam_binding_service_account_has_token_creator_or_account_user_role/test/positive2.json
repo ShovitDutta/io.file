@@ -1,0 +1,120 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_project_iam_binding.project",
+                    "mode": "managed",
+                    "type": "google_project_iam_binding",
+                    "name": "project",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "condition": [],
+                        "members": [
+                            "serviceAccount:my-other-app@appspot.gserviceacccount.com",
+                            "user:jane@example.com"
+                        ],
+                        "project": "security-controls-sandbox",
+                        "role": "roles/iam.serviceAccountUser"
+                    },
+                    "sensitive_values": {
+                        "condition": [],
+                        "members": [
+                            false,
+                            false
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_project_iam_binding.project",
+            "mode": "managed",
+            "type": "google_project_iam_binding",
+            "name": "project",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "condition": [],
+                    "members": [
+                        "serviceAccount:my-other-app@appspot.gserviceacccount.com",
+                        "user:jane@example.com"
+                    ],
+                    "project": "security-controls-sandbox",
+                    "role": "roles/iam.serviceAccountUser"
+                },
+                "after_unknown": {
+                    "condition": [],
+                    "etag": true,
+                    "id": true,
+                    "members": [
+                        false,
+                        false
+                    ]
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "condition": [],
+                    "members": [
+                        false,
+                        false
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.35.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_project_iam_binding.project",
+                    "mode": "managed",
+                    "type": "google_project_iam_binding",
+                    "name": "project",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "members": {
+                            "constant_value": [
+                                "user:jane@example.com",
+                                "serviceAccount:my-other-app@appspot.gserviceacccount.com"
+                            ]
+                        },
+                        "project": {
+                            "constant_value": "security-controls-sandbox"
+                        },
+                        "role": {
+                            "constant_value": "roles/iam.serviceAccountUser"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-05-22T20:41:27Z",
+    "errored": false
+}

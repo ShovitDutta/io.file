@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-APIMANAGEMENT-1522",
+  "queryName": "api management is not using tls version 12 or higher",
+  "severity": "HIGH",
+  "category": "Data Protection",
+  "descriptionText": "Configure minimum required version of Transport Layer Security - TLS 1.2 or higher",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/api_management#security",
+  "platform": "Terraform",
+  "descriptionID": "1.5.2.2",
+  "cloudProvider": "azure"
+}

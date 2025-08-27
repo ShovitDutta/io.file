@@ -1,0 +1,20 @@
+[
+   {
+      "queryName": "app gateway is not using https for encryption",
+      "severity": "HIGH",
+      "line": 54,
+      "filename": "positive1.json"
+   },
+   {
+      "queryName": "app gateway is not using https for encryption",
+      "severity": "HIGH",
+      "line": 24,
+      "filename": "positive2.json"
+   },
+   {
+      "queryName": "app gateway is not using https for encryption",
+      "severity": "HIGH",
+      "line": 66,
+      "filename": "positive3.json"
+   }
+]

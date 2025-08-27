@@ -1,0 +1,14 @@
+[
+    {
+      "queryName": "app gateway is missing tags",
+      "severity": "LOW",
+      "line": 130,
+      "fileName": "positive1.json"
+    },
+    {
+      "queryName": "app gateway is missing tags",
+      "severity": "LOW",
+      "line": 130,
+      "fileName": "positive2.json"
+    }
+]

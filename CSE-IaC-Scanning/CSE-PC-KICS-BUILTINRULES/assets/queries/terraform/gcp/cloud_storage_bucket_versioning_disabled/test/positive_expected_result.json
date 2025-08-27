@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "Cloud Storage Bucket Versioning Disabled",
+    "severity": "HIGH",
+    "line": 14,
+    "filename": "positive.json"
+  },
+  {
+    "queryName": "Cloud Storage Bucket Versioning Disabled",
+    "severity": "HIGH",
+    "line": 63,
+    "filename": "positive1.json"
+  }
+]

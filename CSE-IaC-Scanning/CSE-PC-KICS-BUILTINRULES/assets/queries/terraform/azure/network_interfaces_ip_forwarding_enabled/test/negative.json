@@ -1,0 +1,369 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_network_interface.cvs_network_interface",
+                    "mode": "managed",
+                    "type": "azurerm_network_interface",
+                    "name": "cvs_network_interface",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "accelerated_networking_enabled": false,
+                        "auxiliary_mode": null,
+                        "auxiliary_sku": null,
+                        "dns_servers": null,
+                        "edge_zone": null,
+                        "internal_dns_name_label": null,
+                        "ip_configuration": [
+                            {
+                                "name": "internal",
+                                "private_ip_address_allocation": "Dynamic",
+                                "private_ip_address_version": "IPv4",
+                                "public_ip_address_id": null,
+                                "subnet_id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.Network/virtualNetworks/security-poc-yogeshd-vnet-01/subnets/security-poc-pe-snet-01"
+                            }
+                        ],
+                        "ip_forwarding_enabled": false,
+                        "location": "eastus2",
+                        "name": "cvs_network_interface",
+                        "resource_group_name": "security-poc-yogeshd-rg",
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "applied_dns_servers": [],
+                        "ip_configuration": [
+                            {}
+                        ],
+                        "private_ip_addresses": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_network_interface.cvs_network_interface",
+            "mode": "managed",
+            "type": "azurerm_network_interface",
+            "name": "cvs_network_interface",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "accelerated_networking_enabled": false,
+                    "auxiliary_mode": null,
+                    "auxiliary_sku": null,
+                    "dns_servers": null,
+                    "edge_zone": null,
+                    "internal_dns_name_label": null,
+                    "ip_configuration": [
+                        {
+                            "name": "internal",
+                            "private_ip_address_allocation": "Dynamic",
+                            "private_ip_address_version": "IPv4",
+                            "public_ip_address_id": null,
+                            "subnet_id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.Network/virtualNetworks/security-poc-yogeshd-vnet-01/subnets/security-poc-pe-snet-01"
+                        }
+                    ],
+                    "ip_forwarding_enabled": false,
+                    "location": "eastus2",
+                    "name": "cvs_network_interface",
+                    "resource_group_name": "security-poc-yogeshd-rg",
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "applied_dns_servers": true,
+                    "id": true,
+                    "internal_domain_name_suffix": true,
+                    "ip_configuration": [
+                        {
+                            "gateway_load_balancer_frontend_ip_configuration_id": true,
+                            "primary": true,
+                            "private_ip_address": true
+                        }
+                    ],
+                    "mac_address": true,
+                    "private_ip_address": true,
+                    "private_ip_addresses": true,
+                    "virtual_machine_id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "applied_dns_servers": [],
+                    "ip_configuration": [
+                        {}
+                    ],
+                    "private_ip_addresses": []
+                }
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.azurerm_resource_group.resource_group",
+                        "mode": "data",
+                        "type": "azurerm_resource_group",
+                        "name": "resource_group",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg",
+                            "location": "eastus2",
+                            "managed_by": "",
+                            "name": "security-poc-yogeshd-rg",
+                            "tags": {
+                                "createdondate": "2024-06-26",
+                                "dataclassification": "restrictedD",
+                                "environmentsubtype": "POC",
+                                "environmenttype": "NonProd"
+                            },
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    },
+                    {
+                        "address": "data.azurerm_subnet.subnet",
+                        "mode": "data",
+                        "type": "azurerm_subnet",
+                        "name": "subnet",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "address_prefix": "",
+                            "address_prefixes": [
+                                "10.0.0.0/24"
+                            ],
+                            "default_outbound_access_enabled": true,
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.Network/virtualNetworks/security-poc-yogeshd-vnet-01/subnets/security-poc-pe-snet-01",
+                            "name": "security-poc-pe-snet-01",
+                            "network_security_group_id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.Network/networkSecurityGroups/security-poc-pe-nsg-01",
+                            "private_endpoint_network_policies": "Disabled",
+                            "private_link_service_network_policies_enabled": true,
+                            "resource_group_name": "security-poc-yogeshd-rg",
+                            "route_table_id": "",
+                            "service_endpoints": [],
+                            "timeouts": null,
+                            "virtual_network_name": "security-poc-yogeshd-vnet-01"
+                        },
+                        "sensitive_values": {
+                            "address_prefixes": [
+                                false
+                            ],
+                            "service_endpoints": []
+                        }
+                    },
+                    {
+                        "address": "data.azurerm_virtual_network.vnet",
+                        "mode": "data",
+                        "type": "azurerm_virtual_network",
+                        "name": "vnet",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "address_space": [
+                                "10.0.0.0/16"
+                            ],
+                            "dns_servers": null,
+                            "guid": "cefa0287-1343-4146-a6a6-c76d1d6c0768",
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.Network/virtualNetworks/security-poc-yogeshd-vnet-01",
+                            "location": "eastus2",
+                            "name": "security-poc-yogeshd-vnet-01",
+                            "resource_group_name": "security-poc-yogeshd-rg",
+                            "subnets": [
+                                "security-poc-app-snet-01",
+                                "security-poc-appgtwy-snet-01",
+                                "security-poc-azureml-snet-01",
+                                "security-poc-aks-snet-01",
+                                "security-poc-pe-snet-01"
+                            ],
+                            "tags": {
+                                "createdondate": "2024-07-31",
+                                "dataclassification": "restrictedD",
+                                "environmenttype": "NonProd",
+                                "itpmid": "87DB880C626F02E3"
+                            },
+                            "timeouts": null,
+                            "vnet_peerings": {},
+                            "vnet_peerings_addresses": []
+                        },
+                        "sensitive_values": {
+                            "address_space": [
+                                false
+                            ],
+                            "subnets": [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false
+                            ],
+                            "tags": {},
+                            "vnet_peerings": {},
+                            "vnet_peerings_addresses": []
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.26.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_network_interface.cvs_network_interface",
+                    "mode": "managed",
+                    "type": "azurerm_network_interface",
+                    "name": "cvs_network_interface",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "ip_configuration": [
+                            {
+                                "name": {
+                                    "constant_value": "internal"
+                                },
+                                "private_ip_address_allocation": {
+                                    "constant_value": "Dynamic"
+                                },
+                                "subnet_id": {
+                                    "references": [
+                                        "data.azurerm_subnet.subnet.id",
+                                        "data.azurerm_subnet.subnet"
+                                    ]
+                                }
+                            }
+                        ],
+                        "ip_forwarding_enabled": {
+                            "constant_value": false
+                        },
+                        "location": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.location",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "cvs_network_interface"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.name",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_resource_group.resource_group",
+                    "mode": "data",
+                    "type": "azurerm_resource_group",
+                    "name": "resource_group",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_subnet.subnet",
+                    "mode": "data",
+                    "type": "azurerm_subnet",
+                    "name": "subnet",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-pe-snet-01"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.name",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "virtual_network_name": {
+                            "references": [
+                                "data.azurerm_virtual_network.vnet.name",
+                                "data.azurerm_virtual_network.vnet"
+                            ]
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_virtual_network.vnet",
+                    "mode": "data",
+                    "type": "azurerm_virtual_network",
+                    "name": "vnet",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-yogeshd-vnet-01"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.name",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "name"
+            ]
+        },
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "location"
+            ]
+        },
+        {
+            "resource": "data.azurerm_subnet.subnet",
+            "attribute": [
+                "id"
+            ]
+        }
+    ],
+    "timestamp": "2025-04-20T19:30:26Z",
+    "errored": false
+}

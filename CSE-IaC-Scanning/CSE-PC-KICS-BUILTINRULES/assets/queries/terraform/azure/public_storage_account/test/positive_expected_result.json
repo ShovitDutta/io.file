@@ -1,0 +1,14 @@
+[
+	{
+		"queryName": "Public Storage Account",
+		"severity": "CRITICAL",
+		"line": 49,
+		"fileName": "positive.json"
+	},
+	{
+		"queryName": "Public Storage Account",
+		"severity": "CRITICAL",
+		"line": 49,
+		"fileName": "positive2.json"
+	}
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "Encryption On Managed Disk Disabled",
+    "severity": "MEDIUM",
+    "line": 10,
+    "fileName": "positive1.json"
+  },
+  {
+    "queryName": "Encryption On Managed Disk Disabled",
+    "severity": "MEDIUM",
+    "line": 18,
+    "fileName": "positive1.json"
+  }
+]

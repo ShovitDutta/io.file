@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-AKS-11319",
+    "queryName": "aks cluster local accounts must be disabled",
+    "severity": "HIGH",
+    "category": "IAM Protection",
+    "descriptionText": "Kubernetes Local Accounts must be disabled",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster#local_account_disabled-1",
+    "platform": "Terraform",
+    "descriptionID": "1.13.1.9",
+    "cloudProvider": "azure"
+}

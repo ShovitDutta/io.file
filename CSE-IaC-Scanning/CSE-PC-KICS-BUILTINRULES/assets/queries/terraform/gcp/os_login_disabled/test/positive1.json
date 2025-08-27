@@ -1,0 +1,162 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.10.4",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_compute_project_metadata.positive1",
+          "mode": "managed",
+          "type": "google_compute_project_metadata",
+          "name": "positive1",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "metadata": {
+              "enable-oslogin": "false"
+            },
+            "project": "security-controls-sandbox",
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "metadata": {}
+          }
+        },
+        {
+          "address": "google_compute_project_metadata.positive2",
+          "mode": "managed",
+          "type": "google_compute_project_metadata",
+          "name": "positive2",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "metadata": {
+              "foo": "bar"
+            },
+            "project": "security-controls-sandbox",
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "metadata": {}
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "google_compute_project_metadata.positive1",
+      "mode": "managed",
+      "type": "google_compute_project_metadata",
+      "name": "positive1",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "metadata": {
+            "enable-oslogin": "false"
+          },
+          "project": "security-controls-sandbox",
+          "timeouts": null
+        },
+        "after_unknown": {
+          "id": true,
+          "metadata": {}
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "address": "google_compute_project_metadata.positive2",
+      "mode": "managed",
+      "type": "google_compute_project_metadata",
+      "name": "positive2",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "metadata": {
+            "foo": "bar"
+          },
+          "project": "security-controls-sandbox",
+          "timeouts": null
+        },
+        "after_unknown": {
+          "id": true,
+          "metadata": {}
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "metadata": {}
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google",
+        "version_constraint": "6.15.0",
+        "expressions": {
+          "project": {
+            "constant_value": "security-controls-sandbox"
+          },
+          "region": {
+            "constant_value": "us-central1"
+          },
+          "zone": {
+            "constant_value": "us-central1-c"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_compute_project_metadata.positive1",
+          "mode": "managed",
+          "type": "google_compute_project_metadata",
+          "name": "positive1",
+          "provider_config_key": "google",
+          "expressions": {
+            "metadata": {
+              "constant_value": {
+                "enable-oslogin": false
+              }
+            }
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "google_compute_project_metadata.positive2",
+          "mode": "managed",
+          "type": "google_compute_project_metadata",
+          "name": "positive2",
+          "provider_config_key": "google",
+          "expressions": {
+            "metadata": {
+              "constant_value": {
+                "foo": "bar"
+              }
+            }
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  },
+  "timestamp": "2025-06-02T19:24:33Z",
+  "applyable": true,
+  "complete": true,
+  "errored": false
+}

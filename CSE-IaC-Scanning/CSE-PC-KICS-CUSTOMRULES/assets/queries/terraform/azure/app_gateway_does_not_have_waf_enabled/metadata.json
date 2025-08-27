@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-APPGATEWAY-13538",
+    "queryName": "app gateway does not have waf enabled",
+    "severity": "LOW",
+    "category": "Network Security",
+    "descriptionText": "Azure Application Gateway does not have the Web application firewall enabled",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/application_gateway#waf_configuration",
+    "platform": "Terraform",
+    "descriptionID": "1.35.3.8",
+    "cloudProvider": "azure"
+}

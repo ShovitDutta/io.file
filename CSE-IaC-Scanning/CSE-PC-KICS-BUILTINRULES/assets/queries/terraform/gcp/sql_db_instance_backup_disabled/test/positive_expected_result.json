@@ -1,0 +1,33 @@
+[
+ 
+  {
+    "queryName": "SQL DB Instance Backup Disabled",
+    "severity": "MEDIUM",
+    "line": 32,
+    "fileName": "positive6.json"
+  },
+  {
+    "queryName": "SQL DB Instance Backup Disabled",
+    "severity": "MEDIUM",
+    "line": 67,
+    "fileName": "positive4.json"
+  },
+  {
+    "queryName": "SQL DB Instance Backup Disabled Test",
+    "severity": "MEDIUM",
+    "line": 23,
+    "fileName": "positive8.json"
+  },
+  {
+    "queryName": "SQL DB Instance Backup Disabled Test",
+    "severity": "MEDIUM",
+    "line": 32,
+    "fileName": "positive7.json"
+  },
+  {
+    "queryName": "SQL DB Instance Backup Disabled Test",
+    "severity": "MEDIUM",
+    "line": 1241,
+    "fileName": "positive5.json"
+  }
+]

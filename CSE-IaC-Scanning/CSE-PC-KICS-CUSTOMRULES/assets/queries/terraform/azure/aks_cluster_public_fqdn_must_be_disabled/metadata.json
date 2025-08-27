@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-AKS-11332",
+    "queryName": "aks cluster public fqdn must be disabled", 
+    "severity": "CRITICAL",
+    "category": "Network Security",
+    "descriptionText": "AKS Cluster public FQDN must be disabled",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster#private_cluster_public_fqdn_enabled-1",
+    "platform": "Terraform",
+    "descriptionID": "1.13.3.2",
+    "cloudProvider": "azure"
+}

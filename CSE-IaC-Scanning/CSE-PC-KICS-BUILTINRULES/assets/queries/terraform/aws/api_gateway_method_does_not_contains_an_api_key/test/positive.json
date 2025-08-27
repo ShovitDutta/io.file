@@ -1,0 +1,192 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_api_gateway_method.api_gateway_method_1",
+                    "mode": "managed",
+                    "type": "aws_api_gateway_method",
+                    "name": "api_gateway_method_1",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "api_key_required": false,
+                        "authorization": "NONE",
+                        "authorization_scopes": null,
+                        "authorizer_id": null,
+                        "http_method": "GET",
+                        "operation_name": null,
+                        "region": "us-east-1",
+                        "request_models": null,
+                        "request_parameters": null,
+                        "request_validator_id": null,
+                        "resource_id": "api_gateway_resource-example",
+                        "rest_api_id": "api_gateway_rest-api-example"
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "aws_api_gateway_method.api_gateway_method_2",
+                    "mode": "managed",
+                    "type": "aws_api_gateway_method",
+                    "name": "api_gateway_method_2",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "api_key_required": false,
+                        "authorization": "NONE",
+                        "authorization_scopes": null,
+                        "authorizer_id": null,
+                        "http_method": "GET",
+                        "operation_name": null,
+                        "region": "us-east-1",
+                        "request_models": null,
+                        "request_parameters": null,
+                        "request_validator_id": null,
+                        "resource_id": "api_gateway_resource-example",
+                        "rest_api_id": "api_gateway_rest-api-example"
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_api_gateway_method.api_gateway_method_1",
+            "mode": "managed",
+            "type": "aws_api_gateway_method",
+            "name": "api_gateway_method_1",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "api_key_required": false,
+                    "authorization": "NONE",
+                    "authorization_scopes": null,
+                    "authorizer_id": null,
+                    "http_method": "GET",
+                    "operation_name": null,
+                    "region": "us-east-1",
+                    "request_models": null,
+                    "request_parameters": null,
+                    "request_validator_id": null,
+                    "resource_id": "api_gateway_resource-example",
+                    "rest_api_id": "api_gateway_rest-api-example"
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "aws_api_gateway_method.api_gateway_method_2",
+            "mode": "managed",
+            "type": "aws_api_gateway_method",
+            "name": "api_gateway_method_2",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "api_key_required": false,
+                    "authorization": "NONE",
+                    "authorization_scopes": null,
+                    "authorizer_id": null,
+                    "http_method": "GET",
+                    "operation_name": null,
+                    "region": "us-east-1",
+                    "request_models": null,
+                    "request_parameters": null,
+                    "request_validator_id": null,
+                    "resource_id": "api_gateway_resource-example",
+                    "rest_api_id": "api_gateway_rest-api-example"
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "full_name": "registry.terraform.io/hashicorp/aws",
+                "version_constraint": "6.4.0",
+                "expressions": {
+                    "profile": {
+                        "constant_value": "saurabh-eis-dev"
+                    },
+                    "region": {
+                        "constant_value": "us-east-1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_api_gateway_method.api_gateway_method_1",
+                    "mode": "managed",
+                    "type": "aws_api_gateway_method",
+                    "name": "api_gateway_method_1",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "authorization": {
+                            "constant_value": "NONE"
+                        },
+                        "http_method": {
+                            "constant_value": "GET"
+                        },
+                        "resource_id": {
+                            "constant_value": "api_gateway_resource-example"
+                        },
+                        "rest_api_id": {
+                            "constant_value": "api_gateway_rest-api-example"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_api_gateway_method.api_gateway_method_2",
+                    "mode": "managed",
+                    "type": "aws_api_gateway_method",
+                    "name": "api_gateway_method_2",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "api_key_required": {
+                            "constant_value": false
+                        },
+                        "authorization": {
+                            "constant_value": "NONE"
+                        },
+                        "http_method": {
+                            "constant_value": "GET"
+                        },
+                        "resource_id": {
+                            "constant_value": "api_gateway_resource-example"
+                        },
+                        "rest_api_id": {
+                            "constant_value": "api_gateway_rest-api-example"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-08-07T09:29:25Z",
+    "errored": false
+}

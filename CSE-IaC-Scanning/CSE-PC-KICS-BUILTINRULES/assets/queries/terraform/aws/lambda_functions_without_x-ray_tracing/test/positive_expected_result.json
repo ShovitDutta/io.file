@@ -1,0 +1,15 @@
+[
+  {
+
+    "queryName": "Lambda Functions Without X-Ray Tracing",
+    "severity": "LOW",
+    "line": 37,
+    "filename": "positive1.json"
+  },
+  {
+    "queryName": "Lambda Functions Without X-Ray Tracing",
+    "severity": "LOW",
+    "line": 75,
+    "filename": "positive2.json"
+  }
+]

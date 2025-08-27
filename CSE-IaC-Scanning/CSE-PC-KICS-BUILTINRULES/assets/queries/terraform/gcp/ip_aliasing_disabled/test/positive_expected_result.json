@@ -1,0 +1,20 @@
+[
+  {
+    "queryName": "IP Aliasing Disabled",
+    "severity": "HIGH",
+    "line": 73,
+    "filename": "positive1.json"
+  },
+  {
+    "queryName": "IP Aliasing Disabled",
+    "severity": "HIGH",
+    "line": 14,
+    "filename": "positive.json"
+  },
+  {
+    "queryName": "IP Aliasing Disabled",
+    "severity": "HIGH",
+    "line": 14,
+    "filename": "positive2.json"
+  }
+]

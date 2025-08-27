@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "PostgreSQL Server Infrastructure Encryption Disabled",
+    "severity": "LOW",
+    "line": 25,
+    "fileName": "positive.json"
+  }
+]

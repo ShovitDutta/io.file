@@ -1,0 +1,558 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_iam_policy.positive1policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive1policy",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "description": "Positive1 Policy",
+                        "name": "positive1policy",
+                        "path": "/",
+                        "policy": "{\"Statement\":[{\"Action\":[\"lambda:InvokeFunction\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:positive1\"]}],\"Version\":\"2012-10-17\"}",
+                        "tags": null
+                    },
+                    "sensitive_values": {
+                        "tags_all": {}
+                    }
+                },
+                {
+                    "address": "aws_iam_policy.positive2policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive2policy",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "description": "Positive2 Policy",
+                        "name": "positive2policy",
+                        "path": "/",
+                        "policy": "{\"Statement\":[{\"Action\":[\"lambda:InvokeFunction\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:positive2*:*\"]}],\"Version\":\"2022-20-27\"}",
+                        "tags": null
+                    },
+                    "sensitive_values": {
+                        "tags_all": {}
+                    }
+                },
+                {
+                    "address": "aws_iam_policy.positive3policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive3policy",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "description": "positive3 Policy",
+                        "name": "positive3policy",
+                        "path": "/",
+                        "policy": "{\"Statement\":[{\"Action\":[\"lambda:InvokeFunction\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:*:*\"]}],\"Version\":\"2022-20-27\"}",
+                        "tags": null
+                    },
+                    "sensitive_values": {
+                        "tags_all": {}
+                    }
+                },
+                {
+                    "address": "aws_iam_policy.positive4policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive4policy",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "description": "positive4 Policy",
+                        "name": "positive4policy",
+                        "path": "/",
+                        "policy": "{\"Statement\":[{\"Action\":\"lambda:InvokeFunction\",\"Effect\":\"Allow\",\"Resource\":\"arn:aws:lambda:*:*:function:*:*\"}],\"Version\":\"2012-10-17\"}",
+                        "tags": null
+                    },
+                    "sensitive_values": {
+                        "tags_all": {}
+                    }
+                },
+                {
+                    "address": "aws_iam_policy.positive5policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive5policy",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "description": "positive5 Policy",
+                        "name": "positive5policy",
+                        "path": "/",
+                        "policy": "{\"Statement\":[{\"Action\":[\"*\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:*:*\"]}],\"Version\":\"2022-20-27\"}",
+                        "tags": null
+                    },
+                    "sensitive_values": {
+                        "tags_all": {}
+                    }
+                },
+                {
+                    "address": "aws_iam_policy.positive6policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive6policy",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "description": "positive6 Policy",
+                        "name": "positive6policy",
+                        "path": "/",
+                        "policy": "{\"Statement\":[{\"Action\":[\"lambda:*\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:*:*\"]}],\"Version\":\"2022-20-27\"}",
+                        "tags": null
+                    },
+                    "sensitive_values": {
+                        "tags_all": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_iam_policy.positive1policy",
+            "mode": "managed",
+            "type": "aws_iam_policy",
+            "name": "positive1policy",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "Positive1 Policy",
+                    "name": "positive1policy",
+                    "path": "/",
+                    "policy": "{\"Statement\":[{\"Action\":[\"lambda:InvokeFunction\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:positive1\"]}],\"Version\":\"2012-10-17\"}",
+                    "tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "attachment_count": true,
+                    "id": true,
+                    "name_prefix": true,
+                    "policy_id": true,
+                    "tags_all": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "tags_all": {}
+                }
+            }
+        },
+        {
+            "address": "aws_iam_policy.positive2policy",
+            "mode": "managed",
+            "type": "aws_iam_policy",
+            "name": "positive2policy",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "Positive2 Policy",
+                    "name": "positive2policy",
+                    "path": "/",
+                    "policy": "{\"Statement\":[{\"Action\":[\"lambda:InvokeFunction\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:positive2*:*\"]}],\"Version\":\"2022-20-27\"}",
+                    "tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "attachment_count": true,
+                    "id": true,
+                    "name_prefix": true,
+                    "policy_id": true,
+                    "tags_all": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "tags_all": {}
+                }
+            }
+        },
+        {
+            "address": "aws_iam_policy.positive3policy",
+            "mode": "managed",
+            "type": "aws_iam_policy",
+            "name": "positive3policy",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "positive3 Policy",
+                    "name": "positive3policy",
+                    "path": "/",
+                    "policy": "{\"Statement\":[{\"Action\":[\"lambda:InvokeFunction\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:*:*\"]}],\"Version\":\"2022-20-27\"}",
+                    "tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "attachment_count": true,
+                    "id": true,
+                    "name_prefix": true,
+                    "policy_id": true,
+                    "tags_all": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "tags_all": {}
+                }
+            }
+        },
+        {
+            "address": "aws_iam_policy.positive4policy",
+            "mode": "managed",
+            "type": "aws_iam_policy",
+            "name": "positive4policy",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "positive4 Policy",
+                    "name": "positive4policy",
+                    "path": "/",
+                    "policy": "{\"Statement\":[{\"Action\":\"lambda:InvokeFunction\",\"Effect\":\"Allow\",\"Resource\":\"arn:aws:lambda:*:*:function:*:*\"}],\"Version\":\"2012-10-17\"}",
+                    "tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "attachment_count": true,
+                    "id": true,
+                    "name_prefix": true,
+                    "policy_id": true,
+                    "tags_all": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "tags_all": {}
+                }
+            }
+        },
+        {
+            "address": "aws_iam_policy.positive5policy",
+            "mode": "managed",
+            "type": "aws_iam_policy",
+            "name": "positive5policy",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "positive5 Policy",
+                    "name": "positive5policy",
+                    "path": "/",
+                    "policy": "{\"Statement\":[{\"Action\":[\"*\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:*:*\"]}],\"Version\":\"2022-20-27\"}",
+                    "tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "attachment_count": true,
+                    "id": true,
+                    "name_prefix": true,
+                    "policy_id": true,
+                    "tags_all": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "tags_all": {}
+                }
+            }
+        },
+        {
+            "address": "aws_iam_policy.positive6policy",
+            "mode": "managed",
+            "type": "aws_iam_policy",
+            "name": "positive6policy",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "positive6 Policy",
+                    "name": "positive6policy",
+                    "path": "/",
+                    "policy": "{\"Statement\":[{\"Action\":[\"lambda:*\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:*:*\"]}],\"Version\":\"2022-20-27\"}",
+                    "tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "attachment_count": true,
+                    "id": true,
+                    "name_prefix": true,
+                    "policy_id": true,
+                    "tags_all": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "tags_all": {}
+                }
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.aws_iam_policy_document.datapositive4policy",
+                        "mode": "data",
+                        "type": "aws_iam_policy_document",
+                        "name": "datapositive4policy",
+                        "provider_name": "registry.terraform.io/hashicorp/aws",
+                        "schema_version": 0,
+                        "values": {
+                            "id": "504036345",
+                            "json": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Effect\": \"Allow\",\n      \"Action\": \"lambda:InvokeFunction\",\n      \"Resource\": \"arn:aws:lambda:*:*:function:*:*\"\n    }\n  ]\n}",
+                            "minified_json": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:*:*:function:*:*\"}]}",
+                            "override_json": null,
+                            "override_policy_documents": null,
+                            "policy_id": null,
+                            "source_json": null,
+                            "source_policy_documents": null,
+                            "statement": [
+                                {
+                                    "actions": [
+                                        "lambda:InvokeFunction"
+                                    ],
+                                    "condition": [],
+                                    "effect": "Allow",
+                                    "not_actions": [],
+                                    "not_principals": [],
+                                    "not_resources": [],
+                                    "principals": [],
+                                    "resources": [
+                                        "arn:aws:lambda:*:*:function:*:*"
+                                    ],
+                                    "sid": ""
+                                }
+                            ],
+                            "version": "2012-10-17"
+                        },
+                        "sensitive_values": {
+                            "statement": [
+                                {
+                                    "actions": [
+                                        false
+                                    ],
+                                    "condition": [],
+                                    "not_actions": [],
+                                    "not_principals": [],
+                                    "not_resources": [],
+                                    "principals": [],
+                                    "resources": [
+                                        false
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "full_name": "registry.terraform.io/hashicorp/aws",
+                "version_constraint": "6.4.0",
+                "expressions": {
+                    "profile": {
+                        "constant_value": "saurabh-eis-dev"
+                    },
+                    "region": {
+                        "constant_value": "us-east-1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_iam_policy.positive1policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive1policy",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "Positive1 Policy"
+                        },
+                        "name": {
+                            "constant_value": "positive1policy"
+                        },
+                        "path": {
+                            "constant_value": "/"
+                        },
+                        "policy": {}
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_iam_policy.positive2policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive2policy",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "Positive2 Policy"
+                        },
+                        "name": {
+                            "constant_value": "positive2policy"
+                        },
+                        "path": {
+                            "constant_value": "/"
+                        },
+                        "policy": {}
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_iam_policy.positive3policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive3policy",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "positive3 Policy"
+                        },
+                        "name": {
+                            "constant_value": "positive3policy"
+                        },
+                        "path": {
+                            "constant_value": "/"
+                        },
+                        "policy": {}
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_iam_policy.positive4policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive4policy",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "positive4 Policy"
+                        },
+                        "name": {
+                            "constant_value": "positive4policy"
+                        },
+                        "path": {
+                            "constant_value": "/"
+                        },
+                        "policy": {
+                            "references": [
+                                "data.aws_iam_policy_document.datapositive4policy.json",
+                                "data.aws_iam_policy_document.datapositive4policy"
+                            ]
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_iam_policy.positive5policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive5policy",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "positive5 Policy"
+                        },
+                        "name": {
+                            "constant_value": "positive5policy"
+                        },
+                        "path": {
+                            "constant_value": "/"
+                        },
+                        "policy": {}
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_iam_policy.positive6policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "positive6policy",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "positive6 Policy"
+                        },
+                        "name": {
+                            "constant_value": "positive6policy"
+                        },
+                        "path": {
+                            "constant_value": "/"
+                        },
+                        "policy": {}
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.aws_iam_policy_document.datapositive4policy",
+                    "mode": "data",
+                    "type": "aws_iam_policy_document",
+                    "name": "datapositive4policy",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "statement": [
+                            {
+                                "actions": {
+                                    "constant_value": [
+                                        "lambda:InvokeFunction"
+                                    ]
+                                },
+                                "effect": {
+                                    "constant_value": "Allow"
+                                },
+                                "resources": {
+                                    "constant_value": [
+                                        "arn:aws:lambda:*:*:function:*:*"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "data.aws_iam_policy_document.datapositive4policy",
+            "attribute": [
+                "json"
+            ]
+        }
+    ],
+    "timestamp": "2025-07-30T09:48:18Z",
+    "errored": false
+}
