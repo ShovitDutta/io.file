@@ -1,0 +1,12 @@
+{
+  "id": "CSE-PC-GCP-PUBSUB-2833",
+  "queryName": "pubsub location is set to non us region",
+  "severity": "CRITICAL",
+  "category": "Network Security",
+  "descriptionText": "PubSub is a global resource but the Resource Location constraint limits usage to US regions, global is not allowed",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/pubsub_topic#allowed_persistence_regions",
+  "platform": "Terraform",
+  "descriptionID": "2.8.3.3",
+  "cloudProvider": "gcp",
+  "cwe": ""
+}

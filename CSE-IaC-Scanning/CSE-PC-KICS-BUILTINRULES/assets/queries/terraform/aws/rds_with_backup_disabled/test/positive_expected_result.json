@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "RDS With Backup Disabled",
+    "severity": "MEDIUM",
+    "line": 14,
+    "fileName": "positive1.json"
+  },
+  {
+    "queryName": "RDS With Backup Disabled",
+    "severity": "MEDIUM",
+    "line": 19,
+    "fileName": "positive2.json"
+  }
+]

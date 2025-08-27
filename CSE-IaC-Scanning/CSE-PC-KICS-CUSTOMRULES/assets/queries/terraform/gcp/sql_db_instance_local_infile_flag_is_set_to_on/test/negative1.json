@@ -1,0 +1,437 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.10.4",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_sql_database_instance.main",
+          "mode": "managed",
+          "type": "google_sql_database_instance",
+          "name": "main",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "clone": [],
+            "database_version": "MYSQL_8_0",
+            "deletion_protection": true,
+            "name": "psc-enabled-main-instance",
+            "project": "security-controls-sandbox",
+            "restore_backup_context": [],
+            "root_password": null,
+            "settings": [
+              {
+                "activation_policy": "ALWAYS",
+                "active_directory_config": [],
+                "advanced_machine_features": [],
+                "availability_type": "REGIONAL",
+                "backup_configuration": [
+                  {
+                    "binary_log_enabled": true,
+                    "enabled": true,
+                    "location": null,
+                    "point_in_time_recovery_enabled": null
+                  }
+                ],
+                "collation": null,
+                "database_flags": [
+                  {
+                    "name": "local_infile",
+                    "value": "off"
+                  }
+                ],
+                "deletion_protection_enabled": null,
+                "deny_maintenance_period": [],
+                "disk_autoresize": true,
+                "disk_autoresize_limit": 0,
+                "disk_type": "PD_SSD",
+                "enable_dataplex_integration": null,
+                "enable_google_ml_integration": null,
+                "ip_configuration": [
+                  {
+                    "allocated_ip_range": null,
+                    "authorized_networks": [],
+                    "enable_private_path_for_google_cloud_services": null,
+                    "ipv4_enabled": false,
+                    "private_network": null,
+                    "psc_config": [
+                      {
+                        "allowed_consumer_projects": [
+                          "allowed-consumer-project-name"
+                        ],
+                        "psc_auto_connections": [
+                          {
+                            "consumer_network": "network-name",
+                            "consumer_service_project_id": "project-id"
+                          }
+                        ],
+                        "psc_enabled": true
+                      }
+                    ]
+                  }
+                ],
+                "maintenance_window": [],
+                "password_validation_policy": [],
+                "pricing_plan": "PER_USE",
+                "sql_server_audit_config": [],
+                "tier": "db-f1-micro",
+                "time_zone": null
+              }
+            ],
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "available_maintenance_versions": [],
+            "clone": [],
+            "ip_address": [],
+            "replica_configuration": [],
+            "replica_names": [],
+            "restore_backup_context": [],
+            "root_password": true,
+            "server_ca_cert": true,
+            "settings": [
+              {
+                "active_directory_config": [],
+                "advanced_machine_features": [],
+                "backup_configuration": [
+                  {
+                    "backup_retention_settings": []
+                  }
+                ],
+                "data_cache_config": [],
+                "database_flags": [
+                  {}
+                ],
+                "deny_maintenance_period": [],
+                "insights_config": [],
+                "ip_configuration": [
+                  {
+                    "authorized_networks": [],
+                    "psc_config": [
+                      {
+                        "allowed_consumer_projects": [
+                          false
+                        ],
+                        "psc_auto_connections": [
+                          {}
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "location_preference": [],
+                "maintenance_window": [],
+                "password_validation_policy": [],
+                "sql_server_audit_config": [],
+                "user_labels": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "google_sql_database_instance.main",
+      "mode": "managed",
+      "type": "google_sql_database_instance",
+      "name": "main",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "clone": [],
+          "database_version": "MYSQL_8_0",
+          "deletion_protection": true,
+          "name": "psc-enabled-main-instance",
+          "project": "security-controls-sandbox",
+          "restore_backup_context": [],
+          "root_password": null,
+          "settings": [
+            {
+              "activation_policy": "ALWAYS",
+              "active_directory_config": [],
+              "advanced_machine_features": [],
+              "availability_type": "REGIONAL",
+              "backup_configuration": [
+                {
+                  "binary_log_enabled": true,
+                  "enabled": true,
+                  "location": null,
+                  "point_in_time_recovery_enabled": null
+                }
+              ],
+              "collation": null,
+              "database_flags": [
+                {
+                  "name": "local_infile",
+                  "value": "off"
+                }
+              ],
+              "deletion_protection_enabled": null,
+              "deny_maintenance_period": [],
+              "disk_autoresize": true,
+              "disk_autoresize_limit": 0,
+              "disk_type": "PD_SSD",
+              "enable_dataplex_integration": null,
+              "enable_google_ml_integration": null,
+              "ip_configuration": [
+                {
+                  "allocated_ip_range": null,
+                  "authorized_networks": [],
+                  "enable_private_path_for_google_cloud_services": null,
+                  "ipv4_enabled": false,
+                  "private_network": null,
+                  "psc_config": [
+                    {
+                      "allowed_consumer_projects": [
+                        "allowed-consumer-project-name"
+                      ],
+                      "psc_auto_connections": [
+                        {
+                          "consumer_network": "network-name",
+                          "consumer_service_project_id": "project-id"
+                        }
+                      ],
+                      "psc_enabled": true
+                    }
+                  ]
+                }
+              ],
+              "maintenance_window": [],
+              "password_validation_policy": [],
+              "pricing_plan": "PER_USE",
+              "sql_server_audit_config": [],
+              "tier": "db-f1-micro",
+              "time_zone": null
+            }
+          ],
+          "timeouts": null
+        },
+        "after_unknown": {
+          "available_maintenance_versions": true,
+          "clone": [],
+          "connection_name": true,
+          "dns_name": true,
+          "encryption_key_name": true,
+          "first_ip_address": true,
+          "id": true,
+          "instance_type": true,
+          "ip_address": true,
+          "maintenance_version": true,
+          "master_instance_name": true,
+          "private_ip_address": true,
+          "psc_service_attachment_link": true,
+          "public_ip_address": true,
+          "region": true,
+          "replica_configuration": true,
+          "replica_names": true,
+          "restore_backup_context": [],
+          "self_link": true,
+          "server_ca_cert": true,
+          "service_account_email_address": true,
+          "settings": [
+            {
+              "active_directory_config": [],
+              "advanced_machine_features": [],
+              "backup_configuration": [
+                {
+                  "backup_retention_settings": true,
+                  "start_time": true,
+                  "transaction_log_retention_days": true
+                }
+              ],
+              "connector_enforcement": true,
+              "data_cache_config": true,
+              "database_flags": [
+                {}
+              ],
+              "deny_maintenance_period": [],
+              "disk_size": true,
+              "edition": true,
+              "insights_config": true,
+              "ip_configuration": [
+                {
+                  "authorized_networks": [],
+                  "psc_config": [
+                    {
+                      "allowed_consumer_projects": [
+                        false
+                      ],
+                      "psc_auto_connections": [
+                        {}
+                      ]
+                    }
+                  ],
+                  "server_ca_mode": true,
+                  "ssl_mode": true
+                }
+              ],
+              "location_preference": true,
+              "maintenance_window": [],
+              "password_validation_policy": [],
+              "sql_server_audit_config": [],
+              "user_labels": true,
+              "version": true
+            }
+          ]
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "available_maintenance_versions": [],
+          "clone": [],
+          "ip_address": [],
+          "replica_configuration": [],
+          "replica_names": [],
+          "restore_backup_context": [],
+          "root_password": true,
+          "server_ca_cert": true,
+          "settings": [
+            {
+              "active_directory_config": [],
+              "advanced_machine_features": [],
+              "backup_configuration": [
+                {
+                  "backup_retention_settings": []
+                }
+              ],
+              "data_cache_config": [],
+              "database_flags": [
+                {}
+              ],
+              "deny_maintenance_period": [],
+              "insights_config": [],
+              "ip_configuration": [
+                {
+                  "authorized_networks": [],
+                  "psc_config": [
+                    {
+                      "allowed_consumer_projects": [
+                        false
+                      ],
+                      "psc_auto_connections": [
+                        {}
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "location_preference": [],
+              "maintenance_window": [],
+              "password_validation_policy": [],
+              "sql_server_audit_config": [],
+              "user_labels": {}
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google",
+        "version_constraint": "6.15.0",
+        "expressions": {
+          "project": {
+            "constant_value": "security-controls-sandbox"
+          },
+          "region": {
+            "constant_value": "us-central1"
+          },
+          "zone": {
+            "constant_value": "us-central1-c"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_sql_database_instance.main",
+          "mode": "managed",
+          "type": "google_sql_database_instance",
+          "name": "main",
+          "provider_config_key": "google",
+          "expressions": {
+            "database_version": {
+              "constant_value": "MYSQL_8_0"
+            },
+            "name": {
+              "constant_value": "psc-enabled-main-instance"
+            },
+            "settings": [
+              {
+                "availability_type": {
+                  "constant_value": "REGIONAL"
+                },
+                "backup_configuration": [
+                  {
+                    "binary_log_enabled": {
+                      "constant_value": true
+                    },
+                    "enabled": {
+                      "constant_value": true
+                    }
+                  }
+                ],
+                "database_flags": [
+                  {
+                    "name": {
+                      "constant_value": "local_infile"
+                    },
+                    "value": {
+                      "constant_value": "off"
+                    }
+                  }
+                ],
+                "ip_configuration": [
+                  {
+                    "ipv4_enabled": {
+                      "constant_value": false
+                    },
+                    "psc_config": [
+                      {
+                        "allowed_consumer_projects": {
+                          "constant_value": [
+                            "allowed-consumer-project-name"
+                          ]
+                        },
+                        "psc_auto_connections": [
+                          {
+                            "consumer_network": {
+                              "constant_value": "network-name"
+                            },
+                            "consumer_service_project_id": {
+                              "constant_value": "project-id"
+                            }
+                          }
+                        ],
+                        "psc_enabled": {
+                          "constant_value": true
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "tier": {
+                  "constant_value": "db-f1-micro"
+                }
+              }
+            ]
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  },
+  "timestamp": "2025-05-21T18:45:15Z",
+  "applyable": true,
+  "complete": true,
+  "errored": false
+}

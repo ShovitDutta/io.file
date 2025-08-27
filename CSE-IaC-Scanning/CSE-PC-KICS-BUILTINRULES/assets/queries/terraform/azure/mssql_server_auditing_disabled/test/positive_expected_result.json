@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "MSSQL Server Auditing Disabled",
+    "severity": "MEDIUM",
+    "line": 15,
+    "fileName": "positive.json"
+  }
+]

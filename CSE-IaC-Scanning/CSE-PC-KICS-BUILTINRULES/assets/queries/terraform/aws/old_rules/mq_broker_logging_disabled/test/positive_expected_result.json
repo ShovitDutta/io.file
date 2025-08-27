@@ -1,0 +1,17 @@
+[
+	{
+		"queryName": "MQ Broker Logging Disabled",
+		"severity": "CRITICAL",
+		"line": 1
+	},
+	{
+		"queryName": "MQ Broker Logging Disabled",
+		"severity": "CRITICAL",
+		"line": 8
+	},
+	{
+		"queryName": "MQ Broker Logging Disabled",
+		"severity": "CRITICAL",
+		"line": 17
+	}
+]

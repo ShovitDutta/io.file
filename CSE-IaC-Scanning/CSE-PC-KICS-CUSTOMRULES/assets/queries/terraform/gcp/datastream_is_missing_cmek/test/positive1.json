@@ -1,0 +1,1074 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_datastream_connection_profile.destination",
+                    "mode": "managed",
+                    "type": "google_datastream_connection_profile",
+                    "name": "destination",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "bigquery_profile": [
+                            {}
+                        ],
+                        "connection_profile_id": "destination-profile",
+                        "create_without_validation": false,
+                        "display_name": "BigQuery Destination",
+                        "effective_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "forward_ssh_connectivity": [],
+                        "gcs_profile": [],
+                        "labels": null,
+                        "location": "us-central1",
+                        "mysql_profile": [],
+                        "oracle_profile": [],
+                        "postgresql_profile": [],
+                        "private_connectivity": [],
+                        "project": "security-controls-sandbox",
+                        "sql_server_profile": [],
+                        "terraform_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "bigquery_profile": [
+                            {}
+                        ],
+                        "effective_labels": {},
+                        "forward_ssh_connectivity": [],
+                        "gcs_profile": [],
+                        "mysql_profile": [],
+                        "oracle_profile": [],
+                        "postgresql_profile": [],
+                        "private_connectivity": [],
+                        "sql_server_profile": [],
+                        "terraform_labels": {}
+                    }
+                },
+                {
+                    "address": "google_datastream_connection_profile.source",
+                    "mode": "managed",
+                    "type": "google_datastream_connection_profile",
+                    "name": "source",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "bigquery_profile": [],
+                        "connection_profile_id": "source-profile",
+                        "create_without_validation": false,
+                        "display_name": "Postgresql Source",
+                        "effective_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "forward_ssh_connectivity": [],
+                        "gcs_profile": [],
+                        "labels": null,
+                        "location": "us-central1",
+                        "mysql_profile": [],
+                        "oracle_profile": [],
+                        "postgresql_profile": [
+                            {
+                                "database": "postgres",
+                                "hostname": "hostname",
+                                "password": "pass",
+                                "port": 5432,
+                                "username": "user"
+                            }
+                        ],
+                        "private_connectivity": [],
+                        "project": "security-controls-sandbox",
+                        "sql_server_profile": [],
+                        "terraform_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "bigquery_profile": [],
+                        "effective_labels": {},
+                        "forward_ssh_connectivity": [],
+                        "gcs_profile": [],
+                        "mysql_profile": [],
+                        "oracle_profile": [],
+                        "postgresql_profile": [
+                            {}
+                        ],
+                        "private_connectivity": [],
+                        "sql_server_profile": [],
+                        "terraform_labels": {}
+                    }
+                },
+                {
+                    "address": "google_datastream_stream.default",
+                    "mode": "managed",
+                    "type": "google_datastream_stream",
+                    "name": "default",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "backfill_all": [
+                            {
+                                "mysql_excluded_objects": [],
+                                "oracle_excluded_objects": [],
+                                "postgresql_excluded_objects": [
+                                    {
+                                        "postgresql_schemas": [
+                                            {
+                                                "postgresql_tables": [
+                                                    {
+                                                        "postgresql_columns": [
+                                                            {
+                                                                "column": "column",
+                                                                "data_type": null,
+                                                                "nullable": null,
+                                                                "ordinal_position": null,
+                                                                "primary_key": null
+                                                            }
+                                                        ],
+                                                        "table": "table"
+                                                    }
+                                                ],
+                                                "schema": "schema"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "sql_server_excluded_objects": []
+                            }
+                        ],
+                        "backfill_none": [],
+                        "create_without_validation": false,
+                        "customer_managed_encryption_key": null,
+                        "desired_state": "RUNNING",
+                        "destination_config": [
+                            {
+                                "bigquery_destination_config": [
+                                    {
+                                        "append_only": [],
+                                        "data_freshness": "900s",
+                                        "merge": [],
+                                        "single_target_dataset": [],
+                                        "source_hierarchy_datasets": [
+                                            {
+                                                "dataset_template": [
+                                                    {
+                                                        "dataset_id_prefix": null,
+                                                        "kms_key_name": null,
+                                                        "location": "us-central1"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "gcs_destination_config": []
+                            }
+                        ],
+                        "display_name": "Postgres to BigQuery",
+                        "effective_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "labels": null,
+                        "location": "us-central1",
+                        "project": "security-controls-sandbox",
+                        "source_config": [
+                            {
+                                "mysql_source_config": [],
+                                "oracle_source_config": [],
+                                "postgresql_source_config": [
+                                    {
+                                        "exclude_objects": [
+                                            {
+                                                "postgresql_schemas": [
+                                                    {
+                                                        "postgresql_tables": [
+                                                            {
+                                                                "postgresql_columns": [
+                                                                    {
+                                                                        "column": "column",
+                                                                        "data_type": null,
+                                                                        "nullable": null,
+                                                                        "ordinal_position": null,
+                                                                        "primary_key": null
+                                                                    }
+                                                                ],
+                                                                "table": "table"
+                                                            }
+                                                        ],
+                                                        "schema": "schema"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "include_objects": [
+                                            {
+                                                "postgresql_schemas": [
+                                                    {
+                                                        "postgresql_tables": [
+                                                            {
+                                                                "postgresql_columns": [
+                                                                    {
+                                                                        "column": "column",
+                                                                        "data_type": null,
+                                                                        "nullable": null,
+                                                                        "ordinal_position": null,
+                                                                        "primary_key": null
+                                                                    }
+                                                                ],
+                                                                "table": "table"
+                                                            }
+                                                        ],
+                                                        "schema": "schema"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "max_concurrent_backfill_tasks": 12,
+                                        "publication": "publication",
+                                        "replication_slot": "replication_slot"
+                                    }
+                                ],
+                                "sql_server_source_config": []
+                            }
+                        ],
+                        "stream_id": "my-stream",
+                        "terraform_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "backfill_all": [
+                            {
+                                "mysql_excluded_objects": [],
+                                "oracle_excluded_objects": [],
+                                "postgresql_excluded_objects": [
+                                    {
+                                        "postgresql_schemas": [
+                                            {
+                                                "postgresql_tables": [
+                                                    {
+                                                        "postgresql_columns": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "sql_server_excluded_objects": []
+                            }
+                        ],
+                        "backfill_none": [],
+                        "destination_config": [
+                            {
+                                "bigquery_destination_config": [
+                                    {
+                                        "append_only": [],
+                                        "merge": [],
+                                        "single_target_dataset": [],
+                                        "source_hierarchy_datasets": [
+                                            {
+                                                "dataset_template": [
+                                                    {}
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "gcs_destination_config": []
+                            }
+                        ],
+                        "effective_labels": {},
+                        "source_config": [
+                            {
+                                "mysql_source_config": [],
+                                "oracle_source_config": [],
+                                "postgresql_source_config": [
+                                    {
+                                        "exclude_objects": [
+                                            {
+                                                "postgresql_schemas": [
+                                                    {
+                                                        "postgresql_tables": [
+                                                            {
+                                                                "postgresql_columns": [
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "include_objects": [
+                                            {
+                                                "postgresql_schemas": [
+                                                    {
+                                                        "postgresql_tables": [
+                                                            {
+                                                                "postgresql_columns": [
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "sql_server_source_config": []
+                            }
+                        ],
+                        "terraform_labels": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_datastream_connection_profile.destination",
+            "mode": "managed",
+            "type": "google_datastream_connection_profile",
+            "name": "destination",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "bigquery_profile": [
+                        {}
+                    ],
+                    "connection_profile_id": "destination-profile",
+                    "create_without_validation": false,
+                    "display_name": "BigQuery Destination",
+                    "effective_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "forward_ssh_connectivity": [],
+                    "gcs_profile": [],
+                    "labels": null,
+                    "location": "us-central1",
+                    "mysql_profile": [],
+                    "oracle_profile": [],
+                    "postgresql_profile": [],
+                    "private_connectivity": [],
+                    "project": "security-controls-sandbox",
+                    "sql_server_profile": [],
+                    "terraform_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "bigquery_profile": [
+                        {}
+                    ],
+                    "effective_labels": {},
+                    "forward_ssh_connectivity": [],
+                    "gcs_profile": [],
+                    "id": true,
+                    "mysql_profile": [],
+                    "name": true,
+                    "oracle_profile": [],
+                    "postgresql_profile": [],
+                    "private_connectivity": [],
+                    "sql_server_profile": [],
+                    "terraform_labels": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "bigquery_profile": [
+                        {}
+                    ],
+                    "effective_labels": {},
+                    "forward_ssh_connectivity": [],
+                    "gcs_profile": [],
+                    "mysql_profile": [],
+                    "oracle_profile": [],
+                    "postgresql_profile": [],
+                    "private_connectivity": [],
+                    "sql_server_profile": [],
+                    "terraform_labels": {}
+                }
+            }
+        },
+        {
+            "address": "google_datastream_connection_profile.source",
+            "mode": "managed",
+            "type": "google_datastream_connection_profile",
+            "name": "source",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "bigquery_profile": [],
+                    "connection_profile_id": "source-profile",
+                    "create_without_validation": false,
+                    "display_name": "Postgresql Source",
+                    "effective_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "forward_ssh_connectivity": [],
+                    "gcs_profile": [],
+                    "labels": null,
+                    "location": "us-central1",
+                    "mysql_profile": [],
+                    "oracle_profile": [],
+                    "postgresql_profile": [
+                        {
+                            "database": "postgres",
+                            "hostname": "hostname",
+                            "password": "pass",
+                            "port": 5432,
+                            "username": "user"
+                        }
+                    ],
+                    "private_connectivity": [],
+                    "project": "security-controls-sandbox",
+                    "sql_server_profile": [],
+                    "terraform_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "bigquery_profile": [],
+                    "effective_labels": {},
+                    "forward_ssh_connectivity": [],
+                    "gcs_profile": [],
+                    "id": true,
+                    "mysql_profile": [],
+                    "name": true,
+                    "oracle_profile": [],
+                    "postgresql_profile": [
+                        {}
+                    ],
+                    "private_connectivity": [],
+                    "sql_server_profile": [],
+                    "terraform_labels": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "bigquery_profile": [],
+                    "effective_labels": {},
+                    "forward_ssh_connectivity": [],
+                    "gcs_profile": [],
+                    "mysql_profile": [],
+                    "oracle_profile": [],
+                    "postgresql_profile": [
+                        {
+                            "password": true
+                        }
+                    ],
+                    "private_connectivity": [],
+                    "sql_server_profile": [],
+                    "terraform_labels": {}
+                }
+            }
+        },
+        {
+            "address": "google_datastream_stream.default",
+            "mode": "managed",
+            "type": "google_datastream_stream",
+            "name": "default",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "backfill_all": [
+                        {
+                            "mysql_excluded_objects": [],
+                            "oracle_excluded_objects": [],
+                            "postgresql_excluded_objects": [
+                                {
+                                    "postgresql_schemas": [
+                                        {
+                                            "postgresql_tables": [
+                                                {
+                                                    "postgresql_columns": [
+                                                        {
+                                                            "column": "column",
+                                                            "data_type": null,
+                                                            "nullable": null,
+                                                            "ordinal_position": null,
+                                                            "primary_key": null
+                                                        }
+                                                    ],
+                                                    "table": "table"
+                                                }
+                                            ],
+                                            "schema": "schema"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sql_server_excluded_objects": []
+                        }
+                    ],
+                    "backfill_none": [],
+                    "create_without_validation": false,
+                    "customer_managed_encryption_key": null,
+                    "desired_state": "RUNNING",
+                    "destination_config": [
+                        {
+                            "bigquery_destination_config": [
+                                {
+                                    "append_only": [],
+                                    "data_freshness": "900s",
+                                    "merge": [],
+                                    "single_target_dataset": [],
+                                    "source_hierarchy_datasets": [
+                                        {
+                                            "dataset_template": [
+                                                {
+                                                    "dataset_id_prefix": null,
+                                                    "kms_key_name": null,
+                                                    "location": "us-central1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "gcs_destination_config": []
+                        }
+                    ],
+                    "display_name": "Postgres to BigQuery",
+                    "effective_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "labels": null,
+                    "location": "us-central1",
+                    "project": "security-controls-sandbox",
+                    "source_config": [
+                        {
+                            "mysql_source_config": [],
+                            "oracle_source_config": [],
+                            "postgresql_source_config": [
+                                {
+                                    "exclude_objects": [
+                                        {
+                                            "postgresql_schemas": [
+                                                {
+                                                    "postgresql_tables": [
+                                                        {
+                                                            "postgresql_columns": [
+                                                                {
+                                                                    "column": "column",
+                                                                    "data_type": null,
+                                                                    "nullable": null,
+                                                                    "ordinal_position": null,
+                                                                    "primary_key": null
+                                                                }
+                                                            ],
+                                                            "table": "table"
+                                                        }
+                                                    ],
+                                                    "schema": "schema"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "include_objects": [
+                                        {
+                                            "postgresql_schemas": [
+                                                {
+                                                    "postgresql_tables": [
+                                                        {
+                                                            "postgresql_columns": [
+                                                                {
+                                                                    "column": "column",
+                                                                    "data_type": null,
+                                                                    "nullable": null,
+                                                                    "ordinal_position": null,
+                                                                    "primary_key": null
+                                                                }
+                                                            ],
+                                                            "table": "table"
+                                                        }
+                                                    ],
+                                                    "schema": "schema"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "max_concurrent_backfill_tasks": 12,
+                                    "publication": "publication",
+                                    "replication_slot": "replication_slot"
+                                }
+                            ],
+                            "sql_server_source_config": []
+                        }
+                    ],
+                    "stream_id": "my-stream",
+                    "terraform_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "backfill_all": [
+                        {
+                            "mysql_excluded_objects": [],
+                            "oracle_excluded_objects": [],
+                            "postgresql_excluded_objects": [
+                                {
+                                    "postgresql_schemas": [
+                                        {
+                                            "postgresql_tables": [
+                                                {
+                                                    "postgresql_columns": [
+                                                        {
+                                                            "length": true,
+                                                            "precision": true,
+                                                            "scale": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sql_server_excluded_objects": []
+                        }
+                    ],
+                    "backfill_none": [],
+                    "destination_config": [
+                        {
+                            "bigquery_destination_config": [
+                                {
+                                    "append_only": [],
+                                    "merge": [],
+                                    "single_target_dataset": [],
+                                    "source_hierarchy_datasets": [
+                                        {
+                                            "dataset_template": [
+                                                {}
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "destination_connection_profile": true,
+                            "gcs_destination_config": []
+                        }
+                    ],
+                    "effective_labels": {},
+                    "id": true,
+                    "name": true,
+                    "source_config": [
+                        {
+                            "mysql_source_config": [],
+                            "oracle_source_config": [],
+                            "postgresql_source_config": [
+                                {
+                                    "exclude_objects": [
+                                        {
+                                            "postgresql_schemas": [
+                                                {
+                                                    "postgresql_tables": [
+                                                        {
+                                                            "postgresql_columns": [
+                                                                {
+                                                                    "length": true,
+                                                                    "precision": true,
+                                                                    "scale": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "include_objects": [
+                                        {
+                                            "postgresql_schemas": [
+                                                {
+                                                    "postgresql_tables": [
+                                                        {
+                                                            "postgresql_columns": [
+                                                                {
+                                                                    "length": true,
+                                                                    "precision": true,
+                                                                    "scale": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "source_connection_profile": true,
+                            "sql_server_source_config": []
+                        }
+                    ],
+                    "state": true,
+                    "terraform_labels": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "backfill_all": [
+                        {
+                            "mysql_excluded_objects": [],
+                            "oracle_excluded_objects": [],
+                            "postgresql_excluded_objects": [
+                                {
+                                    "postgresql_schemas": [
+                                        {
+                                            "postgresql_tables": [
+                                                {
+                                                    "postgresql_columns": [
+                                                        {}
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sql_server_excluded_objects": []
+                        }
+                    ],
+                    "backfill_none": [],
+                    "destination_config": [
+                        {
+                            "bigquery_destination_config": [
+                                {
+                                    "append_only": [],
+                                    "merge": [],
+                                    "single_target_dataset": [],
+                                    "source_hierarchy_datasets": [
+                                        {
+                                            "dataset_template": [
+                                                {}
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "gcs_destination_config": []
+                        }
+                    ],
+                    "effective_labels": {},
+                    "source_config": [
+                        {
+                            "mysql_source_config": [],
+                            "oracle_source_config": [],
+                            "postgresql_source_config": [
+                                {
+                                    "exclude_objects": [
+                                        {
+                                            "postgresql_schemas": [
+                                                {
+                                                    "postgresql_tables": [
+                                                        {
+                                                            "postgresql_columns": [
+                                                                {}
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "include_objects": [
+                                        {
+                                            "postgresql_schemas": [
+                                                {
+                                                    "postgresql_tables": [
+                                                        {
+                                                            "postgresql_columns": [
+                                                                {}
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "sql_server_source_config": []
+                        }
+                    ],
+                    "terraform_labels": {}
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.15.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    },
+                    "zone": {
+                        "constant_value": "us-central1-c"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_datastream_connection_profile.destination",
+                    "mode": "managed",
+                    "type": "google_datastream_connection_profile",
+                    "name": "destination",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "bigquery_profile": [
+                            {}
+                        ],
+                        "connection_profile_id": {
+                            "constant_value": "destination-profile"
+                        },
+                        "display_name": {
+                            "constant_value": "BigQuery Destination"
+                        },
+                        "location": {
+                            "constant_value": "us-central1"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "google_datastream_connection_profile.source",
+                    "mode": "managed",
+                    "type": "google_datastream_connection_profile",
+                    "name": "source",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "connection_profile_id": {
+                            "constant_value": "source-profile"
+                        },
+                        "display_name": {
+                            "constant_value": "Postgresql Source"
+                        },
+                        "location": {
+                            "constant_value": "us-central1"
+                        },
+                        "postgresql_profile": [
+                            {
+                                "database": {
+                                    "constant_value": "postgres"
+                                },
+                                "hostname": {
+                                    "constant_value": "hostname"
+                                },
+                                "password": {
+                                    "constant_value": "pass"
+                                },
+                                "port": {
+                                    "constant_value": 5432
+                                },
+                                "username": {
+                                    "constant_value": "user"
+                                }
+                            }
+                        ]
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "google_datastream_stream.default",
+                    "mode": "managed",
+                    "type": "google_datastream_stream",
+                    "name": "default",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "backfill_all": [
+                            {
+                                "postgresql_excluded_objects": [
+                                    {
+                                        "postgresql_schemas": [
+                                            {
+                                                "postgresql_tables": [
+                                                    {
+                                                        "postgresql_columns": [
+                                                            {
+                                                                "column": {
+                                                                    "constant_value": "column"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "table": {
+                                                            "constant_value": "table"
+                                                        }
+                                                    }
+                                                ],
+                                                "schema": {
+                                                    "constant_value": "schema"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "desired_state": {
+                            "constant_value": "RUNNING"
+                        },
+                        "destination_config": [
+                            {
+                                "bigquery_destination_config": [
+                                    {
+                                        "data_freshness": {
+                                            "constant_value": "900s"
+                                        },
+                                        "source_hierarchy_datasets": [
+                                            {
+                                                "dataset_template": [
+                                                    {
+                                                        "location": {
+                                                            "constant_value": "us-central1"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "destination_connection_profile": {
+                                    "references": [
+                                        "google_datastream_connection_profile.destination.id",
+                                        "google_datastream_connection_profile.destination"
+                                    ]
+                                }
+                            }
+                        ],
+                        "display_name": {
+                            "constant_value": "Postgres to BigQuery"
+                        },
+                        "location": {
+                            "constant_value": "us-central1"
+                        },
+                        "source_config": [
+                            {
+                                "postgresql_source_config": [
+                                    {
+                                        "exclude_objects": [
+                                            {
+                                                "postgresql_schemas": [
+                                                    {
+                                                        "postgresql_tables": [
+                                                            {
+                                                                "postgresql_columns": [
+                                                                    {
+                                                                        "column": {
+                                                                            "constant_value": "column"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "table": {
+                                                                    "constant_value": "table"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "schema": {
+                                                            "constant_value": "schema"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "include_objects": [
+                                            {
+                                                "postgresql_schemas": [
+                                                    {
+                                                        "postgresql_tables": [
+                                                            {
+                                                                "postgresql_columns": [
+                                                                    {
+                                                                        "column": {
+                                                                            "constant_value": "column"
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "table": {
+                                                                    "constant_value": "table"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "schema": {
+                                                            "constant_value": "schema"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "max_concurrent_backfill_tasks": {
+                                            "constant_value": 12
+                                        },
+                                        "publication": {
+                                            "constant_value": "publication"
+                                        },
+                                        "replication_slot": {
+                                            "constant_value": "replication_slot"
+                                        }
+                                    }
+                                ],
+                                "source_connection_profile": {
+                                    "references": [
+                                        "google_datastream_connection_profile.source.id",
+                                        "google_datastream_connection_profile.source"
+                                    ]
+                                }
+                            }
+                        ],
+                        "stream_id": {
+                            "constant_value": "my-stream"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "google_datastream_connection_profile.source",
+            "attribute": [
+                "id"
+            ]
+        },
+        {
+            "resource": "google_datastream_connection_profile.destination",
+            "attribute": [
+                "id"
+            ]
+        }
+    ],
+    "timestamp": "2025-07-14T17:46:34Z",
+    "errored": false
+}

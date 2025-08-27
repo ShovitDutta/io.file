@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "EC2 Not EBS Optimized",
+    "severity": "INFO",
+    "line": 14,
+    "filename": "positive.json"
+  },
+  {
+    "queryName": "EC2 Not EBS Optimized",
+    "severity": "INFO",
+    "line": 66,
+    "filename": "positive.json"
+  }
+]

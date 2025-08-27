@@ -1,0 +1,186 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.10.4",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_bigtable_instance.negative",
+          "mode": "managed",
+          "type": "google_bigtable_instance",
+          "name": "negative",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 1,
+          "values": {
+            "cluster": [
+              {
+                "autoscaling_config": [],
+                "cluster_id": "tf-instance-cluster",
+                "kms_key_name": "projects/test/locations/nam3/keyRingstest/gkr-nonprod-nam3/cryptoKeys/gk-hcb-nonprod-sde-dbaas-nam3",
+                "num_nodes": 1,
+                "storage_type": "HDD"
+              }
+            ],
+            "deletion_protection": true,
+            "effective_labels": {
+              "goog-terraform-provisioned": "true",
+              "my-label": "prod-label"
+            },
+            "force_destroy": false,
+            "instance_type": "PRODUCTION",
+            "labels": {
+              "my-label": "prod-label"
+            },
+            "name": "tf-instance-1",
+            "project": "security-controls-sandbox",
+            "terraform_labels": {
+              "goog-terraform-provisioned": "true",
+              "my-label": "prod-label"
+            },
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "cluster": [
+              {
+                "autoscaling_config": []
+              }
+            ],
+            "effective_labels": {},
+            "labels": {},
+            "terraform_labels": {}
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "google_bigtable_instance.negative",
+      "mode": "managed",
+      "type": "google_bigtable_instance",
+      "name": "negative",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "cluster": [
+            {
+              "autoscaling_config": [],
+              "cluster_id": "tf-instance-cluster",
+              "kms_key_name": "demo-cmek-key",
+              "num_nodes": 1,
+              "storage_type": "HDD"
+            }
+          ],
+          "deletion_protection": true,
+          "effective_labels": {
+            "goog-terraform-provisioned": "true",
+            "my-label": "prod-label"
+          },
+          "force_destroy": false,
+          "instance_type": "PRODUCTION",
+          "labels": {
+            "my-label": "prod-label"
+          },
+          "name": "tf-instance-1",
+          "project": "security-controls-sandbox",
+          "terraform_labels": {
+            "goog-terraform-provisioned": "true",
+            "my-label": "prod-label"
+          },
+          "timeouts": null
+        },
+        "after_unknown": {
+          "cluster": [
+            {
+              "autoscaling_config": [],
+              "state": true,
+              "zone": true
+            }
+          ],
+          "display_name": true,
+          "effective_labels": {},
+          "id": true,
+          "labels": {},
+          "terraform_labels": {}
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "cluster": [
+            {
+              "autoscaling_config": []
+            }
+          ],
+          "effective_labels": {},
+          "labels": {},
+          "terraform_labels": {}
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google",
+        "version_constraint": "6.15.0",
+        "expressions": {
+          "project": {
+            "constant_value": "security-controls-sandbox"
+          },
+          "region": {
+            "constant_value": "us-central1"
+          },
+          "zone": {
+            "constant_value": "us-central1-c"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_bigtable_instance.negative",
+          "mode": "managed",
+          "type": "google_bigtable_instance",
+          "name": "negative",
+          "provider_config_key": "google",
+          "expressions": {
+            "cluster": [
+              {
+                "cluster_id": {
+                  "constant_value": "tf-instance-cluster"
+                },
+                "kms_key_name": {
+                  "constant_value": "demo-cmek-key"
+                },
+                "num_nodes": {
+                  "constant_value": 1
+                },
+                "storage_type": {
+                  "constant_value": "HDD"
+                }
+              }
+            ],
+            "labels": {
+              "constant_value": {
+                "my-label": "prod-label"
+              }
+            },
+            "name": {
+              "constant_value": "tf-instance-1"
+            }
+          },
+          "schema_version": 1
+        }
+      ]
+    }
+  },
+  "timestamp": "2025-01-16T16:09:31Z",
+  "applyable": true,
+  "complete": true,
+  "errored": false
+}

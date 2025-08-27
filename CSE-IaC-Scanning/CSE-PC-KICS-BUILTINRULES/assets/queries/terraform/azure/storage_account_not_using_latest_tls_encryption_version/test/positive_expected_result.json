@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "Storage Account Not Using Latest TLS Encryption Version",
+    "severity": "MEDIUM",
+    "line": 47,
+    "fileName": "positive.json"
+  }
+]

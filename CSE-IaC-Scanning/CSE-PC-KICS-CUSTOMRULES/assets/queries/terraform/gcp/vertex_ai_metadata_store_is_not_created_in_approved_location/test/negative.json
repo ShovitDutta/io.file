@@ -1,0 +1,107 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_vertex_ai_metadata_store.store",
+                    "mode": "managed",
+                    "type": "google_vertex_ai_metadata_store",
+                    "name": "store",
+                    "provider_name": "registry.terraform.io/hashicorp/google-beta",
+                    "schema_version": 0,
+                    "values": {
+                        "description": "Store to test the terraform module",
+                        "encryption_spec": [],
+                        "name": "test-store",
+                        "project": "your-project-id",
+                        "region": "us-central1",
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "encryption_spec": [],
+                        "state": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_vertex_ai_metadata_store.store",
+            "mode": "managed",
+            "type": "google_vertex_ai_metadata_store",
+            "name": "store",
+            "provider_name": "registry.terraform.io/hashicorp/google-beta",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "Store to test the terraform module",
+                    "encryption_spec": [],
+                    "name": "test-store",
+                    "project": "your-project-id",
+                    "region": "us-central1",
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "create_time": true,
+                    "encryption_spec": [],
+                    "id": true,
+                    "state": true,
+                    "update_time": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "encryption_spec": [],
+                    "state": []
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google-beta": {
+                "name": "google-beta",
+                "full_name": "registry.terraform.io/hashicorp/google-beta",
+                "version_constraint": "~\u003e 6.43.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "your-project-id"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_vertex_ai_metadata_store.store",
+                    "mode": "managed",
+                    "type": "google_vertex_ai_metadata_store",
+                    "name": "store",
+                    "provider_config_key": "google-beta",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "Store to test the terraform module"
+                        },
+                        "name": {
+                            "constant_value": "test-store"
+                        },
+                        "region": {
+                            "constant_value": "us-central1"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-24T17:48:55Z",
+    "errored": false
+}

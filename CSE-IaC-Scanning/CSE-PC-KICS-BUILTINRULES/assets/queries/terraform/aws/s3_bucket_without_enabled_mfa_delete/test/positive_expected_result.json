@@ -1,0 +1,20 @@
+[
+  {
+    "queryName": "S3 Bucket Without Enabled MFA Delete",
+    "severity": "LOW",
+    "line": 30,
+    "fileName": "positive.json"
+  },
+  {
+    "queryName": "S3 Bucket Without Enabled MFA Delete",
+    "severity": "LOW",
+    "line": 62,
+    "fileName": "positive1.json"
+  },
+  {
+    "queryName": "S3 Bucket Without Enabled MFA Delete",
+    "severity": "LOW",
+    "line": 64,
+    "fileName": "positive2.json"
+  }
+]

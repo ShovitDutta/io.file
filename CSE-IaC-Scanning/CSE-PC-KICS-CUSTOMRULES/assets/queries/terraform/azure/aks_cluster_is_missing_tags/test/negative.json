@@ -1,0 +1,590 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_kubernetes_cluster.negative1",
+                    "mode": "managed",
+                    "type": "azurerm_kubernetes_cluster",
+                    "name": "negative1",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 2,
+                    "values": {
+                        "aci_connector_linux": [],
+                        "automatic_channel_upgrade": null,
+                        "azure_active_directory_role_based_access_control": [],
+                        "azure_policy_enabled": null,
+                        "confidential_computing": [],
+                        "cost_analysis_enabled": null,
+                        "custom_ca_trust_certificates_base64": null,
+                        "default_node_pool": [
+                            {
+                                "capacity_reservation_group_id": null,
+                                "custom_ca_trust_enabled": null,
+                                "enable_auto_scaling": null,
+                                "enable_host_encryption": null,
+                                "enable_node_public_ip": null,
+                                "fips_enabled": null,
+                                "gpu_instance": null,
+                                "host_group_id": null,
+                                "kubelet_config": [],
+                                "linux_os_config": [],
+                                "max_count": null,
+                                "message_of_the_day": null,
+                                "min_count": null,
+                                "name": "default",
+                                "node_count": 1,
+                                "node_network_profile": [],
+                                "node_public_ip_prefix_id": null,
+                                "node_taints": null,
+                                "only_critical_addons_enabled": null,
+                                "os_disk_type": "Managed",
+                                "pod_subnet_id": null,
+                                "proximity_placement_group_id": null,
+                                "scale_down_mode": "Delete",
+                                "snapshot_id": null,
+                                "tags": { 
+                                "costcenter": "02045",
+                                "dataclassification": "confidential",
+                                "environmenttype": "dev",
+                                "itpmid": "12345",
+                                "sharedemailaddress": "CloudSecurityServices@cvshealth.com"},
+                                "temporary_name_for_rotation": null,
+                                "type": "VirtualMachineScaleSets",
+                                "ultra_ssd_enabled": false,
+                                "upgrade_settings": [],
+                                "vm_size": "Standard_D2_v2",
+                                "vnet_subnet_id": null,
+                                "zones": null
+                            }
+                        ],
+                        "disk_encryption_set_id": null,
+                        "dns_prefix": "exampleaks1",
+                        "dns_prefix_private_cluster": null,
+                        "edge_zone": null,
+                        "enable_pod_security_policy": null,
+                        "http_application_routing_enabled": null,
+                        "http_proxy_config": [],
+                        "identity": [
+                            {
+                                "identity_ids": null,
+                                "type": "SystemAssigned"
+                            }
+                        ],
+                        "image_cleaner_enabled": false,
+                        "image_cleaner_interval_hours": 48,
+                        "ingress_application_gateway": [],
+                        "key_management_service": [],
+                        "key_vault_secrets_provider": [],
+                        "linux_profile": [],
+                        "local_account_disabled": null,
+                        "location": "westeurope",
+                        "maintenance_window": [],
+                        "maintenance_window_auto_upgrade": [],
+                        "maintenance_window_node_os": [],
+                        "microsoft_defender": [],
+                        "monitor_metrics": [],
+                        "name": "example-aks1",
+                        "network_profile": [
+                            {
+                                "load_balancer_sku": "standard",
+                                "network_plugin": "azure",
+                                "network_plugin_mode": null,
+                                "network_policy": "azure",
+                                "outbound_type": "loadBalancer"
+                            }
+                        ],
+                        "node_os_channel_upgrade": null,
+                        "oidc_issuer_enabled": null,
+                        "oms_agent": [],
+                        "open_service_mesh_enabled": null,
+                        "private_cluster_enabled": false,
+                        "private_cluster_public_fqdn_enabled": false,
+                        "public_network_access_enabled": true,
+                        "resource_group_name": "example-resources",
+                        "role_based_access_control_enabled": true,
+                        "run_command_enabled": true,
+                        "service_mesh_profile": [],
+                        "service_principal": [],
+                        "sku_tier": "Free",
+                        "storage_profile": [],
+                        "support_plan": "KubernetesOfficial",
+                        "tags": {
+                            "costcenter": "02045",
+                            "dataclassification": "confidential",
+                            "environmenttype": "dev",
+                            "itpmid": "12345",
+                            "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                        },
+                        "timeouts": null,
+                        "web_app_routing": [],
+                        "workload_autoscaler_profile": [],
+                        "workload_identity_enabled": false
+                    },
+                    "sensitive_values": {
+                        "aci_connector_linux": [],
+                        "api_server_access_profile": [],
+                        "api_server_authorized_ip_ranges": [],
+                        "auto_scaler_profile": [],
+                        "azure_active_directory_role_based_access_control": [],
+                        "confidential_computing": [],
+                        "default_node_pool": [
+                            {
+                                "kubelet_config": [],
+                                "linux_os_config": [],
+                                "node_labels": {},
+                                "node_network_profile": [],
+                                "upgrade_settings": []
+                            }
+                        ],
+                        "http_proxy_config": [],
+                        "identity": [
+                            {}
+                        ],
+                        "ingress_application_gateway": [],
+                        "key_management_service": [],
+                        "key_vault_secrets_provider": [],
+                        "kube_admin_config": [],
+                        "kube_config": [],
+                        "kubelet_identity": [],
+                        "linux_profile": [],
+                        "maintenance_window": [],
+                        "maintenance_window_auto_upgrade": [],
+                        "maintenance_window_node_os": [],
+                        "microsoft_defender": [],
+                        "monitor_metrics": [],
+                        "network_profile": [
+                            {
+                                "ip_versions": [],
+                                "load_balancer_profile": [],
+                                "nat_gateway_profile": [],
+                                "outbound_ip_address_ids": [],
+                                "outbound_ip_prefix_ids": [],
+                                "pod_cidrs": [],
+                                "service_cidrs": []
+                            }
+                        ],
+                        "oms_agent": [],
+                        "service_mesh_profile": [],
+                        "service_principal": [],
+                        "storage_profile": [],
+                        "tags": {},
+                        "web_app_routing": [],
+                        "windows_profile": [],
+                        "workload_autoscaler_profile": []
+                    }
+                },
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "location": "westeurope",
+                        "managed_by": null,
+                        "name": "example-resources",
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_kubernetes_cluster.negative1",
+            "mode": "managed",
+            "type": "azurerm_kubernetes_cluster",
+            "name": "negative1",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "aci_connector_linux": [],
+                    "automatic_channel_upgrade": null,
+                    "azure_active_directory_role_based_access_control": [],
+                    "azure_policy_enabled": null,
+                    "confidential_computing": [],
+                    "cost_analysis_enabled": null,
+                    "custom_ca_trust_certificates_base64": null,
+                    "default_node_pool": [
+                        {
+                            "capacity_reservation_group_id": null,
+                            "custom_ca_trust_enabled": null,
+                            "enable_auto_scaling": null,
+                            "enable_host_encryption": null,
+                            "enable_node_public_ip": null,
+                            "fips_enabled": null,
+                            "gpu_instance": null,
+                            "host_group_id": null,
+                            "kubelet_config": [],
+                            "linux_os_config": [],
+                            "max_count": null,
+                            "message_of_the_day": null,
+                            "min_count": null,
+                            "name": "default",
+                            "node_count": 1,
+                            "node_network_profile": [],
+                            "node_public_ip_prefix_id": null,
+                            "node_taints": null,
+                            "only_critical_addons_enabled": null,
+                            "os_disk_type": "Managed",
+                            "pod_subnet_id": null,
+                            "proximity_placement_group_id": null,
+                            "scale_down_mode": "Delete",
+                            "snapshot_id": null,
+                            "tags": null,
+                            "temporary_name_for_rotation": null,
+                            "type": "VirtualMachineScaleSets",
+                            "ultra_ssd_enabled": false,
+                            "upgrade_settings": [],
+                            "vm_size": "Standard_D2_v2",
+                            "vnet_subnet_id": null,
+                            "zones": null
+                        }
+                    ],
+                    "disk_encryption_set_id": null,
+                    "dns_prefix": "exampleaks1",
+                    "dns_prefix_private_cluster": null,
+                    "edge_zone": null,
+                    "enable_pod_security_policy": null,
+                    "http_application_routing_enabled": null,
+                    "http_proxy_config": [],
+                    "identity": [
+                        {
+                            "identity_ids": null,
+                            "type": "SystemAssigned"
+                        }
+                    ],
+                    "image_cleaner_enabled": false,
+                    "image_cleaner_interval_hours": 48,
+                    "ingress_application_gateway": [],
+                    "key_management_service": [],
+                    "key_vault_secrets_provider": [],
+                    "linux_profile": [],
+                    "local_account_disabled": null,
+                    "location": "westeurope",
+                    "maintenance_window": [],
+                    "maintenance_window_auto_upgrade": [],
+                    "maintenance_window_node_os": [],
+                    "microsoft_defender": [],
+                    "monitor_metrics": [],
+                    "name": "example-aks1",
+                    "network_profile": [
+                        {
+                            "load_balancer_sku": "standard",
+                            "network_plugin": "azure",
+                            "network_plugin_mode": null,
+                            "network_policy": "azure",
+                            "outbound_type": "loadBalancer"
+                        }
+                    ],
+                    "node_os_channel_upgrade": null,
+                    "oidc_issuer_enabled": null,
+                    "oms_agent": [],
+                    "open_service_mesh_enabled": null,
+                    "private_cluster_enabled": false,
+                    "private_cluster_public_fqdn_enabled": false,
+                    "public_network_access_enabled": true,
+                    "resource_group_name": "example-resources",
+                    "role_based_access_control_enabled": true,
+                    "run_command_enabled": true,
+                    "service_mesh_profile": [],
+                    "service_principal": [],
+                    "sku_tier": "Free",
+                    "storage_profile": [],
+                    "support_plan": "KubernetesOfficial",
+                    "tags": {
+                        "Environment": "Production"
+                    },
+                    "timeouts": null,
+                    "web_app_routing": [],
+                    "workload_autoscaler_profile": [],
+                    "workload_identity_enabled": false
+                },
+                "after_unknown": {
+                    "aci_connector_linux": [],
+                    "api_server_access_profile": true,
+                    "api_server_authorized_ip_ranges": true,
+                    "auto_scaler_profile": true,
+                    "azure_active_directory_role_based_access_control": [],
+                    "confidential_computing": [],
+                    "current_kubernetes_version": true,
+                    "default_node_pool": [
+                        {
+                            "kubelet_config": [],
+                            "kubelet_disk_type": true,
+                            "linux_os_config": [],
+                            "max_pods": true,
+                            "node_labels": true,
+                            "node_network_profile": [],
+                            "orchestrator_version": true,
+                            "os_disk_size_gb": true,
+                            "os_sku": true,
+                            "upgrade_settings": [],
+                            "workload_runtime": true
+                        }
+                    ],
+                    "fqdn": true,
+                    "http_application_routing_zone_name": true,
+                    "http_proxy_config": [],
+                    "id": true,
+                    "identity": [
+                        {
+                            "principal_id": true,
+                            "tenant_id": true
+                        }
+                    ],
+                    "ingress_application_gateway": [],
+                    "key_management_service": [],
+                    "key_vault_secrets_provider": [],
+                    "kube_admin_config": true,
+                    "kube_admin_config_raw": true,
+                    "kube_config": true,
+                    "kube_config_raw": true,
+                    "kubelet_identity": true,
+                    "kubernetes_version": true,
+                    "linux_profile": [],
+                    "maintenance_window": [],
+                    "maintenance_window_auto_upgrade": [],
+                    "maintenance_window_node_os": [],
+                    "microsoft_defender": [],
+                    "monitor_metrics": [],
+                    "network_profile": [
+                        {
+                            "dns_service_ip": true,
+                            "docker_bridge_cidr": true,
+                            "ebpf_data_plane": true,
+                            "ip_versions": true,
+                            "load_balancer_profile": true,
+                            "nat_gateway_profile": true,
+                            "network_data_plane": true,
+                            "network_mode": true,
+                            "outbound_ip_address_ids": true,
+                            "outbound_ip_prefix_ids": true,
+                            "pod_cidr": true,
+                            "pod_cidrs": true,
+                            "service_cidr": true,
+                            "service_cidrs": true
+                        }
+                    ],
+                    "node_resource_group": true,
+                    "node_resource_group_id": true,
+                    "oidc_issuer_url": true,
+                    "oms_agent": [],
+                    "portal_fqdn": true,
+                    "private_dns_zone_id": true,
+                    "private_fqdn": true,
+                    "service_mesh_profile": [],
+                    "service_principal": [],
+                    "storage_profile": [],
+                    "tags": {},
+                    "web_app_routing": [],
+                    "windows_profile": true,
+                    "workload_autoscaler_profile": []
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "aci_connector_linux": [],
+                    "api_server_access_profile": [],
+                    "api_server_authorized_ip_ranges": [],
+                    "auto_scaler_profile": [],
+                    "azure_active_directory_role_based_access_control": [],
+                    "confidential_computing": [],
+                    "default_node_pool": [
+                        {
+                            "kubelet_config": [],
+                            "linux_os_config": [],
+                            "node_labels": {},
+                            "node_network_profile": [],
+                            "upgrade_settings": []
+                        }
+                    ],
+                    "http_proxy_config": [],
+                    "identity": [
+                        {}
+                    ],
+                    "ingress_application_gateway": [],
+                    "key_management_service": [],
+                    "key_vault_secrets_provider": [],
+                    "kube_admin_config": true,
+                    "kube_admin_config_raw": true,
+                    "kube_config": true,
+                    "kube_config_raw": true,
+                    "kubelet_identity": [],
+                    "linux_profile": [],
+                    "maintenance_window": [],
+                    "maintenance_window_auto_upgrade": [],
+                    "maintenance_window_node_os": [],
+                    "microsoft_defender": [],
+                    "monitor_metrics": [],
+                    "network_profile": [
+                        {
+                            "ip_versions": [],
+                            "load_balancer_profile": [],
+                            "nat_gateway_profile": [],
+                            "outbound_ip_address_ids": [],
+                            "outbound_ip_prefix_ids": [],
+                            "pod_cidrs": [],
+                            "service_cidrs": []
+                        }
+                    ],
+                    "oms_agent": [],
+                    "service_mesh_profile": [],
+                    "service_principal": [],
+                    "storage_profile": [],
+                    "tags": {},
+                    "web_app_routing": [],
+                    "windows_profile": [],
+                    "workload_autoscaler_profile": []
+                }
+            }
+        },
+        {
+            "address": "azurerm_resource_group.example",
+            "mode": "managed",
+            "type": "azurerm_resource_group",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "location": "westeurope",
+                    "managed_by": null,
+                    "name": "example-resources",
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "3.117.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ]
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_kubernetes_cluster.negative1",
+                    "mode": "managed",
+                    "type": "azurerm_kubernetes_cluster",
+                    "name": "negative1",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "default_node_pool": [
+                            {
+                                "name": {
+                                    "constant_value": "default"
+                                },
+                                "node_count": {
+                                    "constant_value": 1
+                                },
+                                "vm_size": {
+                                    "constant_value": "Standard_D2_v2"
+                                }
+                            }
+                        ],
+                        "dns_prefix": {
+                            "constant_value": "exampleaks1"
+                        },
+                        "identity": [
+                            {
+                                "type": {
+                                    "constant_value": "SystemAssigned"
+                                }
+                            }
+                        ],
+                        "location": {
+                            "references": [
+                                "azurerm_resource_group.example.location",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "example-aks1"
+                        },
+                        "network_profile": [
+                            {
+                                "network_plugin": {
+                                    "constant_value": "azure"
+                                },
+                                "network_policy": {
+                                    "constant_value": "azure"
+                                }
+                            }
+                        ],
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.example.name",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "Environment": "Production"
+                            }
+                        }
+                    },
+                    "schema_version": 2
+                },
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "location": {
+                            "constant_value": "West Europe"
+                        },
+                        "name": {
+                            "constant_value": "example-resources"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "azurerm_resource_group.example",
+            "attribute": [
+                "location"
+            ]
+        },
+        {
+            "resource": "azurerm_resource_group.example",
+            "attribute": [
+                "name"
+            ]
+        }
+    ],
+    "timestamp": "2025-02-28T19:53:15Z",
+    "errored": false
+}

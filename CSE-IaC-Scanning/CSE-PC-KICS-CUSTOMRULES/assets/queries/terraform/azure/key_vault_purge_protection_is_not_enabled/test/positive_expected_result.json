@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "key vault purge protection is not enabled",
+      "severity": "HIGH",
+      "line": 1
+    }
+]

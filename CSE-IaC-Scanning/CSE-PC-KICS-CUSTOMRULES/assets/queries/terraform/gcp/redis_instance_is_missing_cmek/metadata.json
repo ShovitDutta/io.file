@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-REDISINSTANCE-23221",
+    "queryName": "redis instance is missing cmek",
+    "severity": "CRITICAL",
+    "category": "Data Protection",
+    "descriptionText": "Ensure CVSH Standard CMEK required on all redis instances for data at rest not applicable for redis cluster",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/redis_instance#customer_managed_key",
+    "platform": "Terraform",
+    "descriptionID": "2.32.2.1",
+    "cloudProvider": "gcp"
+}

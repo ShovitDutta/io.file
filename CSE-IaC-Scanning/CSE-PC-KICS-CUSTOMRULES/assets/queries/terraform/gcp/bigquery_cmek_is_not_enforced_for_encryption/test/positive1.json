@@ -1,0 +1,217 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.10.4",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_org_policy_policy.negative",
+          "mode": "managed",
+          "type": "google_org_policy_policy",
+          "name": "negative",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "dry_run_spec": [],
+            "name": "organizations/123456789/policies/gcp.restrictNonCmekServices",
+            "parent": "organizations/123456789",
+            "spec": [
+              {
+                "inherit_from_parent": null,
+                "reset": null,
+                "rules": [
+                  {
+                    "allow_all": null,
+                    "condition": [],
+                    "deny_all": null,
+                    "enforce": "FALSE",
+                    "parameters": null,
+                    "values": [
+                      {
+                        "allowed_values": null,
+                        "denied_values": [
+                          "bigquery.googleapis.com"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "dry_run_spec": [],
+            "spec": [
+              {
+                "rules": [
+                  {
+                    "condition": [],
+                    "values": [
+                      {
+                        "denied_values": [
+                          false
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "google_org_policy_policy.negative",
+      "mode": "managed",
+      "type": "google_org_policy_policy",
+      "name": "negative",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "dry_run_spec": [],
+          "name": "organizations/123456789/policies/gcp.restrictNonCmekServices",
+          "parent": "organizations/123456789",
+          "spec": [
+            {
+              "inherit_from_parent": null,
+              "reset": null,
+              "rules": [
+                {
+                  "allow_all": null,
+                  "condition": [],
+                  "deny_all": null,
+                  "enforce": "TRUE",
+                  "parameters": null,
+                  "values": [
+                    {
+                      "allowed_values": null,
+                      "denied_values": [
+                        "bigquery.googleapis.com"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "timeouts": null
+        },
+        "after_unknown": {
+          "dry_run_spec": [],
+          "etag": true,
+          "id": true,
+          "spec": [
+            {
+              "etag": true,
+              "rules": [
+                {
+                  "condition": [],
+                  "values": [
+                    {
+                      "denied_values": [
+                        false
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "update_time": true
+            }
+          ]
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "dry_run_spec": [],
+          "spec": [
+            {
+              "rules": [
+                {
+                  "condition": [],
+                  "values": [
+                    {
+                      "denied_values": [
+                        false
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google",
+        "version_constraint": "6.15.0",
+        "expressions": {
+          "project": {
+            "constant_value": "security-controls-sandbox"
+          },
+          "region": {
+            "constant_value": "us-central1"
+          },
+          "zone": {
+            "constant_value": "us-central1-c"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_org_policy_policy.negative",
+          "mode": "managed",
+          "type": "google_org_policy_policy",
+          "name": "negative",
+          "provider_config_key": "google",
+          "expressions": {
+            "name": {
+              "constant_value": "organizations/123456789/policies/gcp.restrictNonCmekServices"
+            },
+            "parent": {
+              "constant_value": "organizations/123456789"
+            },
+            "spec": [
+              {
+                "rules": [
+                  {
+                    "enforce": {
+                      "constant_value": "TRUE"
+                    },
+                    "values": [
+                      {
+                        "denied_values": {
+                          "constant_value": [
+                            "bigquery.googleapis.com"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  },
+  "timestamp": "2025-01-16T17:04:44Z",
+  "applyable": true,
+  "complete": true,
+  "errored": false
+}

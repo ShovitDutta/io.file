@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDSQL-27923",
+    "queryName": "sql db instance skip_show_database is set to off",
+    "severity": "MEDIUM",
+    "category": "Data Protection",
+    "descriptionText": "skip_show_database flag must be set to on. This prevents people from using Show databases statemet if they do not habe the show databases priveileges.",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/sql_database_instance",
+    "platform": "Terraform",
+    "descriptionID": "2.79.2.3",
+    "cloudProvider": "gcp"
+}  

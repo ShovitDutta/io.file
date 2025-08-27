@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "integrity monitoring is disabled for shielded worker nodes",
+    "severity": "MEDIUM",
+    "line": 14,
+    "fileName": "positive1.json"
+  },
+  {
+    "queryName": "integrity monitoring is disabled for shielded worker nodes",
+    "severity": "MEDIUM",
+    "line": 67,
+    "fileName": "positive2.json"
+  }
+]

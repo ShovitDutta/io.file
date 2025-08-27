@@ -1,0 +1,362 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_cloudfunctions2_function.function",
+                    "mode": "managed",
+                    "type": "google_cloudfunctions2_function",
+                    "name": "function",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "build_config": [
+                            {
+                                "entry_point": "helloPubSub",
+                                "environment_variables": {
+                                    "BUILD_CONFIG_TEST": "build_test"
+                                },
+                                "on_deploy_update_policy": [],
+                                "runtime": "nodejs16",
+                                "service_account": "dev-cvs@security-controls-sandbox.iam.gserviceaccount.com",
+                                "source": [
+                                    {
+                                        "repo_source": [],
+                                        "storage_source": [
+                                            {
+                                                "bucket": "csetest-bucket",
+                                                "object": "lib.file.zip"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "worker_pool": null
+                            }
+                        ],
+                        "description": "a new function",
+                        "effective_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "event_trigger": [],
+                        "kms_key_name": "projects/security-controls-sandbox/locations/us-east5/keyRings/cse-key-test/cryptoKeys/cse-test-keyy",
+                        "labels": null,
+                        "location": "us-central1",
+                        "name": "gcf-function",
+                        "project": "security-controls-sandbox",
+                        "service_config": [
+                            {
+                                "all_traffic_on_latest_revision": true,
+                                "available_cpu": "4",
+                                "available_memory": "4Gi",
+                                "binary_authorization_policy": null,
+                                "environment_variables": {
+                                    "SERVICE_CONFIG_DIFF_TEST": "dev-cvs@security-controls-sandbox.iam.gserviceaccount.com",
+                                    "SERVICE_CONFIG_TEST": "config_test"
+                                },
+                                "ingress_settings": "ALLOW_INTERNAL_ONLY",
+                                "max_instance_count": 3,
+                                "max_instance_request_concurrency": 80,
+                                "min_instance_count": 1,
+                                "secret_environment_variables": [],
+                                "secret_volumes": [],
+                                "timeout_seconds": 60,
+                                "vpc_connector": null,
+                                "vpc_connector_egress_settings": "PRIVATE_RANGES_ONLY"
+                            }
+                        ],
+                        "terraform_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "build_config": [
+                            {
+                                "automatic_update_policy": [],
+                                "environment_variables": {},
+                                "on_deploy_update_policy": [],
+                                "source": [
+                                    {
+                                        "repo_source": [],
+                                        "storage_source": [
+                                            {}
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "effective_labels": {},
+                        "event_trigger": [],
+                        "service_config": [
+                            {
+                                "environment_variables": {},
+                                "secret_environment_variables": [],
+                                "secret_volumes": []
+                            }
+                        ],
+                        "terraform_labels": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_cloudfunctions2_function.function",
+            "mode": "managed",
+            "type": "google_cloudfunctions2_function",
+            "name": "function",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "build_config": [
+                        {
+                            "entry_point": "helloPubSub",
+                            "environment_variables": {
+                                "BUILD_CONFIG_TEST": "build_test"
+                            },
+                            "on_deploy_update_policy": [],
+                            "runtime": "nodejs16",
+                            "service_account": "dev-cvs@security-controls-sandbox.iam.gserviceaccount.com",
+                            "source": [
+                                {
+                                    "repo_source": [],
+                                    "storage_source": [
+                                        {
+                                            "bucket": "csetest-bucket",
+                                            "object": "lib.file.zip"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "worker_pool": null
+                        }
+                    ],
+                    "description": "a new function",
+                    "effective_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "event_trigger": [],
+                    "kms_key_name": "projects/security-controls-sandbox/locations/us-east5/keyRings/cse-key-test/cryptoKeys/cse-test-keyy",
+                    "labels": null,
+                    "location": "us-central1",
+                    "name": "gcf-function",
+                    "project": "security-controls-sandbox",
+                    "service_config": [
+                        {
+                            "all_traffic_on_latest_revision": true,
+                            "available_cpu": "4",
+                            "available_memory": "4Gi",
+                            "binary_authorization_policy": null,
+                            "environment_variables": {
+                                "SERVICE_CONFIG_DIFF_TEST": "dev-cvs@security-controls-sandbox.iam.gserviceaccount.com",
+                                "SERVICE_CONFIG_TEST": "config_test"
+                            },
+                            "ingress_settings": "ALLOW_INTERNAL_ONLY",
+                            "max_instance_count": 3,
+                            "max_instance_request_concurrency": 80,
+                            "min_instance_count": 1,
+                            "secret_environment_variables": [],
+                            "secret_volumes": [],
+                            "timeout_seconds": 60,
+                            "vpc_connector": null,
+                            "vpc_connector_egress_settings": "PRIVATE_RANGES_ONLY"
+                        }
+                    ],
+                    "terraform_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "build_config": [
+                        {
+                            "automatic_update_policy": true,
+                            "build": true,
+                            "docker_repository": true,
+                            "environment_variables": {},
+                            "on_deploy_update_policy": [],
+                            "source": [
+                                {
+                                    "repo_source": [],
+                                    "storage_source": [
+                                        {
+                                            "generation": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "effective_labels": {},
+                    "environment": true,
+                    "event_trigger": [],
+                    "id": true,
+                    "service_config": [
+                        {
+                            "environment_variables": {},
+                            "gcf_uri": true,
+                            "secret_environment_variables": [],
+                            "secret_volumes": [],
+                            "service": true,
+                            "service_account_email": true,
+                            "uri": true
+                        }
+                    ],
+                    "state": true,
+                    "terraform_labels": {},
+                    "update_time": true,
+                    "url": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "build_config": [
+                        {
+                            "automatic_update_policy": [],
+                            "environment_variables": {},
+                            "on_deploy_update_policy": [],
+                            "source": [
+                                {
+                                    "repo_source": [],
+                                    "storage_source": [
+                                        {}
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "effective_labels": {},
+                    "event_trigger": [],
+                    "service_config": [
+                        {
+                            "environment_variables": {},
+                            "secret_environment_variables": [],
+                            "secret_volumes": []
+                        }
+                    ],
+                    "terraform_labels": {}
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.35.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_cloudfunctions2_function.function",
+                    "mode": "managed",
+                    "type": "google_cloudfunctions2_function",
+                    "name": "function",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "build_config": [
+                            {
+                                "entry_point": {
+                                    "constant_value": "helloPubSub"
+                                },
+                                "environment_variables": {
+                                    "constant_value": {
+                                        "BUILD_CONFIG_TEST": "build_test"
+                                    }
+                                },
+                                "runtime": {
+                                    "constant_value": "nodejs16"
+                                },
+                                "service_account": {
+                                    "constant_value": "dev-cvs@security-controls-sandbox.iam.gserviceaccount.com"
+                                },
+                                "source": [
+                                    {
+                                        "storage_source": [
+                                            {
+                                                "bucket": {
+                                                    "constant_value": "csetest-bucket"
+                                                },
+                                                "object": {
+                                                    "constant_value": "lib.file.zip"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": {
+                            "constant_value": "a new function"
+                        },
+                        "kms_key_name": {
+                            "constant_value": "projects/security-controls-sandbox/locations/us-east5/keyRings/cse-key-test/cryptoKeys/cse-test-keyy"
+                        },
+                        "location": {
+                            "constant_value": "us-central1"
+                        },
+                        "name": {
+                            "constant_value": "gcf-function"
+                        },
+                        "service_config": [
+                            {
+                                "all_traffic_on_latest_revision": {
+                                    "constant_value": true
+                                },
+                                "available_cpu": {
+                                    "constant_value": "4"
+                                },
+                                "available_memory": {
+                                    "constant_value": "4Gi"
+                                },
+                                "environment_variables": {
+                                    "constant_value": {
+                                        "SERVICE_CONFIG_DIFF_TEST": "dev-cvs@security-controls-sandbox.iam.gserviceaccount.com",
+                                        "SERVICE_CONFIG_TEST": "config_test"
+                                    }
+                                },
+                                "ingress_settings": {
+                                    "constant_value": "ALLOW_INTERNAL_ONLY"
+                                },
+                                "max_instance_count": {
+                                    "constant_value": 3
+                                },
+                                "max_instance_request_concurrency": {
+                                    "constant_value": 80
+                                },
+                                "min_instance_count": {
+                                    "constant_value": 1
+                                },
+                                "timeout_seconds": {
+                                    "constant_value": 60
+                                },
+                                "vpc_connector_egress_settings": {
+                                    "constant_value": "PRIVATE_RANGES_ONLY"
+                                }
+                            }
+                        ]
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-14T11:05:53Z",
+    "errored": false
+}

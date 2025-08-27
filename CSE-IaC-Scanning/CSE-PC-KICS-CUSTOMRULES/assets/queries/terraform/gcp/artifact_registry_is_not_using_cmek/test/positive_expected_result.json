@@ -1,0 +1,8 @@
+[
+    {
+        "queryName": "artifact registry is not using cmek",
+        "severity": "HIGH",
+        "line": 4,
+        "fileName": "positive.tf"
+    }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-MYSQLFLEXIBLESERVER-12731",
+  "queryName": "mysql flexible server public network access enabled",
+  "severity": "CRITICAL",
+  "category": "Network Security",
+  "descriptionText": "Disable public access to MySQL Flexible Server",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mysql_flexible_server#public_network_access_enabled",
+  "platform": "Terraform",
+  "descriptionID": "1.27.3.1",
+  "cloudProvider": "azure"
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "bigtable instance is not encrypted with CMEK",
+        "severity": "HIGH",
+        "line": 15,
+        "fileName": "positive1.json"
+    },
+    {
+        "queryName": "bigtable instance is not encrypted with CMEK",
+        "severity": "HIGH",
+        "line": 15,
+        "fileName": "positive2.json"
+    }
+]

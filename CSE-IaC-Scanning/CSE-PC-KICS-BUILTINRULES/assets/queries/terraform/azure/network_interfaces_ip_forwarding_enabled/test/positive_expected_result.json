@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "Network Interfaces IP Forwarding Enabled",
+    "severity": "MEDIUM",
+    "line": 30,
+    "fileName": "positive.json"
+  }
+]

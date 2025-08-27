@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-STORAGEACCOUNT-13110",
+    "queryName": "blob items publicly accessible",
+    "severity": "CRITICAL",
+    "category": "IAM",
+    "descriptionText": "Disable allow_nested_items_to_be_public policy must be in place",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account.html",
+    "platform": "Terraform",
+    "descriptionID": "1.3.1.10",
+    "cloudProvider": "azure"
+  }

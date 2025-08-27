@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-DATABRICKS-11133",
+  "queryName": "data bricks with cluster connectivity is using public ip",
+  "severity": "CRITICAL",
+  "category": "Network Security",
+  "descriptionText": "Deploy Azure Databricks workspace with Secure Cluster Connectivity (No Public IP)",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/databricks_workspace.html#no_public_ip-1",
+  "platform": "Terraform",
+  "descriptionID": "1.11.3.3",
+  "cloudProvider": "azure"
+}

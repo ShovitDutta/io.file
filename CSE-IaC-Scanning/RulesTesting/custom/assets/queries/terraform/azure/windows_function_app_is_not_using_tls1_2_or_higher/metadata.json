@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-FUNCTIONAPP-18221",
+    "queryName": "windows function app is not using tls1 2 or higher",
+    "severity": "HIGH",
+    "category": "Data Protection Standards",
+    "descriptionText": "Configure minimum required version of Transport Layer Security (TLS) ",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/windows_function_app#minimum_tls_version",
+    "platform": "Terraform",
+    "descriptionID": "1.8.2.21",
+    "cloudProvider": "azure"
+}

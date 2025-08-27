@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-KEYVAULT-1432",
+    "queryName": "key vault public access is not limited to private endpoint",
+    "severity": "HIGH",
+    "category": "Network Security",
+    "descriptionText": "Limit access through private endpoint",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_endpoint",
+    "platform": "Terraform",
+    "descriptionID": "1.4.3.2",
+    "cloudProvider": "azure"
+}

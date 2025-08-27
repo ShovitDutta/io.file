@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "CloudWatch Metrics Disabled for API Gateway Method Settings",
+    "severity": "MEDIUM",
+    "line": 18,
+    "fileName": "positive.json"
+  },
+  {
+    "queryName": "CloudWatch Metrics Disabled for API Gateway Method Settings",
+    "severity": "MEDIUM",
+    "line": 21,
+    "fileName": "positive1.json"
+  }
+]

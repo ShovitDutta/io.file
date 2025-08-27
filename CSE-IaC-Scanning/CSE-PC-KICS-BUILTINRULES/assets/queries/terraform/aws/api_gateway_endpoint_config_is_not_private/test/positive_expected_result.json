@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "API Gateway Endpoint Config is Not Private",
+    "severity": "MEDIUM",
+    "line": 18,
+    "filename": "positive.json"
+  }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "queryName": "artifact registry is not in allowed locations",
+        "severity": "HIGH",
+        "line": 2,
+        "fileName": "positive.tf"
+    }
+]

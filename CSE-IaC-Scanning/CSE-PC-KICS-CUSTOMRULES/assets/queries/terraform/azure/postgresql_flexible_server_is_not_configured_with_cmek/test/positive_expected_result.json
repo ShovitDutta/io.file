@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "postgresql flexible server is not configured with cmek",
+      "severity": "HIGH",
+      "line": 1
+    }
+]

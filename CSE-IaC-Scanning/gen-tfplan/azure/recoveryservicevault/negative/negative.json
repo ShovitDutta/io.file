@@ -1,0 +1,509 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_key_vault.example",
+                    "mode": "managed",
+                    "type": "azurerm_key_vault",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 2,
+                    "values": {
+                        "access_policy": [
+                            {
+                                "application_id": null,
+                                "certificate_permissions": null,
+                                "key_permissions": [
+                                    "Get"
+                                ],
+                                "object_id": "3934304b-bbed-4260-9183-a09d07cf3155",
+                                "secret_permissions": [
+                                    "Get"
+                                ],
+                                "storage_permissions": [
+                                    "Get"
+                                ],
+                                "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                            }
+                        ],
+                        "enable_rbac_authorization": null,
+                        "enabled_for_deployment": null,
+                        "enabled_for_disk_encryption": true,
+                        "enabled_for_template_deployment": null,
+                        "location": "westeurope",
+                        "name": "examplekeyvault",
+                        "public_network_access_enabled": true,
+                        "purge_protection_enabled": false,
+                        "resource_group_name": "tfex-recovery_vault",
+                        "sku_name": "standard",
+                        "soft_delete_retention_days": 7,
+                        "tags": null,
+                        "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "access_policy": [
+                            {
+                                "key_permissions": [
+                                    false
+                                ],
+                                "secret_permissions": [
+                                    false
+                                ],
+                                "storage_permissions": [
+                                    false
+                                ]
+                            }
+                        ],
+                        "contact": [],
+                        "network_acls": []
+                    }
+                },
+                {
+                    "address": "azurerm_recovery_services_vault.vault",
+                    "mode": "managed",
+                    "type": "azurerm_recovery_services_vault",
+                    "name": "vault",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "classic_vmware_replication_enabled": null,
+                        "cross_region_restore_enabled": false,
+                        "encryption": [
+                            {
+                                "infrastructure_encryption_enabled": true,
+                                "use_system_assigned_identity": true,
+                                "user_assigned_identity_id": null
+                            }
+                        ],
+                        "identity": [
+                            {
+                                "identity_ids": null,
+                                "type": "UserAssigned"
+                            }
+                        ],
+                        "location": "westeurope",
+                        "monitoring": [],
+                        "name": "example-recovery-vault",
+                        "public_network_access_enabled": true,
+                        "resource_group_name": "tfex-recovery_vault",
+                        "sku": "Standard",
+                        "soft_delete_enabled": true,
+                        "storage_mode_type": "GeoRedundant",
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "encryption": [
+                            {}
+                        ],
+                        "identity": [
+                            {}
+                        ],
+                        "monitoring": []
+                    }
+                },
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "location": "westeurope",
+                        "managed_by": null,
+                        "name": "tfex-recovery_vault",
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_key_vault.example",
+            "mode": "managed",
+            "type": "azurerm_key_vault",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access_policy": [
+                        {
+                            "application_id": null,
+                            "certificate_permissions": null,
+                            "key_permissions": [
+                                "Get"
+                            ],
+                            "object_id": "3934304b-bbed-4260-9183-a09d07cf3155",
+                            "secret_permissions": [
+                                "Get"
+                            ],
+                            "storage_permissions": [
+                                "Get"
+                            ],
+                            "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                        }
+                    ],
+                    "enable_rbac_authorization": null,
+                    "enabled_for_deployment": null,
+                    "enabled_for_disk_encryption": true,
+                    "enabled_for_template_deployment": null,
+                    "location": "westeurope",
+                    "name": "examplekeyvault",
+                    "public_network_access_enabled": true,
+                    "purge_protection_enabled": false,
+                    "resource_group_name": "tfex-recovery_vault",
+                    "sku_name": "standard",
+                    "soft_delete_retention_days": 7,
+                    "tags": null,
+                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "access_policy": [
+                        {
+                            "key_permissions": [
+                                false
+                            ],
+                            "secret_permissions": [
+                                false
+                            ],
+                            "storage_permissions": [
+                                false
+                            ]
+                        }
+                    ],
+                    "contact": true,
+                    "id": true,
+                    "network_acls": true,
+                    "vault_uri": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "access_policy": [
+                        {
+                            "key_permissions": [
+                                false
+                            ],
+                            "secret_permissions": [
+                                false
+                            ],
+                            "storage_permissions": [
+                                false
+                            ]
+                        }
+                    ],
+                    "contact": [],
+                    "network_acls": []
+                }
+            }
+        },
+        {
+            "address": "azurerm_recovery_services_vault.vault",
+            "mode": "managed",
+            "type": "azurerm_recovery_services_vault",
+            "name": "vault",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "classic_vmware_replication_enabled": null,
+                    "cross_region_restore_enabled": false,
+                    "encryption": [
+                        {
+                            "infrastructure_encryption_enabled": true,
+                            "use_system_assigned_identity": true,
+                            "user_assigned_identity_id": null
+                        }
+                    ],
+                    "identity": [
+                        {
+                            "identity_ids": null,
+                            "type": "UserAssigned"
+                        }
+                    ],
+                    "location": "westeurope",
+                    "monitoring": [],
+                    "name": "example-recovery-vault",
+                    "public_network_access_enabled": true,
+                    "resource_group_name": "tfex-recovery_vault",
+                    "sku": "Standard",
+                    "soft_delete_enabled": true,
+                    "storage_mode_type": "GeoRedundant",
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "encryption": [
+                        {
+                            "key_id": true
+                        }
+                    ],
+                    "id": true,
+                    "identity": [
+                        {
+                            "principal_id": true,
+                            "tenant_id": true
+                        }
+                    ],
+                    "immutability": true,
+                    "monitoring": []
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "encryption": [
+                        {}
+                    ],
+                    "identity": [
+                        {}
+                    ],
+                    "monitoring": []
+                }
+            }
+        },
+        {
+            "address": "azurerm_resource_group.example",
+            "mode": "managed",
+            "type": "azurerm_resource_group",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "location": "westeurope",
+                    "managed_by": null,
+                    "name": "tfex-recovery_vault",
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.azurerm_client_config.current",
+                        "mode": "data",
+                        "type": "azurerm_client_config",
+                        "name": "current",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "client_id": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+                            "id": "Y2xpZW50Q29uZmlncy9jbGllbnRJZD0wNGIwNzc5NS04ZGRiLTQ2MWEtYmJlZS0wMmY5ZTFiZjdiNDY7b2JqZWN0SWQ9MzkzNDMwNGItYmJlZC00MjYwLTkxODMtYTA5ZDA3Y2YzMTU1O3N1YnNjcmlwdGlvbklkPWVjOGRjNjE4LTQ2ZGQtNDNlMi04NTA2LTMwMDdmMzA0ZDg4NDt0ZW5hbnRJZD1mYWJiNjFiOC0zYWZlLTRlNzUtYjkzNC1hNDdmNzgyYjhjZDc=",
+                            "object_id": "3934304b-bbed-4260-9183-a09d07cf3155",
+                            "subscription_id": "ec8dc618-46dd-43e2-8506-3007f304d884",
+                            "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                            "timeouts": null
+                        },
+                        "sensitive_values": {}
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "3.117.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ]
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_key_vault.example",
+                    "mode": "managed",
+                    "type": "azurerm_key_vault",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access_policy": {
+                            "references": [
+                                "data.azurerm_client_config.current.object_id",
+                                "data.azurerm_client_config.current",
+                                "data.azurerm_client_config.current.tenant_id",
+                                "data.azurerm_client_config.current"
+                            ]
+                        },
+                        "enabled_for_disk_encryption": {
+                            "constant_value": true
+                        },
+                        "location": {
+                            "references": [
+                                "azurerm_resource_group.example.location",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "examplekeyvault"
+                        },
+                        "purge_protection_enabled": {
+                            "constant_value": false
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.example.name",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "sku_name": {
+                            "constant_value": "standard"
+                        },
+                        "soft_delete_retention_days": {
+                            "constant_value": 7
+                        },
+                        "tenant_id": {
+                            "references": [
+                                "data.azurerm_client_config.current.tenant_id",
+                                "data.azurerm_client_config.current"
+                            ]
+                        }
+                    },
+                    "schema_version": 2
+                },
+                {
+                    "address": "azurerm_recovery_services_vault.vault",
+                    "mode": "managed",
+                    "type": "azurerm_recovery_services_vault",
+                    "name": "vault",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "encryption": [
+                            {
+                                "infrastructure_encryption_enabled": {
+                                    "constant_value": true
+                                },
+                                "key_id": {
+                                    "references": [
+                                        "azurerm_key_vault.example.id",
+                                        "azurerm_key_vault.example"
+                                    ]
+                                }
+                            }
+                        ],
+                        "identity": [
+                            {
+                                "type": {
+                                    "constant_value": "UserAssigned"
+                                }
+                            }
+                        ],
+                        "location": {
+                            "references": [
+                                "azurerm_resource_group.example.location",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "example-recovery-vault"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.example.name",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "sku": {
+                            "constant_value": "Standard"
+                        },
+                        "soft_delete_enabled": {
+                            "constant_value": true
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "location": {
+                            "constant_value": "West Europe"
+                        },
+                        "name": {
+                            "constant_value": "tfex-recovery_vault"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_client_config.current",
+                    "mode": "data",
+                    "type": "azurerm_client_config",
+                    "name": "current",
+                    "provider_config_key": "azurerm",
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "azurerm_resource_group.example",
+            "attribute": [
+                "location"
+            ]
+        },
+        {
+            "resource": "data.azurerm_client_config.current",
+            "attribute": [
+                "object_id"
+            ]
+        },
+        {
+            "resource": "azurerm_key_vault.example",
+            "attribute": [
+                "id"
+            ]
+        },
+        {
+            "resource": "data.azurerm_client_config.current",
+            "attribute": [
+                "tenant_id"
+            ]
+        },
+        {
+            "resource": "azurerm_resource_group.example",
+            "attribute": [
+                "name"
+            ]
+        }
+    ],
+    "timestamp": "2025-02-11T20:51:22Z",
+    "errored": false
+}

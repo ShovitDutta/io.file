@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-KEYVAULT-1426",
+    "queryName": "key vault key is not using hsm protected keys",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Ensure all key should be HSM (hardware security module)-protected keys",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_key#key_type",
+    "platform": "Terraform",
+    "descriptionID": "1.4.2.6",
+    "cloudProvider": "azure"
+}

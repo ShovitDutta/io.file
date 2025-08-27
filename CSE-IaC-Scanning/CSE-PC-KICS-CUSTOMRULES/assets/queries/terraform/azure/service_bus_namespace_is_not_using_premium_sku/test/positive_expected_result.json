@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "service bus namespace is not using premium sku",
+      "severity": "CRITICAL",
+      "line": 31,
+      "fileName": "positive.json"
+    }
+]

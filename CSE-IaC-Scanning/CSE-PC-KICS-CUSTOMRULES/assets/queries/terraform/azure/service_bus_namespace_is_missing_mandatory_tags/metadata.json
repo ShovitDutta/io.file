@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-SERVICEBUS-13151",
+  "queryName": "service bus namespace is missing mandatory tags",
+  "severity": "LOW",
+  "category": "Governance",
+  "descriptionText": "IT Hygiene:  Azure Service Bus must be tagged per standards",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/servicebus_namespace#tags-1",
+  "platform": "Terraform",
+  "descriptionID": "1.31.5.1",
+  "cloudProvider": "azure"
+}

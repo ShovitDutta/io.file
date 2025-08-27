@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "dataproc cluster is not using internal ip",
+        "severity": "HIGH",
+        "line": 9,
+        "fileName": "positive1.json"
+    },
+    {
+        "queryName": "dataproc cluster is not using internal ip",
+        "severity": "HIGH",
+        "line": 27,
+        "fileName": "positive2.json"
+    }
+]

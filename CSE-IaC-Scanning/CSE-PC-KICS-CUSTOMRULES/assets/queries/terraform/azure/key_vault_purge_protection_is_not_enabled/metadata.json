@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-KEYVAULT-1425",
+    "queryName": "key vault purge protection is not enabled",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Ensure Purge protection is enabled",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault#purge_protection_enabled",
+    "platform": "Terraform",
+    "descriptionID": "1.4.2.5",
+    "cloudProvider": "azure"
+}

@@ -1,0 +1,137 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_api_gateway_method_settings.api_gateway_method_setting",
+                    "mode": "managed",
+                    "type": "aws_api_gateway_method_settings",
+                    "name": "api_gateway_method_setting",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "method_path": "/home/GET",
+                        "region": "us-east-1",
+                        "rest_api_id": "api-123456789",
+                        "settings": [
+                            {
+                                "logging_level": "INFO",
+                                "metrics_enabled": false,
+                                "throttling_burst_limit": -1,
+                                "throttling_rate_limit": -1
+                            }
+                        ],
+                        "stage_name": "dev"
+                    },
+                    "sensitive_values": {
+                        "settings": [
+                            {}
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_api_gateway_method_settings.api_gateway_method_setting",
+            "mode": "managed",
+            "type": "aws_api_gateway_method_settings",
+            "name": "api_gateway_method_setting",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "method_path": "/home/GET",
+                    "region": "us-east-1",
+                    "rest_api_id": "api-123456789",
+                    "settings": [
+                        {
+                            "logging_level": "INFO",
+                            "metrics_enabled": false,
+                            "throttling_burst_limit": -1,
+                            "throttling_rate_limit": -1
+                        }
+                    ],
+                    "stage_name": "dev"
+                },
+                "after_unknown": {
+                    "id": true,
+                    "settings": [
+                        {
+                            "cache_data_encrypted": true,
+                            "cache_ttl_in_seconds": true,
+                            "caching_enabled": true,
+                            "data_trace_enabled": true,
+                            "require_authorization_for_cache_control": true,
+                            "unauthorized_cache_control_header_strategy": true
+                        }
+                    ]
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "settings": [
+                        {}
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "full_name": "registry.terraform.io/hashicorp/aws",
+                "version_constraint": "6.4.0",
+                "expressions": {
+                    "profile": {
+                        "constant_value": "saurabh-eis-dev"
+                    },
+                    "region": {
+                        "constant_value": "us-east-1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_api_gateway_method_settings.api_gateway_method_setting",
+                    "mode": "managed",
+                    "type": "aws_api_gateway_method_settings",
+                    "name": "api_gateway_method_setting",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "method_path": {
+                            "constant_value": "/home/GET"
+                        },
+                        "rest_api_id": {
+                            "constant_value": "api-123456789"
+                        },
+                        "settings": [
+                            {
+                                "logging_level": {
+                                    "constant_value": "INFO"
+                                },
+                                "metrics_enabled": {
+                                    "constant_value": false
+                                }
+                            }
+                        ],
+                        "stage_name": {
+                            "constant_value": "dev"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-08-18T09:38:12Z",
+    "errored": false
+}

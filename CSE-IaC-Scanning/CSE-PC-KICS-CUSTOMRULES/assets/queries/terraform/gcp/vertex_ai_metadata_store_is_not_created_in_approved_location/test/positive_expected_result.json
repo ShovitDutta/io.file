@@ -1,0 +1,8 @@
+[
+    {
+        "queryName": "vertex ai metadata store is not created in approved location",
+        "severity": "HIGH",
+        "line": 19,
+        "fileName": "positive.json"
+    }
+]

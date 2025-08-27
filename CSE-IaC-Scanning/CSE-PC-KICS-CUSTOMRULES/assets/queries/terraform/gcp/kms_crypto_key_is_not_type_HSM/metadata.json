@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-KMS-21723",
+    "queryName": "kms crypto key is not type hsm",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "The allowed KMS Cryptokey type is HSM.",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/kms_crypto_key#protection_level",
+    "platform": "Terraform",
+    "descriptionID": "2.17.2.3",
+    "cloudProvider": "gcp"
+}

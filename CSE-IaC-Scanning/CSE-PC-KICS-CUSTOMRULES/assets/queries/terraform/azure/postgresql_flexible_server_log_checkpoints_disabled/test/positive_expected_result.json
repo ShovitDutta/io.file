@@ -1,0 +1,17 @@
+[
+  {
+    "queryName": "postgresql flexible server log checkpoints disabled",
+    "severity": "MEDIUM",
+    "line": 4
+  },
+  {
+    "queryName": "postgresql flexible server log checkpoints disabled",
+    "severity": "MEDIUM",
+    "line": 10
+  },
+  {
+    "queryName": "postgresql flexible server log checkpoints disabled",
+    "severity": "MEDIUM",
+    "line": 16
+  }
+]

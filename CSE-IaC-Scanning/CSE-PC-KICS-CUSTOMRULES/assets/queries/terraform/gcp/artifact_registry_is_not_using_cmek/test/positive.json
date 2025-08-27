@@ -1,0 +1,162 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_artifact_registry_repository.my-repo",
+                    "mode": "managed",
+                    "type": "google_artifact_registry_repository",
+                    "name": "my-repo",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "cleanup_policies": [],
+                        "cleanup_policy_dry_run": null,
+                        "description": "example docker repository with cmek",
+                        "docker_config": [],
+                        "effective_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "format": "DOCKER",
+                        "kms_key_name": null,
+                        "labels": null,
+                        "location": "us-central1",
+                        "maven_config": [],
+                        "mode": "STANDARD_REPOSITORY",
+                        "project": "security-controls-sandbox",
+                        "remote_repository_config": [],
+                        "repository_id": "my-repository",
+                        "terraform_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "timeouts": null,
+                        "virtual_repository_config": []
+                    },
+                    "sensitive_values": {
+                        "cleanup_policies": [],
+                        "docker_config": [],
+                        "effective_labels": {},
+                        "maven_config": [],
+                        "remote_repository_config": [],
+                        "terraform_labels": {},
+                        "virtual_repository_config": [],
+                        "vulnerability_scanning_config": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_artifact_registry_repository.my-repo",
+            "mode": "managed",
+            "type": "google_artifact_registry_repository",
+            "name": "my-repo",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "cleanup_policies": [],
+                    "cleanup_policy_dry_run": null,
+                    "description": "example docker repository with cmek",
+                    "docker_config": [],
+                    "effective_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "format": "DOCKER",
+                    "kms_key_name": null,
+                    "labels": null,
+                    "location": "us-central1",
+                    "maven_config": [],
+                    "mode": "STANDARD_REPOSITORY",
+                    "project": "security-controls-sandbox",
+                    "remote_repository_config": [],
+                    "repository_id": "my-repository",
+                    "terraform_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "timeouts": null,
+                    "virtual_repository_config": []
+                },
+                "after_unknown": {
+                    "cleanup_policies": [],
+                    "create_time": true,
+                    "docker_config": [],
+                    "effective_labels": {},
+                    "id": true,
+                    "maven_config": [],
+                    "name": true,
+                    "remote_repository_config": [],
+                    "terraform_labels": {},
+                    "update_time": true,
+                    "virtual_repository_config": [],
+                    "vulnerability_scanning_config": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "cleanup_policies": [],
+                    "docker_config": [],
+                    "effective_labels": {},
+                    "maven_config": [],
+                    "remote_repository_config": [],
+                    "terraform_labels": {},
+                    "virtual_repository_config": [],
+                    "vulnerability_scanning_config": []
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.15.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    },
+                    "zone": {
+                        "constant_value": "us-central1-c"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_artifact_registry_repository.my-repo",
+                    "mode": "managed",
+                    "type": "google_artifact_registry_repository",
+                    "name": "my-repo",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "example docker repository with cmek"
+                        },
+                        "format": {
+                            "constant_value": "DOCKER"
+                        },
+                        "location": {
+                            "constant_value": "us-central1"
+                        },
+                        "repository_id": {
+                            "constant_value": "my-repository"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-11T16:36:54Z",
+    "errored": false
+}

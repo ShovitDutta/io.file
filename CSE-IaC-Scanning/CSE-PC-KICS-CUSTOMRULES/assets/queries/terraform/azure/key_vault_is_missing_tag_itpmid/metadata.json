@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-KEYVAULT-14511",
+    "queryName": "key vault is missing tag itpmid",
+    "severity": "LOW",
+    "category": "Governance",
+    "descriptionText": "IT Hygiene: Azure Keyvault must be tagged per standards",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault#tags",
+    "platform": "Terraform",
+    "descriptionID": "1.4.5.11",
+    "cloudProvider": "azure"
+}

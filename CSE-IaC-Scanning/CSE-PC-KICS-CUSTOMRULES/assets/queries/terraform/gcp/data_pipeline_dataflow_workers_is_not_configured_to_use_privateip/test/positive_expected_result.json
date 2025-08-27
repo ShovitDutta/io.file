@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "data pipeline dataflow workers is not configured to use privateip",
+        "severity": "HIGH",
+        "line": 29,
+        "fileName": "positive.json"
+    },
+    {
+        "queryName": "data pipeline dataflow workers is not configured to use privateip",
+        "severity": "HIGH",
+        "line": 29,
+        "fileName": "positive2.json"
+    }
+]

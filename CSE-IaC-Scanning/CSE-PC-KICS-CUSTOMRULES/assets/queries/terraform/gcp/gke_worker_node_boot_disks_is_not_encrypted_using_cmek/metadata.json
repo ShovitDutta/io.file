@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-GCP-GKE-21424",
+  "queryName": "gke worker node boot disks is not encrypted using cmek",
+  "severity": "High",
+  "category": "Data Protection",
+  "descriptionText": "Worker node boot disks must be encrypted using CMEK",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster#boot_disk_kms_key-1",
+  "platform": "Terraform",
+  "descriptionID": "2.14.2.4",
+  "cloudProvider": "gcp"
+}

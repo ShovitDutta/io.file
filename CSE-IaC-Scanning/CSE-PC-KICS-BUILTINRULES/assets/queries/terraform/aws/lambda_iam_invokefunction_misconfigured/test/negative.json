@@ -1,0 +1,175 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_iam_policy.negative1policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "negative1policy",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "description": "negative1 Policy",
+                        "name": "negative1policy",
+                        "path": "/",
+                        "policy": "{\"Statement\":[{\"Action\":[\"lambda:InvokeFunction\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:negative1\",\"arn:aws:lambda:*:*:function:negative1:*\"]}],\"Version\":\"2012-10-17\"}",
+                        "tags": null
+                    },
+                    "sensitive_values": {
+                        "tags_all": {}
+                    }
+                },
+                {
+                    "address": "aws_iam_policy.negative2policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "negative2policy",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "description": "negative2 Policy",
+                        "name": "negative2policy",
+                        "path": "/",
+                        "policy": "{\"Statement\":[{\"Action\":[\"s3:*\"],\"Effect\":\"Allow\",\"Resource\":[\"*\"]}],\"Version\":\"2012-10-17\"}",
+                        "tags": null
+                    },
+                    "sensitive_values": {
+                        "tags_all": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_iam_policy.negative1policy",
+            "mode": "managed",
+            "type": "aws_iam_policy",
+            "name": "negative1policy",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "negative1 Policy",
+                    "name": "negative1policy",
+                    "path": "/",
+                    "policy": "{\"Statement\":[{\"Action\":[\"lambda:InvokeFunction\"],\"Effect\":\"Allow\",\"Resource\":[\"arn:aws:lambda:*:*:function:negative1\",\"arn:aws:lambda:*:*:function:negative1:*\"]}],\"Version\":\"2012-10-17\"}",
+                    "tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "attachment_count": true,
+                    "id": true,
+                    "name_prefix": true,
+                    "policy_id": true,
+                    "tags_all": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "tags_all": {}
+                }
+            }
+        },
+        {
+            "address": "aws_iam_policy.negative2policy",
+            "mode": "managed",
+            "type": "aws_iam_policy",
+            "name": "negative2policy",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "negative2 Policy",
+                    "name": "negative2policy",
+                    "path": "/",
+                    "policy": "{\"Statement\":[{\"Action\":[\"s3:*\"],\"Effect\":\"Allow\",\"Resource\":[\"*\"]}],\"Version\":\"2012-10-17\"}",
+                    "tags": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "attachment_count": true,
+                    "id": true,
+                    "name_prefix": true,
+                    "policy_id": true,
+                    "tags_all": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "tags_all": {}
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "full_name": "registry.terraform.io/hashicorp/aws",
+                "version_constraint": "6.4.0",
+                "expressions": {
+                    "profile": {
+                        "constant_value": "saurabh-eis-dev"
+                    },
+                    "region": {
+                        "constant_value": "us-east-1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_iam_policy.negative1policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "negative1policy",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "negative1 Policy"
+                        },
+                        "name": {
+                            "constant_value": "negative1policy"
+                        },
+                        "path": {
+                            "constant_value": "/"
+                        },
+                        "policy": {}
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_iam_policy.negative2policy",
+                    "mode": "managed",
+                    "type": "aws_iam_policy",
+                    "name": "negative2policy",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "description": {
+                            "constant_value": "negative2 Policy"
+                        },
+                        "name": {
+                            "constant_value": "negative2policy"
+                        },
+                        "path": {
+                            "constant_value": "/"
+                        },
+                        "policy": {}
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-30T09:39:42Z",
+    "errored": false
+}

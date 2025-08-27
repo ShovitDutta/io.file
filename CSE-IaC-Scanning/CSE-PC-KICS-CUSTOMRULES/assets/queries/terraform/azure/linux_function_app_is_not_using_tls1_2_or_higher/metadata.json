@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-FUNCTIONAPP-1822",
+    "queryName": "linux function app is not using tls1 2 or higher",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Configure minimum required version of Transport Layer Security",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_function_app#minimum_tls_version",
+    "platform": "Terraform",
+    "descriptionID": "1.8.2.2",
+    "cloudProvider": "azure"
+}

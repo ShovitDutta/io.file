@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-DATAFACTORY-11555",
+    "queryName": "data factory is missing tag dataclassification",
+    "severity": "LOW",
+    "category": "Governance",
+    "descriptionText": "IT Hygiene: Azure Data Factory must be tagged per standards",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/data_factory#tags",
+    "platform": "Terraform",
+    "descriptionID": "1.15.5.5",
+    "cloudProvider": "azure"
+}

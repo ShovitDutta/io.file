@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "search service have public network access enabled",
+      "severity": "CRITICAL",
+      "line": 25,
+      "fileName": "positive.json"
+    }
+]

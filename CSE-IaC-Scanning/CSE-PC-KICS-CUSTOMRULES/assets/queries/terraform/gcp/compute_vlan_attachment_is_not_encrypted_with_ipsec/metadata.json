@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-COMPUTEENGINE-2627",
+    "queryName": "compute vlan attachment is not encrypted with ipsec",
+    "severity": "CRITICAL",
+    "category": "Data Protection",
+    "descriptionText": "Ensure that only IPSEC VLAN attachment encryption setting is allowed",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_interconnect_attachment#encryption",
+    "platform": "Terraform",
+    "descriptionID": "2.6.2.7",
+    "cloudProvider": "gcp"
+}

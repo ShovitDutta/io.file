@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "cloud sqlserver private access is not configured to work within vpc",
+      "severity": "HIGH",
+      "line": 45,
+      "filename": "positive.json"
+    }
+  ]

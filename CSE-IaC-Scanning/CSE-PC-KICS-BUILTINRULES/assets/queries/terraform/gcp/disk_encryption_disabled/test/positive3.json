@@ -1,0 +1,3034 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.9.8",
+  "planned_values": {
+    "outputs": {
+      "compute_instance_environment": {
+        "sensitive": false,
+        "type": "string",
+        "value": "dev"
+      },
+      "compute_instance_hostname": {
+        "sensitive": false,
+        "type": "string",
+        "value": "GCPTAPBROC46.AETH.AETNA.COM"
+      },
+      "compute_instance_ip": {
+        "sensitive": true
+      },
+      "compute_instance_line_of_business": {
+        "sensitive": false,
+        "type": "string",
+        "value": "hcb"
+      },
+      "compute_instance_name": {
+        "sensitive": false,
+        "type": "string",
+        "value": "gcptapbroc46"
+      },
+      "compute_instance_os_type": {
+        "sensitive": false,
+        "type": "string",
+        "value": "windows"
+      },
+      "compute_instance_project_id": {
+        "sensitive": false,
+        "type": "string",
+        "value": "corp-dev-broc-sechub-vpc"
+      },
+      "compute_instance_zone": {
+        "sensitive": false,
+        "type": "string",
+        "value": "us-east4-a"
+      },
+      "is_secure_hub_vpc": {
+        "sensitive": false,
+        "type": "bool",
+        "value": true
+      }
+    },
+    "root_module": {
+      "child_modules": [
+        {
+          "address": "module.gcp-compute-instance-broc-12547775432",
+          "child_modules": [
+            {
+              "resources": [
+                {
+                  "address": "module.gcp-compute-instance-broc-12547775432.module.core_region_validation.terraform_data.region_validation",
+                  "mode": "managed",
+                  "type": "terraform_data",
+                  "name": "region_validation",
+                  "provider_name": "terraform.io/builtin/terraform",
+                  "schema_version": 0,
+                  "values": {
+                    "input": "us-east4",
+                    "triggers_replace": null
+                  },
+                  "sensitive_values": {}
+                }
+              ],
+              "address": "module.gcp-compute-instance-broc-12547775432.module.core_region_validation"
+            },
+            {
+              "resources": [
+                {
+                  "address": "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation.terraform_data.label_validation",
+                  "mode": "managed",
+                  "type": "terraform_data",
+                  "name": "label_validation",
+                  "provider_name": "terraform.io/builtin/terraform",
+                  "schema_version": 0,
+                  "values": {
+                    "input": {
+                      "broc_resource_id": "gcp-compute-instance-broc-12547775432",
+                      "costcenter": "190320",
+                      "cvsappid": "apm0015867",
+                      "environmentsubtype": "lab",
+                      "environmenttype": "nonprod",
+                      "itpmid": "16627",
+                      "managed_by": "broccoli",
+                      "sharedemailaddress": "broccoli-contributors_at_cvshealth_com"
+                    },
+                    "triggers_replace": null
+                  },
+                  "sensitive_values": {
+                    "input": {},
+                    "output": {}
+                  }
+                }
+              ],
+              "address": "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation"
+            },
+            {
+              "resources": [
+                {
+                  "address": "module.gcp-compute-instance-broc-12547775432.module.core_cmek_validation.terraform_data.cvs_key_vault_cmek",
+                  "mode": "managed",
+                  "type": "terraform_data",
+                  "name": "cvs_key_vault_cmek",
+                  "provider_name": "terraform.io/builtin/terraform",
+                  "schema_version": 0,
+                  "values": {
+                    "input": null,
+                    "output": null,
+                    "triggers_replace": {
+                      "cvs_key_vault_cmek_string": "projects/cvs-key-vault-nonprod/locations/us-east4/keyRings/gkr-nonprod-us-east4/cryptoKeys/gk-corp-dev-broc-sechub-vpc-us-east4"
+                    }
+                  },
+                  "sensitive_values": {
+                    "triggers_replace": {}
+                  }
+                }
+              ],
+              "address": "module.gcp-compute-instance-broc-12547775432.module.core_cmek_validation"
+            },
+            {
+              "resources": [
+                {
+                  "address": "module.gcp-compute-instance-broc-12547775432.module.core-compute-disk[0].google_compute_disk.compute_disk",
+                  "mode": "managed",
+                  "type": "google_compute_disk",
+                  "name": "compute_disk",
+                  "provider_name": "registry.terraform.io/hashicorp/google",
+                  "schema_version": 0,
+                  "values": {
+                    "async_primary_disk": [],
+                    "description": "Compute Disk for hcb-dev-gcptapbroc46",
+                    "disk_encryption_key": [
+                      {
+                        "kms_key_self_link": "",
+                        "sha256": "A"
+                      }
+                    ],
+                    "effective_labels": {
+                      "costcenter": "190320",
+                      "cvsappid": "apm0015867",
+                      "drive_letter": "e",
+                      "environmentsubtype": "lab",
+                      "environmenttype": "nonprod",
+                      "goog-terraform-provisioned": "true",
+                      "itpmid": "16627",
+                      "sharedemailaddress": "broccoli-contributors_at_cvshealth_com",
+                      "volume_label": "app"
+                    },
+                    "guest_os_features": [
+                      {
+                        "type": "MULTI_IP_SUBNET"
+                      },
+                      {
+                        "type": "UEFI_COMPATIBLE"
+                      }
+                    ],
+                    "image": "",
+                    "labels": {
+                      "costcenter": "190320",
+                      "cvsappid": "apm0015867",
+                      "drive_letter": "e",
+                      "environmentsubtype": "lab",
+                      "environmenttype": "nonprod",
+                      "itpmid": "16627",
+                      "sharedemailaddress": "broccoli-contributors_at_cvshealth_com",
+                      "volume_label": "app"
+                    },
+                    "licenses": [],
+                    "name": "disk-gcptapbroc46-0",
+                    "physical_block_size_bytes": 4096,
+                    "project": "corp-dev-broc-sechub-vpc",
+                    "size": 50,
+                    "snapshot": "",
+                    "source_disk": null,
+                    "source_image_encryption_key": [],
+                    "source_snapshot_encryption_key": [],
+                    "storage_pool": null,
+                    "terraform_labels": {
+                      "costcenter": "190320",
+                      "cvsappid": "apm0015867",
+                      "drive_letter": "e",
+                      "environmentsubtype": "lab",
+                      "environmenttype": "nonprod",
+                      "goog-terraform-provisioned": "true",
+                      "itpmid": "16627",
+                      "sharedemailaddress": "broccoli-contributors_at_cvshealth_com",
+                      "volume_label": "app"
+                    },
+                    "timeouts": null,
+                    "type": "pd-ssd",
+                    "zone": "us-east4-a"
+                  },
+                  "sensitive_values": {
+                    "async_primary_disk": [],
+                    "disk_encryption_key": [
+                      {
+                        "kms_key_self_link": "",
+                        "sha256": "A"
+                      }
+                    ],
+                    "effective_labels": {},
+                    "guest_os_features": [
+                      {},
+                      {}
+                    ],
+                    "labels": {},
+                    "licenses": [],
+                    "source_image_encryption_key": [],
+                    "source_snapshot_encryption_key": [],
+                    "terraform_labels": {},
+                    "users": []
+                  }
+                }
+              ],
+              "address": "module.gcp-compute-instance-broc-12547775432.module.core-compute-disk[0]"
+            },
+            {
+              "resources": [
+                {
+                  "address": "module.gcp-compute-instance-broc-12547775432.module.core-compute-disk[1].google_compute_disk.compute_disk",
+                  "mode": "managed",
+                  "type": "google_compute_disk",
+                  "name": "compute_disk",
+                  "provider_name": "registry.terraform.io/hashicorp/google",
+                  "schema_version": 0,
+                  "values": {
+                    "async_primary_disk": [],
+                    "description": "Compute Disk for hcb-dev-gcptapbroc46",
+                    "disk_encryption_key": [
+                    {
+                      "kms_key_self_link": "",
+                        "sha256": "A"
+                    }
+                    ],
+                    "effective_labels": {
+                      "costcenter": "190320",
+                      "cvsappid": "apm0015867",
+                      "drive_letter": "p",
+                      "environmentsubtype": "lab",
+                      "environmenttype": "nonprod",
+                      "goog-terraform-provisioned": "true",
+                      "itpmid": "16627",
+                      "sharedemailaddress": "broccoli-contributors_at_cvshealth_com",
+                      "volume_label": "pagefile"
+                    },
+                    "guest_os_features": [
+                      {
+                        "type": "MULTI_IP_SUBNET"
+                      },
+                      {
+                        "type": "UEFI_COMPATIBLE"
+                      }
+                    ],
+                    "image": "",
+                    "labels": {
+                      "costcenter": "190320",
+                      "cvsappid": "apm0015867",
+                      "drive_letter": "p",
+                      "environmentsubtype": "lab",
+                      "environmenttype": "nonprod",
+                      "itpmid": "16627",
+                      "sharedemailaddress": "broccoli-contributors_at_cvshealth_com",
+                      "volume_label": "pagefile"
+                    },
+                    "licenses": [],
+                    "name": "disk-gcptapbroc46-1",
+                    "physical_block_size_bytes": 4096,
+                    "project": "corp-dev-broc-sechub-vpc",
+                    "size": 50,
+                    "snapshot": "",
+                    "source_disk": null,
+                    "source_image_encryption_key": [],
+                    "source_snapshot_encryption_key": [],
+                    "storage_pool": null,
+                    "terraform_labels": {
+                      "costcenter": "190320",
+                      "cvsappid": "apm0015867",
+                      "drive_letter": "p",
+                      "environmentsubtype": "lab",
+                      "environmenttype": "nonprod",
+                      "goog-terraform-provisioned": "true",
+                      "itpmid": "16627",
+                      "sharedemailaddress": "broccoli-contributors_at_cvshealth_com",
+                      "volume_label": "pagefile"
+                    },
+                    "timeouts": null,
+                    "type": "pd-ssd",
+                    "zone": "us-east4-a"
+                  },
+                  "sensitive_values": {
+                    "async_primary_disk": [],
+                    "disk_encryption_key": [
+                      {
+                        "kms_key_self_link": "",
+                        "sha256": "A"
+                      }
+                    ],
+                    "effective_labels": {},
+                    "guest_os_features": [
+                      {},
+                      {}
+                    ],
+                    "labels": {},
+                    "licenses": [],
+                    "source_image_encryption_key": [],
+                    "source_snapshot_encryption_key": [],
+                    "terraform_labels": {},
+                    "users": []
+                  }
+                }
+              ],
+              "address": "module.gcp-compute-instance-broc-12547775432.module.core-compute-disk[1]"
+            },
+            {
+              "resources": [
+                {
+                  "address": "module.gcp-compute-instance-broc-12547775432.module.core_os_image_validation.terraform_data.cvs_os_image",
+                  "mode": "managed",
+                  "type": "terraform_data",
+                  "name": "cvs_os_image",
+                  "provider_name": "terraform.io/builtin/terraform",
+                  "schema_version": 0,
+                  "values": {
+                    "input": null,
+                    "output": null,
+                    "triggers_replace": {
+                      "cvs_os_image_url_string": "https://www.googleapis.com/compute/v1/projects/sysadm-dev/global/images/windows2022-20241209-131933"
+                    }
+                  },
+                  "sensitive_values": {
+                    "triggers_replace": {}
+                  }
+                }
+              ],
+              "address": "module.gcp-compute-instance-broc-12547775432.module.core_os_image_validation"
+            },
+            {
+              "resources": [
+                {
+                  "address": "module.gcp-compute-instance-broc-12547775432.module.core-compute-instance.google_compute_instance.compute_instance",
+                  "mode": "managed",
+                  "type": "google_compute_instance",
+                  "name": "compute_instance",
+                  "provider_name": "registry.terraform.io/hashicorp/google",
+                  "schema_version": 6,
+                  "values": {
+                    "advanced_machine_features": [],
+                    "allow_stopping_for_update": true,
+                    "attached_disk": [
+                      {
+                        "disk_encryption_key_raw": null,
+                        "kms_key_self_link": "projects/cvs-key-vault-nonprod/locations/us-east4/keyRings/gkr-nonprod-us-east4/cryptoKeys/gk-corp-dev-broc-sechub-vpc-us-east4",
+                        "mode": "READ_WRITE"
+                      },
+                      {
+                        "disk_encryption_key_raw": null,
+                        "kms_key_self_link": "projects/cvs-key-vault-nonprod/locations/us-east4/keyRings/gkr-nonprod-us-east4/cryptoKeys/gk-corp-dev-broc-sechub-vpc-us-east4",
+                        "mode": "READ_WRITE"
+                      }
+                    ],
+                    "boot_disk": [
+                      {
+                        "auto_delete": true,
+                        "disk_encryption_key_raw": null,
+                        "initialize_params": [
+                          {
+                            "enable_confidential_compute": null,
+                            "image": "https://www.googleapis.com/compute/v1/projects/sysadm-dev/global/images/windows2022-20241209-131933",
+                            "resource_manager_tags": null,
+                            "size": 100,
+                            "storage_pool": null,
+                            "type": "pd-standard"
+                          }
+                        ],
+                        "interface": null,
+                        "kms_key_self_link": "projects/cvs-key-vault-nonprod/locations/us-east4/keyRings/gkr-nonprod-us-east4/cryptoKeys/gk-corp-dev-broc-sechub-vpc-us-east4",
+                        "mode": "READ_WRITE"
+                      }
+                    ],
+                    "can_ip_forward": false,
+                    "deletion_protection": false,
+                    "description": "Compute instance for hcb-dev-gcptapbroc46",
+                    "desired_status": null,
+                    "enable_display": null,
+                    "hostname": "GCPTAPBROC46.AETH.AETNA.COM",
+                    "key_revocation_action_type": null,
+                    "machine_type": "n2-standard-2",
+                    "metadata": {
+                      "block-project-ssh-keys": "true",
+                      "enable-guest-attributes": "true",
+                      "enable-osconfig": "true",
+                      "enable-oslogin": "true",
+                      "sysprep-specialize-script-ps1": "Enable-WSManCredSSP -Role Server -Force; netsh advfirewall firewall add rule name='Open Port 5985' dir=in action=allow protocol=TCP localport=5985; netsh advfirewall firewall add rule name='Open Port 5986' dir=in action=allow protocol=TCP localport=5986; W32tm /resync /force; Set-TimeZone 'Eastern Standard Time';"
+                    },
+                    "metadata_startup_script": null,
+                    "name": "gcptapbroc46",
+                    "network_interface": [
+                      {
+                        "access_config": [],
+                        "alias_ip_range": [],
+                        "ipv6_access_config": [],
+                        "network": "https://www.googleapis.com/compute/v1/projects/cvs-securehub-prod/global/networks/vpc-aacvs-hub-trusted-nonprod-1",
+                        "nic_type": null,
+                        "queue_count": null,
+                        "subnetwork": "sn-aacvs-use4-corp-dev-broc-sechub-vpc-testing",
+                        "subnetwork_project": "cvs-securehub-prod"
+                      }
+                    ],
+                    "network_performance_config": [],
+                    "params": [],
+                    "project": "corp-dev-broc-sechub-vpc",
+                    "resource_policies": null,
+                    "scratch_disk": [],
+                    "service_account": [],
+                    "shielded_instance_config": [],
+                    "tags": [
+                      "allow-iap",
+                      "east4nonprodilb"
+                    ],
+                    "timeouts": null,
+                    "zone": "us-east4-a"
+                  },
+                  "sensitive_values": {
+                    "advanced_machine_features": [],
+                    "attached_disk": [
+                      {
+                        "disk_encryption_key_raw": true
+                      },
+                      {
+                        "disk_encryption_key_raw": true
+                      }
+                    ],
+                    "boot_disk": [
+                      {
+                        "disk_encryption_key_raw": true,
+                        "initialize_params": [
+                          {
+                            "labels": {},
+                            "resource_policies": []
+                          }
+                        ]
+                      }
+                    ],
+                    "confidential_instance_config": [],
+                    "effective_labels": {},
+                    "guest_accelerator": [],
+                    "labels": {},
+                    "metadata": {},
+                    "network_interface": [
+                      {
+                        "access_config": [],
+                        "alias_ip_range": [],
+                        "ipv6_access_config": []
+                      }
+                    ],
+                    "network_performance_config": [],
+                    "params": [],
+                    "reservation_affinity": [],
+                    "scheduling": [],
+                    "scratch_disk": [],
+                    "service_account": [],
+                    "shielded_instance_config": [],
+                    "tags": [
+                      false,
+                      false
+                    ],
+                    "terraform_labels": {}
+                  }
+                }
+              ],
+              "address": "module.gcp-compute-instance-broc-12547775432.module.core-compute-instance"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "relevant_attributes": [],
+  "resource_changes": [],
+  "configuration": {
+    "provider_config": {
+      "module.gcp-compute-instance-broc-12547775432.module.core_cmek_validation:terraform": {
+        "name": "terraform",
+        "full_name": "terraform.io/builtin/terraform",
+        "module_address": "module.gcp-compute-instance-broc-12547775432.module.core_cmek_validation"
+      },
+      "module.gcp-compute-instance-broc-12547775432.module.core_os_image_validation:terraform": {
+        "name": "terraform",
+        "full_name": "terraform.io/builtin/terraform",
+        "module_address": "module.gcp-compute-instance-broc-12547775432.module.core_os_image_validation"
+      },
+      "module.gcp-compute-instance-broc-12547775432.module.core_region_validation:terraform": {
+        "name": "terraform",
+        "full_name": "terraform.io/builtin/terraform",
+        "module_address": "module.gcp-compute-instance-broc-12547775432.module.core_region_validation"
+      },
+      "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation:external": {
+        "name": "external",
+        "full_name": "registry.terraform.io/hashicorp/external",
+        "module_address": "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation"
+      },
+      "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation:terraform": {
+        "name": "terraform",
+        "full_name": "terraform.io/builtin/terraform",
+        "module_address": "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation"
+      },
+      "module.gcp-compute-instance-broc-12547775432.module.platform_vpc_subnetwork.module.core-gcp-region-validation:terraform": {
+        "name": "terraform",
+        "full_name": "terraform.io/builtin/terraform",
+        "module_address": "module.gcp-compute-instance-broc-12547775432.module.platform_vpc_subnetwork.module.core-gcp-region-validation"
+      },
+      "module.gcp-compute-instance-broc-12547775432:google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google",
+        "module_address": "module.gcp-compute-instance-broc-12547775432"
+      }
+    },
+    "root_module": {
+      "outputs": {
+        "compute_instance_environment": {
+          "expression": {
+            "references": [
+              "module.gcp-compute-instance-broc-12547775432.compute_instance_environment",
+              "module.gcp-compute-instance-broc-12547775432"
+            ]
+          }
+        },
+        "compute_instance_hostname": {
+          "expression": {
+            "references": [
+              "module.gcp-compute-instance-broc-12547775432.compute_instance_hostname",
+              "module.gcp-compute-instance-broc-12547775432"
+            ]
+          }
+        },
+        "compute_instance_ip": {
+          "sensitive": true,
+          "expression": {
+            "references": [
+              "module.gcp-compute-instance-broc-12547775432.compute_instance_ip",
+              "module.gcp-compute-instance-broc-12547775432"
+            ]
+          }
+        },
+        "compute_instance_line_of_business": {
+          "expression": {
+            "references": [
+              "module.gcp-compute-instance-broc-12547775432.compute_instance_line_of_business",
+              "module.gcp-compute-instance-broc-12547775432"
+            ]
+          }
+        },
+        "compute_instance_name": {
+          "expression": {
+            "references": [
+              "module.gcp-compute-instance-broc-12547775432.compute_instance_name",
+              "module.gcp-compute-instance-broc-12547775432"
+            ]
+          }
+        },
+        "compute_instance_os_type": {
+          "expression": {
+            "references": [
+              "module.gcp-compute-instance-broc-12547775432.compute_instance_os_type",
+              "module.gcp-compute-instance-broc-12547775432"
+            ]
+          }
+        },
+        "compute_instance_project_id": {
+          "expression": {
+            "references": [
+              "module.gcp-compute-instance-broc-12547775432.compute_instance_project_id",
+              "module.gcp-compute-instance-broc-12547775432"
+            ]
+          }
+        },
+        "compute_instance_zone": {
+          "expression": {
+            "references": [
+              "module.gcp-compute-instance-broc-12547775432.compute_instance_zone",
+              "module.gcp-compute-instance-broc-12547775432"
+            ]
+          }
+        },
+        "is_secure_hub_vpc": {
+          "expression": {
+            "references": [
+              "module.gcp-compute-instance-broc-12547775432.is_secure_hub_vpc",
+              "module.gcp-compute-instance-broc-12547775432"
+            ]
+          }
+        }
+      },
+      "module_calls": {
+        "gcp-compute-instance-broc-12547775432": {
+          "source": "git::https://github.com/cvs-health-source-code/broc-platform-gcp-compute-instance?ref=v2.0.0-beta5",
+          "expressions": {
+            "additional_disks_configuration_linux": {
+              "references": [
+                "var.additional_disks_configuration_linux"
+              ]
+            },
+            "additional_disks_configuration_windows": {
+              "references": [
+                "var.additional_disks_configuration_windows"
+              ]
+            },
+            "compute_disk_guest_os_features": {
+              "references": [
+                "var.compute_disk_guest_os_features"
+              ]
+            },
+            "compute_disk_image": {
+              "references": [
+                "var.compute_disk_image"
+              ]
+            },
+            "compute_disk_licenses": {
+              "references": [
+                "var.compute_disk_licenses"
+              ]
+            },
+            "compute_disk_physical_block_size_bytes": {
+              "references": [
+                "var.compute_disk_physical_block_size_bytes"
+              ]
+            },
+            "compute_disk_snapshot": {
+              "references": [
+                "var.compute_disk_snapshot"
+              ]
+            },
+            "compute_instance_allow_stopping_for_update": {
+              "references": [
+                "var.compute_instance_allow_stopping_for_update"
+              ]
+            },
+            "compute_instance_application_id": {
+              "references": [
+                "var.compute_instance_application_id"
+              ]
+            },
+            "compute_instance_boot_disk_auto_delete": {
+              "references": [
+                "var.compute_instance_boot_disk_auto_delete"
+              ]
+            },
+            "compute_instance_boot_disk_kms_key_self_link": {
+              "references": [
+                "var.compute_instance_boot_disk_kms_key_self_link"
+              ]
+            },
+            "compute_instance_environment": {
+              "references": [
+                "var.compute_instance_environment"
+              ]
+            },
+            "compute_instance_iam_member_member_mappings": {
+              "references": [
+                "var.compute_instance_iam_member_member_mappings"
+              ]
+            },
+            "compute_instance_line_of_business": {
+              "references": [
+                "var.compute_instance_line_of_business"
+              ]
+            },
+            "compute_instance_machine_type": {
+              "references": [
+                "var.compute_instance_machine_type"
+              ]
+            },
+            "compute_instance_metadata": {
+              "references": [
+                "var.compute_instance_metadata"
+              ]
+            },
+            "compute_instance_name": {
+              "references": [
+                "var.compute_instance_name"
+              ]
+            },
+            "compute_instance_network_interface_network": {
+              "references": [
+                "var.compute_instance_network_interface_network"
+              ]
+            },
+            "compute_instance_network_interface_subnetwork": {
+              "references": [
+                "var.compute_instance_network_interface_subnetwork"
+              ]
+            },
+            "compute_instance_network_interface_subnetwork_project": {
+              "references": [
+                "var.compute_instance_network_interface_subnetwork_project"
+              ]
+            },
+            "compute_instance_os_image_name": {
+              "references": [
+                "var.compute_instance_os_image_name"
+              ]
+            },
+            "compute_instance_os_image_project_id": {
+              "references": [
+                "var.compute_instance_os_image_project_id"
+              ]
+            },
+            "compute_instance_os_type": {
+              "references": [
+                "var.compute_instance_os_type"
+              ]
+            },
+            "compute_instance_project_id": {
+              "references": [
+                "var.compute_instance_project_id"
+              ]
+            },
+            "compute_instance_shielded_instance_config": {
+              "references": [
+                "var.compute_instance_shielded_instance_config"
+              ]
+            },
+            "compute_instance_tags": {
+              "references": [
+                "var.compute_instance_tags"
+              ]
+            },
+            "compute_instance_use_type": {
+              "references": [
+                "var.compute_instance_use_type"
+              ]
+            },
+            "compute_instance_zone": {
+              "references": [
+                "var.compute_instance_zone"
+              ]
+            },
+            "compute_subnetwork_iam_member_member": {
+              "references": [
+                "var.compute_subnetwork_iam_member_member"
+              ]
+            },
+            "compute_subnetwork_ip_cidr_range": {
+              "references": [
+                "var.compute_subnetwork_ip_cidr_range"
+              ]
+            },
+            "compute_subnetwork_purpose": {
+              "references": [
+                "var.compute_subnetwork_purpose"
+              ]
+            },
+            "compute_subnetwork_secondary_ip_range_ip_cidr_range": {
+              "references": [
+                "var.compute_subnetwork_secondary_ip_range_ip_cidr_range"
+              ]
+            },
+            "compute_vm_t_shirt_size": {
+              "references": [
+                "var.compute_vm_t_shirt_size"
+              ]
+            },
+            "resources_labels": {
+              "references": [
+                "var.resources_labels"
+              ]
+            },
+            "service_account_iam_mappings": {
+              "references": [
+                "var.service_account_iam_mappings"
+              ]
+            }
+          },
+          "module": {
+            "outputs": {
+              "compute_instance_environment": {
+                "expression": {
+                  "references": [
+                    "var.compute_instance_environment"
+                  ]
+                },
+                "description": "The environment in which the compute resource is being created"
+              },
+              "compute_instance_hostname": {
+                "expression": {
+                  "references": [
+                    "local.hostname"
+                  ]
+                },
+                "description": "Compute Instance Hostname"
+              },
+              "compute_instance_ip": {
+                "expression": {
+                  "references": [
+                    "module.core-compute-instance.compute_instance.network_interface[0].network_ip",
+                    "module.core-compute-instance.compute_instance.network_interface[0]",
+                    "module.core-compute-instance.compute_instance.network_interface",
+                    "module.core-compute-instance.compute_instance",
+                    "module.core-compute-instance"
+                  ]
+                },
+                "description": "Compute Instance Internal IP"
+              },
+              "compute_instance_line_of_business": {
+                "expression": {
+                  "references": [
+                    "var.compute_instance_line_of_business"
+                  ]
+                },
+                "description": "Line of Business designated"
+              },
+              "compute_instance_name": {
+                "expression": {
+                  "references": [
+                    "var.compute_instance_name"
+                  ]
+                },
+                "description": "Compute Instance Name"
+              },
+              "compute_instance_os_type": {
+                "expression": {
+                  "references": [
+                    "var.compute_instance_os_type"
+                  ]
+                },
+                "description": "Type of Operating System to be installed (linux or windows)"
+              },
+              "compute_instance_project_id": {
+                "expression": {
+                  "references": [
+                    "var.compute_instance_project_id"
+                  ]
+                },
+                "description": "The project ID where the compute resource is being created"
+              },
+              "compute_instance_tags": {
+                "expression": {
+                  "references": [
+                    "module.core-compute-instance.compute_instance.tags",
+                    "module.core-compute-instance.compute_instance",
+                    "module.core-compute-instance"
+                  ]
+                },
+                "description": "Networking tags assigned to the Compute Instance"
+              },
+              "compute_instance_zone": {
+                "expression": {
+                  "references": [
+                    "var.compute_instance_zone"
+                  ]
+                },
+                "description": "The zone that the machine should be created in"
+              },
+              "is_secure_hub_vpc": {
+                "expression": {
+                  "references": [
+                    "local.is_secure_hub_vpc"
+                  ]
+                },
+                "description": "Boolean to determine if the VPC is Secure Hub VPC"
+              }
+            },
+            "resources": [
+              {
+                "address": "data.google_compute_network.core_vpc_network",
+                "mode": "data",
+                "type": "google_compute_network",
+                "name": "core_vpc_network",
+                "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                "expressions": {
+                  "name": {
+                    "references": [
+                      "var.compute_instance_network_interface_network"
+                    ]
+                  },
+                  "project": {
+                    "references": [
+                      "var.compute_instance_network_interface_subnetwork_project"
+                    ]
+                  }
+                },
+                "schema_version": 0,
+                "count_expression": {
+                  "references": [
+                    "local.vpc_network_exists"
+                  ]
+                }
+              },
+              {
+                "address": "data.google_compute_networks.all_vpc_networks",
+                "mode": "data",
+                "type": "google_compute_networks",
+                "name": "all_vpc_networks",
+                "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                "expressions": {
+                  "project": {
+                    "references": [
+                      "var.compute_instance_network_interface_subnetwork_project"
+                    ]
+                  }
+                },
+                "schema_version": 0,
+                "count_expression": {
+                  "references": [
+                    "local.project_exists"
+                  ]
+                }
+              },
+              {
+                "address": "data.google_kms_crypto_key.google_crypto_key",
+                "mode": "data",
+                "type": "google_kms_crypto_key",
+                "name": "google_crypto_key",
+                "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                "expressions": {
+                  "key_ring": {
+                    "references": [
+                      "local.cmek_self_link"
+                    ]
+                  },
+                  "name": {
+                    "references": [
+                      "local.cmek_self_link"
+                    ]
+                  }
+                },
+                "schema_version": 0
+              },
+              {
+                "address": "data.google_project.core_google_project",
+                "mode": "data",
+                "type": "google_project",
+                "name": "core_google_project",
+                "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                "expressions": {
+                  "project_id": {
+                    "references": [
+                      "var.compute_instance_project_id"
+                    ]
+                  }
+                },
+                "schema_version": 0
+              }
+            ],
+            "module_calls": {
+              "core-compute-disk": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-compute-disk.git?ref=v1",
+                "expressions": {
+                  "compute_disk_description": {
+                    "references": [
+                      "local.compute_disk_description"
+                    ]
+                  },
+                  "compute_disk_disk_encryption_key_kms_key_self_link": {
+                    "references": [
+                      "local.valid_cmek_self_link"
+                    ]
+                  },
+                  "compute_disk_guest_os_features": {
+                    "references": [
+                      "local.compute_disk_guest_os_features"
+                    ]
+                  },
+                  "compute_disk_image": {
+                    "references": [
+                      "var.compute_disk_image"
+                    ]
+                  },
+                  "compute_disk_labels": {
+                    "references": [
+                      "local.merged_disk_config_list",
+                      "count.index"
+                    ]
+                  },
+                  "compute_disk_licenses": {
+                    "references": [
+                      "var.compute_disk_licenses"
+                    ]
+                  },
+                  "compute_disk_name": {
+                    "references": [
+                      "local.compute_disk_name_prefix",
+                      "count.index"
+                    ]
+                  },
+                  "compute_disk_physical_block_size_bytes": {
+                    "references": [
+                      "var.compute_disk_physical_block_size_bytes"
+                    ]
+                  },
+                  "compute_disk_project": {
+                    "references": [
+                      "var.compute_instance_project_id"
+                    ]
+                  },
+                  "compute_disk_size": {
+                    "references": [
+                      "local.merged_disk_config_list",
+                      "count.index"
+                    ]
+                  },
+                  "compute_disk_snapshot": {
+                    "references": [
+                      "var.compute_disk_snapshot"
+                    ]
+                  },
+                  "compute_disk_type": {
+                    "references": [
+                      "local.merged_disk_config_list",
+                      "count.index"
+                    ]
+                  },
+                  "compute_disk_zone": {
+                    "references": [
+                      "var.compute_instance_zone"
+                    ]
+                  }
+                },
+                "count_expression": {
+                  "references": [
+                    "local.merged_disk_config_list"
+                  ]
+                },
+                "module": {
+                  "outputs": {
+                    "compute_disk_id": {
+                      "expression": {
+                        "references": [
+                          "google_compute_disk.compute_disk.id",
+                          "google_compute_disk.compute_disk"
+                        ]
+                      },
+                      "description": "The ID of the compute disk"
+                    },
+                    "compute_disk_self_link": {
+                      "expression": {
+                        "references": [
+                          "google_compute_disk.compute_disk.id",
+                          "google_compute_disk.compute_disk"
+                        ]
+                      },
+                      "description": "The self link of the compute disk"
+                    }
+                  },
+                  "resources": [
+                    {
+                      "address": "google_compute_disk.compute_disk",
+                      "mode": "managed",
+                      "type": "google_compute_disk",
+                      "name": "compute_disk",
+                      "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                      "expressions": {
+                        "description": {
+                          "references": [
+                            "var.compute_disk_description"
+                          ]
+                        },
+                        "disk_encryption_key": [
+                          {
+                            "kms_key_self_link": {
+                              "references": [
+                                "var.compute_disk_disk_encryption_key_kms_key_self_link"
+                              ]
+                            }
+                          }
+                        ],
+                        "image": {
+                          "references": [
+                            "var.compute_disk_image"
+                          ]
+                        },
+                        "labels": {
+                          "references": [
+                            "var.compute_disk_labels"
+                          ]
+                        },
+                        "licenses": {
+                          "references": [
+                            "var.compute_disk_licenses"
+                          ]
+                        },
+                        "name": {
+                          "references": [
+                            "var.compute_disk_name"
+                          ]
+                        },
+                        "physical_block_size_bytes": {
+                          "references": [
+                            "var.compute_disk_physical_block_size_bytes"
+                          ]
+                        },
+                        "project": {
+                          "references": [
+                            "var.compute_disk_project"
+                          ]
+                        },
+                        "size": {
+                          "references": [
+                            "var.compute_disk_size"
+                          ]
+                        },
+                        "snapshot": {
+                          "references": [
+                            "var.compute_disk_snapshot"
+                          ]
+                        },
+                        "type": {
+                          "references": [
+                            "var.compute_disk_type"
+                          ]
+                        },
+                        "zone": {
+                          "references": [
+                            "var.compute_disk_zone"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "compute_disk_description": {
+                      "description": "An optional description of this resource"
+                    },
+                    "compute_disk_disk_encryption_key_kms_key_self_link": {
+                      "description": "Encrypts the disk using a customer-supplied encryption key"
+                    },
+                    "compute_disk_guest_os_features": {
+                      "description": "A list of features to enable on the guest operating system. Applicable only for bootable disks."
+                    },
+                    "compute_disk_image": {
+                      "description": "The image from which to initialize this disk. This can be one of: the image's self_link, projects/{project}/global/images/{image}, projects/{project}/global/images/family/{family}, global/images/{image}, global/images/family/{family}, family/{family}, {project}/{family}, {project}/{image}, {family}, or {image}"
+                    },
+                    "compute_disk_labels": {
+                      "description": "Labels to apply to this disk. A list of key->value pairs"
+                    },
+                    "compute_disk_licenses": {
+                      "description": "Any applicable license URI"
+                    },
+                    "compute_disk_name": {
+                      "description": "Name of the resource"
+                    },
+                    "compute_disk_physical_block_size_bytes": {
+                      "description": "Physical block size of the persistent disk, in bytes. If not present in a request, a default value is used. Currently supported sizes are 4096 and 16384"
+                    },
+                    "compute_disk_project": {
+                      "description": "The ID of the project in which the resource belongs. If it is not provided, the provider project is used."
+                    },
+                    "compute_disk_size": {
+                      "description": "Size of the persistent disk, specified in GB"
+                    },
+                    "compute_disk_snapshot": {
+                      "description": "The source snapshot used to create this disk. You can provide this as a partial or full URL to the resource"
+                    },
+                    "compute_disk_type": {
+                      "description": "URL of the disk type resource describing which disk type to use to create the disk. Eg: pd-standard, pd-ssd etc."
+                    },
+                    "compute_disk_zone": {
+                      "description": "A reference to the zone where the disk resides"
+                    }
+                  }
+                },
+                "depends_on": [
+                  "module.core_cmek_validation"
+                ]
+              },
+              "core-compute-instance": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-compute-instance.git?ref=v1",
+                "expressions": {
+                  "compute_instance_allow_stopping_for_update": {
+                    "references": [
+                      "var.compute_instance_allow_stopping_for_update"
+                    ]
+                  },
+                  "compute_instance_attached_disks": {
+                    "references": [
+                      "local.attached_disks_config"
+                    ]
+                  },
+                  "compute_instance_boot_disk_auto_delete": {
+                    "references": [
+                      "var.compute_instance_boot_disk_auto_delete"
+                    ]
+                  },
+                  "compute_instance_boot_disk_initialize_params_image": {
+                    "references": [
+                      "local.disk_image_self_link"
+                    ]
+                  },
+                  "compute_instance_boot_disk_initialize_params_size": {
+                    "references": [
+                      "local.os_boot_disk_vm_config.disk_size",
+                      "local.os_boot_disk_vm_config"
+                    ]
+                  },
+                  "compute_instance_boot_disk_initialize_params_type": {
+                    "references": [
+                      "local.os_boot_disk_vm_config.disk_type",
+                      "local.os_boot_disk_vm_config"
+                    ]
+                  },
+                  "compute_instance_boot_disk_kms_key_self_link": {
+                    "references": [
+                      "local.valid_cmek_self_link"
+                    ]
+                  },
+                  "compute_instance_description": {
+                    "references": [
+                      "local.compute_instance_description"
+                    ]
+                  },
+                  "compute_instance_hostname": {
+                    "references": [
+                      "local.hostname"
+                    ]
+                  },
+                  "compute_instance_labels": {
+                    "references": [
+                      "local.resource_labels_generated"
+                    ]
+                  },
+                  "compute_instance_machine_type": {
+                    "references": [
+                      "local.compute_instance_machine_type_mapping",
+                      "var.compute_instance_os_type",
+                      "var.compute_vm_t_shirt_size"
+                    ]
+                  },
+                  "compute_instance_metadata": {
+                    "references": [
+                      "local.compute_instance_metadata"
+                    ]
+                  },
+                  "compute_instance_name": {
+                    "references": [
+                      "var.compute_instance_name"
+                    ]
+                  },
+                  "compute_instance_network_interface_network": {
+                    "references": [
+                      "local.vpc_network_selfLink"
+                    ]
+                  },
+                  "compute_instance_network_interface_subnetwork": {
+                    "references": [
+                      "local.vpc_subnet_exists",
+                      "var.compute_instance_network_interface_subnetwork",
+                      "module.platform_vpc_subnetwork[0].compute_subnetwork_self_link",
+                      "module.platform_vpc_subnetwork[0]"
+                    ]
+                  },
+                  "compute_instance_network_interface_subnetwork_project": {
+                    "references": [
+                      "var.compute_instance_network_interface_subnetwork_project"
+                    ]
+                  },
+                  "compute_instance_project": {
+                    "references": [
+                      "var.compute_instance_project_id"
+                    ]
+                  },
+                  "compute_instance_service_account_email": {
+                    "references": [
+                      "local.create_service_account"
+                    ]
+                  },
+                  "compute_instance_service_account_scopes": {
+                    "references": [
+                      "local.compute_instance_service_account_scopes"
+                    ]
+                  },
+                  "compute_instance_shielded_instance_config": {
+                    "references": [
+                      "var.compute_instance_shielded_instance_config"
+                    ]
+                  },
+                  "compute_instance_shielded_instance_config_enable_integrity_monitoring": {
+                    "references": [
+                      "local.compute_instance_shielded_instance_config_enable_integrity_monitoring"
+                    ]
+                  },
+                  "compute_instance_shielded_instance_config_enable_secure_boot": {
+                    "references": [
+                      "local.compute_instance_shielded_instance_config_enable_secure_boot"
+                    ]
+                  },
+                  "compute_instance_shielded_instance_config_enable_vtpm": {
+                    "references": [
+                      "local.compute_instance_shielded_instance_config_enable_vtpm"
+                    ]
+                  },
+                  "compute_instance_tags": {
+                    "references": [
+                      "local.combined_network_tags"
+                    ]
+                  },
+                  "compute_instance_zone": {
+                    "references": [
+                      "var.compute_instance_zone"
+                    ]
+                  }
+                },
+                "module": {
+                  "outputs": {
+                    "compute_instance": {
+                      "sensitive": true,
+                      "expression": {
+                        "references": [
+                          "google_compute_instance.compute_instance"
+                        ]
+                      },
+                      "description": "All outputs for the compute instance"
+                    }
+                  },
+                  "resources": [
+                    {
+                      "address": "google_compute_instance.compute_instance",
+                      "mode": "managed",
+                      "type": "google_compute_instance",
+                      "name": "compute_instance",
+                      "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                      "expressions": {
+                        "allow_stopping_for_update": {
+                          "references": [
+                            "var.compute_instance_allow_stopping_for_update"
+                          ]
+                        },
+                        "boot_disk": [
+                          {
+                            "auto_delete": {
+                              "references": [
+                                "var.compute_instance_boot_disk_auto_delete"
+                              ]
+                            },
+                            "initialize_params": [
+                              {
+                                "image": {
+                                  "references": [
+                                    "var.compute_instance_boot_disk_initialize_params_image"
+                                  ]
+                                },
+                                "size": {
+                                  "references": [
+                                    "var.compute_instance_boot_disk_initialize_params_size"
+                                  ]
+                                },
+                                "type": {
+                                  "references": [
+                                    "var.compute_instance_boot_disk_initialize_params_type"
+                                  ]
+                                }
+                              }
+                            ],
+                            "kms_key_self_link": {
+                              "references": [
+                                "var.compute_instance_boot_disk_kms_key_self_link"
+                              ]
+                            }
+                          }
+                        ],
+                        "description": {
+                          "references": [
+                            "var.compute_instance_description"
+                          ]
+                        },
+                        "hostname": {
+                          "references": [
+                            "var.compute_instance_hostname"
+                          ]
+                        },
+                        "labels": {
+                          "references": [
+                            "var.compute_instance_labels"
+                          ]
+                        },
+                        "machine_type": {
+                          "references": [
+                            "var.compute_instance_machine_type"
+                          ]
+                        },
+                        "metadata": {
+                          "references": [
+                            "local.compute_instance_metadata_consolidated"
+                          ]
+                        },
+                        "name": {
+                          "references": [
+                            "var.compute_instance_name"
+                          ]
+                        },
+                        "network_interface": [
+                          {
+                            "network": {
+                              "references": [
+                                "var.compute_instance_network_interface_network"
+                              ]
+                            },
+                            "subnetwork": {
+                              "references": [
+                                "var.compute_instance_network_interface_subnetwork"
+                              ]
+                            },
+                            "subnetwork_project": {
+                              "references": [
+                                "var.compute_instance_network_interface_subnetwork_project"
+                              ]
+                            }
+                          }
+                        ],
+                        "project": {
+                          "references": [
+                            "var.compute_instance_project"
+                          ]
+                        },
+                        "tags": {
+                          "references": [
+                            "var.compute_instance_tags"
+                          ]
+                        },
+                        "zone": {
+                          "references": [
+                            "var.compute_instance_zone"
+                          ]
+                        }
+                      },
+                      "schema_version": 6
+                    }
+                  ],
+                  "variables": {
+                    "compute_instance_allow_stopping_for_update": {
+                      "description": "If true, allows Terraform to stop the instance to update its properties. If you try to update a property that requires stopping the instance without setting this field, the update will fail."
+                    },
+                    "compute_instance_attached_disks": {
+                      "description": "A list of disks attached to the instance"
+                    },
+                    "compute_instance_boot_disk_auto_delete": {
+                      "description": "Whether the disk will be auto-deleted when the instance is deleted. Defaults to true"
+                    },
+                    "compute_instance_boot_disk_initialize_params_image": {
+                      "description": "Parameters for a new disk that will be created alongside the new instance. Either initialize_params or source must be set"
+                    },
+                    "compute_instance_boot_disk_initialize_params_size": {
+                      "description": "The size of the image in gigabytes. If not specified, it will inherit the size of its base image"
+                    },
+                    "compute_instance_boot_disk_initialize_params_type": {
+                      "description": "The GCE disk type. Such as pd-standard, pd-balanced or pd-ssd"
+                    },
+                    "compute_instance_boot_disk_kms_key_self_link": {
+                      "description": " The self_link of the encryption key that is stored in Google Cloud KMS to encrypt this disk. Only one of kms_key_self_link and disk_encryption_key_raw may be set"
+                    },
+                    "compute_instance_description": {
+                      "description": "A brief description of this compute instance resource"
+                    },
+                    "compute_instance_hostname": {
+                      "description": "A custom hostname for the instance"
+                    },
+                    "compute_instance_labels": {
+                      "description": " map of key/value label pairs to assign to the instance. Note: This field is non-authoritative, and will only manage the labels present in your configuration"
+                    },
+                    "compute_instance_machine_type": {
+                      "description": "The machine type to create"
+                    },
+                    "compute_instance_metadata": {
+                      "description": "A list of key/value metadata to assign to the compute instance. This will be merged with any default metadata set in the provider configuration"
+                    },
+                    "compute_instance_name": {
+                      "description": "A unique name for the resource, required by GCE. Changing this forces a new resource to be created."
+                    },
+                    "compute_instance_network_interface_network": {
+                      "description": "The name or self_link of the network to attach this interface to. Either network or subnetwork must be provided. If network isn't provided it will be inferred from the subnetwork"
+                    },
+                    "compute_instance_network_interface_subnetwork": {
+                      "description": "The name or self_link of the subnetwork to attach this interface to. Either network or subnetwork must be provided. If network isn't provided it will be inferred from the subnetwork. The subnetwork must exist in the same region this instance will be created in"
+                    },
+                    "compute_instance_network_interface_subnetwork_project": {
+                      "description": "The project in which the subnetwork belongs. If the subnetwork is a self_link, this field is ignored in favor of the project defined in the subnetwork self_link. If the subnetwork is a name and this field is not provided, the provider project is used"
+                    },
+                    "compute_instance_project": {
+                      "description": "The ID of the project in which the resource belongs. If it is not provided, the provider project is used"
+                    },
+                    "compute_instance_service_account_email": {
+                      "description": "The service account e-mail address"
+                    },
+                    "compute_instance_service_account_scopes": {
+                      "description": "A list of service scopes. Both OAuth2 URLs and gcloud short names are supported. To allow full access to all Cloud APIs, use the cloud-platform scope"
+                    },
+                    "compute_instance_shielded_instance_config": {
+                      "description": "Enable Shielded VM on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Pass true to provision argument block. Passing false will remove argument block."
+                    },
+                    "compute_instance_shielded_instance_config_enable_integrity_monitoring": {
+                      "description": "Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true"
+                    },
+                    "compute_instance_shielded_instance_config_enable_secure_boot": {
+                      "description": "Verify the digital signature of all boot components, and halt the boot process if signature verification fails. Defaults to false"
+                    },
+                    "compute_instance_shielded_instance_config_enable_vtpm": {
+                      "description": "Use a virtualized trusted platform module, which is a specialized computer chip you can use to encrypt objects like keys and certificates. Defaults to true"
+                    },
+                    "compute_instance_tags": {
+                      "description": "A list of network tags to attach to the instance"
+                    },
+                    "compute_instance_zone": {
+                      "description": "The zone that the machine should be created in. If it is not provided, the provider zone is used"
+                    }
+                  }
+                },
+                "depends_on": [
+                  "module.core_cmek_validation"
+                ]
+              },
+              "core-compute-instance-iam-member": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-compute-instance-iam-member.git?ref=v1",
+                "expressions": {
+                  "compute_instance_iam_member_instance_name": {
+                    "references": [
+                      "var.compute_instance_name"
+                    ]
+                  },
+                  "compute_instance_iam_member_member": {
+                    "references": [
+                      "each.value.type",
+                      "each.value"
+                    ]
+                  },
+                  "compute_instance_iam_member_project": {
+                    "references": [
+                      "var.compute_instance_project_id"
+                    ]
+                  },
+                  "compute_instance_iam_member_role": {
+                    "references": [
+                      "each.value.role",
+                      "each.value"
+                    ]
+                  },
+                  "compute_instance_iam_member_zone": {
+                    "references": [
+                      "var.compute_instance_zone"
+                    ]
+                  }
+                },
+                "for_each_expression": {
+                  "references": [
+                    "var.compute_instance_iam_member_member_mappings"
+                  ]
+                },
+                "module": {
+                  "resources": [
+                    {
+                      "address": "google_compute_instance_iam_member.compute_instance_iam_member",
+                      "mode": "managed",
+                      "type": "google_compute_instance_iam_member",
+                      "name": "compute_instance_iam_member",
+                      "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                      "expressions": {
+                        "instance_name": {
+                          "references": [
+                            "var.compute_instance_iam_member_instance_name"
+                          ]
+                        },
+                        "member": {
+                          "references": [
+                            "var.compute_instance_iam_member_member"
+                          ]
+                        },
+                        "project": {
+                          "references": [
+                            "var.compute_instance_iam_member_project"
+                          ]
+                        },
+                        "role": {
+                          "references": [
+                            "var.compute_instance_iam_member_role"
+                          ]
+                        },
+                        "zone": {
+                          "references": [
+                            "var.compute_instance_iam_member_zone"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "compute_instance_iam_member_instance_name": {
+                      "description": "Used to find the parent resource to bind the IAM policy to"
+                    },
+                    "compute_instance_iam_member_member": {
+                      "description": "Identities that will be granted the privilege in role"
+                    },
+                    "compute_instance_iam_member_project": {
+                      "description": "The ID of the project in which the resource belongs. If it is not provided, the project will be parsed from the identifier of the parent resource"
+                    },
+                    "compute_instance_iam_member_role": {
+                      "description": "The role that should be applied"
+                    },
+                    "compute_instance_iam_member_zone": {
+                      "description": "A reference to the zone where the machine resides. Used to find the parent resource to bind the IAM policy to. If not specified, the value will be parsed from the identifier of the parent resource. If no zone is provided in the parent identifier and no zone is specified, it is taken from the provider configuration"
+                    }
+                  }
+                },
+                "depends_on": [
+                  "module.core-compute-instance"
+                ]
+              },
+              "core_cmek_validation": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-cmek-validation.git?ref=v1",
+                "expressions": {
+                  "cvs_key_vault_cmek_project": {
+                    "references": [
+                      "var.compute_instance_project_id"
+                    ]
+                  },
+                  "cvs_key_vault_cmek_region": {
+                    "references": [
+                      "local.vpc_subnet_region"
+                    ]
+                  }
+                },
+                "module": {
+                  "outputs": {
+                    "cvs_key_vault_cmek_string": {
+                      "expression": {
+                        "references": [
+                          "terraform_data.cvs_key_vault_cmek.triggers_replace.cvs_key_vault_cmek_string",
+                          "terraform_data.cvs_key_vault_cmek.triggers_replace",
+                          "terraform_data.cvs_key_vault_cmek"
+                        ]
+                      },
+                      "description": "This output will present the CMEK string, which will be passed to the resources for either Platform and Self-Service Modules"
+                    }
+                  },
+                  "resources": [
+                    {
+                      "address": "terraform_data.cvs_key_vault_cmek",
+                      "mode": "managed",
+                      "type": "terraform_data",
+                      "name": "cvs_key_vault_cmek",
+                      "provider_config_key": "module.gcp-compute-instance-broc-12547775432.module.core_cmek_validation:terraform",
+                      "expressions": {
+                        "triggers_replace": {
+                          "references": [
+                            "local.cvs_key_vault_cmek_structure"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    },
+                    {
+                      "address": "data.google_project.cvs_key_vault_project",
+                      "mode": "data",
+                      "type": "google_project",
+                      "name": "cvs_key_vault_project",
+                      "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                      "expressions": {
+                        "project_id": {
+                          "references": [
+                            "var.cvs_key_vault_cmek_project"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "cvs_key_vault_cmek_project": {
+                      "description": "The project passed for the resource, to get the correct CMEK from the CVS Key Vault Projects"
+                    },
+                    "cvs_key_vault_cmek_region": {
+                      "description": "The region passed for the resource, to get the correct CMEK from the CVS Key Vault Projects"
+                    },
+                    "cvs_key_vault_dynamic_cmek": {
+                      "default": "",
+                      "description": "To use additional CVS Key Vault Project, other than the default ones (cvs-key-vault-prod & cvs-key-vault-nonprod). Note: If you pass something other than the default Prod/NonProd, make sure you match environment types (e.g. Pass lab but region/project is prod)."
+                    }
+                  }
+                }
+              },
+              "core_os_image_validation": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-compute-instance-image-validation.git?ref=v1",
+                "expressions": {
+                  "os_image_name": {
+                    "references": [
+                      "var.compute_instance_os_image_name"
+                    ]
+                  },
+                  "os_image_project_id": {
+                    "references": [
+                      "var.compute_instance_os_image_project_id"
+                    ]
+                  }
+                },
+                "module": {
+                  "outputs": {
+                    "os_image_disk_size_gb": {
+                      "expression": {
+                        "references": [
+                          "local.cvs_os_image_disk_size_gb"
+                        ]
+                      },
+                      "description": "The disk size of the OS image returned by the data lookup"
+                    },
+                    "os_image_self_link": {
+                      "expression": {
+                        "references": [
+                          "local.cvs_os_image_self_link"
+                        ]
+                      },
+                      "description": "The self link of the OS image returned by the data lookup"
+                    }
+                  },
+                  "resources": [
+                    {
+                      "address": "terraform_data.cvs_os_image",
+                      "mode": "managed",
+                      "type": "terraform_data",
+                      "name": "cvs_os_image",
+                      "provider_config_key": "module.gcp-compute-instance-broc-12547775432.module.core_os_image_validation:terraform",
+                      "expressions": {
+                        "triggers_replace": {
+                          "references": [
+                            "local.cvs_os_image_self_link"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    },
+                    {
+                      "address": "data.google_compute_image.compute_instance_os_image",
+                      "mode": "data",
+                      "type": "google_compute_image",
+                      "name": "compute_instance_os_image",
+                      "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                      "expressions": {
+                        "most_recent": {
+                          "references": [
+                            "local.most_recent_version"
+                          ]
+                        },
+                        "name": {
+                          "references": [
+                            "var.os_image_name"
+                          ]
+                        },
+                        "project": {
+                          "references": [
+                            "var.os_image_project_id"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "os_image_name": {
+                      "description": "The name of the OS image"
+                    },
+                    "os_image_project_id": {
+                      "description": "The project ID of the OS image"
+                    }
+                  }
+                }
+              },
+              "core_region_validation": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-region-validation.git?ref=v1",
+                "expressions": {
+                  "region_validation": {
+                    "references": [
+                      "local.vpc_subnet_region"
+                    ]
+                  }
+                },
+                "module": {
+                  "resources": [
+                    {
+                      "address": "terraform_data.region_validation",
+                      "mode": "managed",
+                      "type": "terraform_data",
+                      "name": "region_validation",
+                      "provider_config_key": "module.gcp-compute-instance-broc-12547775432.module.core_region_validation:terraform",
+                      "expressions": {
+                        "input": {
+                          "references": [
+                            "var.region_validation"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "region_validation": {
+                      "description": "Only the following regions are allowed: us-east1, us-east4, us-west2, us-central1, and us"
+                    }
+                  }
+                }
+              },
+              "core_resource_label_validation": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-label-validation.git?ref=v2",
+                "expressions": {
+                  "label_validation_input": {
+                    "references": [
+                      "var.resources_labels"
+                    ]
+                  }
+                },
+                "module": {
+                  "outputs": {
+                    "label_validation_output": {
+                      "expression": {
+                        "references": [
+                          "terraform_data.label_validation.output",
+                          "terraform_data.label_validation"
+                        ]
+                      },
+                      "description": "This output is to be used, in parent modules to make sure"
+                    }
+                  },
+                  "resources": [
+                    {
+                      "address": "terraform_data.label_validation",
+                      "mode": "managed",
+                      "type": "terraform_data",
+                      "name": "label_validation",
+                      "provider_config_key": "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation:terraform",
+                      "expressions": {
+                        "input": {
+                          "references": [
+                            "local.label_validation_config"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    },
+                    {
+                      "address": "data.external.env_check",
+                      "mode": "data",
+                      "type": "external",
+                      "name": "env_check",
+                      "provider_config_key": "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation:external",
+                      "expressions": {
+                        "program": {
+                          "references": [
+                            "path.module"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "label_validation_input": {
+                      "description": "This will accept variables from Platform and Self-Service modules, to then validate correct labels are being passed. Additional labels can be passed but are not required for validation."
+                    }
+                  }
+                }
+              },
+              "platform_vpc_subnetwork": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-platform-gcp-network-compute-subnetwork.git?ref=v1",
+                "expressions": {
+                  "compute_subnetwork_iam_member_member": {
+                    "references": [
+                      "var.compute_subnetwork_iam_member_member"
+                    ]
+                  },
+                  "compute_subnetwork_ip_cidr_range": {
+                    "references": [
+                      "var.compute_subnetwork_ip_cidr_range"
+                    ]
+                  },
+                  "compute_subnetwork_network": {
+                    "references": [
+                      "var.compute_instance_network_interface_network"
+                    ]
+                  },
+                  "compute_subnetwork_project": {
+                    "references": [
+                      "var.compute_instance_network_interface_subnetwork_project"
+                    ]
+                  },
+                  "compute_subnetwork_purpose": {
+                    "references": [
+                      "var.compute_subnetwork_purpose"
+                    ]
+                  },
+                  "compute_subnetwork_region": {
+                    "references": [
+                      "local.vpc_subnet_region"
+                    ]
+                  },
+                  "compute_subnetwork_secondary_ip_range_ip_cidr_range": {
+                    "references": [
+                      "var.compute_subnetwork_secondary_ip_range_ip_cidr_range"
+                    ]
+                  },
+                  "customer_project_id": {
+                    "references": [
+                      "var.compute_instance_project_id"
+                    ]
+                  }
+                },
+                "count_expression": {
+                  "references": [
+                    "local.vpc_subnet_exists"
+                  ]
+                },
+                "module": {
+                  "outputs": {
+                    "compute-subnetwork-id": {
+                      "expression": {
+                        "references": [
+                          "module.core-compute-subnetwork.compute_subnetwork_id",
+                          "module.core-compute-subnetwork"
+                        ]
+                      },
+                      "description": "An identifier for the resource with fully listed format"
+                    },
+                    "compute-subnetwork-name": {
+                      "expression": {
+                        "references": [
+                          "module.core-compute-subnetwork.compute_subnetwork_name",
+                          "module.core-compute-subnetwork"
+                        ]
+                      },
+                      "description": "Name of the subnetwork created"
+                    },
+                    "compute-subnetwork-self_link": {
+                      "expression": {
+                        "references": [
+                          "module.core-compute-subnetwork.compute_subnetwork_self_link",
+                          "module.core-compute-subnetwork"
+                        ]
+                      },
+                      "description": "The URI of the created subnetwork"
+                    }
+                  },
+                  "module_calls": {
+                    "core-compute-subnetwork": {
+                      "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-network-compute-subnetwork.git",
+                      "expressions": {
+                        "compute_subnetwork_ip_cidr_range": {
+                          "references": [
+                            "var.compute_subnetwork_ip_cidr_range"
+                          ]
+                        },
+                        "compute_subnetwork_network": {
+                          "references": [
+                            "var.compute_subnetwork_network"
+                          ]
+                        },
+                        "compute_subnetwork_project": {
+                          "references": [
+                            "var.compute_subnetwork_project"
+                          ]
+                        },
+                        "compute_subnetwork_purpose": {
+                          "references": [
+                            "var.compute_subnetwork_purpose"
+                          ]
+                        },
+                        "compute_subnetwork_region": {
+                          "references": [
+                            "var.compute_subnetwork_region"
+                          ]
+                        },
+                        "compute_subnetwork_secondary_ip_range_ip_cidr_range": {
+                          "references": [
+                            "var.compute_subnetwork_secondary_ip_range_ip_cidr_range"
+                          ]
+                        },
+                        "customer_project_id": {
+                          "references": [
+                            "var.customer_project_id"
+                          ]
+                        }
+                      },
+                      "module": {
+                        "outputs": {
+                          "compute_subnetwork_id": {
+                            "expression": {
+                              "references": [
+                                "google_compute_subnetwork.compute_subnetwork.id",
+                                "google_compute_subnetwork.compute_subnetwork"
+                              ]
+                            },
+                            "description": "An identifier for the resource with fully listed format"
+                          },
+                          "compute_subnetwork_name": {
+                            "expression": {
+                              "references": [
+                                "google_compute_subnetwork.compute_subnetwork.name",
+                                "google_compute_subnetwork.compute_subnetwork"
+                              ]
+                            },
+                            "description": "Name of the subnetwork created"
+                          },
+                          "compute_subnetwork_self_link": {
+                            "expression": {
+                              "references": [
+                                "google_compute_subnetwork.compute_subnetwork.self_link",
+                                "google_compute_subnetwork.compute_subnetwork"
+                              ]
+                            },
+                            "description": "The URI of the created subnetwork"
+                          }
+                        },
+                        "resources": [
+                          {
+                            "address": "google_compute_subnetwork.compute_subnetwork",
+                            "mode": "managed",
+                            "type": "google_compute_subnetwork",
+                            "name": "compute_subnetwork",
+                            "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                            "expressions": {
+                              "ip_cidr_range": {
+                                "references": [
+                                  "var.compute_subnetwork_ip_cidr_range"
+                                ]
+                              },
+                              "log_config": [
+                                {
+                                  "aggregation_interval": {
+                                    "constant_value": "INTERVAL_15_MIN"
+                                  },
+                                  "flow_sampling": {
+                                    "constant_value": 1
+                                  },
+                                  "metadata": {
+                                    "constant_value": "INCLUDE_ALL_METADATA"
+                                  }
+                                }
+                              ],
+                              "name": {
+                                "references": [
+                                  "local.compute_subnetwork_name"
+                                ]
+                              },
+                              "network": {
+                                "references": [
+                                  "var.compute_subnetwork_network"
+                                ]
+                              },
+                              "private_ip_google_access": {
+                                "references": [
+                                  "local.private_ip_google_access"
+                                ]
+                              },
+                              "project": {
+                                "references": [
+                                  "var.compute_subnetwork_project"
+                                ]
+                              },
+                              "region": {
+                                "references": [
+                                  "var.compute_subnetwork_region"
+                                ]
+                              },
+                              "secondary_ip_range": [
+                                {
+                                  "ip_cidr_range": {
+                                    "references": [
+                                      "var.compute_subnetwork_secondary_ip_range_ip_cidr_range"
+                                    ]
+                                  },
+                                  "range_name": {
+                                    "references": [
+                                      "local.compute_subnetwork_secondary_ip_range_range_name"
+                                    ]
+                                  }
+                                }
+                              ]
+                            },
+                            "schema_version": 0
+                          }
+                        ],
+                        "variables": {
+                          "compute_subnetwork_ip_cidr_range": {
+                            "description": "The range of internal addresses that are owned by this subnetwork"
+                          },
+                          "compute_subnetwork_network": {
+                            "description": "The network this subnet belongs to"
+                          },
+                          "compute_subnetwork_project": {
+                            "description": "The VPC network host GCP project this subnet belongs to"
+                          },
+                          "compute_subnetwork_purpose": {
+                            "description": "Short name provided that will be appended to the calculated name of the subnet.  This should identify the usage such as (vms or nodes)"
+                          },
+                          "compute_subnetwork_region": {
+                            "description": "The GCP region for this subnetwork"
+                          },
+                          "compute_subnetwork_secondary_ip_range_ip_cidr_range": {
+                            "default": "",
+                            "description": "IP Cidr Range for the secondary network, must be in CIDR notiation (0.0.0.0/24)"
+                          },
+                          "customer_project_id": {
+                            "description": "The Project ID that the subnet will be used in as the shared VPC Subnet.  This is not the VPC project ID."
+                          }
+                        }
+                      }
+                    },
+                    "core-compute-subnetwork-iam-member": {
+                      "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-network-compute-subnetwork-iam-member.git",
+                      "expressions": {
+                        "compute_subnetwork_iam_member_member": {
+                          "references": [
+                            "each.key"
+                          ]
+                        },
+                        "compute_subnetwork_iam_member_project": {
+                          "references": [
+                            "var.customer_project_id"
+                          ]
+                        },
+                        "compute_subnetwork_iam_member_region": {
+                          "references": [
+                            "var.compute_subnetwork_region"
+                          ]
+                        },
+                        "compute_subnetwork_iam_member_subnetwork": {
+                          "references": [
+                            "module.core-compute-subnetwork.compute_subnetwork_id",
+                            "module.core-compute-subnetwork"
+                          ]
+                        }
+                      },
+                      "for_each_expression": {
+                        "references": [
+                          "var.compute_subnetwork_iam_member_member"
+                        ]
+                      },
+                      "module": {
+                        "outputs": {
+                          "compute_subnetwork_id": {
+                            "expression": {
+                              "references": [
+                                "google_compute_subnetwork_iam_member.compute_subnetwork_iam_member.id",
+                                "google_compute_subnetwork_iam_member.compute_subnetwork_iam_member"
+                              ]
+                            },
+                            "description": "An identifier for the resource with a fully qualified name"
+                          },
+                          "compute_subnetwork_member": {
+                            "expression": {
+                              "references": [
+                                "google_compute_subnetwork_iam_member.compute_subnetwork_iam_member.member",
+                                "google_compute_subnetwork_iam_member.compute_subnetwork_iam_member"
+                              ]
+                            },
+                            "description": "Name of the subnetwork service that will use the subnetwork"
+                          }
+                        },
+                        "resources": [
+                          {
+                            "address": "google_compute_subnetwork_iam_member.compute_subnetwork_iam_member",
+                            "mode": "managed",
+                            "type": "google_compute_subnetwork_iam_member",
+                            "name": "compute_subnetwork_iam_member",
+                            "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                            "expressions": {
+                              "member": {
+                                "references": [
+                                  "var.compute_subnetwork_iam_member_member"
+                                ]
+                              },
+                              "project": {
+                                "references": [
+                                  "var.compute_subnetwork_iam_member_project"
+                                ]
+                              },
+                              "region": {
+                                "references": [
+                                  "var.compute_subnetwork_iam_member_region"
+                                ]
+                              },
+                              "role": {
+                                "references": [
+                                  "local.compute_subnetwork_iam_member_role"
+                                ]
+                              },
+                              "subnetwork": {
+                                "references": [
+                                  "var.compute_subnetwork_iam_member_subnetwork"
+                                ]
+                              }
+                            },
+                            "schema_version": 0
+                          }
+                        ],
+                        "variables": {
+                          "compute_subnetwork_iam_member_member": {
+                            "description": "Full name for the Service Account that needs subnet access"
+                          },
+                          "compute_subnetwork_iam_member_project": {
+                            "description": "ID of the member project"
+                          },
+                          "compute_subnetwork_iam_member_region": {
+                            "description": "Region for the subnetwork"
+                          },
+                          "compute_subnetwork_iam_member_subnetwork": {
+                            "description": "Name of the subnetwork"
+                          }
+                        }
+                      }
+                    },
+                    "core-gcp-org-policy": {
+                      "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-org-policy.git",
+                      "expressions": {
+                        "gcp_project_id": {
+                          "references": [
+                            "var.customer_project_id"
+                          ]
+                        },
+                        "org_policy_policy_constraint_name": {
+                          "references": [
+                            "local.org_policy_policy_constraint_name"
+                          ]
+                        },
+                        "org_policy_policy_rules_values_allowed_values": {
+                          "references": [
+                            "module.core-compute-subnetwork.compute_subnetwork_id",
+                            "module.core-compute-subnetwork"
+                          ]
+                        }
+                      },
+                      "module": {
+                        "outputs": {
+                          "org_policy_policy_id": {
+                            "expression": {
+                              "references": [
+                                "google_org_policy_policy.org_policy_policy.id",
+                                "google_org_policy_policy.org_policy_policy"
+                              ]
+                            },
+                            "description": "ID of the Policy adjusted"
+                          }
+                        },
+                        "resources": [
+                          {
+                            "address": "google_org_policy_policy.org_policy_policy",
+                            "mode": "managed",
+                            "type": "google_org_policy_policy",
+                            "name": "org_policy_policy",
+                            "provider_config_key": "module.gcp-compute-instance-broc-12547775432:google",
+                            "expressions": {
+                              "name": {
+                                "references": [
+                                  "var.gcp_project_id",
+                                  "var.org_policy_policy_constraint_name"
+                                ]
+                              },
+                              "parent": {
+                                "references": [
+                                  "var.gcp_project_id"
+                                ]
+                              },
+                              "spec": [
+                                {
+                                  "rules": [
+                                    {
+                                      "values": [
+                                        {
+                                          "allowed_values": {
+                                            "references": [
+                                              "var.org_policy_policy_rules_values_allowed_values"
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "schema_version": 0
+                          }
+                        ],
+                        "variables": {
+                          "gcp_project_id": {
+                            "description": "Project ID of the customer"
+                          },
+                          "org_policy_policy_constraint_name": {
+                            "description": "Name of the Policy Constraint at the project level that Allow policy would be added to. (ex. compute.restrictSharedVpcSubnetworks"
+                          },
+                          "org_policy_policy_rules_values_allowed_values": {
+                            "description": "Allowed values which will be used to additively create an allow rules in the policy. An example would be the full subnet name"
+                          }
+                        }
+                      },
+                      "depends_on": [
+                        "module.core-compute-subnetwork"
+                      ]
+                    },
+                    "core-gcp-region-validation": {
+                      "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-region-validation.git",
+                      "expressions": {
+                        "region_validation": {
+                          "references": [
+                            "var.compute_subnetwork_region"
+                          ]
+                        }
+                      },
+                      "module": {
+                        "resources": [
+                          {
+                            "address": "terraform_data.region_validation",
+                            "mode": "managed",
+                            "type": "terraform_data",
+                            "name": "region_validation",
+                            "provider_config_key": "module.gcp-compute-instance-broc-12547775432.module.platform_vpc_subnetwork.module.core-gcp-region-validation:terraform",
+                            "expressions": {
+                              "input": {
+                                "references": [
+                                  "var.region_validation"
+                                ]
+                              }
+                            },
+                            "schema_version": 0
+                          }
+                        ],
+                        "variables": {
+                          "region_validation": {
+                            "description": "Only the following regions are allowed: us-east1, us-east4, us-west2, us-central1, and us"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "variables": {
+                    "compute_subnetwork_iam_member_member": {
+                      "default": [
+                        ""
+                      ],
+                      "description": "List of the Fully Qualified names of service agents/accounts that need to have access on the subnet (Ex. name@details.com)"
+                    },
+                    "compute_subnetwork_ip_cidr_range": {
+                      "description": "The range of internal addresses that are owned by this subnetwork"
+                    },
+                    "compute_subnetwork_network": {
+                      "description": "The network this subnet belongs to"
+                    },
+                    "compute_subnetwork_project": {
+                      "description": "The VPC network host GCP project this subnet belongs to"
+                    },
+                    "compute_subnetwork_purpose": {
+                      "description": "Short name provided that will be appended to the calculated name of the subnet.  This should identify the usage such as (vms or nodes)"
+                    },
+                    "compute_subnetwork_region": {
+                      "description": "The GCP region for this subnetwork"
+                    },
+                    "compute_subnetwork_secondary_ip_range_ip_cidr_range": {
+                      "default": "",
+                      "description": "IP Cidr Range for the secondary network, must be in CIDR notiation (0.0.0.0/24)"
+                    },
+                    "customer_project_id": {
+                      "description": "The Project ID that the subnet will be used in as the shared VPC Subnet.  This is not the VPC project ID."
+                    }
+                  }
+                },
+                "depends_on": [
+                  "module.core_region_validation"
+                ]
+              }
+            },
+            "variables": {
+              "additional_disks_configuration_linux": {
+                "default": [],
+                "description": "Additional disks configuration for linux specifying size and optional disk_size for each. If size is 'custom', disk_size is required."
+              },
+              "additional_disks_configuration_windows": {
+                "default": [],
+                "description": "Additional disks configuration specifying size and optional disk_size for each. If size is 'custom', disk_size is required."
+              },
+              "compute_disk_guest_os_features": {
+                "default": [],
+                "description": "A list of features to enable on the guest operating system. Applicable only for bootable disks."
+              },
+              "compute_disk_image": {
+                "default": "",
+                "description": "The image from which to initialize this disk. This can be one of: the image's self_link, projects/{project}/global/images/{image}, projects/{project}/global/images/family/{family}"
+              },
+              "compute_disk_licenses": {
+                "default": [],
+                "description": "Any applicable license URI"
+              },
+              "compute_disk_physical_block_size_bytes": {
+                "default": 4096,
+                "description": "Physical block size of the persistent disk, in bytes. If not present in a request, a default value is used. Currently supported sizes are 4096 and 16384"
+              },
+              "compute_disk_snapshot": {
+                "default": "",
+                "description": "The source snapshot used to create this disk. You can provide this as a partial or full URL to the resource"
+              },
+              "compute_instance_allow_stopping_for_update": {
+                "default": true,
+                "description": "If true, allows Terraform to stop the instance to update its properties. If you try to update a property that requires stopping the instance without setting this field, the update will fail."
+              },
+              "compute_instance_application_id": {
+                "description": "Application ID for the Compute Instance"
+              },
+              "compute_instance_boot_disk_auto_delete": {
+                "default": true,
+                "description": "Whether the disk will be auto-deleted when the instance is deleted. Defaults to true"
+              },
+              "compute_instance_boot_disk_kms_key_self_link": {
+                "default": "",
+                "description": " The self_link of the encryption key that is stored in Google Cloud KMS to encrypt this disk. Only one of kms_key_self_link and disk_encryption_key_raw may be set"
+              },
+              "compute_instance_environment": {
+                "description": "The environment in which the compute resource is being created (test, dev, qa, uat, pt, prod, dr, preprod)"
+              },
+              "compute_instance_iam_member_member_mappings": {
+                "default": {},
+                "description": "A Map which is listing strings. Mappings are as follows ( Type:Principal : [ roles/role.name, ], Type:Principal : [ roles/role.name, roles/role.name, roles/role.name, ], etc. ). One principal per map, roles can be as much as needed. Listing by Principal allows a quick view of the roles for that principal"
+              },
+              "compute_instance_line_of_business": {
+                "description": "Line of Business"
+              },
+              "compute_instance_machine_type": {
+                "default": "",
+                "description": "The machine type to create. If not provided, the provider will use the default machine type"
+              },
+              "compute_instance_metadata": {
+                "default": {},
+                "description": "A list of key/value metadata to assign to the compute instance. This will be merged with any default metadata set in the provider configuration"
+              },
+              "compute_instance_name": {
+                "description": "The name of the instance the user can provide. If the name is not provided, the terraform configuration we have will auto-generate a unique name"
+              },
+              "compute_instance_network_interface_network": {
+                "description": "The name or self_link of the network to attach this interface to. Either network or subnetwork must be provided. If network isn't provided it will be inferred from the subnetwork"
+              },
+              "compute_instance_network_interface_subnetwork": {
+                "description": "The name or self_link of the subnetwork to attach this interface to. Either network or subnetwork must be provided. If network isn't provided it will be inferred from the subnetwork. The subnetwork must exist in the same region this instance will be created in"
+              },
+              "compute_instance_network_interface_subnetwork_project": {
+                "description": "The project in which the subnetwork belongs. If the subnetwork is a self_link, this field is ignored in favor of the project defined in the subnetwork self_link. If the subnetwork is a name and this field is not provided, the provider project is used"
+              },
+              "compute_instance_os_image_name": {
+                "description": "The name of the image to use for the instance."
+              },
+              "compute_instance_os_image_project_id": {
+                "description": "The project in which the image belongs."
+              },
+              "compute_instance_os_type": {
+                "description": "Type of Operating System to be installed (linux or windows)"
+              },
+              "compute_instance_project_id": {
+                "description": "The ID of the project in which the resource belongs. If it is not provided, the provider project is used"
+              },
+              "compute_instance_shielded_instance_config": {
+                "default": false,
+                "description": "Enable Shielded VM on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Pass true to provision argument block. Passing false will remove argument block."
+              },
+              "compute_instance_tags": {
+                "default": [],
+                "description": "A list of network tags to attach to the instance"
+              },
+              "compute_instance_use_type": {
+                "description": "The use type of the instance created whether app, db or web"
+              },
+              "compute_instance_zone": {
+                "description": "The zone that the machine should be created in. If it is not provided, the provider zone is used"
+              },
+              "compute_subnetwork_iam_member_member": {
+                "default": [
+                  ""
+                ],
+                "description": "List of the Fully Qualified names of service agents/accounts that need to have access on the subnet (Ex. name@details.com)"
+              },
+              "compute_subnetwork_ip_cidr_range": {
+                "default": "",
+                "description": "The range of internal addresses that are owned by this subnetwork"
+              },
+              "compute_subnetwork_purpose": {
+                "default": "",
+                "description": "Short name provided that will be appended to the calculated name of the subnet.  This should identify the usage such as (vms or nodes)"
+              },
+              "compute_subnetwork_secondary_ip_range_ip_cidr_range": {
+                "default": "",
+                "description": "IP Cidr Range for the secondary network, must be in CIDR notiation (0.0.0.0/24)"
+              },
+              "compute_vm_t_shirt_size": {
+                "description": "Size of the vm to be built, specified based on t shirt sizing."
+              },
+              "resources_labels": {
+                "description": "Map of key/value label pairs to assign to the instance. Note: This field is non-authoritative, and will only manage the labels present in your configuration"
+              },
+              "service_account_iam_mappings": {
+                "default": {},
+                "description": "A Map which is listing strings. Mappings are as follows ( Type:Principal : [ roles/role.name, ], Type:Principal : [ roles/role.name, roles/role.name, roles/role.name, ], etc. ). One principal per map, roles can be as much as needed. Listing by Principal allows a quick view of the roles for that principal"
+              }
+            }
+          }
+        }
+      },
+      "variables": {
+        "additional_disks_configuration_linux": {
+          "default": [],
+          "description": "Additional disks configuration for linux specifying size and optional disk_size for each. If size is 'custom', disk_size is required."
+        },
+        "additional_disks_configuration_windows": {
+          "default": [],
+          "description": "Additional disks configuration specifying size and optional disk_size for each. If size is 'custom', disk_size is required."
+        },
+        "compute_disk_guest_os_features": {
+          "default": [],
+          "description": "A list of features to enable on the guest operating system. Applicable only for bootable disks."
+        },
+        "compute_disk_image": {
+          "default": "",
+          "description": "The image from which to initialize this disk. This can be one of: the image's self_link, projects/{project}/global/images/{image}, projects/{project}/global/images/family/{family}"
+        },
+        "compute_disk_licenses": {
+          "default": [],
+          "description": "Any applicable license URI"
+        },
+        "compute_disk_physical_block_size_bytes": {
+          "default": 4096,
+          "description": "Physical block size of the persistent disk, in bytes. If not present in a request, a default value is used. Currently supported sizes are 4096 and 16384"
+        },
+        "compute_disk_snapshot": {
+          "default": "",
+          "description": "The source snapshot used to create this disk. You can provide this as a partial or full URL to the resource"
+        },
+        "compute_instance_allow_stopping_for_update": {
+          "default": true,
+          "description": "If true, allows Terraform to stop the instance to update its properties. If you try to update a property that requires stopping the instance without setting this field, the update will fail."
+        },
+        "compute_instance_application_id": {
+          "description": "Application ID for the Compute Instance"
+        },
+        "compute_instance_boot_disk_auto_delete": {
+          "default": true,
+          "description": "Whether the disk will be auto-deleted when the instance is deleted. Defaults to true"
+        },
+        "compute_instance_boot_disk_kms_key_self_link": {
+          "default": "",
+          "description": " The self_link of the encryption key that is stored in Google Cloud KMS to encrypt this disk. Only one of kms_key_self_link and disk_encryption_key_raw may be set"
+        },
+        "compute_instance_environment": {
+          "description": "The environment in which the compute resource is being created (test, dev, qa, uat, pt, prod, dr, preprod)"
+        },
+        "compute_instance_iam_member_member_mappings": {
+          "default": {},
+          "description": "A Map which is listing strings. Mappings are as follows ( Type:Principal : [ roles/role.name, ], Type:Principal : [ roles/role.name, roles/role.name, roles/role.name, ], etc. ). One principal per map, roles can be as much as needed. Listing by Principal allows a quick view of the roles for that principal"
+        },
+        "compute_instance_line_of_business": {
+          "description": "Line of Business"
+        },
+        "compute_instance_machine_type": {
+          "default": "",
+          "description": "The machine type to create. If not provided, the provider will use the default machine type"
+        },
+        "compute_instance_metadata": {
+          "default": {},
+          "description": "A list of key/value metadata to assign to the compute instance. This will be merged with any default metadata set in the provider configuration"
+        },
+        "compute_instance_name": {
+          "description": "The name of the instance the user can provide. If the name is not provided, the terraform configuration we have will auto-generate a unique name"
+        },
+        "compute_instance_network_interface_network": {
+          "description": "The name or self_link of the network to attach this interface to. Either network or subnetwork must be provided. If network isn't provided it will be inferred from the subnetwork"
+        },
+        "compute_instance_network_interface_subnetwork": {
+          "description": "The name or self_link of the subnetwork to attach this interface to. Either network or subnetwork must be provided. If network isn't provided it will be inferred from the subnetwork. The subnetwork must exist in the same region this instance will be created in"
+        },
+        "compute_instance_network_interface_subnetwork_project": {
+          "description": "The project in which the subnetwork belongs. If the subnetwork is a self_link, this field is ignored in favor of the project defined in the subnetwork self_link. If the subnetwork is a name and this field is not provided, the provider project is used"
+        },
+        "compute_instance_os_image_name": {
+          "description": "The name of the image to use for the instance."
+        },
+        "compute_instance_os_image_project_id": {
+          "description": "The project in which the image belongs."
+        },
+        "compute_instance_os_type": {
+          "description": "Type of Operating System to be installed (linux or windows)"
+        },
+        "compute_instance_project_id": {
+          "description": "The ID of the project in which the resource belongs. If it is not provided, the provider project is used"
+        },
+        "compute_instance_shielded_instance_config": {
+          "default": false,
+          "description": "Enable Shielded VM on this instance. Shielded VM provides verifiable integrity to prevent against malware and rootkits. Pass true to provision argument block. Passing false will remove argument block."
+        },
+        "compute_instance_tags": {
+          "default": [],
+          "description": "A list of network tags to attach to the instance"
+        },
+        "compute_instance_use_type": {
+          "description": "The use type of the instance created whether app, db or web"
+        },
+        "compute_instance_zone": {
+          "description": "The zone that the machine should be created in. If it is not provided, the provider zone is used"
+        },
+        "compute_subnetwork_iam_member_member": {
+          "default": [
+            ""
+          ],
+          "description": "List of the Fully Qualified names of service agents/accounts that need to have access on the subnet (Ex. name@details.com)"
+        },
+        "compute_subnetwork_ip_cidr_range": {
+          "default": "",
+          "description": "The range of internal addresses that are owned by this subnetwork"
+        },
+        "compute_subnetwork_purpose": {
+          "default": "",
+          "description": "Short name provided that will be appended to the calculated name of the subnet.  This should identify the usage such as (vms or nodes)"
+        },
+        "compute_subnetwork_secondary_ip_range_ip_cidr_range": {
+          "default": "",
+          "description": "IP Cidr Range for the secondary network, must be in CIDR notiation (0.0.0.0/24)"
+        },
+        "compute_vm_t_shirt_size": {
+          "description": "Size of the vm to be built, specified based on t shirt sizing."
+        },
+        "resources_labels": {
+          "description": "Map of key/value label pairs to assign to the instance. Note: This field is non-authoritative, and will only manage the labels present in your configuration"
+        },
+        "service_account_iam_mappings": {
+          "default": {},
+          "description": "A Map which is listing strings. Mappings are as follows ( Type:Principal : [ roles/role.name, ], Type:Principal : [ roles/role.name, roles/role.name, roles/role.name, ], etc. ). One principal per map, roles can be as much as needed. Listing by Principal allows a quick view of the roles for that principal"
+        }
+      }
+    }
+  },
+  "checks": [
+    {
+      "address": {
+        "kind": "resource",
+        "mode": "managed",
+        "module": "module.gcp-compute-instance-broc-12547775432.module.core_os_image_validation",
+        "name": "cvs_os_image",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.module.core_os_image_validation.terraform_data.cvs_os_image",
+        "type": "terraform_data"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432.module.core_os_image_validation",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.module.core_os_image_validation.terraform_data.cvs_os_image"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "resource",
+        "mode": "managed",
+        "module": "module.gcp-compute-instance-broc-12547775432.module.core_region_validation",
+        "name": "region_validation",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.module.core_region_validation.terraform_data.region_validation",
+        "type": "terraform_data"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432.module.core_region_validation",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.module.core_region_validation.terraform_data.region_validation"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "resource",
+        "mode": "managed",
+        "module": "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation",
+        "name": "label_validation",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation.terraform_data.label_validation",
+        "type": "terraform_data"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.module.core_resource_label_validation.terraform_data.label_validation"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "resource",
+        "mode": "managed",
+        "module": "module.gcp-compute-instance-broc-12547775432.module.platform_vpc_subnetwork.module.core-gcp-region-validation",
+        "name": "region_validation",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.module.platform_vpc_subnetwork.module.core-gcp-region-validation.terraform_data.region_validation",
+        "type": "terraform_data"
+      },
+      "status": "pass"
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.gcp-compute-instance-broc-12547775432.module.platform_vpc_subnetwork",
+        "name": "compute_subnetwork_project",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.module.platform_vpc_subnetwork.var.compute_subnetwork_project"
+      },
+      "status": "pass"
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.gcp-compute-instance-broc-12547775432.module.platform_vpc_subnetwork",
+        "name": "compute_subnetwork_purpose",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.module.platform_vpc_subnetwork.var.compute_subnetwork_purpose"
+      },
+      "status": "pass"
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.gcp-compute-instance-broc-12547775432",
+        "name": "additional_disks_configuration_linux",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.var.additional_disks_configuration_linux"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.var.additional_disks_configuration_linux"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.gcp-compute-instance-broc-12547775432",
+        "name": "additional_disks_configuration_windows",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.var.additional_disks_configuration_windows"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.var.additional_disks_configuration_windows"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.gcp-compute-instance-broc-12547775432",
+        "name": "compute_instance_environment",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_environment"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_environment"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.gcp-compute-instance-broc-12547775432",
+        "name": "compute_instance_machine_type",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_machine_type"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_machine_type"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.gcp-compute-instance-broc-12547775432",
+        "name": "compute_instance_os_image_name",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_os_image_name"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_os_image_name"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.gcp-compute-instance-broc-12547775432",
+        "name": "compute_instance_os_image_project_id",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_os_image_project_id"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_os_image_project_id"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.gcp-compute-instance-broc-12547775432",
+        "name": "compute_instance_os_type",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_os_type"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_os_type"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.gcp-compute-instance-broc-12547775432",
+        "name": "compute_instance_project_id",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_project_id"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_instance_project_id"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.gcp-compute-instance-broc-12547775432",
+        "name": "compute_vm_t_shirt_size",
+        "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_vm_t_shirt_size"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.gcp-compute-instance-broc-12547775432",
+            "to_display": "module.gcp-compute-instance-broc-12547775432.var.compute_vm_t_shirt_size"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "additional_disks_configuration_linux",
+        "to_display": "var.additional_disks_configuration_linux"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.additional_disks_configuration_linux"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "additional_disks_configuration_windows",
+        "to_display": "var.additional_disks_configuration_windows"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.additional_disks_configuration_windows"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "compute_instance_environment",
+        "to_display": "var.compute_instance_environment"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.compute_instance_environment"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "compute_instance_machine_type",
+        "to_display": "var.compute_instance_machine_type"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.compute_instance_machine_type"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "compute_instance_os_image_name",
+        "to_display": "var.compute_instance_os_image_name"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.compute_instance_os_image_name"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "compute_instance_os_image_project_id",
+        "to_display": "var.compute_instance_os_image_project_id"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.compute_instance_os_image_project_id"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "compute_instance_os_type",
+        "to_display": "var.compute_instance_os_type"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.compute_instance_os_type"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "compute_instance_project_id",
+        "to_display": "var.compute_instance_project_id"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.compute_instance_project_id"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "compute_vm_t_shirt_size",
+        "to_display": "var.compute_vm_t_shirt_size"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.compute_vm_t_shirt_size"
+          },
+          "status": "pass"
+        }
+      ]
+    }
+  ],
+  "timestamp": "2024-12-30T14:22:17Z",
+  "errored": false
+}

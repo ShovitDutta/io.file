@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-APPGATEWAY-13551",
+  "queryName": "app gateway is missing tags",
+  "severity": "LOW",
+  "category": "Governance",
+  "descriptionText": "IT Hygiene: App Gateway must be tagged per standards",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/application_gateway#tags",
+  "platform": "Terraform",
+  "descriptionID": "1.35.5.1",
+  "cloudProvider": "azure"
+}

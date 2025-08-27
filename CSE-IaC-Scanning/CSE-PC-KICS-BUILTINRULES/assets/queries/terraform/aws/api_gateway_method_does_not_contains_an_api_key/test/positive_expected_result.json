@@ -1,0 +1,15 @@
+[
+  {
+    
+    "queryName": "API Gateway Method Does Not Contains An API Key",
+    "severity": "MEDIUM",
+    "line": 15,
+    "fileName": "positive.json"
+  },
+  {
+    "queryName": "API Gateway Method Does Not Contains An API Key",
+    "severity": "MEDIUM",
+    "line": 38,
+    "fileName": "positive.json"
+  }
+]

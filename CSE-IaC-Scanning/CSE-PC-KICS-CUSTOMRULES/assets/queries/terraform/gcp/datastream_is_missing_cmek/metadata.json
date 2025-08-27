@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-DATASTREAM-24921",
+    "queryName": "datastream is missing cmek",
+    "severity": "CRITICAL",
+    "category": "Data Protection",
+    "descriptionText": "CMEK required on all instances for data-at-rest",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/datastream_stream#customer_managed_encryption_key-1",
+    "platform": "Terraform",
+    "descriptionID": "2.49.2.1",
+    "cloudProvider": "gcp"
+}

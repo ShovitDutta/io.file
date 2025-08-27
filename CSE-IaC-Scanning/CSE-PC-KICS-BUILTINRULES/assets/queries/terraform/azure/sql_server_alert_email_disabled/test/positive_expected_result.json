@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "SQL Server Alert Email Disabled",
+    "severity": "INFO",
+    "line": 16,
+    "filename": "positive.json"
+  }
+]

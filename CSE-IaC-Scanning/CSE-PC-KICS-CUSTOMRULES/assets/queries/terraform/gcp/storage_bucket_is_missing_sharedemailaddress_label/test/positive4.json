@@ -1,0 +1,229 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_storage_bucket.storage",
+                    "mode": "managed",
+                    "type": "google_storage_bucket",
+                    "name": "storage",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 3,
+                    "values": {
+                        "autoclass": [],
+                        "cors": [],
+                        "custom_placement_config": [],
+                        "default_event_based_hold": null,
+                        "effective_labels": {
+                            "applicationid": "13211",
+                            "costcenter": "44211",
+                            "dataclassification": "internal",
+                            "environmenttype": "dev",
+                            "goog-terraform-provisioned": "true",
+                            "itpmid": "2212",
+                            "owner": "platform-security"
+                        },
+                        "enable_object_retention": null,
+                        "encryption": [],
+                        "force_destroy": false,
+                        "hierarchical_namespace": [],
+                        "labels": {
+                            "applicationid": "13211",
+                            "costcenter": "44211",
+                            "dataclassification": "internal",
+                            "environmenttype": "dev",
+                            "itpmid": "2212",
+                            "owner": "platform-security"
+                        },
+                        "lifecycle_rule": [],
+                        "location": "USCENTRAL1",
+                        "logging": [],
+                        "name": "some-unique-name",
+                        "requester_pays": null,
+                        "retention_policy": [],
+                        "storage_class": "STANDARD",
+                        "terraform_labels": {
+                            "applicationid": "13211",
+                            "costcenter": "44211",
+                            "dataclassification": "internal",
+                            "environmenttype": "dev",
+                            "goog-terraform-provisioned": "true",
+                            "itpmid": "2212",
+                            "owner": "platform-security"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "autoclass": [],
+                        "cors": [],
+                        "custom_placement_config": [],
+                        "effective_labels": {},
+                        "encryption": [],
+                        "hierarchical_namespace": [],
+                        "labels": {},
+                        "lifecycle_rule": [],
+                        "logging": [],
+                        "retention_policy": [],
+                        "soft_delete_policy": [],
+                        "terraform_labels": {},
+                        "versioning": [],
+                        "website": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_storage_bucket.storage",
+            "mode": "managed",
+            "type": "google_storage_bucket",
+            "name": "storage",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "autoclass": [],
+                    "cors": [],
+                    "custom_placement_config": [],
+                    "default_event_based_hold": null,
+                    "effective_labels": {
+                        "applicationid": "13211",
+                        "costcenter": "44211",
+                        "dataclassification": "internal",
+                        "environmenttype": "dev",
+                        "goog-terraform-provisioned": "true",
+                        "itpmid": "2212",
+                        "owner": "platform-security"
+                    },
+                    "enable_object_retention": null,
+                    "encryption": [],
+                    "force_destroy": false,
+                    "hierarchical_namespace": [],
+                    "labels": {
+                        "applicationid": "13211",
+                        "costcenter": "44211",
+                        "dataclassification": "internal",
+                        "environmenttype": "dev",
+                        "itpmid": "2212",
+                        "owner": "platform-security"
+                    },
+                    "lifecycle_rule": [],
+                    "location": "USCENTRAL1",
+                    "logging": [],
+                    "name": "some-unique-name",
+                    "requester_pays": null,
+                    "retention_policy": [],
+                    "storage_class": "STANDARD",
+                    "terraform_labels": {
+                        "applicationid": "13211",
+                        "costcenter": "44211",
+                        "dataclassification": "internal",
+                        "environmenttype": "dev",
+                        "goog-terraform-provisioned": "true",
+                        "itpmid": "2212",
+                        "owner": "platform-security"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "autoclass": [],
+                    "cors": [],
+                    "custom_placement_config": [],
+                    "effective_labels": {},
+                    "encryption": [],
+                    "hierarchical_namespace": [],
+                    "id": true,
+                    "labels": {},
+                    "lifecycle_rule": [],
+                    "logging": [],
+                    "project": true,
+                    "project_number": true,
+                    "public_access_prevention": true,
+                    "retention_policy": [],
+                    "rpo": true,
+                    "self_link": true,
+                    "soft_delete_policy": true,
+                    "terraform_labels": {},
+                    "time_created": true,
+                    "uniform_bucket_level_access": true,
+                    "updated": true,
+                    "url": true,
+                    "versioning": true,
+                    "website": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "autoclass": [],
+                    "cors": [],
+                    "custom_placement_config": [],
+                    "effective_labels": {},
+                    "encryption": [],
+                    "hierarchical_namespace": [],
+                    "labels": {},
+                    "lifecycle_rule": [],
+                    "logging": [],
+                    "retention_policy": [],
+                    "soft_delete_policy": [],
+                    "terraform_labels": {},
+                    "versioning": [],
+                    "website": []
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.35.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_storage_bucket.storage",
+                    "mode": "managed",
+                    "type": "google_storage_bucket",
+                    "name": "storage",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "labels": {
+                            "constant_value": {
+                                "applicationid": "13211",
+                                "costcenter": "44211",
+                                "dataclassification": "internal",
+                                "environmenttype": "dev",
+                                "itpmid": "2212",
+                                "owner": "platform-security"
+                            }
+                        },
+                        "location": {
+                            "constant_value": "uscentral1"
+                        },
+                        "name": {
+                            "constant_value": "some-unique-name"
+                        }
+                    },
+                    "schema_version": 3
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-10T17:30:14Z",
+    "errored": false
+}

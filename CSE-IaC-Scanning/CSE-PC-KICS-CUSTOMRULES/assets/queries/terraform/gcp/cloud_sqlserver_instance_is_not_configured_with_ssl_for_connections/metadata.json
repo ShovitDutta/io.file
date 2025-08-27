@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDSQLSERVER-28124",
+    "queryName": "cloud sqlserver instance is not configured with ssl for connections",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Instances must be configured to required SSL-TLS 1.2 for all connections",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/sql_database_instance#ssl_mode",
+    "platform": "Terraform",
+    "descriptionID": "2.81.2.4",
+    "cloudProvider": "gcp"
+}  

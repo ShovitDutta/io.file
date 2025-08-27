@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "RDS Without Logging",
+    "severity": "MEDIUM",
+    "line": 14,
+    "fileName": "positive.json"
+  }
+]

@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "key vault is not using premium sku",
+      "severity": "LOW",
+      "line": 1
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "azure custom vision resource is missing required tags",
+        "severity": "CRITICAL",
+        "line": 49,
+        "fileName": "positive.json"
+    },
+    {
+        "queryName": "azure custom vision resource is missing required tags",
+        "severity": "CRITICAL",
+        "line": 109,
+        "fileName": "positive.json"
+    }
+]

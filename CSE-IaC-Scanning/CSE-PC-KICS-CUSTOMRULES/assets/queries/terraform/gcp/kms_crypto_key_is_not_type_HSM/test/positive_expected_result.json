@@ -1,0 +1,8 @@
+[
+
+    {
+        "queryName": "kms crypto key is not type hsmM",
+        "severity": "HIGH",
+        "line": 8
+    }
+]

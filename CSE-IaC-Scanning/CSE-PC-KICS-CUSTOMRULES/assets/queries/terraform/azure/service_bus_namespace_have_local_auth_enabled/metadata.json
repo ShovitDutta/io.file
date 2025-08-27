@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-SERVICEBUS-13114",
+    "queryName": "service bus namespace have local auth enabled",
+    "severity": "HIGH",
+    "category": "IAM Protection",
+    "descriptionText": "Azure Service Bus must have local auth disabled",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/servicebus_namespace#local_auth_enabled-1",
+    "platform": "Terraform",
+    "descriptionID": "1.31.1.4",
+    "cloudProvider": "azure"
+}

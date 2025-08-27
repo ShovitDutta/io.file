@@ -1,0 +1,7 @@
+[
+   {
+      "queryName": "app gateway waf policy is not enabeld for prevention mode",
+      "severity": "LOW",
+      "line": 141
+   }
+]

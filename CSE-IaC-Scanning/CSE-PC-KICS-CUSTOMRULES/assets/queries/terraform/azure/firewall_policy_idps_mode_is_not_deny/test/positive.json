@@ -1,0 +1,382 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_firewall_policy.example",
+                    "mode": "managed",
+                    "type": "azurerm_firewall_policy",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "auto_learn_private_ranges_enabled": null,
+                        "base_policy_id": null,
+                        "dns": [],
+                        "explicit_proxy": [],
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                                ],
+                                "type": "UserAssigned"
+                            }
+                        ],
+                        "insights": [],
+                        "intrusion_detection": [
+                            {
+                                "mode": "Alert",
+                                "private_ranges": null,
+                                "signature_overrides": [],
+                                "traffic_bypass": []
+                            }
+                        ],
+                        "location": "eastus2",
+                        "name": "example-policy",
+                        "private_ip_ranges": null,
+                        "resource_group_name": "security-poc-yogeshd-rg",
+                        "sku": "Premium",
+                        "sql_redirect_allowed": null,
+                        "tags": {
+                            "costcenter": "02045",
+                            "dataclassification": "confidential",
+                            "environmenttype": "dev",
+                            "itpmid": "12345",
+                            "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                        },
+                        "threat_intelligence_allowlist": [],
+                        "threat_intelligence_mode": "Alert",
+                        "timeouts": null,
+                        "tls_certificate": []
+                    },
+                    "sensitive_values": {
+                        "child_policies": [],
+                        "dns": [],
+                        "explicit_proxy": [],
+                        "firewalls": [],
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    false
+                                ]
+                            }
+                        ],
+                        "insights": [],
+                        "intrusion_detection": [
+                            {
+                                "signature_overrides": [],
+                                "traffic_bypass": []
+                            }
+                        ],
+                        "rule_collection_groups": [],
+                        "tags": {},
+                        "threat_intelligence_allowlist": [],
+                        "tls_certificate": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_firewall_policy.example",
+            "mode": "managed",
+            "type": "azurerm_firewall_policy",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "auto_learn_private_ranges_enabled": null,
+                    "base_policy_id": null,
+                    "dns": [],
+                    "explicit_proxy": [],
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                            ],
+                            "type": "UserAssigned"
+                        }
+                    ],
+                    "insights": [],
+                    "intrusion_detection": [
+                        {
+                            "mode": "Deny",
+                            "private_ranges": null,
+                            "signature_overrides": [],
+                            "traffic_bypass": []
+                        }
+                    ],
+                    "location": "eastus2",
+                    "name": "example-policy",
+                    "private_ip_ranges": null,
+                    "resource_group_name": "security-poc-yogeshd-rg",
+                    "sku": "Premium",
+                    "sql_redirect_allowed": null,
+                    "tags": {
+                        "costcenter": "02045",
+                        "dataclassification": "confidential",
+                        "environmenttype": "dev",
+                        "itpmid": "12345",
+                        "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                    },
+                    "threat_intelligence_allowlist": [],
+                    "threat_intelligence_mode": "Alert",
+                    "timeouts": null,
+                    "tls_certificate": []
+                },
+                "after_unknown": {
+                    "child_policies": true,
+                    "dns": [],
+                    "explicit_proxy": [],
+                    "firewalls": true,
+                    "id": true,
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ],
+                            "principal_id": true,
+                            "tenant_id": true
+                        }
+                    ],
+                    "insights": [],
+                    "intrusion_detection": [
+                        {
+                            "signature_overrides": [],
+                            "traffic_bypass": []
+                        }
+                    ],
+                    "rule_collection_groups": true,
+                    "tags": {},
+                    "threat_intelligence_allowlist": [],
+                    "tls_certificate": []
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "child_policies": [],
+                    "dns": [],
+                    "explicit_proxy": [],
+                    "firewalls": [],
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ]
+                        }
+                    ],
+                    "insights": [],
+                    "intrusion_detection": [
+                        {
+                            "signature_overrides": [],
+                            "traffic_bypass": []
+                        }
+                    ],
+                    "rule_collection_groups": [],
+                    "tags": {},
+                    "threat_intelligence_allowlist": [],
+                    "tls_certificate": []
+                }
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.azurerm_resource_group.resource_group",
+                        "mode": "data",
+                        "type": "azurerm_resource_group",
+                        "name": "resource_group",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg",
+                            "location": "eastus2",
+                            "managed_by": "",
+                            "name": "security-poc-yogeshd-rg",
+                            "tags": {
+                                "createdondate": "2024-06-26",
+                                "dataclassification": "restrictedD",
+                                "environmentsubtype": "POC",
+                                "environmenttype": "NonProd"
+                            },
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    },
+                    {
+                        "address": "data.azurerm_user_assigned_identity.user_assigned_identity",
+                        "mode": "data",
+                        "type": "azurerm_user_assigned_identity",
+                        "name": "user_assigned_identity",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "client_id": "860e8e4f-6052-4dc5-b3f9-feef98bf1a12",
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi",
+                            "location": "eastus2",
+                            "name": "security-poc-css-mi",
+                            "principal_id": "7e9254ab-e4e6-4fd3-845e-17810afb5f58",
+                            "resource_group_name": "security-poc-yogeshd-rg",
+                            "tags": {
+                                "createdondate": "2024-07-31",
+                                "dataclassification": "restrictedD",
+                                "environmenttype": "NonProd",
+                                "itpmid": "87DB880C626F02E3"
+                            },
+                            "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.20.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_firewall_policy.example",
+                    "mode": "managed",
+                    "type": "azurerm_firewall_policy",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "identity": [
+                            {
+                                "identity_ids": {
+                                    "references": [
+                                        "data.azurerm_user_assigned_identity.user_assigned_identity.id",
+                                        "data.azurerm_user_assigned_identity.user_assigned_identity"
+                                    ]
+                                },
+                                "type": {
+                                    "constant_value": "UserAssigned"
+                                }
+                            }
+                        ],
+                        "intrusion_detection": [
+                            {
+                                "mode": {
+                                    "constant_value": "Deny"
+                                }
+                            }
+                        ],
+                        "location": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.location",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "example-policy"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.name",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "sku": {
+                            "constant_value": "Premium"
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "costcenter": "02045",
+                                "dataclassification": "confidential",
+                                "environmenttype": "dev",
+                                "itpmid": "12345",
+                                "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                            }
+                        },
+                        "threat_intelligence_mode": {
+                            "constant_value": "Alert"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_resource_group.resource_group",
+                    "mode": "data",
+                    "type": "azurerm_resource_group",
+                    "name": "resource_group",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_user_assigned_identity.user_assigned_identity",
+                    "mode": "data",
+                    "type": "azurerm_user_assigned_identity",
+                    "name": "user_assigned_identity",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-css-mi"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "location"
+            ]
+        },
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "name"
+            ]
+        },
+        {
+            "resource": "data.azurerm_user_assigned_identity.user_assigned_identity",
+            "attribute": [
+                "id"
+            ]
+        }
+    ],
+    "timestamp": "2025-03-23T07:21:32Z",
+    "errored": false
+}

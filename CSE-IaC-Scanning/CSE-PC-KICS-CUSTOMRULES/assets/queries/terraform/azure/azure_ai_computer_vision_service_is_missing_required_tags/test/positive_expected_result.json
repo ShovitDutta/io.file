@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "azure ai computer vision service is missing required tags",
+      "severity": "LOW",
+      "line": 56,
+      "fileName": "positive.json"
+    }
+]

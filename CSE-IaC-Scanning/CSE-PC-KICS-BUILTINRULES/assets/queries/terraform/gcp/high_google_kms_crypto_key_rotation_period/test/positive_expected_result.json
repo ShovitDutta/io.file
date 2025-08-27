@@ -1,0 +1,20 @@
+[
+  {
+    "queryName": "High Google KMS Crypto Key Rotation Period",
+    "severity": "MEDIUM",
+    "line": 22,
+    "filename": "positive.json"
+  },
+  {
+    "queryName": "High Google KMS Crypto Key Rotation Period",
+    "severity": "MEDIUM",
+    "line": 22,
+    "filename": "positive1.json"
+  },
+  {
+    "queryName": "High Google KMS Crypto Key Rotation Period",
+    "severity": "MEDIUM",
+    "line": 22,
+    "filename": "positive2.json"
+  }
+]

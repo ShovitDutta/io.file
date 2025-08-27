@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-DATAFACTORY-11532",
+    "queryName": "data factory is not configured to access with private endpoint",
+    "severity": "HIGH",
+    "category": "Network Security",
+    "descriptionText": "Limit access through private endpoint to data factory Studio",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/1.44.0/docs/resources/private_endpoint#private_service_connection",
+    "platform": "Terraform",
+    "descriptionID": "1.15.3.2",
+    "cloudProvider": "azure"
+}

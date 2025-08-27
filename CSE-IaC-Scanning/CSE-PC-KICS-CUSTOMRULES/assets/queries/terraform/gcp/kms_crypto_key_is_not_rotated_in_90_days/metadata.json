@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-KMS-21823",
+    "queryName": "kms crypto key is not rotated in 90 days",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "All keys must have a rotation policy applied that meet the control standards",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/kms_crypto_key#rotation_period",
+    "platform": "Terraform",
+    "descriptionID": "2.18.2.3",
+    "cloudProvider": "gcp"
+}

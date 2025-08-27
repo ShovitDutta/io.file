@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "firewall diganostic settings is not configured to capture operational logs metric",
+      "severity": "HIGH",
+      "line": 52
+    }
+]

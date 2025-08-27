@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDPOSTGRESQL-28034",
+    "queryName": "cloud sql private access is not configured to work within vpc for postgresql",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Google Private Service Access must be configured to allow private instance to work within the VPC",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/sql_database_instance#private_network",
+    "platform": "Terraform",
+    "descriptionID": "2.80.3.4",
+    "cloudProvider": "gcp"
+}  

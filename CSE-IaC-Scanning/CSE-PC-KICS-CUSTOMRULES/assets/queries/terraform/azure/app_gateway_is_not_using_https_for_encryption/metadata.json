@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-APPGATEWAY-13521",
+    "queryName": "app gateway is not using https for encryption",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Ensure data is encrypted during transit from and to the App gateway",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/application_gateway#backend_http_settings_name",
+    "platform": "Terraform",
+    "descriptionID": "1.35.2.1",
+    "cloudProvider": "azure"
+}

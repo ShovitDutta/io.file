@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "RDP Access Is Not Restricted",
+    "severity": "CRITICAL",
+    "line": 12,
+    "fileName": "positive1.json"
+  },
+  {
+    "queryName": "RDP Access Is Not Restricted",
+    "severity": "CRITICAL",
+    "line": 25,
+    "fileName": "positive2.json"
+  }
+]

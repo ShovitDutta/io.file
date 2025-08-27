@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "windows function app is missing tags",
+      "severity": "LOW",
+      "line": 79,
+      "fileName": "positive.json"
+    }
+]

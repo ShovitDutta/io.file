@@ -1,0 +1,137 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_compute_ssl_policy.nonprod-ssl-policy",
+                    "mode": "managed",
+                    "type": "google_compute_ssl_policy",
+                    "name": "nonprod-ssl-policy",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "custom_features": [
+                            "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+                            "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+                        ],
+                        "description": "Sample SSl Policy for nonprod environment",
+                        "min_tls_version": "TLS_1_1",
+                        "name": "nonprod-ssl-policy",
+                        "profile": "CUSTOM",
+                        "project": "security-controls-sandbox",
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "custom_features": [
+                            false,
+                            false
+                        ],
+                        "enabled_features": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_compute_ssl_policy.nonprod-ssl-policy",
+            "mode": "managed",
+            "type": "google_compute_ssl_policy",
+            "name": "nonprod-ssl-policy",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "custom_features": [
+                        "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+                        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+                    ],
+                    "description": "Sample SSl Policy for nonprod environment",
+                    "min_tls_version": "TLS_1_1",
+                    "name": "nonprod-ssl-policy",
+                    "profile": "CUSTOM",
+                    "project": "security-controls-sandbox",
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "creation_timestamp": true,
+                    "custom_features": [
+                        false,
+                        false
+                    ],
+                    "enabled_features": true,
+                    "fingerprint": true,
+                    "id": true,
+                    "self_link": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "custom_features": [
+                        false,
+                        false
+                    ],
+                    "enabled_features": []
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.35.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_compute_ssl_policy.nonprod-ssl-policy",
+                    "mode": "managed",
+                    "type": "google_compute_ssl_policy",
+                    "name": "nonprod-ssl-policy",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "custom_features": {
+                            "constant_value": [
+                                "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+                                "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+                            ]
+                        },
+                        "description": {
+                            "constant_value": "Sample SSl Policy for nonprod environment"
+                        },
+                        "min_tls_version": {
+                            "constant_value": "TLS_1_1"
+                        },
+                        "name": {
+                            "constant_value": "nonprod-ssl-policy"
+                        },
+                        "profile": {
+                            "constant_value": "CUSTOM"
+                        },
+                        "project": {
+                            "constant_value": "security-controls-sandbox"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-05-22T18:30:51Z",
+    "errored": false
+}

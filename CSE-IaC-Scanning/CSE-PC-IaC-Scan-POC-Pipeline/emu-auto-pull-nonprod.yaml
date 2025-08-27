@@ -1,0 +1,304 @@
+steps:
+  - id: chown directories
+    name: gcr.io/cloud-builders/git
+    args:
+      - '-c'
+      - |
+        # Google Cloud Build has the volumes it create owned by root.
+        # To run as non-root, need to do a chown first.
+        chown -R 1023:1024 /home/cmadmin/
+        echo "### list files in /home/cmadmin:"
+        ls -la /home/cmadmin
+        echo "### list files in /home/cmadmin^"
+        ls -la /
+        echo "### list files in /^"
+        ls -la /workspace
+        echo "### list files in /workspace^"
+    entrypoint: bash
+    volumes:
+      - name: ssh
+        path: /home/cmadmin
+
+  - id: 'Testing Inside Iceberg container'
+    name: 'us-east4-docker.pkg.dev/digital-dfp-dev/cloudbuild-consumer-images/gcp-iac-pipeline-cli:goody-posterror'
+  #   #name: 'ruby'
+    entrypoint: 'sh'
+  #   secretEnv:
+  #   - CLOUDBUILD_TERRAFORM_GH_APP_APP_ID
+  #   - CLOUDBUILD_TERRAFORM_GH_APP_INSTALLATION_ID
+  #   - CLOUDBUILD_TERRAFORM_GH_APP_PRIVATE_KEY
+    args:
+    - '-c'
+    - |
+        echo "### list files in /home/cmadmin:"
+        ls -la /home/cmadmin
+        echo "### list files in /home/cmadmin^"
+        ls -la /
+        echo "### list files in /^"
+        ls -la /workspace
+        echo "### list files in /workspace^"
+  #     export GH_APP_APP_ID=$$CLOUDBUILD_TERRAFORM_GH_APP_APP_ID
+  #     export GH_APP_INSTALLATION_ID=$$CLOUDBUILD_TERRAFORM_GH_APP_INSTALLATION_ID
+  #     export GH_APP_PRIVATE_KEY=$$CLOUDBUILD_TERRAFORM_GH_APP_PRIVATE_KEY
+
+  #     echo "### get_jwt.rb is around?"
+  #     ls -alth /usr/local/bin/
+  #     export JWT=`ruby /usr/local/bin/get_jwt.rb`
+  #     curl -X POST -H "Authorization: Bearer $$JWT" -H "Accept: application/vnd.github+json" https://api.github.com/app/installations/$$GH_APP_INSTALLATION_ID/access_tokens | jq -r '.token' > /home/cmadmin/tf_github_cvs_health_source_code_r_token.txt
+
+  #     # debug
+  #     echo "### JWT env var:"
+  #     echo $$JWT
+  #     echo "### JWT env var^"
+  #     echo "### cat that jwt token file:"
+  #     echo "--- we will not actually cat that file as that would be insecure ---"
+  #     # cat /home/cmadmin/tf_github_cvs_health_source_code_r_token.txt
+  #     echo "### cat that jwt token file^"
+    volumes:
+      - name: ssh
+        path: /home/cmadmin
+
+  # - id: Git Clone and Checkout
+  #   name: 'us-east4-docker.pkg.dev/digital-dfp-dev/cloudbuild-consumer-images/gcp-iac-pipeline-cli:goody-posterror'
+  #   env:
+  #     - HOME=/home/cmadmin
+  #   args:
+  #     - '-c'
+  #     - |
+  #       echo "### checkout commit: $_SHA"
+  #       echo "### _REPO_FULL_NAME: $_REPO_FULL_NAME"
+  #       echo "### _REPO: $_REPO"
+
+  #       # https git clone in EMU can't use SSH keys, so using jwt, etc instead:
+  #       mkdir /home/cmadmin/apps
+  #       cd /home/cmadmin/apps
+  #       export TOKEN=`cat /home/cmadmin/tf_github_cvs_health_source_code_r_token.txt`
+
+  #       echo "### git clone:"
+  #       git clone -v https://x-access-token:$$TOKEN@github.com/${_REPO_FULL_NAME}.git /home/cmadmin/apps/
+        
+  #       echo "### Troubleshooting ###"
+  #       echo "Having trouble downloading the Terraform Module? -> https://cvsdigital.atlassian.net/wiki/spaces/DSSP/pages/2726111355/Terraform+Modules+-+Migration+to+Github+EMU"
+
+  #       echo "### git checkout:"
+  #       cd /home/cmadmin/apps/
+  #       git checkout $_SHA
+
+  #   entrypoint: sh
+  #   volumes:
+  #     - name: ssh
+  #       path: /home/cmadmin
+
+  # - id: create array of modified directories
+  #   name: 'us-east4-docker.pkg.dev/digital-dfp-dev/cloudbuild-consumer-images/gcp-iac-pipeline-cli:goody-posterror'
+  #   env:
+  #     - HOME=/home/cmadmin
+  #   args:
+  #     - '-c'
+  #     - |
+  #       dir_list_file=/home/cmadmin/dir_list
+  #       cd /home/cmadmin/apps
+
+  #       # #Check the diff for .tf files
+  #       # echo "### _BRANCH_REF is: $_BRANCH_REF"
+  #       # echo "### _COMMENTS_URL is: $_COMMENTS_URL"
+  #       # echo "### _PR is: $_PR"
+  #       # echo "### _PR_ACTION is: $_PR_ACTION"
+  #       # echo "### _REPO is: $_REPO"
+  #       # echo "### _REPO_FULL_NAME is: $_REPO_FULL_NAME"
+  #       # echo "### _REPO_OWNER is: $_REPO_OWNER"
+  #       # echo "### _SHA is: $_SHA"
+  #       # echo "### _SSH_URL is: $_SSH_URL"
+  #       # echo "### git branch is on the next line(s):"
+  #       # git branch
+
+  #       # ## Search for Added and Modified .tf files:
+  #       # dir_array_am=$(\
+  #       #   for i in $(git diff origin/${_BRANCH_REF} --name-status --diff-filter=AM | cut -f 2 | grep \.tf) ; do
+  #       #     dirname $i
+  #       #   done \
+  #       #     | sort | uniq
+  #       # )
+  #       # ## Search for Renamed .tf files:
+  #       # dir_array_r=$(\
+  #       #   for i in $(git diff origin/${_BRANCH_REF} --name-status --diff-filter=R | cut -f 3 | grep \.tf) ; do
+  #       #     dirname $i
+  #       #   done \
+  #       #     | sort | uniq
+  #       # )
+  #       # ## Added/Modified:
+  #       # cat /dev/null > $dir_list_file
+  #       # for i in ${dir_array_am[@]} ; do
+  #       #   echo $i >> $dir_list_file
+  #       # done
+  #       # ## Renamed:
+  #       # for i in ${dir_array_r[@]} ; do
+  #       #   echo $i >> $dir_list_file
+  #       # done
+
+  #   #     # Exit if no changes to terraform directories were found:
+  #   #     echo "### Display the contents of dir_list_file:"
+  #   #     cat $dir_list_file
+  #   #     echo "### Display the contents of dir_list_file^"
+    #     echo "### Check to see if the file contains a listing of directories containing .tf files which were added/changed/removed"
+    #     file_empty=true
+    #     [ -s $dir_list_file ] && file_empty=false
+    #     [ $file_empty == false ] && echo "### Added/changed/removed .tf files were found, plan should happen"
+    #     [ $file_empty == true ] && echo "### No terraform changes were found, exiting"
+    #     [ $file_empty == true ] && exit 1
+    #     echo "" #without this echo line, the job crashes ...
+    # entrypoint: bash
+    # volumes:
+    #   - name: ssh
+    #     path: /home/cmadmin
+
+  # - id: Terraform Plan
+  #   name: 'us-east4-docker.pkg.dev/digital-dfp-dev/cloudbuild-consumer-images/gcp-iac-pipeline-cli:goody-posterror'
+  #   secretEnv:
+  #     - GITHUB_ORG_NAME
+  #     - CLOUDBUILD_TERRAFORM_GH_APP_APP_ID
+  #     - CLOUDBUILD_TERRAFORM_GH_APP_INSTALLATION_ID
+  #     - CLOUDBUILD_TERRAFORM_GH_APP_PRIVATE_KEY
+  #     - SNYK_TOKEN
+  #   env:
+  #     - HOME=/home/cmadmin
+  #     - GITHUB_DNS_NAME=api.github.com
+  #     - GITHUB_ORG=$_REPO_OWNER
+  #     - GITHUB_REPO=$_REPO
+  #     - GITHUB_PR=$_PR
+  #     - REGION=us-east4
+  #     - PROJECT_ID=$PROJECT_ID
+  #     - BUILD_ID=$BUILD_ID
+  #     - _SSH_URL=$_SSH_URL
+  #   args:
+  #     - '-c'
+  #     - |
+
+  #       cd /home/cmadmin/apps
+
+  #       #EMU auth stuff:
+  #       export TOKEN=`cat /home/cmadmin/tf_github_cvs_health_source_code_r_token.txt`
+  #       git config --global url."https://x-access-token:$$TOKEN@github.com".insteadOf https://github.com
+  #       export GITHUB_APP_ID=$$CLOUDBUILD_TERRAFORM_GH_APP_APP_ID
+  #       export GITHUB_APP_INSTALLATION_ID=$$CLOUDBUILD_TERRAFORM_GH_APP_INSTALLATION_ID
+  #       export GITHUB_APP_PEM_FILE=$$CLOUDBUILD_TERRAFORM_GH_APP_PRIVATE_KEY
+
+  #       #Go script necessary
+  #       export GITHUB_TYPE="emu"
+
+  #       echo "### ==================================="
+  #       echo "### ==== Terraform Plan (git pull) ===="
+  #       echo "### ==================================="
+
+  #       # array of changed folders from previous step
+  #       dir_list_file=/home/cmadmin/dir_list
+
+  #       #----------------debug:-------------------
+  #       echo "### _BRANCH_REF: $_BRANCH_REF"
+  #       echo "### _PR: $_PR"
+  #       echo "### _PR_ACTION: $_PR_ACTION"
+  #       echo "### array file should exist"
+  #       echo "### array file is $dir_list_file"
+  #       cat $dir_list_file
+  #       echo "### array file contents should have been dumped above ^"
+  #       echo "### perhaps the auto backend got placed in the wrong place:"
+  #       ls /home/cmadmin/apps
+  #       echo "### perhaps the auto backend got placed in the wrong place^"
+  #       #----------------debug^-------------------
+
+
+  #       #-------------------------------
+  #       # modify remote.origin.url to remove the x-access-token section:
+
+  #       echo "### old url:"
+  #       git config --get remote.origin.url
+
+  #       remote_url_part=$(git config --get remote.origin.url \
+  #         | cut -d@ -f 2 | sed 's/github.com/github.com:/g')
+  #       git remote set-url origin "git@${remote_url_part}"
+
+  #       echo "### new url:"
+  #       git config --get remote.origin.url
+  #       #-------------------------------
+
+  #       for dir in $(cat $dir_list_file); do
+  #         ## cd to root of repo at beginning of loop:
+  #         cd /home/cmadmin/apps
+
+  #         echo "### Working with terraform in directory ${dir}"
+  #         cd /home/cmadmin/apps/${dir} \
+  #           || { echo "Directory ${dir} does not appear to exist." && exit 1 ; }
+
+  #         # EMU stuff:
+  #         echo "### verifying GITHUB_ORG_NAME:"
+  #         echo $$GITHUB_ORG_NAME
+  #         echo "### verifying GITHUB_ORG_NAME^"
+  #         echo -e "github_organization = \"$$GITHUB_ORG_NAME\"\n" >> terraform.auto.tfvars
+          
+  #         gcp-iac-pipeline-cli plan -s --autostate --dir "/home/cmadmin/apps/${dir}"
+          
+  #         echo "### Troubleshooting ###"
+  #         echo "Having trouble downloading the Terraform Module? -> https://cvsdigital.atlassian.net/wiki/spaces/DSSP/pages/2726111355/Terraform+Modules+-+Migration+to+Github+EMU"
+  #       done
+
+  #   entrypoint: bash
+  #   volumes:
+  #     - name: ssh
+  #       path: /home/cmadmin
+
+  - id: 'CSS IaC Scan'
+    name: 'paulchak/rhl9-x86_64-kics-snyk-opa:V20'
+    entrypoint: 'bash'
+    args:
+    - '-c'
+    - |
+        echo "### list files in /home/cmadmin:"
+        ls -la /home/cmadmin
+        echo "### list files in /home/cmadmin^"
+        ls -la /
+        echo "### list files in /^"
+        ls -la /workspace
+        echo "### list files in /workspace^"
+    volumes:
+      - name: ssh
+        path: /home/cmadmin
+    allowFailure: true
+    
+
+  # - id: 'revoke tf-github-cvs-health-source-code-r GH App token'
+  #   name: 'us-east4-docker.pkg.dev/digital-dfp-dev/cloudbuild-consumer-images/gcp-iac-pipeline-cli:goody-posterror'
+  #   entrypoint: 'sh'
+  #   args:
+  #   - '-c'
+  #   - |
+  #     export TOKEN=`cat /home/cmadmin/tf_github_cvs_health_source_code_r_token.txt`
+  #     curl \
+  #       -X DELETE \
+  #       -H "Accept: application/vnd.github+json" \
+  #       -H "Authorization: Bearer $$TOKEN" \
+  #       https://api.github.com/installation/token
+  #     rm /home/cmadmin/tf_github_cvs_health_source_code_r_token.txt
+  #   volumes:
+  #     - name: ssh
+  #       path: /home/cmadmin
+
+# tags: ['${_REPO}','${_REPO_OWNER}']
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+  pool:
+    name: >-
+      projects/security-controls-sandbox/locations/us-west2/workerPools/security-controls-sandbox-wrkr-pool
+
+# availableSecrets:
+#   secretManager:
+#   - versionName: projects/digital-dfp-dev/secrets/github-org-name/versions/latest
+#     env: GITHUB_ORG_NAME
+#   - versionName: projects/digital-dfp-dev/secrets/github-cvs-health-source-code-cloudbuild-terraform-app-id/versions/latest
+#     env: CLOUDBUILD_TERRAFORM_GH_APP_APP_ID
+#   - versionName: projects/digital-dfp-dev/secrets/github-cvs-health-source-code-cloudbuild-terraform-installation-id/versions/latest
+#     env: CLOUDBUILD_TERRAFORM_GH_APP_INSTALLATION_ID
+#   - versionName: projects/digital-dfp-dev/secrets/github-cvs-health-source-code-cloudbuild-terraform-private-key/versions/latest
+#     env: CLOUDBUILD_TERRAFORM_GH_APP_PRIVATE_KEY
+#   - versionName: projects/digital-dfp-dev/secrets/cloudbuild-snyk-token/versions/latest
+#     env: SNYK_TOKEN

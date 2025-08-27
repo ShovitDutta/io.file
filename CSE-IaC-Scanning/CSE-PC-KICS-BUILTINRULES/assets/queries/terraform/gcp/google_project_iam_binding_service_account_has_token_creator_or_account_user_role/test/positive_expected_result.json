@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "Google Project IAM Binding Service Account has Token Creator or Account User Role",
+    "severity": "MEDIUM",
+    "line": 21,
+    "filename": "positive1.json"
+  },
+  {
+    "queryName": "Google Project IAM Binding Service Account has Token Creator or Account User Role",
+    "severity": "MEDIUM",
+    "line": 21,
+    "filename": "positive2.json"
+  }
+]

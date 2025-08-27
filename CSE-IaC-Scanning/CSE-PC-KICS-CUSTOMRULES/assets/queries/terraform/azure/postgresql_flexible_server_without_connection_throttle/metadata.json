@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-POSTGRESQLFLEXIBLESERVER-12446",
+  "queryName": "postgresql flexible server without connection throttle",
+  "severity": "MEDIUM",
+  "category": "Logging and Monitoring",
+  "descriptionText": "Ensure that Connection Throttling is set for the PostgreSQL server",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server_configuration",
+  "platform": "Terraform",
+  "descriptionID": "1.24.4.6",
+  "cloudProvider": "azure"
+}

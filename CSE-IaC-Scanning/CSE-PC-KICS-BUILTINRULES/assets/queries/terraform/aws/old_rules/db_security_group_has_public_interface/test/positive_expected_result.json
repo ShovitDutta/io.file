@@ -1,0 +1,14 @@
+[
+	{
+		"queryName": "DB Security Group Has Public Interface",
+		"severity": "CRITICAL",
+		"line": 5,
+		"fileName": "positive1.tf"
+	},
+	{
+		"queryName": "DB Security Group Has Public Interface",
+		"severity": "CRITICAL",
+		"line": 9,
+		"fileName": "positive2.tf"
+	}
+]

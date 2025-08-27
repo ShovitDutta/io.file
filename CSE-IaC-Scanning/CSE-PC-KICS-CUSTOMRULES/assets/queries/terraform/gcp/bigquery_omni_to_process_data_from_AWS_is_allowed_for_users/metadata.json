@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-BIGQUERY-21023",
+    "queryName": "bigquery omni to process data from AWS is allowed for users",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Ensure users are not allow to use Bigquery omni to process data from AWS",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_organization_policy#constraint",
+    "platform": "Terraform",
+    "descriptionID": "2.10.2.3",
+    "cloudProvider": "gcp"
+}

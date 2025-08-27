@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-REDISCACHE-12851",
+  "queryName": "redis cache is missing required tags",
+  "severity": "LOW",
+  "category": "Governance",
+  "descriptionText": "IT Hygiene: Redis Cache must be tagged per standards",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/redis_cache#tags",
+  "platform": "Terraform",
+  "descriptionID": "1.28.5.1",
+  "cloudProvider": "azure"
+}

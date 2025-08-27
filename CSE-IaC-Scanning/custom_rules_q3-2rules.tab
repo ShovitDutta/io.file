@@ -1,0 +1,3 @@
+﻿Primary_ID	Seconday_ID	Rule_Name	Severity	Category	Rule_Type	Cloud_Provider	Description	Service	CVS_Rule_ID	Terraform_URL
+1.48.2.3	1.48.2	recovery_service_vault_encryption_is_not_using_cmek	high	Data Protection	custom	azure	Enable encryption of Backup using CMK	RECOVERY_SERVICE_VAULT	CSE-PC-AZURE-RECOVERYSERVICEVAULT-14823	https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/recovery_services_vault#key_id
+1.28.5.1	1.28.5	redis_cache_is_missing_required_tags	low Governance	custom	azure	IT Hygiene:Function must be tagged per standards 	REDIS_CACHE	CSE-PC-AZURE-REDISCACHE-12851	https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/redis_cache#tags

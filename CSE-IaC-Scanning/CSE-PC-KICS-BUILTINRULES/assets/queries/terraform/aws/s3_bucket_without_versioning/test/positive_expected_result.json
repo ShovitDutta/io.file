@@ -1,0 +1,26 @@
+[
+  {
+    "queryName": "S3 Bucket Without Versioning",
+    "severity": "MEDIUM",
+    "line": 14,
+    "fileName": "positive.json"
+  },
+  {
+    "queryName": "S3 Bucket Without Versioning",
+    "severity": "MEDIUM",
+    "line": 65,
+    "fileName": "positive2.json"
+  },
+  {
+    "queryName": "S3 Bucket Without Versioning",
+    "severity": "MEDIUM",
+    "line": 29,
+    "fileName": "positive1.json"
+  },
+  {
+    "queryName": "S3 Bucket Without Versioning",
+    "severity": "MEDIUM",
+    "line": 14,
+    "fileName": "positive3.json"
+  }
+]

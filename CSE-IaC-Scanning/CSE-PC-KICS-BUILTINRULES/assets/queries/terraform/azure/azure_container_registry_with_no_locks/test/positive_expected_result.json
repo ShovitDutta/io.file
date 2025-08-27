@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "Azure Container Registry With No Locks",
+    "severity": "HIGH",
+    "line": 59,
+    "filename": "positive.json"
+  }
+]

@@ -1,0 +1,20 @@
+[
+	{
+		"queryName": "pubsub location is set to non us region",
+		"severity": "CRITICAL",
+		"line": 6,
+		"fileName": "positive1.tf"
+	},
+	{
+		"queryName": "pubsub location is set to non us region",
+		"severity": "CRITICAL",
+		"line": 6,
+		"fileName": "positive2.tf"
+	},
+	{
+		"queryName": "pubsub location is set to non us region",
+		"severity": "CRITICAL",
+		"line": 1,
+		"fileName": "positive3.tf"
+	}
+]

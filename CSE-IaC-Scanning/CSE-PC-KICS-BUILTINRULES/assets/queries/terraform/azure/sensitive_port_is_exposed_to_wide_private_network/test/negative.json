@@ -1,0 +1,1267 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_network_security_rule.negative1",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative1",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "access": "Deny",
+                        "description": null,
+                        "destination_address_prefix": "*",
+                        "destination_address_prefixes": null,
+                        "destination_application_security_group_ids": null,
+                        "destination_port_range": "23",
+                        "destination_port_ranges": null,
+                        "direction": "Inbound",
+                        "name": "example",
+                        "network_security_group_name": "example-nsg",
+                        "priority": 100,
+                        "protocol": "Tcp",
+                        "resource_group_name": "example-rg",
+                        "source_address_prefix": "*",
+                        "source_address_prefixes": null,
+                        "source_application_security_group_ids": null,
+                        "source_port_range": "*",
+                        "source_port_ranges": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative10",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative10",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "access": "Allow",
+                        "description": null,
+                        "destination_address_prefix": "*",
+                        "destination_address_prefixes": null,
+                        "destination_application_security_group_ids": null,
+                        "destination_port_range": "23 ,  69",
+                        "destination_port_ranges": null,
+                        "direction": "Inbound",
+                        "name": "example",
+                        "network_security_group_name": "example-nsg",
+                        "priority": 100,
+                        "protocol": "Tcp",
+                        "resource_group_name": "example-rg",
+                        "source_address_prefix": "0.0.1.0",
+                        "source_address_prefixes": null,
+                        "source_application_security_group_ids": null,
+                        "source_port_range": "*",
+                        "source_port_ranges": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative11",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative11",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "access": "Allow",
+                        "description": null,
+                        "destination_address_prefix": "*",
+                        "destination_address_prefixes": null,
+                        "destination_application_security_group_ids": null,
+                        "destination_port_range": "2,310",
+                        "destination_port_ranges": null,
+                        "direction": "Inbound",
+                        "name": "example",
+                        "network_security_group_name": "example-nsg",
+                        "priority": 100,
+                        "protocol": "Tcp",
+                        "resource_group_name": "example-rg",
+                        "source_address_prefix": "0.0.0.0",
+                        "source_address_prefixes": null,
+                        "source_application_security_group_ids": null,
+                        "source_port_range": "*",
+                        "source_port_ranges": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative2",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative2",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "access": "Allow",
+                        "description": null,
+                        "destination_address_prefix": "*",
+                        "destination_address_prefixes": null,
+                        "destination_application_security_group_ids": null,
+                        "destination_port_range": "23-34",
+                        "destination_port_ranges": null,
+                        "direction": "Inbound",
+                        "name": "example",
+                        "network_security_group_name": "example-nsg",
+                        "priority": 100,
+                        "protocol": "Icmp",
+                        "resource_group_name": "example-rg",
+                        "source_address_prefix": "*",
+                        "source_address_prefixes": null,
+                        "source_application_security_group_ids": null,
+                        "source_port_range": "*",
+                        "source_port_ranges": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative3",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative3",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "access": "Allow",
+                        "description": null,
+                        "destination_address_prefix": "*",
+                        "destination_address_prefixes": null,
+                        "destination_application_security_group_ids": null,
+                        "destination_port_range": "8-174",
+                        "destination_port_ranges": null,
+                        "direction": "Inbound",
+                        "name": "example",
+                        "network_security_group_name": "example-nsg",
+                        "priority": 100,
+                        "protocol": "Tcp",
+                        "resource_group_name": "example-rg",
+                        "source_address_prefix": "0.0.0.0",
+                        "source_address_prefixes": null,
+                        "source_application_security_group_ids": null,
+                        "source_port_range": "*",
+                        "source_port_ranges": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative4",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative4",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "access": "Allow",
+                        "description": null,
+                        "destination_address_prefix": "*",
+                        "destination_address_prefixes": null,
+                        "destination_application_security_group_ids": null,
+                        "destination_port_range": "23-196",
+                        "destination_port_ranges": null,
+                        "direction": "Inbound",
+                        "name": "example",
+                        "network_security_group_name": "example-nsg",
+                        "priority": 100,
+                        "protocol": "Tcp",
+                        "resource_group_name": "example-rg",
+                        "source_address_prefix": "0.0.0.0",
+                        "source_address_prefixes": null,
+                        "source_application_security_group_ids": null,
+                        "source_port_range": "*",
+                        "source_port_ranges": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative5",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative5",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "access": "Allow",
+                        "description": null,
+                        "destination_address_prefix": "*",
+                        "destination_address_prefixes": null,
+                        "destination_application_security_group_ids": null,
+                        "destination_port_range": "23",
+                        "destination_port_ranges": null,
+                        "direction": "Inbound",
+                        "name": "example",
+                        "network_security_group_name": "example-nsg",
+                        "priority": 100,
+                        "protocol": "Tcp",
+                        "resource_group_name": "example-rg",
+                        "source_address_prefix": "/1",
+                        "source_address_prefixes": null,
+                        "source_application_security_group_ids": null,
+                        "source_port_range": "*",
+                        "source_port_ranges": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative6",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative6",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "access": "Allow",
+                        "description": null,
+                        "destination_address_prefix": "*",
+                        "destination_address_prefixes": null,
+                        "destination_application_security_group_ids": null,
+                        "destination_port_range": "43",
+                        "destination_port_ranges": null,
+                        "direction": "Inbound",
+                        "name": "example",
+                        "network_security_group_name": "example-nsg",
+                        "priority": 100,
+                        "protocol": "*",
+                        "resource_group_name": "example-rg",
+                        "source_address_prefix": "/0",
+                        "source_address_prefixes": null,
+                        "source_application_security_group_ids": null,
+                        "source_port_range": "*",
+                        "source_port_ranges": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative7",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative7",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "access": "Allow",
+                        "description": null,
+                        "destination_address_prefix": "*",
+                        "destination_address_prefixes": null,
+                        "destination_application_security_group_ids": null,
+                        "destination_port_range": "23",
+                        "destination_port_ranges": null,
+                        "direction": "Inbound",
+                        "name": "example",
+                        "network_security_group_name": "example-nsg",
+                        "priority": 100,
+                        "protocol": "Icmp",
+                        "resource_group_name": "example-rg",
+                        "source_address_prefix": "internet",
+                        "source_address_prefixes": null,
+                        "source_application_security_group_ids": null,
+                        "source_port_range": "*",
+                        "source_port_ranges": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative8",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative8",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "access": "Allow",
+                        "description": null,
+                        "destination_address_prefix": "*",
+                        "destination_address_prefixes": null,
+                        "destination_application_security_group_ids": null,
+                        "destination_port_range": "22, 24,49-67",
+                        "destination_port_ranges": null,
+                        "direction": "Inbound",
+                        "name": "example",
+                        "network_security_group_name": "example-nsg",
+                        "priority": 100,
+                        "protocol": "*",
+                        "resource_group_name": "example-rg",
+                        "source_address_prefix": "any",
+                        "source_address_prefixes": null,
+                        "source_application_security_group_ids": null,
+                        "source_port_range": "*",
+                        "source_port_ranges": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative9",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative9",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "access": "Allow",
+                        "description": null,
+                        "destination_address_prefix": "*",
+                        "destination_address_prefixes": null,
+                        "destination_application_security_group_ids": null,
+                        "destination_port_range": "23",
+                        "destination_port_ranges": null,
+                        "direction": "Inbound",
+                        "name": "example",
+                        "network_security_group_name": "example-nsg",
+                        "priority": 100,
+                        "protocol": "Icmp",
+                        "resource_group_name": "example-rg",
+                        "source_address_prefix": "/0",
+                        "source_address_prefixes": null,
+                        "source_application_security_group_ids": null,
+                        "source_port_range": "*",
+                        "source_port_ranges": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_network_security_rule.negative1",
+            "mode": "managed",
+            "type": "azurerm_network_security_rule",
+            "name": "negative1",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access": "Deny",
+                    "description": null,
+                    "destination_address_prefix": "*",
+                    "destination_address_prefixes": null,
+                    "destination_application_security_group_ids": null,
+                    "destination_port_range": "23",
+                    "destination_port_ranges": null,
+                    "direction": "Inbound",
+                    "name": "example",
+                    "network_security_group_name": "example-nsg",
+                    "priority": 100,
+                    "protocol": "Tcp",
+                    "resource_group_name": "example-rg",
+                    "source_address_prefix": "*",
+                    "source_address_prefixes": null,
+                    "source_application_security_group_ids": null,
+                    "source_port_range": "*",
+                    "source_port_ranges": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_network_security_rule.negative10",
+            "mode": "managed",
+            "type": "azurerm_network_security_rule",
+            "name": "negative10",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access": "Allow",
+                    "description": null,
+                    "destination_address_prefix": "*",
+                    "destination_address_prefixes": null,
+                    "destination_application_security_group_ids": null,
+                    "destination_port_range": "23 ,  69",
+                    "destination_port_ranges": null,
+                    "direction": "Inbound",
+                    "name": "example",
+                    "network_security_group_name": "example-nsg",
+                    "priority": 100,
+                    "protocol": "Tcp",
+                    "resource_group_name": "example-rg",
+                    "source_address_prefix": "0.0.1.0",
+                    "source_address_prefixes": null,
+                    "source_application_security_group_ids": null,
+                    "source_port_range": "*",
+                    "source_port_ranges": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_network_security_rule.negative11",
+            "mode": "managed",
+            "type": "azurerm_network_security_rule",
+            "name": "negative11",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access": "Allow",
+                    "description": null,
+                    "destination_address_prefix": "*",
+                    "destination_address_prefixes": null,
+                    "destination_application_security_group_ids": null,
+                    "destination_port_range": "2,310",
+                    "destination_port_ranges": null,
+                    "direction": "Inbound",
+                    "name": "example",
+                    "network_security_group_name": "example-nsg",
+                    "priority": 100,
+                    "protocol": "Tcp",
+                    "resource_group_name": "example-rg",
+                    "source_address_prefix": "0.0.0.0",
+                    "source_address_prefixes": null,
+                    "source_application_security_group_ids": null,
+                    "source_port_range": "*",
+                    "source_port_ranges": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_network_security_rule.negative2",
+            "mode": "managed",
+            "type": "azurerm_network_security_rule",
+            "name": "negative2",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access": "Allow",
+                    "description": null,
+                    "destination_address_prefix": "*",
+                    "destination_address_prefixes": null,
+                    "destination_application_security_group_ids": null,
+                    "destination_port_range": "23-34",
+                    "destination_port_ranges": null,
+                    "direction": "Inbound",
+                    "name": "example",
+                    "network_security_group_name": "example-nsg",
+                    "priority": 100,
+                    "protocol": "Icmp",
+                    "resource_group_name": "example-rg",
+                    "source_address_prefix": "*",
+                    "source_address_prefixes": null,
+                    "source_application_security_group_ids": null,
+                    "source_port_range": "*",
+                    "source_port_ranges": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_network_security_rule.negative3",
+            "mode": "managed",
+            "type": "azurerm_network_security_rule",
+            "name": "negative3",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access": "Allow",
+                    "description": null,
+                    "destination_address_prefix": "*",
+                    "destination_address_prefixes": null,
+                    "destination_application_security_group_ids": null,
+                    "destination_port_range": "8-174",
+                    "destination_port_ranges": null,
+                    "direction": "Inbound",
+                    "name": "example",
+                    "network_security_group_name": "example-nsg",
+                    "priority": 100,
+                    "protocol": "Tcp",
+                    "resource_group_name": "example-rg",
+                    "source_address_prefix": "0.0.0.0",
+                    "source_address_prefixes": null,
+                    "source_application_security_group_ids": null,
+                    "source_port_range": "*",
+                    "source_port_ranges": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_network_security_rule.negative4",
+            "mode": "managed",
+            "type": "azurerm_network_security_rule",
+            "name": "negative4",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access": "Allow",
+                    "description": null,
+                    "destination_address_prefix": "*",
+                    "destination_address_prefixes": null,
+                    "destination_application_security_group_ids": null,
+                    "destination_port_range": "23-196",
+                    "destination_port_ranges": null,
+                    "direction": "Inbound",
+                    "name": "example",
+                    "network_security_group_name": "example-nsg",
+                    "priority": 100,
+                    "protocol": "Tcp",
+                    "resource_group_name": "example-rg",
+                    "source_address_prefix": "0.0.0.0",
+                    "source_address_prefixes": null,
+                    "source_application_security_group_ids": null,
+                    "source_port_range": "*",
+                    "source_port_ranges": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_network_security_rule.negative5",
+            "mode": "managed",
+            "type": "azurerm_network_security_rule",
+            "name": "negative5",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access": "Allow",
+                    "description": null,
+                    "destination_address_prefix": "*",
+                    "destination_address_prefixes": null,
+                    "destination_application_security_group_ids": null,
+                    "destination_port_range": "23",
+                    "destination_port_ranges": null,
+                    "direction": "Inbound",
+                    "name": "example",
+                    "network_security_group_name": "example-nsg",
+                    "priority": 100,
+                    "protocol": "Tcp",
+                    "resource_group_name": "example-rg",
+                    "source_address_prefix": "/1",
+                    "source_address_prefixes": null,
+                    "source_application_security_group_ids": null,
+                    "source_port_range": "*",
+                    "source_port_ranges": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_network_security_rule.negative6",
+            "mode": "managed",
+            "type": "azurerm_network_security_rule",
+            "name": "negative6",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access": "Allow",
+                    "description": null,
+                    "destination_address_prefix": "*",
+                    "destination_address_prefixes": null,
+                    "destination_application_security_group_ids": null,
+                    "destination_port_range": "43",
+                    "destination_port_ranges": null,
+                    "direction": "Inbound",
+                    "name": "example",
+                    "network_security_group_name": "example-nsg",
+                    "priority": 100,
+                    "protocol": "*",
+                    "resource_group_name": "example-rg",
+                    "source_address_prefix": "/0",
+                    "source_address_prefixes": null,
+                    "source_application_security_group_ids": null,
+                    "source_port_range": "*",
+                    "source_port_ranges": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_network_security_rule.negative7",
+            "mode": "managed",
+            "type": "azurerm_network_security_rule",
+            "name": "negative7",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access": "Allow",
+                    "description": null,
+                    "destination_address_prefix": "*",
+                    "destination_address_prefixes": null,
+                    "destination_application_security_group_ids": null,
+                    "destination_port_range": "23",
+                    "destination_port_ranges": null,
+                    "direction": "Inbound",
+                    "name": "example",
+                    "network_security_group_name": "example-nsg",
+                    "priority": 100,
+                    "protocol": "Icmp",
+                    "resource_group_name": "example-rg",
+                    "source_address_prefix": "internet",
+                    "source_address_prefixes": null,
+                    "source_application_security_group_ids": null,
+                    "source_port_range": "*",
+                    "source_port_ranges": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_network_security_rule.negative8",
+            "mode": "managed",
+            "type": "azurerm_network_security_rule",
+            "name": "negative8",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access": "Allow",
+                    "description": null,
+                    "destination_address_prefix": "*",
+                    "destination_address_prefixes": null,
+                    "destination_application_security_group_ids": null,
+                    "destination_port_range": "22, 24,49-67",
+                    "destination_port_ranges": null,
+                    "direction": "Inbound",
+                    "name": "example",
+                    "network_security_group_name": "example-nsg",
+                    "priority": 100,
+                    "protocol": "*",
+                    "resource_group_name": "example-rg",
+                    "source_address_prefix": "any",
+                    "source_address_prefixes": null,
+                    "source_application_security_group_ids": null,
+                    "source_port_range": "*",
+                    "source_port_ranges": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_network_security_rule.negative9",
+            "mode": "managed",
+            "type": "azurerm_network_security_rule",
+            "name": "negative9",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "access": "Allow",
+                    "description": null,
+                    "destination_address_prefix": "*",
+                    "destination_address_prefixes": null,
+                    "destination_application_security_group_ids": null,
+                    "destination_port_range": "23",
+                    "destination_port_ranges": null,
+                    "direction": "Inbound",
+                    "name": "example",
+                    "network_security_group_name": "example-nsg",
+                    "priority": 100,
+                    "protocol": "Icmp",
+                    "resource_group_name": "example-rg",
+                    "source_address_prefix": "/0",
+                    "source_address_prefixes": null,
+                    "source_application_security_group_ids": null,
+                    "source_port_range": "*",
+                    "source_port_ranges": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.26.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_network_security_rule.negative1",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative1",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access": {
+                            "constant_value": "Deny"
+                        },
+                        "destination_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "destination_port_range": {
+                            "constant_value": "23"
+                        },
+                        "direction": {
+                            "constant_value": "Inbound"
+                        },
+                        "name": {
+                            "constant_value": "example"
+                        },
+                        "network_security_group_name": {
+                            "constant_value": "example-nsg"
+                        },
+                        "priority": {
+                            "constant_value": 100
+                        },
+                        "protocol": {
+                            "constant_value": "Tcp"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "example-rg"
+                        },
+                        "source_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "source_port_range": {
+                            "constant_value": "*"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative10",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative10",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access": {
+                            "constant_value": "Allow"
+                        },
+                        "destination_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "destination_port_range": {
+                            "constant_value": "23 ,  69"
+                        },
+                        "direction": {
+                            "constant_value": "Inbound"
+                        },
+                        "name": {
+                            "constant_value": "example"
+                        },
+                        "network_security_group_name": {
+                            "constant_value": "example-nsg"
+                        },
+                        "priority": {
+                            "constant_value": 100
+                        },
+                        "protocol": {
+                            "constant_value": "Tcp"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "example-rg"
+                        },
+                        "source_address_prefix": {
+                            "constant_value": "0.0.1.0"
+                        },
+                        "source_port_range": {
+                            "constant_value": "*"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative11",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative11",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access": {
+                            "constant_value": "Allow"
+                        },
+                        "destination_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "destination_port_range": {
+                            "constant_value": "2,310"
+                        },
+                        "direction": {
+                            "constant_value": "Inbound"
+                        },
+                        "name": {
+                            "constant_value": "example"
+                        },
+                        "network_security_group_name": {
+                            "constant_value": "example-nsg"
+                        },
+                        "priority": {
+                            "constant_value": 100
+                        },
+                        "protocol": {
+                            "constant_value": "Tcp"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "example-rg"
+                        },
+                        "source_address_prefix": {
+                            "constant_value": "0.0.0.0"
+                        },
+                        "source_port_range": {
+                            "constant_value": "*"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative2",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative2",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access": {
+                            "constant_value": "Allow"
+                        },
+                        "destination_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "destination_port_range": {
+                            "constant_value": "23-34"
+                        },
+                        "direction": {
+                            "constant_value": "Inbound"
+                        },
+                        "name": {
+                            "constant_value": "example"
+                        },
+                        "network_security_group_name": {
+                            "constant_value": "example-nsg"
+                        },
+                        "priority": {
+                            "constant_value": 100
+                        },
+                        "protocol": {
+                            "constant_value": "Icmp"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "example-rg"
+                        },
+                        "source_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "source_port_range": {
+                            "constant_value": "*"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative3",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative3",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access": {
+                            "constant_value": "Allow"
+                        },
+                        "destination_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "destination_port_range": {
+                            "constant_value": "8-174"
+                        },
+                        "direction": {
+                            "constant_value": "Inbound"
+                        },
+                        "name": {
+                            "constant_value": "example"
+                        },
+                        "network_security_group_name": {
+                            "constant_value": "example-nsg"
+                        },
+                        "priority": {
+                            "constant_value": 100
+                        },
+                        "protocol": {
+                            "constant_value": "Tcp"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "example-rg"
+                        },
+                        "source_address_prefix": {
+                            "constant_value": "0.0.0.0"
+                        },
+                        "source_port_range": {
+                            "constant_value": "*"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative4",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative4",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access": {
+                            "constant_value": "Allow"
+                        },
+                        "destination_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "destination_port_range": {
+                            "constant_value": "23-196"
+                        },
+                        "direction": {
+                            "constant_value": "Inbound"
+                        },
+                        "name": {
+                            "constant_value": "example"
+                        },
+                        "network_security_group_name": {
+                            "constant_value": "example-nsg"
+                        },
+                        "priority": {
+                            "constant_value": 100
+                        },
+                        "protocol": {
+                            "constant_value": "Tcp"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "example-rg"
+                        },
+                        "source_address_prefix": {
+                            "constant_value": "0.0.0.0"
+                        },
+                        "source_port_range": {
+                            "constant_value": "*"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative5",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative5",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access": {
+                            "constant_value": "Allow"
+                        },
+                        "destination_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "destination_port_range": {
+                            "constant_value": "23"
+                        },
+                        "direction": {
+                            "constant_value": "Inbound"
+                        },
+                        "name": {
+                            "constant_value": "example"
+                        },
+                        "network_security_group_name": {
+                            "constant_value": "example-nsg"
+                        },
+                        "priority": {
+                            "constant_value": 100
+                        },
+                        "protocol": {
+                            "constant_value": "Tcp"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "example-rg"
+                        },
+                        "source_address_prefix": {
+                            "constant_value": "/1"
+                        },
+                        "source_port_range": {
+                            "constant_value": "*"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative6",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative6",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access": {
+                            "constant_value": "Allow"
+                        },
+                        "destination_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "destination_port_range": {
+                            "constant_value": "43"
+                        },
+                        "direction": {
+                            "constant_value": "Inbound"
+                        },
+                        "name": {
+                            "constant_value": "example"
+                        },
+                        "network_security_group_name": {
+                            "constant_value": "example-nsg"
+                        },
+                        "priority": {
+                            "constant_value": 100
+                        },
+                        "protocol": {
+                            "constant_value": "*"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "example-rg"
+                        },
+                        "source_address_prefix": {
+                            "constant_value": "/0"
+                        },
+                        "source_port_range": {
+                            "constant_value": "*"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative7",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative7",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access": {
+                            "constant_value": "Allow"
+                        },
+                        "destination_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "destination_port_range": {
+                            "constant_value": "23"
+                        },
+                        "direction": {
+                            "constant_value": "Inbound"
+                        },
+                        "name": {
+                            "constant_value": "example"
+                        },
+                        "network_security_group_name": {
+                            "constant_value": "example-nsg"
+                        },
+                        "priority": {
+                            "constant_value": 100
+                        },
+                        "protocol": {
+                            "constant_value": "Icmp"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "example-rg"
+                        },
+                        "source_address_prefix": {
+                            "constant_value": "internet"
+                        },
+                        "source_port_range": {
+                            "constant_value": "*"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative8",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative8",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access": {
+                            "constant_value": "Allow"
+                        },
+                        "destination_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "destination_port_range": {
+                            "constant_value": "22, 24,49-67"
+                        },
+                        "direction": {
+                            "constant_value": "Inbound"
+                        },
+                        "name": {
+                            "constant_value": "example"
+                        },
+                        "network_security_group_name": {
+                            "constant_value": "example-nsg"
+                        },
+                        "priority": {
+                            "constant_value": 100
+                        },
+                        "protocol": {
+                            "constant_value": "*"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "example-rg"
+                        },
+                        "source_address_prefix": {
+                            "constant_value": "any"
+                        },
+                        "source_port_range": {
+                            "constant_value": "*"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_network_security_rule.negative9",
+                    "mode": "managed",
+                    "type": "azurerm_network_security_rule",
+                    "name": "negative9",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "access": {
+                            "constant_value": "Allow"
+                        },
+                        "destination_address_prefix": {
+                            "constant_value": "*"
+                        },
+                        "destination_port_range": {
+                            "constant_value": "23"
+                        },
+                        "direction": {
+                            "constant_value": "Inbound"
+                        },
+                        "name": {
+                            "constant_value": "example"
+                        },
+                        "network_security_group_name": {
+                            "constant_value": "example-nsg"
+                        },
+                        "priority": {
+                            "constant_value": 100
+                        },
+                        "protocol": {
+                            "constant_value": "Icmp"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "example-rg"
+                        },
+                        "source_address_prefix": {
+                            "constant_value": "/0"
+                        },
+                        "source_port_range": {
+                            "constant_value": "*"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-04-22T16:27:47Z",
+    "errored": false
+}

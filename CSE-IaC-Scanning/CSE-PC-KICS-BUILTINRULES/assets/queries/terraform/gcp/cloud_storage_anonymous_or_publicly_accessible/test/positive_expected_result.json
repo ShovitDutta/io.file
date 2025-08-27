@@ -1,0 +1,20 @@
+[
+  {
+    "queryName": "Cloud Storage Anonymous or Publicly Accessible",
+    "severity": "CRITICAL",
+    "line": 17,
+    "filename": "positive.json"
+  },
+  {
+    "queryName": "Cloud Storage Anonymous or Publicly Accessible",
+    "severity": "CRITICAL",
+    "line": 17,
+    "filename": "positive1.json"
+  },
+  {
+    "queryName": "Cloud Storage Anonymous or Publicly Accessible",
+    "severity": "CRITICAL",
+    "line": 17,
+    "filename": "positive2.json"
+  }
+]

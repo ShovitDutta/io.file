@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "bot service is missing tags",
+      "severity": "LOW",
+      "line": 15,
+      "fileName": "positive.json"
+    }
+]

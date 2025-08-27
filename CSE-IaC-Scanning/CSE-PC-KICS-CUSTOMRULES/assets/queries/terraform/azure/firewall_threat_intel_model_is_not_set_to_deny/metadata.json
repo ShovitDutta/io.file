@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-FIREWALL-13437",
+    "queryName": "firewall threat intel model is not set to deny",
+    "severity": "HIGH",
+    "category": "Network Security",
+    "descriptionText": "Enable threat Intelligence to Alert and Deny",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/firewall#threat_intel_mode",
+    "platform": "Terraform",
+    "descriptionID": "1.34.3.7",
+    "cloudProvider": "azure"
+  }

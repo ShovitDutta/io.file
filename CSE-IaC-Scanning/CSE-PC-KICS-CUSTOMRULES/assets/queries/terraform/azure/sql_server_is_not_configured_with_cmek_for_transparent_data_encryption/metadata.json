@@ -1,0 +1,12 @@
+{
+    "id": "CSE-PC-AZURE-SQLSERVER-11621",
+    "queryName": "sql server is not configured with cmek for transparent data encryption",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "In Azure Portal - Azure SQL Server - Security - Data Encryption - set On -Enabled CMK ",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mssql_server_transparent_data_encryption",
+    "platform": "Terraform",
+    "descriptionID": "1.16.2.1",
+    "cloudProvider": "azure",
+    "cwe": ""
+}

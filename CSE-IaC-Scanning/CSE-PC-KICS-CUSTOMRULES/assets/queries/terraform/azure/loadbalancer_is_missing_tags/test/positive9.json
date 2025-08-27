@@ -1,0 +1,260 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_lb.cvs-loadbalancer",
+                    "mode": "managed",
+                    "type": "azurerm_lb",
+                    "name": "cvs-loadbalancer",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "edge_zone": null,
+                        "frontend_ip_configuration": [
+                            {
+                                "name": "cvs-loadbalancer-frontend-ip",
+                                "private_ip_address": "172.19.126.24",
+                                "private_ip_address_allocation": "Dynamic",
+                                "private_ip_address_version": "IPv4",
+                                "zones": null
+                            }
+                        ],
+                        "location": "eastus2",
+                        "name": "cvs-loadbalancer",
+                        "resource_group_name": "security-poc-yogeshd-rg",
+                        "sku": "Standard",
+                        "sku_tier": "Regional",
+                        "tags": {
+                            "costcenter": "02045",
+                            "dataclassification": "confidential",
+                            "environmenttype": "dev",
+                            "itpmid": "12345"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "frontend_ip_configuration": [
+                            {
+                                "inbound_nat_rules": [],
+                                "load_balancer_rules": [],
+                                "outbound_rules": []
+                            }
+                        ],
+                        "private_ip_addresses": [],
+                        "tags": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_lb.cvs-loadbalancer",
+            "mode": "managed",
+            "type": "azurerm_lb",
+            "name": "cvs-loadbalancer",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "edge_zone": null,
+                    "frontend_ip_configuration": [
+                        {
+                            "name": "cvs-loadbalancer-frontend-ip",
+                            "private_ip_address": "172.19.126.24",
+                            "private_ip_address_allocation": "Dynamic",
+                            "private_ip_address_version": "IPv4",
+                            "zones": null
+                        }
+                    ],
+                    "location": "eastus2",
+                    "name": "cvs-loadbalancer",
+                    "resource_group_name": "security-poc-yogeshd-rg",
+                    "sku": "Standard",
+                    "sku_tier": "Regional",
+                    "tags": {
+                        "costcenter": "02045",
+                        "dataclassification": "confidential",
+                        "environmenttype": "dev",
+                        "itpmid": "12345",
+                        "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "frontend_ip_configuration": [
+                        {
+                            "gateway_load_balancer_frontend_ip_configuration_id": true,
+                            "id": true,
+                            "inbound_nat_rules": true,
+                            "load_balancer_rules": true,
+                            "outbound_rules": true,
+                            "public_ip_address_id": true,
+                            "public_ip_prefix_id": true,
+                            "subnet_id": true
+                        }
+                    ],
+                    "id": true,
+                    "private_ip_address": true,
+                    "private_ip_addresses": true,
+                    "tags": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "frontend_ip_configuration": [
+                        {
+                            "inbound_nat_rules": [],
+                            "load_balancer_rules": [],
+                            "outbound_rules": []
+                        }
+                    ],
+                    "private_ip_addresses": [],
+                    "tags": {}
+                }
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.azurerm_resource_group.resource_group",
+                        "mode": "data",
+                        "type": "azurerm_resource_group",
+                        "name": "resource_group",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg",
+                            "location": "eastus2",
+                            "managed_by": "",
+                            "name": "security-poc-yogeshd-rg",
+                            "tags": {
+                                "createdondate": "2024-06-26",
+                                "dataclassification": "restrictedD",
+                                "environmentsubtype": "POC",
+                                "environmenttype": "NonProd"
+                            },
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.20.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_lb.cvs-loadbalancer",
+                    "mode": "managed",
+                    "type": "azurerm_lb",
+                    "name": "cvs-loadbalancer",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "frontend_ip_configuration": [
+                            {
+                                "name": {
+                                    "constant_value": "cvs-loadbalancer-frontend-ip"
+                                },
+                                "private_ip_address": {
+                                    "constant_value": "172.19.126.24"
+                                },
+                                "private_ip_address_allocation": {
+                                    "constant_value": "Dynamic"
+                                },
+                                "private_ip_address_version": {
+                                    "constant_value": "IPv4"
+                                }
+                            }
+                        ],
+                        "location": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.location",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "cvs-loadbalancer"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.name",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "sku": {
+                            "constant_value": "Standard"
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "costcenter": "02045",
+                                "dataclassification": "confidential",
+                                "environmenttype": "dev",
+                                "itpmid": "12345",
+                                "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                            }
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_resource_group.resource_group",
+                    "mode": "data",
+                    "type": "azurerm_resource_group",
+                    "name": "resource_group",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "location"
+            ]
+        },
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "name"
+            ]
+        }
+    ],
+    "timestamp": "2025-03-21T17:46:23Z",
+    "errored": false
+}

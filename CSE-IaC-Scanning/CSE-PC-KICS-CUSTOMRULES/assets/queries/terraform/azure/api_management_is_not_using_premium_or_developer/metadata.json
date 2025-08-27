@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-APIMANAGEMENT-1552",
+  "queryName": "api management is not using premium or developer",
+  "severity": "HIGH",
+  "category": "Governance",
+  "descriptionText": "Only Developer and Premium tier version stv2.1 are allowed",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/api_management#sku_name",
+  "platform": "Terraform",
+  "descriptionID": "1.5.5.2",
+  "cloudProvider": "azure"
+}

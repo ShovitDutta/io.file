@@ -1,0 +1,355 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "location": "westeurope",
+                        "managed_by": null,
+                        "name": "trafficmanagerProfile",
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_traffic_manager_profile.example",
+                    "mode": "managed",
+                    "type": "azurerm_traffic_manager_profile",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "dns_config": [
+                            {
+                                "ttl": 100
+                            }
+                        ],
+                        "max_return": null,
+                        "monitor_config": [
+                            {
+                                "custom_header": [],
+                                "expected_status_code_ranges": null,
+                                "interval_in_seconds": 30,
+                                "path": "/",
+                                "port": 443,
+                                "protocol": "HTTPS",
+                                "timeout_in_seconds": 9,
+                                "tolerated_number_of_failures": 3
+                            }
+                        ],
+                        "resource_group_name": "trafficmanagerProfile",
+                        "tags": {
+                            "environment": "Non-Prod"
+                        },
+                        "timeouts": null,
+                        "traffic_routing_method": "Weighted",
+                        "traffic_view_enabled": null
+                    },
+                    "sensitive_values": {
+                        "dns_config": [
+                            {}
+                        ],
+                        "monitor_config": [
+                            {
+                                "custom_header": []
+                            }
+                        ],
+                        "tags": {}
+                    }
+                },
+                {
+                    "address": "random_id.server",
+                    "mode": "managed",
+                    "type": "random_id",
+                    "name": "server",
+                    "provider_name": "registry.terraform.io/hashicorp/random",
+                    "schema_version": 0,
+                    "values": {
+                        "byte_length": 8,
+                        "keepers": {
+                            "azi_id": "1"
+                        },
+                        "prefix": null
+                    },
+                    "sensitive_values": {
+                        "keepers": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_resource_group.example",
+            "mode": "managed",
+            "type": "azurerm_resource_group",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "location": "westeurope",
+                    "managed_by": null,
+                    "name": "trafficmanagerProfile",
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_traffic_manager_profile.example",
+            "mode": "managed",
+            "type": "azurerm_traffic_manager_profile",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "dns_config": [
+                        {
+                            "ttl": 100
+                        }
+                    ],
+                    "max_return": null,
+                    "monitor_config": [
+                        {
+                            "custom_header": [],
+                            "expected_status_code_ranges": null,
+                            "interval_in_seconds": 30,
+                            "path": "/",
+                            "port": 443,
+                            "protocol": "HTTPS",
+                            "timeout_in_seconds": 9,
+                            "tolerated_number_of_failures": 3
+                        }
+                    ],
+                    "resource_group_name": "trafficmanagerProfile",
+                    "tags": {
+                        "environment": "Non-Prod"
+                    },
+                    "timeouts": null,
+                    "traffic_routing_method": "Weighted",
+                    "traffic_view_enabled": null
+                },
+                "after_unknown": {
+                    "dns_config": [
+                        {
+                            "relative_name": true
+                        }
+                    ],
+                    "fqdn": true,
+                    "id": true,
+                    "monitor_config": [
+                        {
+                            "custom_header": []
+                        }
+                    ],
+                    "name": true,
+                    "profile_status": true,
+                    "tags": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "dns_config": [
+                        {}
+                    ],
+                    "monitor_config": [
+                        {
+                            "custom_header": []
+                        }
+                    ],
+                    "tags": {}
+                }
+            }
+        },
+        {
+            "address": "random_id.server",
+            "mode": "managed",
+            "type": "random_id",
+            "name": "server",
+            "provider_name": "registry.terraform.io/hashicorp/random",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "byte_length": 8,
+                    "keepers": {
+                        "azi_id": "1"
+                    },
+                    "prefix": null
+                },
+                "after_unknown": {
+                    "b64_std": true,
+                    "b64_url": true,
+                    "dec": true,
+                    "hex": true,
+                    "id": true,
+                    "keepers": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "keepers": {}
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "3.117.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ]
+                }
+            },
+            "random": {
+                "name": "random",
+                "full_name": "registry.terraform.io/hashicorp/random"
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "location": {
+                            "constant_value": "West Europe"
+                        },
+                        "name": {
+                            "constant_value": "trafficmanagerProfile"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_traffic_manager_profile.example",
+                    "mode": "managed",
+                    "type": "azurerm_traffic_manager_profile",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "dns_config": [
+                            {
+                                "relative_name": {
+                                    "references": [
+                                        "random_id.server.hex",
+                                        "random_id.server"
+                                    ]
+                                },
+                                "ttl": {
+                                    "constant_value": 100
+                                }
+                            }
+                        ],
+                        "monitor_config": [
+                            {
+                                "interval_in_seconds": {
+                                    "constant_value": 30
+                                },
+                                "path": {
+                                    "constant_value": "/"
+                                },
+                                "port": {
+                                    "constant_value": 443
+                                },
+                                "protocol": {
+                                    "constant_value": "HTTPS"
+                                },
+                                "timeout_in_seconds": {
+                                    "constant_value": 9
+                                },
+                                "tolerated_number_of_failures": {
+                                    "constant_value": 3
+                                }
+                            }
+                        ],
+                        "name": {
+                            "references": [
+                                "random_id.server.hex",
+                                "random_id.server"
+                            ]
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.example.name",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "environment": "Non-Prod"
+                            }
+                        },
+                        "traffic_routing_method": {
+                            "constant_value": "Weighted"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "random_id.server",
+                    "mode": "managed",
+                    "type": "random_id",
+                    "name": "server",
+                    "provider_config_key": "random",
+                    "expressions": {
+                        "byte_length": {
+                            "constant_value": 8
+                        },
+                        "keepers": {
+                            "constant_value": {
+                                "azi_id": 1
+                            }
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "azurerm_resource_group.example",
+            "attribute": [
+                "name"
+            ]
+        },
+        {
+            "resource": "random_id.server",
+            "attribute": [
+                "hex"
+            ]
+        }
+    ],
+    "timestamp": "2025-02-13T14:59:55Z",
+    "errored": false
+}

@@ -1,0 +1,301 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.10.4",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_cloud_run_v2_service.default",
+          "mode": "managed",
+          "type": "google_cloud_run_v2_service",
+          "name": "default",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "annotations": null,
+            "binary_authorization": [],
+            "client": null,
+            "client_version": null,
+            "custom_audiences": null,
+            "deletion_protection": true,
+            "description": null,
+            "effective_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "ingress": "INGRESS_TRAFFIC_ALL",
+            "invoker_iam_disabled": null,
+            "labels": null,
+            "location": "us-central1",
+            "name": "cloudrun-service",
+            "project": "security-controls-sandbox",
+            "scaling": [],
+            "template": [
+              {
+                "annotations": null,
+                "containers": [
+                  {
+                    "args": null,
+                    "command": null,
+                    "depends_on": null,
+                    "env": [],
+                    "image": "us-docker.pkg.dev/cloudrun/container/hello",
+                    "liveness_probe": [],
+                    "name": null,
+                    "volume_mounts": [],
+                    "working_dir": null
+                  }
+                ],
+                "encryption_key": "projects/cvs-key-vault-lab/locations/us-east4/keyRings/gkr-sandbox-us-east4/cryptoKeys/gk-security-controls-sandbox-us-east4",
+                "execution_environment": null,
+                "labels": null,
+                "revision": null,
+                "service_account": "dev-cvs@security-controls-sandbox.iam.gserviceaccount.com",
+                "session_affinity": null,
+                "volumes": [],
+                "vpc_access": []
+              }
+            ],
+            "terraform_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "timeouts": null
+          },
+          "sensitive_values": {
+            "binary_authorization": [],
+            "conditions": [],
+            "effective_annotations": {},
+            "effective_labels": {},
+            "scaling": [],
+            "template": [
+              {
+                "containers": [
+                  {
+                    "env": [],
+                    "liveness_probe": [],
+                    "ports": [],
+                    "resources": [],
+                    "startup_probe": [],
+                    "volume_mounts": []
+                  }
+                ],
+                "scaling": [],
+                "volumes": [],
+                "vpc_access": []
+              }
+            ],
+            "terminal_condition": [],
+            "terraform_labels": {},
+            "traffic": [],
+            "traffic_statuses": [],
+            "urls": []
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "google_cloud_run_v2_service.default",
+      "mode": "managed",
+      "type": "google_cloud_run_v2_service",
+      "name": "default",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "annotations": null,
+          "binary_authorization": [],
+          "client": null,
+          "client_version": null,
+          "custom_audiences": null,
+          "deletion_protection": true,
+          "description": null,
+          "effective_labels": {
+            "goog-terraform-provisioned": "true"
+          },
+          "ingress": "INGRESS_TRAFFIC_ALL",
+          "invoker_iam_disabled": null,
+          "labels": null,
+          "location": "us-central1",
+          "name": "cloudrun-service",
+          "project": "security-controls-sandbox",
+          "scaling": [],
+          "template": [
+            {
+              "annotations": null,
+              "containers": [
+                {
+                  "args": null,
+                  "command": null,
+                  "depends_on": null,
+                  "env": [],
+                  "image": "us-docker.pkg.dev/cloudrun/container/hello",
+                  "liveness_probe": [],
+                  "name": null,
+                  "volume_mounts": [],
+                  "working_dir": null
+                }
+              ],
+              "encryption_key": "projects/cvs-key-vault-prod/locations/us-east4/keyRings/gkr-sandbox-us-east4/cryptoKeys/gk-security-controls-sandbox-dummy-us-east4",
+              "execution_environment": null,
+              "labels": null,
+              "revision": null,
+              "service_account": "dev-cvs@security-controls-sandbox.iam.gserviceaccount.com",
+              "session_affinity": null,
+              "volumes": [],
+              "vpc_access": []
+            }
+          ],
+          "terraform_labels": {
+            "goog-terraform-provisioned": "true"
+          },
+          "timeouts": null
+        },
+        "after_unknown": {
+          "binary_authorization": [],
+          "conditions": true,
+          "create_time": true,
+          "creator": true,
+          "delete_time": true,
+          "effective_annotations": true,
+          "effective_labels": {},
+          "etag": true,
+          "expire_time": true,
+          "generation": true,
+          "id": true,
+          "last_modifier": true,
+          "latest_created_revision": true,
+          "latest_ready_revision": true,
+          "launch_stage": true,
+          "observed_generation": true,
+          "reconciling": true,
+          "scaling": [],
+          "template": [
+            {
+              "containers": [
+                {
+                  "env": [],
+                  "liveness_probe": [],
+                  "ports": true,
+                  "resources": true,
+                  "startup_probe": true,
+                  "volume_mounts": []
+                }
+              ],
+              "max_instance_request_concurrency": true,
+              "scaling": true,
+              "timeout": true,
+              "volumes": [],
+              "vpc_access": []
+            }
+          ],
+          "terminal_condition": true,
+          "terraform_labels": {},
+          "traffic": true,
+          "traffic_statuses": true,
+          "uid": true,
+          "update_time": true,
+          "uri": true,
+          "urls": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "binary_authorization": [],
+          "conditions": [],
+          "effective_annotations": {},
+          "effective_labels": {},
+          "scaling": [],
+          "template": [
+            {
+              "containers": [
+                {
+                  "env": [],
+                  "liveness_probe": [],
+                  "ports": [],
+                  "resources": [],
+                  "startup_probe": [],
+                  "volume_mounts": []
+                }
+              ],
+              "scaling": [],
+              "volumes": [],
+              "vpc_access": []
+            }
+          ],
+          "terminal_condition": [],
+          "terraform_labels": {},
+          "traffic": [],
+          "traffic_statuses": [],
+          "urls": []
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google",
+        "version_constraint": "6.15.0",
+        "expressions": {
+          "project": {
+            "constant_value": "security-controls-sandbox"
+          },
+          "region": {
+            "constant_value": "us-central1"
+          },
+          "zone": {
+            "constant_value": "us-central1-c"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_cloud_run_v2_service.default",
+          "mode": "managed",
+          "type": "google_cloud_run_v2_service",
+          "name": "default",
+          "provider_config_key": "google",
+          "expressions": {
+            "ingress": {
+              "constant_value": "INGRESS_TRAFFIC_ALL"
+            },
+            "location": {
+              "constant_value": "us-central1"
+            },
+            "name": {
+              "constant_value": "cloudrun-service"
+            },
+            "template": [
+              {
+                "containers": [
+                  {
+                    "image": {
+                      "constant_value": "us-docker.pkg.dev/cloudrun/container/hello"
+                    }
+                  }
+                ],
+                "encryption_key": {
+                  "constant_value": "projects/cvs-key-vault-prod/locations/us-east4/keyRings/gkr-sandbox-us-east4/cryptoKeys/gk-security-controls-sandbox-dummy-us-east4"
+                },
+                "service_account": {
+                  "constant_value": "dev-cvs@security-controls-sandbox.iam.gserviceaccount.com"
+                }
+              }
+            ]
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  },
+  "timestamp": "2025-01-13T20:30:29Z",
+  "applyable": true,
+  "complete": true,
+  "errored": false
+}

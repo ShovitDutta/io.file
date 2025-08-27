@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-KEYVAULT-1424",
+    "queryName": "key vault soft delete retention days is not within the limit",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Ensure Days to retain deleted vaults",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault#soft_delete_retention_days",
+    "platform": "Terraform",
+    "descriptionID": "1.4.2.4",
+    "cloudProvider": "azure"
+}

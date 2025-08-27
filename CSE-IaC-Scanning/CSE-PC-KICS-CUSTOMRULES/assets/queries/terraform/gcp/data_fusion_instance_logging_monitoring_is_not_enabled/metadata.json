@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-DATAFUSION-23841",
+    "queryName": "data fusion instance logging and monitoring is not enabled",
+    "severity": "MEDIUM",
+    "category": "Logging and monitoring",
+    "descriptionText": "Pipeline logging and monitoring must be enabled upon creation",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/data_fusion_instance#enable_stackdriver_logging-1",
+    "platform": "Terraform",
+    "descriptionID": "2.38.4.1",
+    "cloudProvider": "gcp"
+}

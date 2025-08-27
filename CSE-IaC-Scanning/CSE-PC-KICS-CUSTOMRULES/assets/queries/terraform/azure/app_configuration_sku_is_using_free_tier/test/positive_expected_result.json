@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "app configuration sku is using free tier",
+      "severity": "MEDIUM",
+      "line": 29,
+      "fileName": "positive1.json"
+    }
+]
