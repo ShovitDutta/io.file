@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-GCP-GKE-21445",
+  "queryName": "integrity monitoring is disabled for shielded worker nodes",
+  "severity": "MEDIUM",
+  "category": "Cluster and Node Governance",
+  "descriptionText": "Integrity Monitoring must be enabled for Shielded worker nodes for standard clusters",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster#enable_integrity_monitoring-1",
+  "platform": "Terraform",
+  "descriptionID": "2.14.4.5",
+  "cloudProvider": "gcp"
+}

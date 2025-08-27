@@ -1,0 +1,15 @@
+[
+    {
+      "queryName": "Azure Data Factory Resource is missing tags - itpmid",
+      "severity": "LOW",
+      "line": 26,
+      "fileName": "positive1.json"
+    },
+    {
+      "queryName": "Azure Data Factory Resource is missing tags - itpmid",
+      "severity": "LOW",
+      "line": 27,
+      "fileName": "positive2.json"
+    }
+
+]

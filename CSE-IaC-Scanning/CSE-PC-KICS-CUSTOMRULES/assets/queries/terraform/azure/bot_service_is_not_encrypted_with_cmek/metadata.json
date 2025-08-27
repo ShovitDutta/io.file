@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-BOTSERVICE-14623",
+  "queryName": "bot service is not encrypted with cmek",
+  "severity": "HIGH",
+  "category": "Data Protection",
+  "descriptionText": "Encryption at-rest: Use customer managed keys to comply with CVS encryption standards",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/bot_service_azure_bot#cmk_key_vault_key_url",
+  "platform": "Terraform",
+  "descriptionID": "1.46.2.3",
+  "cloudProvider": "azure"
+}

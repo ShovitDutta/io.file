@@ -1,0 +1,8 @@
+[
+   {
+    "queryName": "redis cache is not configured with tls 1_2",
+    "severity": "HIGH",
+    "line": 27,
+    "filename": "positive.json"
+   }
+]

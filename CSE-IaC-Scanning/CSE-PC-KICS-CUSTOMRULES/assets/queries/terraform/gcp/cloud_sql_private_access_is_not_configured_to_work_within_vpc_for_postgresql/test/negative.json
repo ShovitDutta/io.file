@@ -1,0 +1,2269 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.9.8",
+  "planned_values": {
+    "root_module": {
+          "child_modules": [
+            {
+              "resources": [
+                {
+                  "address": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-region-validation-database-instance.terraform_data.region_validation",
+                  "mode": "managed",
+                  "type": "terraform_data",
+                  "name": "region_validation",
+                  "provider_name": "terraform.io/builtin/terraform",
+                  "schema_version": 0,
+                  "values": {
+                    "input": "us-east4",
+                    "triggers_replace": null
+                  },
+                  "sensitive_values": {}
+                }
+              ],
+              "address": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-region-validation-database-instance"
+            },
+            {
+              "resources": [
+                {
+                  "address": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-cmek-validation-database-instance.terraform_data.cvs_key_vault_cmek",
+                  "mode": "managed",
+                  "type": "terraform_data",
+                  "name": "cvs_key_vault_cmek",
+                  "provider_name": "terraform.io/builtin/terraform",
+                  "schema_version": 0,
+                  "values": {
+                    "input": null,
+                    "output": null,
+                    "triggers_replace": {
+                      "cvs_key_vault_cmek_string": "projects/cvs-key-vault-nonprod/locations/us-east4/keyRings/gkr-nonprod-us-east4/cryptoKeys/gk-hcb-nonprod-sde-dbaas-us-east4"
+                    }
+                  },
+                  "sensitive_values": {
+                    "triggers_replace": {}
+                  }
+                }
+              ],
+              "address": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-cmek-validation-database-instance"
+            },
+            {
+              "resources": [
+                {
+                  "address": "module.self-gcp-sql-instance-database-user-12182500387.module.core-sql-database-instance.google_sql_database_instance.sql_database_instance",
+                  "mode": "managed",
+                  "type": "google_sql_database_instance",
+                  "name": "sql_database_instance",
+                  "provider_name": "registry.terraform.io/hashicorp/google",
+                  "schema_version": 0,
+                  "values": {
+                    "clone": [],
+                    "database_version": "POSTGRES_16",
+                    "deletion_protection": true,
+                    "encryption_key_name": "projects/cvs-key-vault-nonprod/locations/us-east4/keyRings/gkr-nonprod-us-east4/cryptoKeys/gk-hcb-nonprod-sde-dbaas-us-east4",
+                    "name": "dpegpgsd1",
+                    "project": "hcb-nonprod-sde-dbaas",
+                    "region": "us-east4",
+                    "restore_backup_context": [],
+                    "root_password": null,
+                    "settings": [
+                      {
+                        "activation_policy": "ALWAYS",
+                        "active_directory_config": [],
+                        "advanced_machine_features": [],
+                        "availability_type": "ZONAL",
+                        "backup_configuration": [
+                          {
+                            "backup_retention_settings": [
+                              {
+                                "retained_backups": 7,
+                                "retention_unit": "COUNT"
+                              }
+                            ],
+                            "binary_log_enabled": false,
+                            "enabled": true,
+                            "location": "us",
+                            "point_in_time_recovery_enabled": true,
+                            "start_time": "04:00",
+                            "transaction_log_retention_days": 7
+                          }
+                        ],
+                        "collation": null,
+                        "data_cache_config": [],
+                        "database_flags": [
+                          {
+                            "name": "cloudsql.enable_pgaudit",
+                            "value": "on"
+                          },
+                          {
+                            "name": "cloudsql.iam_authentication",
+                            "value": "on"
+                          },
+                          {
+                            "name": "local_infile",
+                            "value": "on"
+                          },
+                          {
+                            "name": "log_checkpoints",
+                            "value": "on"
+                          },
+                          {
+                            "name": "log_connections",
+                            "value": "on"
+                          },
+                          {
+                            "name": "log_disconnections",
+                            "value": "on"
+                          },
+                          {
+                            "name": "log_error_verbosity",
+                            "value": "default"
+                          },
+                          {
+                            "name": "log_hostname",
+                            "value": "on"
+                          },
+                          {
+                            "name": "log_lock_waits",
+                            "value": "on"
+                          },
+                          {
+                            "name": "log_min_duration_statement",
+                            "value": "-1"
+                          },
+                          {
+                            "name": "log_min_error_statement",
+                            "value": "error"
+                          },
+                          {
+                            "name": "log_min_messages",
+                            "value": "warning"
+                          },
+                          {
+                            "name": "log_statement",
+                            "value": "all"
+                          },
+                          {
+                            "name": "log_temp_files",
+                            "value": "1"
+                          },
+                          {
+                            "name": "pgaudit.log",
+                            "value": "all"
+                          }
+                        ],
+                        "deletion_protection_enabled": true,
+                        "deny_maintenance_period": [],
+                        "disk_autoresize": true,
+                        "disk_autoresize_limit": 0,
+                        "disk_size": 20,
+                        "disk_type": "PD_SSD",
+                        "edition": "ENTERPRISE",
+                        "enable_dataplex_integration": null,
+                        "enable_google_ml_integration": null,
+                        "insights_config": [
+                          {
+                            "query_insights_enabled": true,
+                            "query_plans_per_minute": 5,
+                            "query_string_length": 1024,
+                            "record_application_tags": true,
+                            "record_client_address": true
+                          }
+                        ],
+                        "ip_configuration": [
+                          {
+                            "allocated_ip_range": null,
+                            "authorized_networks": [],
+                            "enable_private_path_for_google_cloud_services": true,
+                            "ipv4_enabled": false,
+                            "private_network": "projects/insurance-vpc/global/networks/vpc-aa-hub-nonprod-1",
+                            "psc_config": [],
+                            "require_ssl": true,
+                            "ssl_mode": "TRUSTED_CLIENT_CERTIFICATE_REQUIRED"
+                          }
+                        ],
+                        "maintenance_window": [
+                          {
+                            "day": 6,
+                            "hour": 7,
+                            "update_track": "stable"
+                          }
+                        ],
+                        "password_validation_policy": [],
+                        "pricing_plan": "PER_USE",
+                        "sql_server_audit_config": [],
+                        "tier": "db-custom-4-15360",
+                        "time_zone": null,
+                        "user_labels": {
+                          "costcenter": "costcenter",
+                          "cvsappid": "dpe",
+                          "environmentsubtype": "dev",
+                          "environmenttype": "nonprod",
+                          "itpmid": "itpmid",
+                          "sharedemailaddress": "davisc4ataetna_com"
+                        }
+                      }
+                    ],
+                    "timeouts": null
+                  },
+                  "sensitive_values": {
+                    "available_maintenance_versions": [],
+                    "clone": [],
+                    "ip_address": [],
+                    "replica_configuration": [],
+                    "restore_backup_context": [],
+                    "root_password": true,
+                    "server_ca_cert": true,
+                    "settings": [
+                      {
+                        "active_directory_config": [],
+                        "advanced_machine_features": [],
+                        "backup_configuration": [
+                          {
+                            "backup_retention_settings": [
+                              {}
+                            ]
+                          }
+                        ],
+                        "data_cache_config": [],
+                        "database_flags": [
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {},
+                          {}
+                        ],
+                        "deny_maintenance_period": [],
+                        "insights_config": [
+                          {}
+                        ],
+                        "ip_configuration": [
+                          {
+                            "authorized_networks": [],
+                            "psc_config": []
+                          }
+                        ],
+                        "location_preference": [],
+                        "maintenance_window": [
+                          {}
+                        ],
+                        "password_validation_policy": [],
+                        "sql_server_audit_config": [],
+                        "user_labels": {}
+                      }
+                    ]
+                  }
+                }
+              ],
+              "address": "module.self-gcp-sql-instance-database-user-12182500387.module.core-sql-database-instance"
+            },
+            {
+              "resources": [
+                {
+                  "address": "module.self-gcp-sql-instance-database-user-12182500387.module.core-sql-database[\"dpe_db\"].google_sql_database.sql_database",
+                  "mode": "managed",
+                  "type": "google_sql_database",
+                  "name": "sql_database",
+                  "provider_name": "registry.terraform.io/hashicorp/google",
+                  "schema_version": 0,
+                  "values": {
+                    "charset": "UTF8",
+                    "collation": "en_US.UTF8",
+                    "deletion_policy": "DELETE",
+                    "instance": "dpegpgsd1",
+                    "name": "dpe_db",
+                    "project": "hcb-nonprod-sde-dbaas",
+                    "timeouts": null
+                  },
+                  "sensitive_values": {}
+                }
+              ],
+              "address": "module.self-gcp-sql-instance-database-user-12182500387.module.core-sql-database[\"dpe_db\"]"
+            }
+          ]
+    }
+  },
+  "relevant_attributes": [],
+  "resource_changes": [],
+  "configuration": {
+    "provider_config": {
+      "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-cmek-validation-database-instance:terraform": {
+        "name": "terraform",
+        "full_name": "terraform.io/builtin/terraform",
+        "module_address": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-cmek-validation-database-instance"
+      },
+      "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-region-validation-database-instance:terraform": {
+        "name": "terraform",
+        "full_name": "terraform.io/builtin/terraform",
+        "module_address": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-region-validation-database-instance"
+      },
+      "module.self-gcp-sql-instance-database-user-12182500387:google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google",
+        "version_constraint": "6.0.0",
+        "module_address": "module.self-gcp-sql-instance-database-user-12182500387"
+      }
+    },
+    "root_module": {
+      "module_calls": {
+        "self-gcp-sql-instance-database-user-12182500387": {
+          "source": "git::https://github.com/cvs-health-source-code/broc-self-gcp-sql-instance-database-user?ref=cd_dev",
+          "expressions": {
+            "resources_labels": {
+              "references": [
+                "var.resources_labels"
+              ]
+            },
+            "resources_project": {
+              "references": [
+                "var.resources_project"
+              ]
+            },
+            "sql_database_charset": {
+              "references": [
+                "var.sql_database_charset"
+              ]
+            },
+            "sql_database_collation": {
+              "references": [
+                "var.sql_database_collation"
+              ]
+            },
+            "sql_database_deletion_policy": {
+              "references": [
+                "var.sql_database_deletion_policy"
+              ]
+            },
+            "sql_database_instance_database_version": {
+              "references": [
+                "var.sql_database_instance_database_version"
+              ]
+            },
+            "sql_database_instance_deletion_protection": {
+              "references": [
+                "var.sql_database_instance_deletion_protection"
+              ]
+            },
+            "sql_database_instance_dynamic_database_flags": {
+              "references": [
+                "var.sql_database_instance_dynamic_database_flags"
+              ]
+            },
+            "sql_database_instance_environment": {
+              "references": [
+                "var.sql_database_instance_environment"
+              ]
+            },
+            "sql_database_instance_name": {
+              "references": [
+                "var.sql_database_instance_name"
+              ]
+            },
+            "sql_database_instance_region": {
+              "references": [
+                "var.sql_database_instance_region"
+              ]
+            },
+            "sql_database_instance_settings_availability_type": {
+              "references": [
+                "var.sql_database_instance_settings_availability_type"
+              ]
+            },
+            "sql_database_instance_settings_backup_configuration_backup_retention_settings_retained_backups": {
+              "references": [
+                "var.sql_database_instance_settings_backup_configuration_backup_retention_settings_retained_backups"
+              ]
+            },
+            "sql_database_instance_settings_backup_configuration_backup_retention_settings_retention_unit": {
+              "references": [
+                "var.sql_database_instance_settings_backup_configuration_backup_retention_settings_retention_unit"
+              ]
+            },
+            "sql_database_instance_settings_backup_configuration_enabled": {
+              "references": [
+                "var.sql_database_instance_settings_backup_configuration_enabled"
+              ]
+            },
+            "sql_database_instance_settings_backup_configuration_location": {
+              "references": [
+                "var.sql_database_instance_settings_backup_configuration_location"
+              ]
+            },
+            "sql_database_instance_settings_backup_configuration_start_time": {
+              "references": [
+                "var.sql_database_instance_settings_backup_configuration_start_time"
+              ]
+            },
+            "sql_database_instance_settings_backup_configuration_transaction_log_retention_days": {
+              "references": [
+                "var.sql_database_instance_settings_backup_configuration_transaction_log_retention_days"
+              ]
+            },
+            "sql_database_instance_settings_deletion_protection_enabled": {
+              "references": [
+                "var.sql_database_instance_settings_deletion_protection_enabled"
+              ]
+            },
+            "sql_database_instance_settings_disk_autoresize": {
+              "references": [
+                "var.sql_database_instance_settings_disk_autoresize"
+              ]
+            },
+            "sql_database_instance_settings_disk_autoresize_limit": {
+              "references": [
+                "var.sql_database_instance_settings_disk_autoresize_limit"
+              ]
+            },
+            "sql_database_instance_settings_disk_size": {
+              "references": [
+                "var.sql_database_instance_settings_disk_size"
+              ]
+            },
+            "sql_database_instance_settings_disk_type": {
+              "references": [
+                "var.sql_database_instance_settings_disk_type"
+              ]
+            },
+            "sql_database_instance_settings_edition": {
+              "references": [
+                "var.sql_database_instance_settings_edition"
+              ]
+            },
+            "sql_database_instance_settings_ip_configuration_private_network": {
+              "references": [
+                "var.sql_database_instance_settings_ip_configuration_private_network"
+              ]
+            },
+            "sql_database_instance_settings_maintenance_window_day": {
+              "references": [
+                "var.sql_database_instance_settings_maintenance_window_day"
+              ]
+            },
+            "sql_database_instance_settings_maintenance_window_hour": {
+              "references": [
+                "var.sql_database_instance_settings_maintenance_window_hour"
+              ]
+            },
+            "sql_database_instance_settings_maintenance_window_update_track": {
+              "references": [
+                "var.sql_database_instance_settings_maintenance_window_update_track"
+              ]
+            },
+            "sql_database_instance_settings_pricing_plan": {
+              "references": [
+                "var.sql_database_instance_settings_pricing_plan"
+              ]
+            },
+            "sql_database_instance_settings_tier": {
+              "references": [
+                "var.sql_database_instance_settings_tier"
+              ]
+            },
+            "sql_database_instance_trusted_client_certificate": {
+              "references": [
+                "var.sql_database_instance_trusted_client_certificate"
+              ]
+            },
+            "sql_database_name": {
+              "references": [
+                "var.sql_database_name"
+              ]
+            },
+            "sql_instance_database_series": {
+              "references": [
+                "var.sql_instance_database_series"
+              ]
+            },
+            "sql_instance_database_size": {
+              "references": [
+                "var.sql_instance_database_size"
+              ]
+            },
+            "sql_user_deletion_policy": {
+              "references": [
+                "var.sql_user_deletion_policy"
+              ]
+            },
+            "sql_user_host": {
+              "references": [
+                "var.sql_user_host"
+              ]
+            },
+            "sql_user_name_and_password": {
+              "references": [
+                "var.sql_user_name_and_password"
+              ]
+            },
+            "sql_user_password_policy_allowed_failed_attempts": {
+              "references": [
+                "var.sql_user_password_policy_allowed_failed_attempts"
+              ]
+            },
+            "sql_user_password_policy_enable_failed_attempts_check": {
+              "references": [
+                "var.sql_user_password_policy_enable_failed_attempts_check"
+              ]
+            },
+            "sql_user_password_policy_enable_password_verification": {
+              "references": [
+                "var.sql_user_password_policy_enable_password_verification"
+              ]
+            },
+            "sql_user_password_policy_password_expiration_duration": {
+              "references": [
+                "var.sql_user_password_policy_password_expiration_duration"
+              ]
+            },
+            "sql_user_type_and_sql_user_name": {
+              "references": [
+                "var.sql_user_type_and_sql_user_name"
+              ]
+            }
+          },
+          "module": {
+            "resources": [
+              {
+                "address": "data.google_project.resources_project",
+                "mode": "data",
+                "type": "google_project",
+                "name": "resources_project",
+                "provider_config_key": "module.self-gcp-sql-instance-database-user-12182500387:google",
+                "expressions": {
+                  "project_id": {
+                    "references": [
+                      "var.resources_project"
+                    ]
+                  }
+                },
+                "schema_version": 0
+              }
+            ],
+            "module_calls": {
+              "core-gcp-cmek-validation-database-instance": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-cmek-validation.git",
+                "expressions": {
+                  "cvs_key_vault_cmek_project": {
+                    "references": [
+                      "var.resources_project"
+                    ]
+                  },
+                  "cvs_key_vault_cmek_region": {
+                    "references": [
+                      "var.sql_database_instance_region"
+                    ]
+                  }
+                },
+                "module": {
+                  "outputs": {
+                    "cvs_key_vault_cmek_string": {
+                      "expression": {
+                        "references": [
+                          "terraform_data.cvs_key_vault_cmek.triggers_replace.cvs_key_vault_cmek_string",
+                          "terraform_data.cvs_key_vault_cmek.triggers_replace",
+                          "terraform_data.cvs_key_vault_cmek"
+                        ]
+                      },
+                      "description": "This output will present the CMEK string, which will be passed to the resources for either Platform and Self-Service Modules"
+                    }
+                  },
+                  "resources": [
+                    {
+                      "address": "terraform_data.cvs_key_vault_cmek",
+                      "mode": "managed",
+                      "type": "terraform_data",
+                      "name": "cvs_key_vault_cmek",
+                      "provider_config_key": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-cmek-validation-database-instance:terraform",
+                      "expressions": {
+                        "triggers_replace": {
+                          "references": [
+                            "local.cvs_key_vault_cmek_structure"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    },
+                    {
+                      "address": "data.google_project.cvs_key_vault_project",
+                      "mode": "data",
+                      "type": "google_project",
+                      "name": "cvs_key_vault_project",
+                      "provider_config_key": "module.self-gcp-sql-instance-database-user-12182500387:google",
+                      "expressions": {
+                        "project_id": {
+                          "references": [
+                            "var.cvs_key_vault_cmek_project"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "cvs_key_vault_cmek_project": {
+                      "description": "The project passed for the resource, to get the correct CMEK from the CVS Key Vault Projects"
+                    },
+                    "cvs_key_vault_cmek_region": {
+                      "description": "The region passed for the resource, to get the correct CMEK from the CVS Key Vault Projects"
+                    },
+                    "cvs_key_vault_dynamic_cmek": {
+                      "default": "",
+                      "description": "To use additional CVS Key Vault Project, other than the default ones (cvs-key-vault-prod & cvs-key-vault-nonprod). Note: If you pass something other than the default Prod/NonProd, make sure you match environment types (e.g. Pass lab but region/project is prod)."
+                    }
+                  }
+                }
+              },
+              "core-gcp-region-validation-database-instance": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-region-validation.git",
+                "expressions": {
+                  "region_validation": {
+                    "references": [
+                      "var.sql_database_instance_region"
+                    ]
+                  }
+                },
+                "module": {
+                  "resources": [
+                    {
+                      "address": "terraform_data.region_validation",
+                      "mode": "managed",
+                      "type": "terraform_data",
+                      "name": "region_validation",
+                      "provider_config_key": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-region-validation-database-instance:terraform",
+                      "expressions": {
+                        "input": {
+                          "references": [
+                            "var.region_validation"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "region_validation": {
+                      "description": "Only the following regions are allowed: us-east1, us-east4, us-west2, us-central1, and us"
+                    }
+                  }
+                }
+              },
+              "core-sql-database": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-sql-database.git",
+                "expressions": {
+                  "sql_database_charset": {
+                    "references": [
+                      "var.sql_database_charset"
+                    ]
+                  },
+                  "sql_database_collation": {
+                    "references": [
+                      "var.sql_database_collation"
+                    ]
+                  },
+                  "sql_database_deletion_policy": {
+                    "references": [
+                      "var.sql_database_deletion_policy"
+                    ]
+                  },
+                  "sql_database_instance": {
+                    "references": [
+                      "module.core-sql-database-instance.sql_database_instance_name",
+                      "module.core-sql-database-instance"
+                    ]
+                  },
+                  "sql_database_name": {
+                    "references": [
+                      "each.key"
+                    ]
+                  },
+                  "sql_database_project": {
+                    "references": [
+                      "var.resources_project"
+                    ]
+                  }
+                },
+                "for_each_expression": {
+                  "references": [
+                    "local.sql_database_name"
+                  ]
+                },
+                "module": {
+                  "outputs": {
+                    "sql_database_charset": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database.sql_database.charset",
+                          "google_sql_database.sql_database"
+                        ]
+                      },
+                      "description": "The charset value"
+                    },
+                    "sql_database_collation": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database.sql_database.collation",
+                          "google_sql_database.sql_database"
+                        ]
+                      },
+                      "description": "The collation value"
+                    },
+                    "sql_database_deletion_policy": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database.sql_database.deletion_policy",
+                          "google_sql_database.sql_database"
+                        ]
+                      },
+                      "description": "The deletion policy for the database"
+                    },
+                    "sql_database_id": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database.sql_database.id",
+                          "google_sql_database.sql_database"
+                        ]
+                      },
+                      "description": "Identifier for the resource with format projects/{{project}}/instances/{{instance}}/databases/{{name}}"
+                    },
+                    "sql_database_name": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database.sql_database.name",
+                          "google_sql_database.sql_database"
+                        ]
+                      },
+                      "description": "The name of the database in the Cloud SQL instance"
+                    },
+                    "sql_database_self_link": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database.sql_database.self_link",
+                          "google_sql_database.sql_database"
+                        ]
+                      },
+                      "description": "The URI of the created resource"
+                    }
+                  },
+                  "resources": [
+                    {
+                      "address": "google_sql_database.sql_database",
+                      "mode": "managed",
+                      "type": "google_sql_database",
+                      "name": "sql_database",
+                      "provider_config_key": "module.self-gcp-sql-instance-database-user-12182500387:google",
+                      "expressions": {
+                        "charset": {
+                          "references": [
+                            "var.sql_database_charset"
+                          ]
+                        },
+                        "collation": {
+                          "references": [
+                            "var.sql_database_collation"
+                          ]
+                        },
+                        "deletion_policy": {
+                          "references": [
+                            "var.sql_database_deletion_policy"
+                          ]
+                        },
+                        "instance": {
+                          "references": [
+                            "var.sql_database_instance"
+                          ]
+                        },
+                        "name": {
+                          "references": [
+                            "var.sql_database_name"
+                          ]
+                        },
+                        "project": {
+                          "references": [
+                            "var.sql_database_project"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "sql_database_charset": {
+                      "description": "The charset value. See MySQL's Supported Character Sets and Collations and Postgres' Character Set Support for more details and supported values. Postgres databases only support a value of UTF8 at creation time"
+                    },
+                    "sql_database_collation": {
+                      "description": "The collation value. See MySQL's Supported Character Sets and Collations and Postgres' Collation Support for more details and supported values. Postgres databases only support a value of en_US.UTF8 at creation time"
+                    },
+                    "sql_database_deletion_policy": {
+                      "description": "The deletion policy for the database. Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful for Postgres, where databases cannot be deleted from the API if there are users other than cloudsqlsuperuser with access. Possible values are: 'ABANDON', 'DELETE'. Defaults to 'DELETE'"
+                    },
+                    "sql_database_instance": {
+                      "description": "The name of the Cloud SQL instance. This does not include the project ID"
+                    },
+                    "sql_database_name": {
+                      "description": "The name of the database in the Cloud SQL instance. This does not include the project ID or instance name"
+                    },
+                    "sql_database_project": {
+                      "description": "The ID of the project in which the resource belongs"
+                    }
+                  }
+                },
+                "depends_on": [
+                  "module.core-sql-database-instance"
+                ]
+              },
+              "core-sql-database-instance": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-sql-database-instance.git?ref=cd_dev",
+                "expressions": {
+                  "sql_database_instance_database_version": {
+                    "references": [
+                      "var.sql_database_instance_database_version"
+                    ]
+                  },
+                  "sql_database_instance_deletion_protection": {
+                    "references": [
+                      "var.sql_database_instance_deletion_protection"
+                    ]
+                  },
+                  "sql_database_instance_dynamic_database_flags": {
+                    "references": [
+                      "local.sql_database_instance_dynamic_database_flags"
+                    ]
+                  },
+                  "sql_database_instance_encryption_key_name": {
+                    "references": [
+                      "module.core-gcp-cmek-validation-database-instance.cvs_key_vault_cmek_string",
+                      "module.core-gcp-cmek-validation-database-instance"
+                    ]
+                  },
+                  "sql_database_instance_name": {
+                    "references": [
+                      "local.sql_database_instance_name"
+                    ]
+                  },
+                  "sql_database_instance_project": {
+                    "references": [
+                      "var.resources_project"
+                    ]
+                  },
+                  "sql_database_instance_region": {
+                    "references": [
+                      "var.sql_database_instance_region"
+                    ]
+                  },
+                  "sql_database_instance_settings_availability_type": {
+                    "references": [
+                      "var.sql_database_instance_settings_availability_type"
+                    ]
+                  },
+                  "sql_database_instance_settings_backup_configuration_backup_retention_settings_retained_backups": {
+                    "references": [
+                      "var.sql_database_instance_settings_backup_configuration_backup_retention_settings_retained_backups"
+                    ]
+                  },
+                  "sql_database_instance_settings_backup_configuration_backup_retention_settings_retention_unit": {
+                    "references": [
+                      "var.sql_database_instance_settings_backup_configuration_backup_retention_settings_retention_unit"
+                    ]
+                  },
+                  "sql_database_instance_settings_backup_configuration_enabled": {
+                    "references": [
+                      "var.sql_database_instance_settings_backup_configuration_enabled"
+                    ]
+                  },
+                  "sql_database_instance_settings_backup_configuration_location": {
+                    "references": [
+                      "var.sql_database_instance_settings_backup_configuration_location"
+                    ]
+                  },
+                  "sql_database_instance_settings_backup_configuration_start_time": {
+                    "references": [
+                      "var.sql_database_instance_settings_backup_configuration_start_time"
+                    ]
+                  },
+                  "sql_database_instance_settings_backup_configuration_transaction_log_retention_days": {
+                    "references": [
+                      "var.sql_database_instance_settings_backup_configuration_transaction_log_retention_days"
+                    ]
+                  },
+                  "sql_database_instance_settings_deletion_protection_enabled": {
+                    "references": [
+                      "var.sql_database_instance_settings_deletion_protection_enabled"
+                    ]
+                  },
+                  "sql_database_instance_settings_disk_autoresize": {
+                    "references": [
+                      "var.sql_database_instance_settings_disk_autoresize"
+                    ]
+                  },
+                  "sql_database_instance_settings_disk_autoresize_limit": {
+                    "references": [
+                      "var.sql_database_instance_settings_disk_autoresize_limit"
+                    ]
+                  },
+                  "sql_database_instance_settings_disk_size": {
+                    "references": [
+                      "local.sql_database_instance_settings_disk_size"
+                    ]
+                  },
+                  "sql_database_instance_settings_disk_type": {
+                    "references": [
+                      "var.sql_database_instance_settings_disk_type"
+                    ]
+                  },
+                  "sql_database_instance_settings_edition": {
+                    "references": [
+                      "var.sql_database_instance_settings_edition"
+                    ]
+                  },
+                  "sql_database_instance_settings_ip_configuration_authorized_networks": {
+                    "references": [
+                      "local.sql_database_instance_settings_ip_configuration_authorized_networks"
+                    ]
+                  },
+                  "sql_database_instance_settings_ip_configuration_private_network": {
+                    "references": [
+                      "local.sql_database_instance_settings_ip_configuration_private_network"
+                    ]
+                  },
+                  "sql_database_instance_settings_maintenance_window_day": {
+                    "references": [
+                      "var.sql_database_instance_settings_maintenance_window_day"
+                    ]
+                  },
+                  "sql_database_instance_settings_maintenance_window_hour": {
+                    "references": [
+                      "var.sql_database_instance_settings_maintenance_window_hour"
+                    ]
+                  },
+                  "sql_database_instance_settings_maintenance_window_update_track": {
+                    "references": [
+                      "var.sql_database_instance_settings_maintenance_window_update_track"
+                    ]
+                  },
+                  "sql_database_instance_settings_pricing_plan": {
+                    "references": [
+                      "var.sql_database_instance_settings_pricing_plan"
+                    ]
+                  },
+                  "sql_database_instance_settings_tier": {
+                    "references": [
+                      "local.sql_database_instance_settings_tier"
+                    ]
+                  },
+                  "sql_database_instance_settings_user_labels": {
+                    "references": [
+                      "var.resources_labels"
+                    ]
+                  },
+                  "sql_database_instance_trusted_client_certificate": {
+                    "references": [
+                      "var.sql_database_instance_trusted_client_certificate"
+                    ]
+                  }
+                },
+                "module": {
+                  "outputs": {
+                    "sql_database_instance_connection_name": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database_instance.sql_database_instance.connection_name",
+                          "google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "The connection name of the instance to be used in connection strings"
+                    },
+                    "sql_database_instance_database_version": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database_instance.sql_database_instance.database_version",
+                          "google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "Supported values include: MYSQL_5_6, MYSQL_5_7, MYSQL_8_0, POSTGRES_9_6,POSTGRES_10, POSTGRES_11, POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, SQLSERVER_2017_STANDARD, SQLSERVER_2019_STANDARD, SQLSERVER_2022_STANDARD"
+                    },
+                    "sql_database_instance_deletion_protection": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database_instance.sql_database_instance.deletion_protection",
+                          "google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "Whether or not to allow Terraform to destroy the instance. Unless this field is set to false in Terraform state, a terraform destroy or terraform apply command that deletes the instance will fail. Defaults to true"
+                    },
+                    "sql_database_instance_encryption_key_name": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database_instance.sql_database_instance.encryption_key_name",
+                          "google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "The full path to the encryption key used for the CMEK disk encryption"
+                    },
+                    "sql_database_instance_instance_type": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database_instance.sql_database_instance.instance_type",
+                          "google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "The type of the instance. The supported values are SQL_INSTANCE_TYPE_UNSPECIFIED, CLOUD_SQL_INSTANCE, ON_PREMISES_INSTANCE and READ_REPLICA_INSTANCE"
+                    },
+                    "sql_database_instance_name": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database_instance.sql_database_instance.name",
+                          "google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "The name of the instance"
+                    },
+                    "sql_database_instance_private_ip_address": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database_instance.sql_database_instance.private_ip_address",
+                          "google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "The first private (PRIVATE) IPv4 address assigned"
+                    },
+                    "sql_database_instance_self_link": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database_instance.sql_database_instance.self_link",
+                          "google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "The URI of the created resource"
+                    },
+                    "sql_database_instance_service_account_email_address": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database_instance.sql_database_instance.service_account_email_address",
+                          "google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "The service agent email address assigned to the instance, which is created by Google and is not passable as a variable"
+                    },
+                    "sql_database_instance_setttings_edition": {
+                      "expression": {
+                        "references": [
+                          "google_sql_database_instance.sql_database_instance.settings[0].edition",
+                          "google_sql_database_instance.sql_database_instance.settings[0]",
+                          "google_sql_database_instance.sql_database_instance.settings",
+                          "google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "Supported values include: MYSQL_5_6, MYSQL_5_7, MYSQL_8_0, POSTGRES_9_6,POSTGRES_10, POSTGRES_11, POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, SQLSERVER_2017_STANDARD, SQLSERVER_2019_STANDARD, SQLSERVER_2022_STANDARD"
+                    }
+                  },
+                  "resources": [
+                    {
+                      "address": "google_sql_database_instance.sql_database_instance",
+                      "mode": "managed",
+                      "type": "google_sql_database_instance",
+                      "name": "sql_database_instance",
+                      "provider_config_key": "module.self-gcp-sql-instance-database-user-12182500387:google",
+                      "expressions": {
+                        "database_version": {
+                          "references": [
+                            "var.sql_database_instance_database_version"
+                          ]
+                        },
+                        "deletion_protection": {
+                          "references": [
+                            "var.sql_database_instance_deletion_protection"
+                          ]
+                        },
+                        "encryption_key_name": {
+                          "references": [
+                            "var.sql_database_instance_encryption_key_name"
+                          ]
+                        },
+                        "name": {
+                          "references": [
+                            "var.sql_database_instance_name"
+                          ]
+                        },
+                        "project": {
+                          "references": [
+                            "var.sql_database_instance_project"
+                          ]
+                        },
+                        "region": {
+                          "references": [
+                            "var.sql_database_instance_region"
+                          ]
+                        },
+                        "settings": [
+                          {
+                            "availability_type": {
+                              "references": [
+                                "var.sql_database_instance_settings_availability_type"
+                              ]
+                            },
+                            "backup_configuration": [
+                              {
+                                "backup_retention_settings": [
+                                  {
+                                    "retained_backups": {
+                                      "references": [
+                                        "var.sql_database_instance_settings_backup_configuration_backup_retention_settings_retained_backups"
+                                      ]
+                                    },
+                                    "retention_unit": {
+                                      "references": [
+                                        "var.sql_database_instance_settings_backup_configuration_backup_retention_settings_retention_unit"
+                                      ]
+                                    }
+                                  }
+                                ],
+                                "binary_log_enabled": {
+                                  "references": [
+                                    "local.sql_database_instance_settings_backup_configuration_binary_log_enabled"
+                                  ]
+                                },
+                                "enabled": {
+                                  "references": [
+                                    "var.sql_database_instance_settings_backup_configuration_enabled"
+                                  ]
+                                },
+                                "location": {
+                                  "references": [
+                                    "var.sql_database_instance_settings_backup_configuration_location"
+                                  ]
+                                },
+                                "point_in_time_recovery_enabled": {
+                                  "references": [
+                                    "local.sql_database_instance_settings_backup_configuration_point_in_time_recovery_enabled"
+                                  ]
+                                },
+                                "start_time": {
+                                  "references": [
+                                    "var.sql_database_instance_settings_backup_configuration_start_time"
+                                  ]
+                                },
+                                "transaction_log_retention_days": {
+                                  "references": [
+                                    "var.sql_database_instance_settings_backup_configuration_transaction_log_retention_days"
+                                  ]
+                                }
+                              }
+                            ],
+                            "deletion_protection_enabled": {
+                              "references": [
+                                "var.sql_database_instance_settings_deletion_protection_enabled"
+                              ]
+                            },
+                            "disk_autoresize": {
+                              "references": [
+                                "var.sql_database_instance_settings_disk_autoresize"
+                              ]
+                            },
+                            "disk_autoresize_limit": {
+                              "references": [
+                                "var.sql_database_instance_settings_disk_autoresize_limit"
+                              ]
+                            },
+                            "disk_size": {
+                              "references": [
+                                "var.sql_database_instance_settings_disk_size"
+                              ]
+                            },
+                            "disk_type": {
+                              "references": [
+                                "var.sql_database_instance_settings_disk_type"
+                              ]
+                            },
+                            "edition": {
+                              "references": [
+                                "var.sql_database_instance_settings_edition"
+                              ]
+                            },
+                            "ip_configuration": [
+                              {
+                                "enable_private_path_for_google_cloud_services": {
+                                  "references": [
+                                    "local.enable_private_path_for_google_cloud_services"
+                                  ]
+                                },
+                                "ipv4_enabled": {
+                                  "references": [
+                                    "local.sql_database_instance_settings_ip_configuration_ipv4_enabled"
+                                  ]
+                                },
+                                "private_network": {
+                                  "references": [
+                                    "var.sql_database_instance_settings_ip_configuration_private_network"
+                                  ]
+                                },
+                                "require_ssl": {
+                                  "constant_value": true
+                                },
+                                "ssl_mode": {
+                                  "references": [
+                                    "local.sql_database_instance_settings_ip_configuration_ssl_mode"
+                                  ]
+                                }
+                              }
+                            ],
+                            "maintenance_window": [
+                              {
+                                "day": {
+                                  "references": [
+                                    "var.sql_database_instance_settings_maintenance_window_day"
+                                  ]
+                                },
+                                "hour": {
+                                  "references": [
+                                    "var.sql_database_instance_settings_maintenance_window_hour"
+                                  ]
+                                },
+                                "update_track": {
+                                  "references": [
+                                    "var.sql_database_instance_settings_maintenance_window_update_track"
+                                  ]
+                                }
+                              }
+                            ],
+                            "pricing_plan": {
+                              "references": [
+                                "var.sql_database_instance_settings_pricing_plan"
+                              ]
+                            },
+                            "tier": {
+                              "references": [
+                                "var.sql_database_instance_settings_tier"
+                              ]
+                            },
+                            "user_labels": {
+                              "references": [
+                                "var.sql_database_instance_settings_user_labels"
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "sql_database_instance_database_version": {
+                      "description": "Insert only support SQLversions, which those values include; Supported values include: MYSQL_5_6, MYSQL_5_7, MYSQL_8_0, POSTGRES_9_6,POSTGRES_10, POSTGRES_11, POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, SQLSERVER_2017_STANDARD, SQLSERVER_2019_STANDARD, SQLSERVER_2022_STANDARD"
+                    },
+                    "sql_database_instance_deletion_protection": {
+                      "description": "Whether or not to allow Terraform to destroy the instance. Unless this field is set to false in Terraform state, a terraform destroy or terraform apply command that deletes the instance will fail. Defaults to true"
+                    },
+                    "sql_database_instance_dynamic_database_flags": {
+                      "default": {},
+                      "description": "Flags that users can pass dynamically, but still pass teh security required flags"
+                    },
+                    "sql_database_instance_encryption_key_name": {
+                      "description": "The full path to the encryption key used for the CMEK disk encryption. Setting up disk encryption currently requires manual steps outside of Terraform. The provided key must be in the same region as the SQL instance"
+                    },
+                    "sql_database_instance_name": {
+                      "description": "The name of the instance"
+                    },
+                    "sql_database_instance_project": {
+                      "description": "The ID of the project in which the resource belongs"
+                    },
+                    "sql_database_instance_region": {
+                      "description": "The region the instance will sit in"
+                    },
+                    "sql_database_instance_settings_availability_type": {
+                      "description": "The availability type of the Cloud SQL instance, high availability (REGIONAL) or single zone (ZONAL).' For all instances, ensure that settings.backup_configuration.enabled is set to true. For MySQL instances, ensure that settings.backup_configuration.binary_log_enabled is set to true. For Postgres and SQL Server instances, ensure that settings.backup_configuration.point_in_time_recovery_enabled is set to true. Defaults to ZONAL"
+                    },
+                    "sql_database_instance_settings_backup_configuration_backup_retention_settings_retained_backups": {
+                      "description": "Depending on the value of retention_unit, this is used to determine if a backup needs to be deleted. If retention_unit is 'COUNT', we will retain this many backups"
+                    },
+                    "sql_database_instance_settings_backup_configuration_backup_retention_settings_retention_unit": {
+                      "description": "The unit that 'retained_backups' represents. Defaults to COUNT"
+                    },
+                    "sql_database_instance_settings_backup_configuration_enabled": {
+                      "description": "True if backup configuration is enabled"
+                    },
+                    "sql_database_instance_settings_backup_configuration_location": {
+                      "description": "The region where the backup will be stored"
+                    },
+                    "sql_database_instance_settings_backup_configuration_start_time": {
+                      "description": "HH:MM format time indicating when backup configuration starts"
+                    },
+                    "sql_database_instance_settings_backup_configuration_transaction_log_retention_days": {
+                      "description": "The number of days of transaction logs we retain for point in time restore, from 1-7"
+                    },
+                    "sql_database_instance_settings_deletion_protection_enabled": {
+                      "description": "Enables deletion protection of an instance at the GCP level"
+                    },
+                    "sql_database_instance_settings_disk_autoresize": {
+                      "description": "Enables auto-resizing of the storage size. Defaults to true"
+                    },
+                    "sql_database_instance_settings_disk_autoresize_limit": {
+                      "description": "The maximum size to which storage capacity can be automatically increased. The default value is 0, which specifies that there is no limit"
+                    },
+                    "sql_database_instance_settings_disk_size": {
+                      "description": "The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased. The minimum value is 10GB"
+                    },
+                    "sql_database_instance_settings_disk_type": {
+                      "description": "The type of data disk: PD_SSD or PD_HDD. Defaults to PD_SSD"
+                    },
+                    "sql_database_instance_settings_edition": {
+                      "default": "ENTERPRISE",
+                      "description": "The machine type to use"
+                    },
+                    "sql_database_instance_settings_ip_configuration_authorized_networks": {
+                      "description": "Name = A name for this whitelist entry, Value = A CIDR notation IPv4 or IPv6 address that is allowed to access this instance. Must be set even if other two attributes are not for the whitelist to become active. Format {key = value}"
+                    },
+                    "sql_database_instance_settings_ip_configuration_private_network": {
+                      "description": "The VPC network from which the Cloud SQL instance is accessible for private IP. For example, projects/myProject/global/networks/default. Specifying a network enables private IP. At least ipv4_enabled must be enabled or a private_network must be configured. This setting can be updated, but it cannot be removed after it is set"
+                    },
+                    "sql_database_instance_settings_maintenance_window_day": {
+                      "description": "Day of week (1-7), starting on Monday"
+                    },
+                    "sql_database_instance_settings_maintenance_window_hour": {
+                      "description": "Hour of day (0-23), ignored if day not set"
+                    },
+                    "sql_database_instance_settings_maintenance_window_update_track": {
+                      "description": "Receive updates earlier (canary) or later (stable)"
+                    },
+                    "sql_database_instance_settings_pricing_plan": {
+                      "description": "Pricing plan for this instance, can only be PER_USER"
+                    },
+                    "sql_database_instance_settings_tier": {
+                      "description": "The machine type to use"
+                    },
+                    "sql_database_instance_settings_user_labels": {
+                      "description": "A set of key/value user label pairs to assign to the instance"
+                    },
+                    "sql_database_instance_trusted_client_certificate": {
+                      "description": "Whether or not the user is bring a Trusted Client Certificate, which will determine the ssl configuration. True means SQL Instance will use a Trusted Client Certificate. False means the SQL Instance will only use SSL and not verify a certificate. True or False, SSL is enabled"
+                    }
+                  }
+                }
+              },
+              "core-sql-user-type-built-in": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-sql-user.git",
+                "expressions": {
+                  "sql_user_deletion_policy": {
+                    "references": [
+                      "var.sql_user_deletion_policy"
+                    ]
+                  },
+                  "sql_user_host": {
+                    "references": [
+                      "var.sql_user_host"
+                    ]
+                  },
+                  "sql_user_instance": {
+                    "references": [
+                      "module.core-sql-database-instance.sql_database_instance_name",
+                      "module.core-sql-database-instance"
+                    ]
+                  },
+                  "sql_user_name": {
+                    "references": [
+                      "each.key"
+                    ]
+                  },
+                  "sql_user_password": {
+                    "references": [
+                      "each.value"
+                    ]
+                  },
+                  "sql_user_password_policy_allowed_failed_attempts": {
+                    "references": [
+                      "var.sql_user_password_policy_allowed_failed_attempts"
+                    ]
+                  },
+                  "sql_user_password_policy_enable_failed_attempts_check": {
+                    "references": [
+                      "var.sql_user_password_policy_enable_failed_attempts_check"
+                    ]
+                  },
+                  "sql_user_password_policy_enable_password_verification": {
+                    "references": [
+                      "var.sql_user_password_policy_enable_password_verification"
+                    ]
+                  },
+                  "sql_user_password_policy_password_expiration_duration": {
+                    "references": [
+                      "var.sql_user_password_policy_password_expiration_duration"
+                    ]
+                  },
+                  "sql_user_project": {
+                    "references": [
+                      "var.resources_project"
+                    ]
+                  },
+                  "sql_user_type": {
+                    "references": [
+                      "local.sql_user_type_built_in"
+                    ]
+                  }
+                },
+                "for_each_expression": {
+                  "references": [
+                    "var.sql_user_name_and_password"
+                  ]
+                },
+                "module": {
+                  "outputs": {
+                    "data_call_sql_user_instance": {
+                      "expression": {
+                        "references": [
+                          "data.google_sql_database_instance.sql_database_instance.database_version",
+                          "data.google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "To provide the database version type, for the instance that was passed"
+                    },
+                    "sql_user_name": {
+                      "expression": {
+                        "references": [
+                          "google_sql_user.sql_user.name",
+                          "google_sql_user.sql_user"
+                        ]
+                      },
+                      "description": "The name of the user"
+                    },
+                    "sql_user_type": {
+                      "expression": {
+                        "references": [
+                          "google_sql_user.sql_user.type",
+                          "google_sql_user.sql_user"
+                        ]
+                      },
+                      "description": "The user type"
+                    }
+                  },
+                  "resources": [
+                    {
+                      "address": "google_sql_user.sql_user",
+                      "mode": "managed",
+                      "type": "google_sql_user",
+                      "name": "sql_user",
+                      "provider_config_key": "module.self-gcp-sql-instance-database-user-12182500387:google",
+                      "expressions": {
+                        "deletion_policy": {
+                          "references": [
+                            "var.sql_user_deletion_policy"
+                          ]
+                        },
+                        "host": {
+                          "references": [
+                            "local.sql_user_host"
+                          ]
+                        },
+                        "instance": {
+                          "references": [
+                            "var.sql_user_instance"
+                          ]
+                        },
+                        "name": {
+                          "references": [
+                            "local.sql_user_name"
+                          ]
+                        },
+                        "password": {
+                          "references": [
+                            "local.sql_user_password"
+                          ]
+                        },
+                        "project": {
+                          "references": [
+                            "var.sql_user_project"
+                          ]
+                        },
+                        "type": {
+                          "references": [
+                            "var.sql_user_type"
+                          ]
+                        }
+                      },
+                      "schema_version": 1
+                    },
+                    {
+                      "address": "data.google_sql_database_instance.sql_database_instance",
+                      "mode": "data",
+                      "type": "google_sql_database_instance",
+                      "name": "sql_database_instance",
+                      "provider_config_key": "module.self-gcp-sql-instance-database-user-12182500387:google",
+                      "expressions": {
+                        "name": {
+                          "references": [
+                            "var.sql_user_instance"
+                          ]
+                        },
+                        "project": {
+                          "references": [
+                            "var.sql_user_project"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "sql_user_deletion_policy": {
+                      "description": "The deletion policy for the user. Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful for Postgres, where users cannot be deleted from the API if they have been granted SQL roles"
+                    },
+                    "sql_user_host": {
+                      "description": "The host the user can connect from. This is only supported for BUILT_IN users in MySQL instances. Don't set this field for PostgreSQL and SQL Server instances. Can be an IP address. Changing this forces a new resource to be created"
+                    },
+                    "sql_user_instance": {
+                      "description": "The name of the Cloud SQL instance. Changing this forces a new resource to be created"
+                    },
+                    "sql_user_name": {
+                      "description": "The name of the user. Changing this forces a new resource to be created"
+                    },
+                    "sql_user_password": {
+                      "description": "The password for the user. Can be updated. For Postgres instances this is a Required field, unless type is set to either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT. Don't set this field for CLOUD_IAM_USER and CLOUD_IAM_SERVICE_ACCOUNT user types for any Cloud SQL instance",
+                      "sensitive": true
+                    },
+                    "sql_user_password_policy_allowed_failed_attempts": {
+                      "description": "Number of failed attempts allowed before the user get locked"
+                    },
+                    "sql_user_password_policy_enable_failed_attempts_check": {
+                      "description": "If true, the check that will lock user after too many failed login attempts will be enabled"
+                    },
+                    "sql_user_password_policy_enable_password_verification": {
+                      "description": "If true, the user must specify the current password before changing the password. This flag is supported only for MySQL"
+                    },
+                    "sql_user_password_policy_password_expiration_duration": {
+                      "description": "Password expiration duration with one week grace period"
+                    },
+                    "sql_user_project": {
+                      "description": "The ID of the project in which the resource belongs. If it is not provided, the provider project is used"
+                    },
+                    "sql_user_type": {
+                      "description": "The user type. It determines the method to authenticate the user during login. The default is the database's built-in user type. Flags include BUILT_IN, CLOUD_IAM_USER, or CLOUD_IAM_SERVICE_ACCOUNT"
+                    }
+                  }
+                },
+                "depends_on": [
+                  "module.core-sql-database-instance"
+                ]
+              },
+              "core-sql-user-type-cloud-iam": {
+                "source": "git::https://github.com/cvs-health-source-code/broc-core-gcp-sql-user.git",
+                "expressions": {
+                  "sql_user_deletion_policy": {
+                    "references": [
+                      "var.sql_user_deletion_policy"
+                    ]
+                  },
+                  "sql_user_host": {
+                    "references": [
+                      "var.sql_user_host"
+                    ]
+                  },
+                  "sql_user_instance": {
+                    "references": [
+                      "module.core-sql-database-instance.sql_database_instance_name",
+                      "module.core-sql-database-instance"
+                    ]
+                  },
+                  "sql_user_name": {
+                    "references": [
+                      "each.key"
+                    ]
+                  },
+                  "sql_user_password": {
+                    "references": [
+                      "local.sql_user_password"
+                    ]
+                  },
+                  "sql_user_password_policy_allowed_failed_attempts": {
+                    "references": [
+                      "var.sql_user_password_policy_allowed_failed_attempts"
+                    ]
+                  },
+                  "sql_user_password_policy_enable_failed_attempts_check": {
+                    "references": [
+                      "var.sql_user_password_policy_enable_failed_attempts_check"
+                    ]
+                  },
+                  "sql_user_password_policy_enable_password_verification": {
+                    "references": [
+                      "var.sql_user_password_policy_enable_password_verification"
+                    ]
+                  },
+                  "sql_user_password_policy_password_expiration_duration": {
+                    "references": [
+                      "var.sql_user_password_policy_password_expiration_duration"
+                    ]
+                  },
+                  "sql_user_project": {
+                    "references": [
+                      "var.resources_project"
+                    ]
+                  },
+                  "sql_user_type": {
+                    "references": [
+                      "each.value"
+                    ]
+                  }
+                },
+                "for_each_expression": {
+                  "references": [
+                    "var.sql_user_type_and_sql_user_name"
+                  ]
+                },
+                "module": {
+                  "outputs": {
+                    "data_call_sql_user_instance": {
+                      "expression": {
+                        "references": [
+                          "data.google_sql_database_instance.sql_database_instance.database_version",
+                          "data.google_sql_database_instance.sql_database_instance"
+                        ]
+                      },
+                      "description": "To provide the database version type, for the instance that was passed"
+                    },
+                    "sql_user_name": {
+                      "expression": {
+                        "references": [
+                          "google_sql_user.sql_user.name",
+                          "google_sql_user.sql_user"
+                        ]
+                      },
+                      "description": "The name of the user"
+                    },
+                    "sql_user_type": {
+                      "expression": {
+                        "references": [
+                          "google_sql_user.sql_user.type",
+                          "google_sql_user.sql_user"
+                        ]
+                      },
+                      "description": "The user type"
+                    }
+                  },
+                  "resources": [
+                    {
+                      "address": "google_sql_user.sql_user",
+                      "mode": "managed",
+                      "type": "google_sql_user",
+                      "name": "sql_user",
+                      "provider_config_key": "module.self-gcp-sql-instance-database-user-12182500387:google",
+                      "expressions": {
+                        "deletion_policy": {
+                          "references": [
+                            "var.sql_user_deletion_policy"
+                          ]
+                        },
+                        "host": {
+                          "references": [
+                            "local.sql_user_host"
+                          ]
+                        },
+                        "instance": {
+                          "references": [
+                            "var.sql_user_instance"
+                          ]
+                        },
+                        "name": {
+                          "references": [
+                            "local.sql_user_name"
+                          ]
+                        },
+                        "password": {
+                          "references": [
+                            "local.sql_user_password"
+                          ]
+                        },
+                        "project": {
+                          "references": [
+                            "var.sql_user_project"
+                          ]
+                        },
+                        "type": {
+                          "references": [
+                            "var.sql_user_type"
+                          ]
+                        }
+                      },
+                      "schema_version": 1
+                    },
+                    {
+                      "address": "data.google_sql_database_instance.sql_database_instance",
+                      "mode": "data",
+                      "type": "google_sql_database_instance",
+                      "name": "sql_database_instance",
+                      "provider_config_key": "module.self-gcp-sql-instance-database-user-12182500387:google",
+                      "expressions": {
+                        "name": {
+                          "references": [
+                            "var.sql_user_instance"
+                          ]
+                        },
+                        "project": {
+                          "references": [
+                            "var.sql_user_project"
+                          ]
+                        }
+                      },
+                      "schema_version": 0
+                    }
+                  ],
+                  "variables": {
+                    "sql_user_deletion_policy": {
+                      "description": "The deletion policy for the user. Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful for Postgres, where users cannot be deleted from the API if they have been granted SQL roles"
+                    },
+                    "sql_user_host": {
+                      "description": "The host the user can connect from. This is only supported for BUILT_IN users in MySQL instances. Don't set this field for PostgreSQL and SQL Server instances. Can be an IP address. Changing this forces a new resource to be created"
+                    },
+                    "sql_user_instance": {
+                      "description": "The name of the Cloud SQL instance. Changing this forces a new resource to be created"
+                    },
+                    "sql_user_name": {
+                      "description": "The name of the user. Changing this forces a new resource to be created"
+                    },
+                    "sql_user_password": {
+                      "description": "The password for the user. Can be updated. For Postgres instances this is a Required field, unless type is set to either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT. Don't set this field for CLOUD_IAM_USER and CLOUD_IAM_SERVICE_ACCOUNT user types for any Cloud SQL instance",
+                      "sensitive": true
+                    },
+                    "sql_user_password_policy_allowed_failed_attempts": {
+                      "description": "Number of failed attempts allowed before the user get locked"
+                    },
+                    "sql_user_password_policy_enable_failed_attempts_check": {
+                      "description": "If true, the check that will lock user after too many failed login attempts will be enabled"
+                    },
+                    "sql_user_password_policy_enable_password_verification": {
+                      "description": "If true, the user must specify the current password before changing the password. This flag is supported only for MySQL"
+                    },
+                    "sql_user_password_policy_password_expiration_duration": {
+                      "description": "Password expiration duration with one week grace period"
+                    },
+                    "sql_user_project": {
+                      "description": "The ID of the project in which the resource belongs. If it is not provided, the provider project is used"
+                    },
+                    "sql_user_type": {
+                      "description": "The user type. It determines the method to authenticate the user during login. The default is the database's built-in user type. Flags include BUILT_IN, CLOUD_IAM_USER, or CLOUD_IAM_SERVICE_ACCOUNT"
+                    }
+                  }
+                },
+                "depends_on": [
+                  "module.core-sql-database-instance"
+                ]
+              }
+            },
+            "variables": {
+              "resources_labels": {
+                "description": "Resource labels to represent user provided metadata. Note: This field is non-authoritative, and will only manage the labels present in your configuration"
+              },
+              "resources_project": {
+                "description": "Project the database and instance are provisioned"
+              },
+              "sql_database_charset": {
+                "default": "UTF8",
+                "description": "The charset value. See MySQL's Supported Character Sets and Collations and Postgres' Character Set Support for more details and supported values. Postgres databases only support a value of UTF8 at creation time. Defaults to UTF8"
+              },
+              "sql_database_collation": {
+                "default": "en_US.UTF8",
+                "description": "The collation value. See MySQL's Supported Character Sets and Collations and Postgres' Collation Support for more details and supported values. Postgres databases only support a value of en_US.UTF8 at creation time. Defaults to en_US.UTF8"
+              },
+              "sql_database_deletion_policy": {
+                "default": "DELETE",
+                "description": "The deletion policy for the database. Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful for Postgres, where databases cannot be deleted from the API if there are users other than cloudsqlsuperuser with access. Possible values are: 'ABANDON', 'DELETE'. Defaults to 'DELETE'. Defaults to DELETE"
+              },
+              "sql_database_instance_database_version": {
+                "description": "Insert only support SQLversions, which those values include; Supported values include: POSTGRES_14, POSTGRES_15, POSTGRES_16"
+              },
+              "sql_database_instance_deletion_protection": {
+                "default": true,
+                "description": "Whether or not to allow Terraform to destroy the instance. Unless this field is set to false in Terraform state, a terraform destroy or terraform apply command that deletes the instance will fail. Defaults to true"
+              },
+              "sql_database_instance_dynamic_database_flags": {
+                "default": {},
+                "description": "Flags that users can pass dynamically. The security required flags for Database version is automatically passed"
+              },
+              "sql_database_instance_environment": {
+                "description": "The environment the instance will sit in"
+              },
+              "sql_database_instance_name": {
+                "description": "The name of the instance"
+              },
+              "sql_database_instance_region": {
+                "description": "The region the instance will sit in"
+              },
+              "sql_database_instance_settings_availability_type": {
+                "default": "ZONAL",
+                "description": "The availability type of the Cloud SQL instance, high availability (REGIONAL) or single zone (ZONAL). For all instances, ensure that settings.backup_configuration.enabled is set to true. For MySQL instances, ensure that settings.backup_configuration.binary_log_enabled is set to true. For Postgres and SQL Server instances, ensure that settings.backup_configuration.point_in_time_recovery_enabled is set to true. Defaults to ZONAL"
+              },
+              "sql_database_instance_settings_backup_configuration_backup_retention_settings_retained_backups": {
+                "default": 7,
+                "description": "Depending on the value of retention_unit, this is used to determine if a backup needs to be deleted. If retention_unit is 'COUNT', we will retain this many backups. Defaults to 7"
+              },
+              "sql_database_instance_settings_backup_configuration_backup_retention_settings_retention_unit": {
+                "default": "COUNT",
+                "description": "The unit that 'retained_backups' represents. Defaults to COUNT"
+              },
+              "sql_database_instance_settings_backup_configuration_enabled": {
+                "default": true,
+                "description": "True if backup configuration is enabled. Defaults to true"
+              },
+              "sql_database_instance_settings_backup_configuration_location": {
+                "default": "us",
+                "description": "The region where the backup will be stored. Defaults to US"
+              },
+              "sql_database_instance_settings_backup_configuration_start_time": {
+                "default": "04:00",
+                "description": "HH:MM format time indicating when backup configuration starts. Defaults to 6:00"
+              },
+              "sql_database_instance_settings_backup_configuration_transaction_log_retention_days": {
+                "default": 7,
+                "description": "The number of days of transaction logs we retain for point in time restore, from 1-7. Defaults to 7"
+              },
+              "sql_database_instance_settings_deletion_protection_enabled": {
+                "default": true,
+                "description": "Enables deletion protection of the instance at the GCP level. Defaults to true"
+              },
+              "sql_database_instance_settings_disk_autoresize": {
+                "default": true,
+                "description": "Enables auto-resizing of the storage size. Defaults to true"
+              },
+              "sql_database_instance_settings_disk_autoresize_limit": {
+                "default": 0,
+                "description": "The maximum size to which storage capacity can be automatically increased. The default value is 0, which specifies that there is no limit"
+              },
+              "sql_database_instance_settings_disk_size": {
+                "default": 20,
+                "description": "The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased. The minimum value is 10GB"
+              },
+              "sql_database_instance_settings_disk_type": {
+                "default": "PD_SSD",
+                "description": "The type of data disk: PD_SSD or PD_HDD. Defaults to PD_SSD"
+              },
+              "sql_database_instance_settings_edition": {
+                "default": "ENTERPRISE",
+                "description": "The edition of the Cloud SQL instance: Currently Only supports ENTERPRISE"
+              },
+              "sql_database_instance_settings_ip_configuration_private_network": {
+                "default": "",
+                "description": "The VPC network from which the Cloud SQL instance is accessible for private IP. For example, projects/myProject/global/networks/default. Specifying a network enables private IP. At least ipv4_enabled must be enabled or a private_network must be configured. This setting can be updated, but it cannot be removed after it is set. User can pass a private network, however if not passed a data call for the project the resource is being provisioned in, will identify if its Production project or NonProduction project and will apply the Insurance VPC network for the environment. Defaults to empty"
+              },
+              "sql_database_instance_settings_maintenance_window_day": {
+                "default": 6,
+                "description": "Day of week (1-7), starting on Monday. Defaults to 6 (Saturday)"
+              },
+              "sql_database_instance_settings_maintenance_window_hour": {
+                "default": 7,
+                "description": "Hour of day (0-23). Defaults to 20"
+              },
+              "sql_database_instance_settings_maintenance_window_update_track": {
+                "default": "stable",
+                "description": "Receive updates earlier (canary) or later (stable). Defaults to stable"
+              },
+              "sql_database_instance_settings_pricing_plan": {
+                "default": "PER_USE",
+                "description": "Pricing plan for the instance. Defaults to PER_USE"
+              },
+              "sql_database_instance_settings_tier": {
+                "default": "",
+                "description": "The machine type to use"
+              },
+              "sql_database_instance_trusted_client_certificate": {
+                "default": false,
+                "description": "Do you already have a Client Certificate you want to use? This determines whether or not the user is bring a Trusted Client Certificate, which will determine the ssl connection configuration. True or False, SSL is still enabled. Defaults to false. If you are trying to provision, SQL Server you will NEED to bring a trusted client certificate. Set this to true."
+              },
+              "sql_database_name": {
+                "default": [],
+                "description": "The name of the database in the Cloud SQL instance. This does not include the project ID or instance name. Defaults to empty"
+              },
+              "sql_instance_database_series": {
+                "default": 1,
+                "description": "The series of the database in the Cloud SQL instance. This does not include the project ID or instance name. Defaults to 1"
+              },
+              "sql_instance_database_size": {
+                "default": "small",
+                "description": "The size of the database in the Cloud SQL instance. This does not include the project ID or instance name. Defaults to empty"
+              },
+              "sql_user_deletion_policy": {
+                "default": "ABANDON",
+                "description": "The deletion policy for the user. Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful for Postgres, where users cannot be deleted from the API if they have been granted SQL roles. Defaults to ABANDON"
+              },
+              "sql_user_host": {
+                "default": "",
+                "description": "The host the user can connect from. This is only supported for BUILT_IN users in MySQL instances. Don't set this field for PostgreSQL and SQL Server instances. Can be an IP address. Changing this forces a new resource to be created. Defaults to empty"
+              },
+              "sql_user_name_and_password": {
+                "default": {},
+                "description": "A key, value mapping of users and their passwords, to use in order to access the SQL. Value for Key mapping is kept as sensitive and will report as such, (sensitive value), durnning terraform plan/apply. Only used for User Type BUILT_IN. Defaults to empty"
+              },
+              "sql_user_password_policy_allowed_failed_attempts": {
+                "default": 7,
+                "description": "Number of failed attempts allowed before the user get locked. Defaults to 7"
+              },
+              "sql_user_password_policy_enable_failed_attempts_check": {
+                "default": true,
+                "description": "If true, the check that will lock user after too many failed login attempts will be enabled. Defaults to true"
+              },
+              "sql_user_password_policy_enable_password_verification": {
+                "default": true,
+                "description": "If true, the user must specify the current password before changing the password. This flag is supported only for MySQL. Defaults to true"
+              },
+              "sql_user_password_policy_password_expiration_duration": {
+                "default": "86400s",
+                "description": "Password expiration duration with one week grace period. Defaults to 86400s"
+              },
+              "sql_user_type_and_sql_user_name": {
+                "default": {},
+                "description": "A key, value mapping of user type and the users, to use in order to access the SQL. Only used for User Type CLOUD_IAM_*. Defaults to empty"
+              }
+            }
+          }
+        }
+      },
+      "variables": {
+        "resources_labels": {
+          "description": "Resource labels to represent user provided metadata. Note: This field is non-authoritative, and will only manage the labels present in your configuration"
+        },
+        "resources_project": {
+          "description": "Project the database and instance are provisioned"
+        },
+        "sql_database_charset": {
+          "default": "UTF8",
+          "description": "The charset value. See MySQL's Supported Character Sets and Collations and Postgres' Character Set Support for more details and supported values. Postgres databases only support a value of UTF8 at creation time. Defaults to UTF8"
+        },
+        "sql_database_collation": {
+          "default": "en_US.UTF8",
+          "description": "The collation value. See MySQL's Supported Character Sets and Collations and Postgres' Collation Support for more details and supported values. Postgres databases only support a value of en_US.UTF8 at creation time. Defaults to en_US.UTF8"
+        },
+        "sql_database_deletion_policy": {
+          "default": "DELETE",
+          "description": "The deletion policy for the database. Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful for Postgres, where databases cannot be deleted from the API if there are users other than cloudsqlsuperuser with access. Possible values are: 'ABANDON', 'DELETE'. Defaults to 'DELETE'. Defaults to DELETE"
+        },
+        "sql_database_instance_database_version": {
+          "description": "Insert only support SQLversions, which those values include; Supported values include: POSTGRES_14, POSTGRES_15, POSTGRES_16"
+        },
+        "sql_database_instance_deletion_protection": {
+          "default": true,
+          "description": "Whether or not to allow Terraform to destroy the instance. Unless this field is set to false in Terraform state, a terraform destroy or terraform apply command that deletes the instance will fail. Defaults to true"
+        },
+        "sql_database_instance_dynamic_database_flags": {
+          "default": {},
+          "description": "Flags that users can pass dynamically. The security required flags for Database version is automatically passed"
+        },
+        "sql_database_instance_environment": {
+          "description": "The environment the instance will sit in"
+        },
+        "sql_database_instance_name": {
+          "description": "The name of the instance"
+        },
+        "sql_database_instance_region": {
+          "description": "The region the instance will sit in"
+        },
+        "sql_database_instance_settings_availability_type": {
+          "default": "ZONAL",
+          "description": "The availability type of the Cloud SQL instance, high availability (REGIONAL) or single zone (ZONAL). For all instances, ensure that settings.backup_configuration.enabled is set to true. For MySQL instances, ensure that settings.backup_configuration.binary_log_enabled is set to true. For Postgres and SQL Server instances, ensure that settings.backup_configuration.point_in_time_recovery_enabled is set to true. Defaults to ZONAL"
+        },
+        "sql_database_instance_settings_backup_configuration_backup_retention_settings_retained_backups": {
+          "default": 7,
+          "description": "Depending on the value of retention_unit, this is used to determine if a backup needs to be deleted. If retention_unit is 'COUNT', we will retain this many backups. Defaults to 7"
+        },
+        "sql_database_instance_settings_backup_configuration_backup_retention_settings_retention_unit": {
+          "default": "COUNT",
+          "description": "The unit that 'retained_backups' represents. Defaults to COUNT"
+        },
+        "sql_database_instance_settings_backup_configuration_enabled": {
+          "default": true,
+          "description": "True if backup configuration is enabled. Defaults to true"
+        },
+        "sql_database_instance_settings_backup_configuration_location": {
+          "default": "us",
+          "description": "The region where the backup will be stored. Defaults to US"
+        },
+        "sql_database_instance_settings_backup_configuration_start_time": {
+          "default": "04:00",
+          "description": "HH:MM format time indicating when backup configuration starts. Defaults to 6:00"
+        },
+        "sql_database_instance_settings_backup_configuration_transaction_log_retention_days": {
+          "default": 7,
+          "description": "The number of days of transaction logs we retain for point in time restore, from 1-7. Defaults to 7"
+        },
+        "sql_database_instance_settings_deletion_protection_enabled": {
+          "default": true,
+          "description": "Enables deletion protection of the instance at the GCP level. Defaults to true"
+        },
+        "sql_database_instance_settings_disk_autoresize": {
+          "default": true,
+          "description": "Enables auto-resizing of the storage size. Defaults to true"
+        },
+        "sql_database_instance_settings_disk_autoresize_limit": {
+          "default": 0,
+          "description": "The maximum size to which storage capacity can be automatically increased. The default value is 0, which specifies that there is no limit"
+        },
+        "sql_database_instance_settings_disk_size": {
+          "default": 20,
+          "description": "The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased. The minimum value is 10GB"
+        },
+        "sql_database_instance_settings_disk_type": {
+          "default": "PD_SSD",
+          "description": "The type of data disk: PD_SSD or PD_HDD. Defaults to PD_SSD"
+        },
+        "sql_database_instance_settings_edition": {
+          "default": "ENTERPRISE",
+          "description": "The edition of the Cloud SQL instance: Currently Only supports ENTERPRISE"
+        },
+        "sql_database_instance_settings_ip_configuration_private_network": {
+          "default": "",
+          "description": "The VPC network from which the Cloud SQL instance is accessible for private IP. For example, projects/myProject/global/networks/default. Specifying a network enables private IP. At least ipv4_enabled must be enabled or a private_network must be configured. This setting can be updated, but it cannot be removed after it is set. User can pass a private network, however if not passed a data call for the project the resource is being provisioned in, will identify if its Production project or NonProduction project and will apply the Insurance VPC network for the environment. Defaults to empty"
+        },
+        "sql_database_instance_settings_maintenance_window_day": {
+          "default": 6,
+          "description": "Day of week (1-7), starting on Monday. Defaults to 6 (Saturday)"
+        },
+        "sql_database_instance_settings_maintenance_window_hour": {
+          "default": 7,
+          "description": "Hour of day (0-23). Defaults to 20"
+        },
+        "sql_database_instance_settings_maintenance_window_update_track": {
+          "default": "stable",
+          "description": "Receive updates earlier (canary) or later (stable). Defaults to stable"
+        },
+        "sql_database_instance_settings_pricing_plan": {
+          "default": "PER_USE",
+          "description": "Pricing plan for the instance. Defaults to PER_USE"
+        },
+        "sql_database_instance_settings_tier": {
+          "default": "",
+          "description": "The machine type to use"
+        },
+        "sql_database_instance_trusted_client_certificate": {
+          "default": false,
+          "description": "Do you already have a Client Certificate you want to use? This determines whether or not the user is bring a Trusted Client Certificate, which will determine the ssl connection configuration. True or False, SSL is still enabled. Defaults to false. If you are trying to provision, SQL Server you will NEED to bring a trusted client certificate. Set this to true."
+        },
+        "sql_database_name": {
+          "default": [],
+          "description": "The name of the database in the Cloud SQL instance. This does not include the project ID or instance name. Defaults to empty"
+        },
+        "sql_instance_database_series": {
+          "default": 1,
+          "description": "The series of the database in the Cloud SQL instance. This does not include the project ID or instance name. Defaults to 1"
+        },
+        "sql_instance_database_size": {
+          "default": "small",
+          "description": "The size of the database in the Cloud SQL instance. This does not include the project ID or instance name. Defaults to empty"
+        },
+        "sql_user_deletion_policy": {
+          "default": "ABANDON",
+          "description": "The deletion policy for the user. Setting ABANDON allows the resource to be abandoned rather than deleted. This is useful for Postgres, where users cannot be deleted from the API if they have been granted SQL roles. Defaults to ABANDON"
+        },
+        "sql_user_host": {
+          "default": "",
+          "description": "The host the user can connect from. This is only supported for BUILT_IN users in MySQL instances. Don't set this field for PostgreSQL and SQL Server instances. Can be an IP address. Changing this forces a new resource to be created. Defaults to empty"
+        },
+        "sql_user_name_and_password": {
+          "default": {},
+          "description": "A key, value mapping of users and their passwords, to use in order to access the SQL. Value for Key mapping is kept as sensitive and will report as such, (sensitive value), durnning terraform plan/apply. Only used for User Type BUILT_IN. Defaults to empty"
+        },
+        "sql_user_password_policy_allowed_failed_attempts": {
+          "default": 7,
+          "description": "Number of failed attempts allowed before the user get locked. Defaults to 7"
+        },
+        "sql_user_password_policy_enable_failed_attempts_check": {
+          "default": true,
+          "description": "If true, the check that will lock user after too many failed login attempts will be enabled. Defaults to true"
+        },
+        "sql_user_password_policy_enable_password_verification": {
+          "default": true,
+          "description": "If true, the user must specify the current password before changing the password. This flag is supported only for MySQL. Defaults to true"
+        },
+        "sql_user_password_policy_password_expiration_duration": {
+          "default": "86400s",
+          "description": "Password expiration duration with one week grace period. Defaults to 86400s"
+        },
+        "sql_user_type_and_sql_user_name": {
+          "default": {},
+          "description": "A key, value mapping of user type and the users, to use in order to access the SQL. Only used for User Type CLOUD_IAM_*. Defaults to empty"
+        }
+      }
+    }
+  },
+  "checks": [
+    {
+      "address": {
+        "kind": "resource",
+        "mode": "managed",
+        "module": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-region-validation-database-instance",
+        "name": "region_validation",
+        "to_display": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-region-validation-database-instance.terraform_data.region_validation",
+        "type": "terraform_data"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-region-validation-database-instance",
+            "to_display": "module.self-gcp-sql-instance-database-user-12182500387.module.core-gcp-region-validation-database-instance.terraform_data.region_validation"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "resource",
+        "mode": "managed",
+        "module": "module.self-gcp-sql-instance-database-user-12182500387.module.core-sql-database-instance",
+        "name": "sql_database_instance",
+        "to_display": "module.self-gcp-sql-instance-database-user-12182500387.module.core-sql-database-instance.google_sql_database_instance.sql_database_instance",
+        "type": "google_sql_database_instance"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.self-gcp-sql-instance-database-user-12182500387.module.core-sql-database-instance",
+            "to_display": "module.self-gcp-sql-instance-database-user-12182500387.module.core-sql-database-instance.google_sql_database_instance.sql_database_instance"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.self-gcp-sql-instance-database-user-12182500387",
+        "name": "sql_database_instance_database_version",
+        "to_display": "module.self-gcp-sql-instance-database-user-12182500387.var.sql_database_instance_database_version"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.self-gcp-sql-instance-database-user-12182500387",
+            "to_display": "module.self-gcp-sql-instance-database-user-12182500387.var.sql_database_instance_database_version"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.self-gcp-sql-instance-database-user-12182500387",
+        "name": "sql_database_instance_environment",
+        "to_display": "module.self-gcp-sql-instance-database-user-12182500387.var.sql_database_instance_environment"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.self-gcp-sql-instance-database-user-12182500387",
+            "to_display": "module.self-gcp-sql-instance-database-user-12182500387.var.sql_database_instance_environment"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.self-gcp-sql-instance-database-user-12182500387",
+        "name": "sql_database_instance_region",
+        "to_display": "module.self-gcp-sql-instance-database-user-12182500387.var.sql_database_instance_region"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.self-gcp-sql-instance-database-user-12182500387",
+            "to_display": "module.self-gcp-sql-instance-database-user-12182500387.var.sql_database_instance_region"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "module": "module.self-gcp-sql-instance-database-user-12182500387",
+        "name": "sql_database_instance_settings_edition",
+        "to_display": "module.self-gcp-sql-instance-database-user-12182500387.var.sql_database_instance_settings_edition"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "module": "module.self-gcp-sql-instance-database-user-12182500387",
+            "to_display": "module.self-gcp-sql-instance-database-user-12182500387.var.sql_database_instance_settings_edition"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "sql_database_instance_database_version",
+        "to_display": "var.sql_database_instance_database_version"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.sql_database_instance_database_version"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "sql_database_instance_environment",
+        "to_display": "var.sql_database_instance_environment"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.sql_database_instance_environment"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "sql_database_instance_region",
+        "to_display": "var.sql_database_instance_region"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.sql_database_instance_region"
+          },
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "address": {
+        "kind": "var",
+        "name": "sql_database_instance_settings_edition",
+        "to_display": "var.sql_database_instance_settings_edition"
+      },
+      "status": "pass",
+      "instances": [
+        {
+          "address": {
+            "to_display": "var.sql_database_instance_settings_edition"
+          },
+          "status": "pass"
+        }
+      ]
+    }
+  ],
+  "timestamp": "2024-12-05T15:10:07Z",
+  "errored": false
+}

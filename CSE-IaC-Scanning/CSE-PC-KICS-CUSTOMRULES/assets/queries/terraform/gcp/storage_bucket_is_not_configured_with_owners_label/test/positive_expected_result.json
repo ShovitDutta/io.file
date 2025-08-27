@@ -1,0 +1,8 @@
+[
+	{
+	  "queryName": "storage bucket is not configured with owners label",
+	  "severity": "LOW",
+	  "line": 14,
+	  "filename": "positive6.json"
+	}
+  ]

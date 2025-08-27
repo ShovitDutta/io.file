@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-LANGUAGESERVICE-17323",
+    "queryName": "azure ai language service not configured with cmek",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Enforce customer managed key for encryption in Azure AI Language Service",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cognitive_account#customer_managed_key-1",
+    "platform": "Terraform",
+    "descriptionID": "1.73.2.3",
+    "cloudProvider": "azure"
+  }

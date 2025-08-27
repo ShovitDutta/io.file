@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "data factory is not disabled public access",
+      "severity": "CRITICAL",
+      "line": 23
+    }
+]

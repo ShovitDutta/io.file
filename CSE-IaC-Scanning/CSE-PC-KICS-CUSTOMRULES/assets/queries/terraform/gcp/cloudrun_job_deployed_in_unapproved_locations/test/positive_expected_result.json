@@ -1,0 +1,8 @@
+[
+    {
+        "queryName": "cloudrun job deployed in unapproved locations.",
+        "severity": "HIGH",
+        "line": 24,
+        "fileName": "positive.json"
+    }
+]

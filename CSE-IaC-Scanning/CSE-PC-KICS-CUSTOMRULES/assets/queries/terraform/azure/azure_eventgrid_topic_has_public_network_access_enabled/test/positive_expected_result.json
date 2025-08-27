@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "azure eventgrid topic has public network access enabled",
+      "severity": "CRITICAL",
+      "line": 30,
+      "fileName": "positive.json"
+    }
+]

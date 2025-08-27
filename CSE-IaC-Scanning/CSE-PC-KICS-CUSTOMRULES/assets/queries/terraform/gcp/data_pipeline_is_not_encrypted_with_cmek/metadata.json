@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-DATAPIPELINE-217721",
+    "queryName": "data pipeline is not encrypted with cmek",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Ensure customer managed encryption keys is being used at the time of data pipeline creation",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/data_pipeline_pipeline#kms_key_name-2",
+    "platform": "Terraform",
+    "descriptionID": "2.177.2.1",
+    "cloudProvider": "gcp"
+}

@@ -1,0 +1,16 @@
+[
+    {
+        "queryName": "cloudRun service is not using cmek",
+        "severity": "HIGH",
+        "line": 14,
+        "fileName": "positive1.json"
+    },
+    {
+        "queryName": "cloudRun service is not using cmek",
+        "severity": "HIGH",
+        "line": 48,
+        "fileName": "positive2.json"
+    }
+
+
+]

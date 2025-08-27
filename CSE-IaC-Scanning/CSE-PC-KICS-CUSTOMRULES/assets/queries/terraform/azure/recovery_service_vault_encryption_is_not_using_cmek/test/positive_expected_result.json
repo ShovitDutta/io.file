@@ -1,0 +1,9 @@
+[
+  {
+    "queryName": "recovery service vault immutability is not using cmek",
+    "severity": "HIGH",
+    "line": 17,
+    "fileName": "positive.json"
+  }
+]
+

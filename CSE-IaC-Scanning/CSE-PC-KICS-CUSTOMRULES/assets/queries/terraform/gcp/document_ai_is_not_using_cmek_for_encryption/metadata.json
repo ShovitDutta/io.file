@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-DOCUMENTAI-24621",
+    "queryName": "document ai is not using cmek for encryption",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "CMEK required on all instances for data-at-rest",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/document_ai_processor#kms_key_name-1",
+    "platform": "Terraform",
+    "descriptionID": "2.46.2.1",
+    "cloudProvider": "gcp"
+}

@@ -1,0 +1,8 @@
+[
+    {
+        "queryName": "cloudfunction is using default service account",
+        "severity": "CRITICAL",
+        "line": 23,
+        "fileName": "positive.json"
+    }
+]

@@ -1,0 +1,191 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_eventgrid_namespace.event_grid_namespace",
+                    "mode": "managed",
+                    "type": "azurerm_eventgrid_namespace",
+                    "name": "event_grid_namespace",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "capacity": 1,
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                                ],
+                                "type": "UserAssigned"
+                            }
+                        ],
+                        "inbound_ip_rule": [],
+                        "location": "eastus2",
+                        "name": "my-eventgrid-namespace",
+                        "public_network_access": "Disabled",
+                        "resource_group_name": "security-poc-yogeshd-rg",
+                        "sku": "Standard",
+                        "tags": {
+                            "costcenter": "190294",
+                            "dataclassification": "Restricted",
+                            "environmenttype": "NonProd",
+                            "itpmid": "ITPMID123456",
+                            "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                        },
+                        "timeouts": null,
+                        "topic_spaces_configuration": []
+                    },
+                    "sensitive_values": {
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    false
+                                ]
+                            }
+                        ],
+                        "inbound_ip_rule": [],
+                        "tags": {},
+                        "topic_spaces_configuration": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_eventgrid_namespace.event_grid_namespace",
+            "mode": "managed",
+            "type": "azurerm_eventgrid_namespace",
+            "name": "event_grid_namespace",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "capacity": 1,
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                            ],
+                            "type": "UserAssigned"
+                        }
+                    ],
+                    "inbound_ip_rule": [],
+                    "location": "eastus2",
+                    "name": "my-eventgrid-namespace",
+                    "public_network_access": "Disabled",
+                    "resource_group_name": "security-poc-yogeshd-rg",
+                    "sku": "Standard",
+                    "tags": {
+                        "costcenter": "190294",
+                        "dataclassification": "Restricted",
+                        "environmenttype": "NonProd",
+                        "itpmid": "ITPMID123456",
+                        "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                    },
+                    "timeouts": null,
+                    "topic_spaces_configuration": []
+                },
+                "after_unknown": {
+                    "id": true,
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ],
+                            "principal_id": true,
+                            "tenant_id": true
+                        }
+                    ],
+                    "inbound_ip_rule": [],
+                    "tags": {},
+                    "topic_spaces_configuration": []
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ]
+                        }
+                    ],
+                    "inbound_ip_rule": [],
+                    "tags": {},
+                    "topic_spaces_configuration": []
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.27.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_eventgrid_namespace.event_grid_namespace",
+                    "mode": "managed",
+                    "type": "azurerm_eventgrid_namespace",
+                    "name": "event_grid_namespace",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "identity": [
+                            {
+                                "identity_ids": {
+                                    "constant_value": [
+                                        "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                                    ]
+                                },
+                                "type": {
+                                    "constant_value": "UserAssigned"
+                                }
+                            }
+                        ],
+                        "location": {
+                            "constant_value": "eastus2"
+                        },
+                        "name": {
+                            "constant_value": "my-eventgrid-namespace"
+                        },
+                        "public_network_access": {
+                            "constant_value": "Disabled"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "costcenter": "190294",
+                                "dataclassification": "Restricted",
+                                "environmenttype": "NonProd",
+                                "itpmid": "ITPMID123456",
+                                "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                            }
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-17T14:35:06Z",
+    "errored": false
+}

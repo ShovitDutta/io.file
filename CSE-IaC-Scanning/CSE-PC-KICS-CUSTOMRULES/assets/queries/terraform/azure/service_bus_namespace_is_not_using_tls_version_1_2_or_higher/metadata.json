@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-SERVICEBUS-13122",
+    "queryName": "service bus namespace is not using tls version 1_2 or higher",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Service Bus Namespace should use TLS version 1.2 or higher to ensure secure communication.",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/servicebus_namespace#minimum_tls_version-1",
+    "platform": "Terraform",
+    "descriptionID": "1.31.2.2",
+    "cloudProvider": "azure"
+}

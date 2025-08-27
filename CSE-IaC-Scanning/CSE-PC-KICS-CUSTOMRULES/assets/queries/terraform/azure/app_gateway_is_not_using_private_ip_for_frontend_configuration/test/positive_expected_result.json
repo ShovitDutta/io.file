@@ -1,0 +1,14 @@
+[
+   {
+      "queryName": "app gateway is not using private ip for frontend configuration",
+      "severity": "HIGH",
+      "line": 59,
+      "filename": "positive1.json"
+   },
+   {
+      "queryName": "app gateway is not using private ip for frontend configuration",
+      "severity": "HIGH",
+      "line": 59,
+      "filename": "positive2.json"
+   }
+]

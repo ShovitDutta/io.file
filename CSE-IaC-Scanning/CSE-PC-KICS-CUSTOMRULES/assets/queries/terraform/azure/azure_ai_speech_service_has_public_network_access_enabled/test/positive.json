@@ -1,0 +1,303 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_cognitive_account.speech_service",
+                    "mode": "managed",
+                    "type": "azurerm_cognitive_account",
+                    "name": "speech_service",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "custom_question_answering_search_service_id": null,
+                        "custom_question_answering_search_service_key": null,
+                        "custom_subdomain_name": "cvs-spch-domain",
+                        "customer_managed_key": [
+                            {
+                                "identity_client_id": "860e8e4f-6052-4dc5-b3f9-feef98bf1a12",
+                                "key_vault_key_id": "https://security-poc-akv-01.vault.azure.net/keys/securitypoccsscmk/7e7b204cd4a240ca880991658dc3ad14"
+                            }
+                        ],
+                        "dynamic_throttling_enabled": false,
+                        "fqdns": null,
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                                ],
+                                "type": "UserAssigned"
+                            }
+                        ],
+                        "kind": "SpeechServices",
+                        "local_auth_enabled": false,
+                        "location": "eastus2",
+                        "metrics_advisor_aad_client_id": null,
+                        "metrics_advisor_aad_tenant_id": null,
+                        "metrics_advisor_super_user_name": null,
+                        "metrics_advisor_website_name": null,
+                        "name": "cvs-speech-service",
+                        "network_acls": [
+                            {
+                                "bypass": null,
+                                "default_action": "Allow",
+                                "ip_rules": null,
+                                "virtual_network_rules": []
+                            }
+                        ],
+                        "outbound_network_access_restricted": true,
+                        "public_network_access_enabled": true,
+                        "qna_runtime_endpoint": null,
+                        "resource_group_name": "security-poc-yogeshd-rg",
+                        "sku_name": "S0",
+                        "storage": [],
+                        "tags": {
+                            "costcenter": "190294",
+                            "dataclassification": "Restricted",
+                            "environment": "NonProd",
+                            "itpmid": "ITPMID123456",
+                            "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "customer_managed_key": [
+                            {}
+                        ],
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    false
+                                ]
+                            }
+                        ],
+                        "network_acls": [
+                            {
+                                "virtual_network_rules": []
+                            }
+                        ],
+                        "storage": [],
+                        "tags": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_cognitive_account.speech_service",
+            "mode": "managed",
+            "type": "azurerm_cognitive_account",
+            "name": "speech_service",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "custom_question_answering_search_service_id": null,
+                    "custom_question_answering_search_service_key": null,
+                    "custom_subdomain_name": "cvs-spch-domain",
+                    "customer_managed_key": [
+                        {
+                            "identity_client_id": "860e8e4f-6052-4dc5-b3f9-feef98bf1a12",
+                            "key_vault_key_id": "https://security-poc-akv-01.vault.azure.net/keys/securitypoccsscmk/7e7b204cd4a240ca880991658dc3ad14"
+                        }
+                    ],
+                    "dynamic_throttling_enabled": false,
+                    "fqdns": null,
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                            ],
+                            "type": "UserAssigned"
+                        }
+                    ],
+                    "kind": "SpeechServices",
+                    "local_auth_enabled": false,
+                    "location": "eastus2",
+                    "metrics_advisor_aad_client_id": null,
+                    "metrics_advisor_aad_tenant_id": null,
+                    "metrics_advisor_super_user_name": null,
+                    "metrics_advisor_website_name": null,
+                    "name": "cvs-speech-service",
+                    "network_acls": [
+                        {
+                            "bypass": null,
+                            "default_action": "Allow",
+                            "ip_rules": null,
+                            "virtual_network_rules": []
+                        }
+                    ],
+                    "outbound_network_access_restricted": true,
+                    "public_network_access_enabled": true,
+                    "qna_runtime_endpoint": null,
+                    "resource_group_name": "security-poc-yogeshd-rg",
+                    "sku_name": "S0",
+                    "storage": [],
+                    "tags": {
+                        "costcenter": "190294",
+                        "dataclassification": "Restricted",
+                        "environment": "NonProd",
+                        "itpmid": "ITPMID123456",
+                        "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "customer_managed_key": [
+                        {}
+                    ],
+                    "endpoint": true,
+                    "id": true,
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ],
+                            "principal_id": true,
+                            "tenant_id": true
+                        }
+                    ],
+                    "network_acls": [
+                        {
+                            "virtual_network_rules": []
+                        }
+                    ],
+                    "primary_access_key": true,
+                    "secondary_access_key": true,
+                    "storage": [],
+                    "tags": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "custom_question_answering_search_service_key": true,
+                    "customer_managed_key": [
+                        {}
+                    ],
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ]
+                        }
+                    ],
+                    "network_acls": [
+                        {
+                            "virtual_network_rules": []
+                        }
+                    ],
+                    "primary_access_key": true,
+                    "secondary_access_key": true,
+                    "storage": [],
+                    "tags": {}
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.27.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_cognitive_account.speech_service",
+                    "mode": "managed",
+                    "type": "azurerm_cognitive_account",
+                    "name": "speech_service",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "custom_subdomain_name": {
+                            "constant_value": "cvs-spch-domain"
+                        },
+                        "customer_managed_key": [
+                            {
+                                "identity_client_id": {
+                                    "constant_value": "860e8e4f-6052-4dc5-b3f9-feef98bf1a12"
+                                },
+                                "key_vault_key_id": {
+                                    "constant_value": "https://security-poc-akv-01.vault.azure.net/keys/securitypoccsscmk/7e7b204cd4a240ca880991658dc3ad14"
+                                }
+                            }
+                        ],
+                        "dynamic_throttling_enabled": {
+                            "constant_value": false
+                        },
+                        "identity": [
+                            {
+                                "identity_ids": {
+                                    "constant_value": [
+                                        "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                                    ]
+                                },
+                                "type": {
+                                    "constant_value": "UserAssigned"
+                                }
+                            }
+                        ],
+                        "kind": {
+                            "constant_value": "SpeechServices"
+                        },
+                        "local_auth_enabled": {
+                            "constant_value": false
+                        },
+                        "location": {
+                            "constant_value": "eastus2"
+                        },
+                        "name": {
+                            "constant_value": "cvs-speech-service"
+                        },
+                        "network_acls": [
+                            {
+                                "default_action": {
+                                    "constant_value": "Allow"
+                                }
+                            }
+                        ],
+                        "outbound_network_access_restricted": {
+                            "constant_value": true
+                        },
+                        "public_network_access_enabled": {
+                            "constant_value": true
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        },
+                        "sku_name": {
+                            "constant_value": "S0"
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "costcenter": "190294",
+                                "dataclassification": "Restricted",
+                                "environment": "NonProd",
+                                "itpmid": "ITPMID123456",
+                                "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                            }
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-06-04T12:50:43Z",
+    "errored": false
+}

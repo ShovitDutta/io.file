@@ -1,0 +1,373 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.10.4",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_data_pipeline_pipeline.primary",
+          "mode": "managed",
+          "type": "google_data_pipeline_pipeline",
+          "name": "primary",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "display_name": "my-pipeline",
+            "name": "my-pipeline",
+            "pipeline_sources": null,
+            "project": "security-controls-sandbox",
+            "region": "us-central1",
+            "schedule_info": [],
+            "state": "STATE_ACTIVE",
+            "timeouts": null,
+            "type": "PIPELINE_TYPE_BATCH",
+            "workload": [
+              {
+                "dataflow_flex_template_request": [
+                  {
+                    "launch_parameter": [
+                      {
+                        "container_spec_gcs_path": null,
+                        "environment": [
+                          {
+                            "additional_experiments": null,
+                            "additional_user_labels": null,
+                            "enable_streaming_engine": null,
+                            "flexrs_goal": null,
+                            "ip_configuration": null,
+                            "kms_key_name": null,
+                            "machine_type": null,
+                            "max_workers": 25,
+                            "network": null,
+                            "num_workers": 20,
+                            "service_account_email": "1234-compute@developer.gserviceaccount.com",
+                            "subnetwork": null,
+                            "temp_location": null,
+                            "worker_region": null,
+                            "worker_zone": null,
+                            "zone": "us-central1"
+                          }
+                        ],
+                        "job_name": "demo",
+                        "launch_options": null,
+                        "parameters": null,
+                        "transform_name_mappings": null,
+                        "update": null
+                      }
+                    ],
+                    "location": "us-central1",
+                    "project_id": "test",
+                    "validate_only": true
+                  }
+                ],
+                "dataflow_launch_template_request": []
+              }
+            ]
+          },
+          "sensitive_values": {
+            "schedule_info": [],
+            "workload": [
+              {
+                "dataflow_flex_template_request": [
+                  {
+                    "launch_parameter": [
+                      {
+                        "environment": [
+                          {}
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "dataflow_launch_template_request": []
+              }
+            ]
+          }
+        },
+        {
+          "address": "google_service_account.service_account",
+          "mode": "managed",
+          "type": "google_service_account",
+          "name": "service_account",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "account_id": "my-account",
+            "create_ignore_already_exists": null,
+            "description": null,
+            "disabled": false,
+            "display_name": "Service Account",
+            "email": "1234-compute@developer.gserviceaccount.com",
+            "member": "serviceAccount:my-account@security-controls-sandbox.iam.gserviceaccount.com",
+            "project": "security-controls-sandbox",
+            "timeouts": null
+          },
+          "sensitive_values": {}
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "google_data_pipeline_pipeline.primary",
+      "mode": "managed",
+      "type": "google_data_pipeline_pipeline",
+      "name": "primary",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "display_name": "my-pipeline",
+          "name": "my-pipeline",
+          "pipeline_sources": null,
+          "project": "security-controls-sandbox",
+          "region": "us-central1",
+          "schedule_info": [],
+          "state": "STATE_ACTIVE",
+          "timeouts": null,
+          "type": "PIPELINE_TYPE_BATCH",
+          "workload": [
+            {
+              "dataflow_flex_template_request": [
+                {
+                  "launch_parameter": [
+                    {
+                      "container_spec_gcs_path": null,
+                      "environment": [
+                        {
+                          "additional_experiments": null,
+                          "additional_user_labels": null,
+                          "enable_streaming_engine": null,
+                          "flexrs_goal": null,
+                          "ip_configuration": null,
+                          "kms_key_name": null,
+                          "machine_type": null,
+                          "max_workers": 25,
+                          "network": null,
+                          "num_workers": 20,
+                          "service_account_email": "1234-compute@developer.gserviceaccount.com",
+                          "subnetwork": null,
+                          "temp_location": null,
+                          "worker_region": null,
+                          "worker_zone": null,
+                          "zone": "us-central1"
+                        }
+                      ],
+                      "job_name": "demo",
+                      "launch_options": null,
+                      "parameters": null,
+                      "transform_name_mappings": null,
+                      "update": null
+                    }
+                  ],
+                  "location": "us-central1",
+                  "project_id": "test",
+                  "validate_only": true
+                }
+              ],
+              "dataflow_launch_template_request": []
+            }
+          ]
+        },
+        "after_unknown": {
+          "create_time": true,
+          "id": true,
+          "job_count": true,
+          "last_update_time": true,
+          "schedule_info": [],
+          "scheduler_service_account_email": true,
+          "workload": [
+            {
+              "dataflow_flex_template_request": [
+                {
+                  "launch_parameter": [
+                    {
+                      "environment": [
+                        {}
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "dataflow_launch_template_request": []
+            }
+          ]
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "schedule_info": [],
+          "workload": [
+            {
+              "dataflow_flex_template_request": [
+                {
+                  "launch_parameter": [
+                    {
+                      "environment": [
+                        {}
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "dataflow_launch_template_request": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "address": "google_service_account.service_account",
+      "mode": "managed",
+      "type": "google_service_account",
+      "name": "service_account",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "account_id": "my-account",
+          "create_ignore_already_exists": null,
+          "description": null,
+          "disabled": false,
+          "display_name": "Service Account",
+          "email": "1234-compute@developer.gserviceaccount.com",
+          "member": "serviceAccount:my-account@security-controls-sandbox.iam.gserviceaccount.com",
+          "project": "security-controls-sandbox",
+          "timeouts": null
+        },
+        "after_unknown": {
+          "id": true,
+          "name": true,
+          "unique_id": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {}
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google",
+        "version_constraint": "6.15.0",
+        "expressions": {
+          "project": {
+            "constant_value": "security-controls-sandbox"
+          },
+          "region": {
+            "constant_value": "us-central1"
+          },
+          "zone": {
+            "constant_value": "us-central1-c"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_data_pipeline_pipeline.primary",
+          "mode": "managed",
+          "type": "google_data_pipeline_pipeline",
+          "name": "primary",
+          "provider_config_key": "google",
+          "expressions": {
+            "display_name": {
+              "constant_value": "my-pipeline"
+            },
+            "name": {
+              "constant_value": "my-pipeline"
+            },
+            "region": {
+              "constant_value": "us-central1"
+            },
+            "state": {
+              "constant_value": "STATE_ACTIVE"
+            },
+            "type": {
+              "constant_value": "PIPELINE_TYPE_BATCH"
+            },
+            "workload": [
+              {
+                "dataflow_flex_template_request": [
+                  {
+                    "launch_parameter": [
+                      {
+                        "environment": [
+                          {
+                            "max_workers": {
+                              "constant_value": 25
+                            },
+                            "num_workers": {
+                              "constant_value": 20
+                            },
+                            "service_account_email": {
+                              "references": [
+                                "google_service_account.service_account.email",
+                                "google_service_account.service_account"
+                              ]
+                            },
+                            "zone": {
+                              "constant_value": "us-central1"
+                            }
+                          }
+                        ],
+                        "job_name": {
+                          "constant_value": "demo"
+                        }
+                      }
+                    ],
+                    "location": {
+                      "constant_value": "us-central1"
+                    },
+                    "project_id": {
+                      "constant_value": "test"
+                    },
+                    "validate_only": {
+                      "constant_value": true
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "google_service_account.service_account",
+          "mode": "managed",
+          "type": "google_service_account",
+          "name": "service_account",
+          "provider_config_key": "google",
+          "expressions": {
+            "account_id": {
+              "constant_value": "my-account"
+            },
+            "display_name": {
+              "constant_value": "Service Account"
+            }
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  },
+  "relevant_attributes": [
+    {
+      "resource": "google_service_account.service_account",
+      "attribute": [
+        "email"
+      ]
+    }
+  ],
+  "timestamp": "2025-05-16T20:47:11Z",
+  "applyable": true,
+  "complete": true,
+  "errored": false
+}

@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-SEARCHSERVICE-16214",
+    "queryName": "search service have local authentication enabled",
+    "severity": "HIGH",
+    "category": "IAM Protection",
+    "descriptionText": "Azure Search Service must have local authentication enabled",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/search_service.html#local_authentication_enabled-1",
+    "platform": "Terraform",
+    "descriptionID": "1.62.1.4",
+    "cloudProvider": "azure"
+}

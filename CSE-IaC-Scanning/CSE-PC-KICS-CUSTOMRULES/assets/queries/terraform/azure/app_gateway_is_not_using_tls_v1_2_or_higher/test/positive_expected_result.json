@@ -1,0 +1,14 @@
+[
+   {
+      "queryName": "app gateway is not using tls v1_2 or higher",
+      "severity": "HIGH",
+      "line": 38,
+      "filename": "positive1.json"
+   },
+   {
+      "queryName": "app gateway is not using tls v1_2 or higher",
+      "severity": "HIGH",
+      "line": 96,
+      "filename": "positive2.json"
+   }
+]

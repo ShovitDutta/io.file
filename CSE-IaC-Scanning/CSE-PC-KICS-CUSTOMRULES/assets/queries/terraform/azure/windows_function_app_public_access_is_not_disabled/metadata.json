@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-FUNCTIONAPP-18311",
+    "queryName": "windows function app public access is not disabled",
+    "severity": "CRITICAL",
+    "category": "Network Security Controls",
+    "descriptionText": "Disable public access to Azure Function",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/windows_function_app#public_network_access_enabled",
+    "platform": "Terraform",
+    "descriptionID": "1.8.3.11",
+    "cloudProvider": "azure"
+}

@@ -1,0 +1,448 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.10.4",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_data_pipeline_pipeline.primary",
+          "mode": "managed",
+          "type": "google_data_pipeline_pipeline",
+          "name": "primary",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "display_name": "my-pipeline",
+            "name": "my-pipeline",
+            "pipeline_sources": null,
+            "project": "security-controls-sandbox",
+            "region": "us-central1",
+            "schedule_info": [
+              {
+                "schedule": "* */2 * * *",
+                "time_zone": "UTC"
+              }
+            ],
+            "state": "STATE_ACTIVE",
+            "timeouts": null,
+            "type": "PIPELINE_TYPE_BATCH",
+            "workload": [
+              {
+                "dataflow_flex_template_request": [],
+                "dataflow_launch_template_request": [
+                  {
+                    "gcs_path": "gs://my-bucket/path",
+                    "launch_parameters": [
+                      {
+                        "environment": [
+                          {
+                            "additional_experiments": null,
+                            "additional_user_labels": {
+                              "context": "test"
+                            },
+                            "bypass_temp_dir_validation": false,
+                            "enable_streaming_engine": false,
+                            "ip_configuration": "WORKER_IP_PRIVATE",
+                            "kms_key_name": null,
+                            "machine_type": "E2",
+                            "max_workers": 5,
+                            "network": "default",
+                            "num_workers": 5,
+                            "service_account_email": "google_service_account.service_account.email",
+                            "subnetwork": null,
+                            "temp_location": "gs://my-bucket/tmp_dir",
+                            "worker_region": "us-central1",
+                            "worker_zone": "us-central1-a",
+                            "zone": "us-centra1-a"
+                          }
+                        ],
+                        "job_name": "my-job",
+                        "parameters": {
+                          "name": "wrench"
+                        },
+                        "transform_name_mapping": {
+                          "name": "wrench"
+                        },
+                        "update": false
+                      }
+                    ],
+                    "location": "us-central1",
+                    "project_id": "my-project",
+                    "validate_only": null
+                  }
+                ]
+              }
+            ]
+          },
+          "sensitive_values": {
+            "schedule_info": [
+              {}
+            ],
+            "workload": [
+              {
+                "dataflow_flex_template_request": [],
+                "dataflow_launch_template_request": [
+                  {
+                    "launch_parameters": [
+                      {
+                        "environment": [
+                          {
+                            "additional_user_labels": {}
+                          }
+                        ],
+                        "parameters": {},
+                        "transform_name_mapping": {}
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "address": "google_service_account.service_account",
+          "mode": "managed",
+          "type": "google_service_account",
+          "name": "service_account",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "account_id": "my-account",
+            "create_ignore_already_exists": null,
+            "description": null,
+            "disabled": false,
+            "display_name": "Service Account",
+            "email": "my-account@security-controls-sandbox.iam.gserviceaccount.com",
+            "member": "serviceAccount:my-account@security-controls-sandbox.iam.gserviceaccount.com",
+            "project": "security-controls-sandbox",
+            "timeouts": null
+          },
+          "sensitive_values": {}
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "google_data_pipeline_pipeline.primary",
+      "mode": "managed",
+      "type": "google_data_pipeline_pipeline",
+      "name": "primary",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "display_name": "my-pipeline",
+          "name": "my-pipeline",
+          "pipeline_sources": null,
+          "project": "security-controls-sandbox",
+          "region": "us-central1",
+          "schedule_info": [
+            {
+              "schedule": "* */2 * * *",
+              "time_zone": "UTC"
+            }
+          ],
+          "state": "STATE_ACTIVE",
+          "timeouts": null,
+          "type": "PIPELINE_TYPE_BATCH",
+          "workload": [
+            {
+              "dataflow_flex_template_request": [],
+              "dataflow_launch_template_request": [
+                {
+                  "gcs_path": "gs://my-bucket/path",
+                  "launch_parameters": [
+                    {
+                      "environment": [
+                        {
+                          "additional_experiments": null,
+                          "additional_user_labels": {
+                            "context": "test"
+                          },
+                          "bypass_temp_dir_validation": false,
+                          "enable_streaming_engine": false,
+                          "ip_configuration": "WORKER_IP_PRIVATE",
+                          "kms_key_name": null,
+                          "machine_type": "E2",
+                          "max_workers": 5,
+                          "network": "default",
+                          "num_workers": 5,
+                          "service_account_email": "google_service_account.service_account.email",
+                          "subnetwork": null,
+                          "temp_location": "gs://my-bucket/tmp_dir",
+                          "worker_region": "us-central1",
+                          "worker_zone": "us-central1-a",
+                          "zone": "us-centra1-a"
+                        }
+                      ],
+                      "job_name": "my-job",
+                      "parameters": {
+                        "name": "wrench"
+                      },
+                      "transform_name_mapping": {
+                        "name": "wrench"
+                      },
+                      "update": false
+                    }
+                  ],
+                  "location": "us-central1",
+                  "project_id": "my-project",
+                  "validate_only": null
+                }
+              ]
+            }
+          ]
+        },
+        "after_unknown": {
+          "create_time": true,
+          "id": true,
+          "job_count": true,
+          "last_update_time": true,
+          "schedule_info": [
+            {
+              "next_job_time": true
+            }
+          ],
+          "scheduler_service_account_email": true,
+          "workload": [
+            {
+              "dataflow_flex_template_request": [],
+              "dataflow_launch_template_request": [
+                {
+                  "launch_parameters": [
+                    {
+                      "environment": [
+                        {
+                          "additional_user_labels": {}
+                        }
+                      ],
+                      "parameters": {},
+                      "transform_name_mapping": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "schedule_info": [
+            {}
+          ],
+          "workload": [
+            {
+              "dataflow_flex_template_request": [],
+              "dataflow_launch_template_request": [
+                {
+                  "launch_parameters": [
+                    {
+                      "environment": [
+                        {
+                          "additional_user_labels": {}
+                        }
+                      ],
+                      "parameters": {},
+                      "transform_name_mapping": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "address": "google_service_account.service_account",
+      "mode": "managed",
+      "type": "google_service_account",
+      "name": "service_account",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "account_id": "my-account",
+          "create_ignore_already_exists": null,
+          "description": null,
+          "disabled": false,
+          "display_name": "Service Account",
+          "email": "my-account@security-controls-sandbox.iam.gserviceaccount.com",
+          "member": "serviceAccount:my-account@security-controls-sandbox.iam.gserviceaccount.com",
+          "project": "security-controls-sandbox",
+          "timeouts": null
+        },
+        "after_unknown": {
+          "id": true,
+          "name": true,
+          "unique_id": true
+        },
+        "before_sensitive": false,
+        "after_sensitive": {}
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google",
+        "version_constraint": "6.15.0",
+        "expressions": {
+          "project": {
+            "constant_value": "security-controls-sandbox"
+          },
+          "region": {
+            "constant_value": "us-central1"
+          },
+          "zone": {
+            "constant_value": "us-central1-c"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_data_pipeline_pipeline.primary",
+          "mode": "managed",
+          "type": "google_data_pipeline_pipeline",
+          "name": "primary",
+          "provider_config_key": "google",
+          "expressions": {
+            "display_name": {
+              "constant_value": "my-pipeline"
+            },
+            "name": {
+              "constant_value": "my-pipeline"
+            },
+            "region": {
+              "constant_value": "us-central1"
+            },
+            "schedule_info": [
+              {
+                "schedule": {
+                  "constant_value": "* */2 * * *"
+                }
+              }
+            ],
+            "state": {
+              "constant_value": "STATE_ACTIVE"
+            },
+            "type": {
+              "constant_value": "PIPELINE_TYPE_BATCH"
+            },
+            "workload": [
+              {
+                "dataflow_launch_template_request": [
+                  {
+                    "gcs_path": {
+                      "constant_value": "gs://my-bucket/path"
+                    },
+                    "launch_parameters": [
+                      {
+                        "environment": [
+                          {
+                            "additional_user_labels": {
+                              "constant_value": {
+                                "context": "test"
+                              }
+                            },
+                            "bypass_temp_dir_validation": {
+                              "constant_value": false
+                            },
+                            "enable_streaming_engine": {
+                              "constant_value": "false"
+                            },
+                            "machine_type": {
+                              "constant_value": "E2"
+                            },
+                            "max_workers": {
+                              "constant_value": 5
+                            },
+                            "network": {
+                              "constant_value": "default"
+                            },
+                            "num_workers": {
+                              "constant_value": 5
+                            },
+                            "service_account_email": {
+                              "constant_value": "google_service_account.service_account.email"
+                            },
+                            "temp_location": {
+                              "constant_value": "gs://my-bucket/tmp_dir"
+                            },
+                            "worker_region": {
+                              "constant_value": "us-central1"
+                            },
+                            "worker_zone": {
+                              "constant_value": "us-central1-a"
+                            },
+                            "zone": {
+                              "constant_value": "us-centra1-a"
+                            }
+                          }
+                        ],
+                        "job_name": {
+                          "constant_value": "my-job"
+                        },
+                        "parameters": {
+                          "constant_value": {
+                            "name": "wrench"
+                          }
+                        },
+                        "transform_name_mapping": {
+                          "constant_value": {
+                            "name": "wrench"
+                          }
+                        },
+                        "update": {
+                          "constant_value": false
+                        }
+                      }
+                    ],
+                    "location": {
+                      "constant_value": "us-central1"
+                    },
+                    "project_id": {
+                      "constant_value": "my-project"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "schema_version": 0
+        },
+        {
+          "address": "google_service_account.service_account",
+          "mode": "managed",
+          "type": "google_service_account",
+          "name": "service_account",
+          "provider_config_key": "google",
+          "expressions": {
+            "account_id": {
+              "constant_value": "my-account"
+            },
+            "display_name": {
+              "constant_value": "Service Account"
+            }
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  },
+  "timestamp": "2025-05-16T18:20:14Z",
+  "applyable": true,
+  "complete": true,
+  "errored": false
+}

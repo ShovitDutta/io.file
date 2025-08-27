@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-SEARCHSERVICE-16223",
+    "queryName": "search service is not enforcing cmek for encryption",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Enforce customer managed key for encryption in Azure Search Service",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/search_service.html#customer_managed_key_enforcement_enabled-1",
+    "platform": "Terraform",
+    "descriptionID": "1.62.2.3",
+    "cloudProvider": "azure"
+  }

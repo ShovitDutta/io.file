@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-STORAGEACCOUNT-1319",
+    "queryName": "blob is publicly accessible",
+    "severity": "CRITICAL",
+    "category": "Access Control",
+    "descriptionText": "Disable Blob public access policy must be in place",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_container#container_access_type",
+    "platform": "Terraform",
+    "descriptionID": "1.3.1.9",
+    "cloudProvider": "azure"
+  }

@@ -1,0 +1,7 @@
+[
+  {
+    "queryName": "secure boot is disabled for shielded worker nodes",
+    "severity": "MEDIUM",
+    "line": 14
+  }
+]

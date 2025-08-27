@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "key vault is missing tag environmenttype",
+      "severity": "LOW",
+      "line": 26
+    }
+]

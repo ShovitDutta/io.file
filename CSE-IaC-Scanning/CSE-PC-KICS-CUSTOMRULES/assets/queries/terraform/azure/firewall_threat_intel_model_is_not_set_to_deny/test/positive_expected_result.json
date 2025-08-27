@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "firewall threat intel model is not set to deny",
+      "severity": "HIGH",
+      "line": 26
+    }
+]

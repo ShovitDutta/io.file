@@ -1,0 +1,8 @@
+[
+   {
+    "queryName": "redis cache is not limited access through private endpoint",
+    "severity": "HIGH",
+    "line": 20,
+    "filename": "positive.json"
+   }
+]

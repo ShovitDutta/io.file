@@ -1,0 +1,14 @@
+[
+    {
+      "queryName": "CMEK required on all instances for data-at-rest",
+      "severity": "HIGH",
+      "line": 14,
+      "fileName": "positive1.json"
+    },
+    {
+      "queryName": "CMEK required on all instances for data-at-rest",
+      "severity": "HIGH",
+      "line": 18,
+      "fileName": "positive2.json"
+    }
+  ]

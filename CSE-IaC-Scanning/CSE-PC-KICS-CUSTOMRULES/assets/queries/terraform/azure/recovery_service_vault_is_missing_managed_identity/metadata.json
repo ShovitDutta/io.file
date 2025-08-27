@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-RECOVERYSERVICEVAULT-14812",
+  "queryName": "recovery service vault is missing managed identity",
+  "severity": "HIGH",
+  "category": "IAM",
+  "descriptionText": "Use Managed Identities for access from other azure resources, eliminating the need to store/use credentials",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/recovery_services_vault#identity",
+  "platform": "Terraform",
+  "descriptionID": "1.48.1.2",
+  "cloudProvider": "azure"
+}

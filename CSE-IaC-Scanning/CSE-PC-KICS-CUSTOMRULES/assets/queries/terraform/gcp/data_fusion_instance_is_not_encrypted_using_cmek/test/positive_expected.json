@@ -1,0 +1,7 @@
+[
+    {
+        "queryName": "data fusion instance is not encrypted using cmek",
+        "severity": "HIGH",
+        "line": 16
+    }
+]

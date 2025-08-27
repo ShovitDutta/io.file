@@ -1,0 +1,199 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_vertex_ai_featurestore.featurestore",
+                    "mode": "managed",
+                    "type": "google_vertex_ai_featurestore",
+                    "name": "featurestore",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "effective_labels": {
+                            "foo": "bar",
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "encryption_spec": [
+                            {
+                                "kms_key_name": "projects/test/locations/nam3/keyRings/gkr-nonprod-uscentral1/cryptoKeys/gk-hcb-nonprod-sde-dbaas-uscentral1"
+                            }
+                        ],
+                        "force_destroy": true,
+                        "labels": {
+                            "foo": "bar"
+                        },
+                        "name": "terraform",
+                        "online_serving_config": [
+                            {
+                                "fixed_node_count": 2,
+                                "scaling": []
+                            }
+                        ],
+                        "project": "security-controls-sandbox",
+                        "region": "us-central1",
+                        "terraform_labels": {
+                            "foo": "bar",
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "effective_labels": {},
+                        "encryption_spec": [
+                            {}
+                        ],
+                        "labels": {},
+                        "online_serving_config": [
+                            {
+                                "scaling": []
+                            }
+                        ],
+                        "terraform_labels": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_vertex_ai_featurestore.featurestore",
+            "mode": "managed",
+            "type": "google_vertex_ai_featurestore",
+            "name": "featurestore",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "effective_labels": {
+                        "foo": "bar",
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "encryption_spec": [
+                        {
+                            "kms_key_name": "projects/cvs-key-vault-nonprod/locations/nam3/keyRings/gkr-nonprod-uscentral1/cryptoKeys/gk-hcb-nonprod-sde-dbaas-uscentral1"
+                        }
+                    ],
+                    "force_destroy": true,
+                    "labels": {
+                        "foo": "bar"
+                    },
+                    "name": "terraform",
+                    "online_serving_config": [
+                        {
+                            "fixed_node_count": 2,
+                            "scaling": []
+                        }
+                    ],
+                    "project": "security-controls-sandbox",
+                    "region": "us-central1",
+                    "terraform_labels": {
+                        "foo": "bar",
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "create_time": true,
+                    "effective_labels": {},
+                    "encryption_spec": [
+                        {}
+                    ],
+                    "etag": true,
+                    "id": true,
+                    "labels": {},
+                    "online_serving_config": [
+                        {
+                            "scaling": []
+                        }
+                    ],
+                    "terraform_labels": {},
+                    "update_time": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "effective_labels": {},
+                    "encryption_spec": [
+                        {}
+                    ],
+                    "labels": {},
+                    "online_serving_config": [
+                        {
+                            "scaling": []
+                        }
+                    ],
+                    "terraform_labels": {}
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.15.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    },
+                    "zone": {
+                        "constant_value": "us-central1-c"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_vertex_ai_featurestore.featurestore",
+                    "mode": "managed",
+                    "type": "google_vertex_ai_featurestore",
+                    "name": "featurestore",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "encryption_spec": [
+                            {
+                                "kms_key_name": {
+                                    "constant_value": "projects/cvs-key-vault-nonprod/locations/nam3/keyRings/gkr-nonprod-uscentral1/cryptoKeys/gk-hcb-nonprod-sde-dbaas-uscentral1"
+                                }
+                            }
+                        ],
+                        "force_destroy": {
+                            "constant_value": true
+                        },
+                        "labels": {
+                            "constant_value": {
+                                "foo": "bar"
+                            }
+                        },
+                        "name": {
+                            "constant_value": "terraform"
+                        },
+                        "online_serving_config": [
+                            {
+                                "fixed_node_count": {
+                                    "constant_value": 2
+                                }
+                            }
+                        ],
+                        "region": {
+                            "constant_value": "us-central1"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-30T15:42:52Z",
+    "errored": false
+}

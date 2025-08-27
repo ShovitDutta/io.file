@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "cloud composer is not encrypted with CMEK to protect data",
+        "severity": "HIGH",
+        "line": 14,
+        "fileName": "positive1.json"
+    },
+    {
+        "queryName": "cloud composer is not encrypted with CMEK to protect data",
+        "severity": "HIGH",
+        "line": 15,
+        "fileName": "positive2.json"
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-COMPUTEENGINE-2651",
+    "queryName": "compute engine is missing labels",
+    "severity": "LOW",
+    "category": "GOVERNANCE",
+    "descriptionText": "IT Hygiene Compute Instances must be labelled per standards",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance#labels",
+    "platform": "Terraform",
+    "descriptionID": "2.6.5.1",
+    "cloudProvider": "gcp"
+}

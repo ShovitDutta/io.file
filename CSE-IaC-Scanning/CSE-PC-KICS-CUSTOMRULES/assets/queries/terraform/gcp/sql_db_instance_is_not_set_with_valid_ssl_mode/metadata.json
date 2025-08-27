@@ -1,0 +1,12 @@
+{
+  "id": "CSE-PC-GCP-CLOUDSQL-27933",
+  "queryName": "SQL DB Instance is not set with valid SSL mode",
+  "severity": "HIGH",
+  "category": "Data Protection",
+  "descriptionText": "Cloud SQL Database Instance should have SSL mode Encrypted ONly",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/sql_database_instance#ssl_mode-1",
+  "platform": "Terraform",
+  "descriptionID": "2.79.3.3",
+  "cloudProvider": "gcp",
+  "cwe": ""
+}

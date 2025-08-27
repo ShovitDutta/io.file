@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-KEYVAULT-1428",
+    "queryName": "key_vault_key_rotation_days_is_incorrect",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Ensure all keys rotate 365 days after creation",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_key#key_type",
+    "platform": "Terraform",
+    "descriptionID": "1.4.2.8",
+    "cloudProvider": "azure"
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "document ai is not using cmek for encryption",
+        "severity": "HIGH",
+        "line": 14,
+        "fileName": "positive1.json"
+    },
+    {
+        "queryName": "document ai is not using cmek for encryption",
+        "severity": "HIGH",
+        "line": 15,
+        "fileName": "positive2.json"
+    }
+]

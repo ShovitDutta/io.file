@@ -1,0 +1,12 @@
+[
+    {
+      "queryName": "key vault is not using rbac for authorization",
+      "severity": "HIGH",
+      "line": 1
+    },
+    {
+      "queryName": "key vault is not using rbac for authorization",
+      "severity": "HIGH",
+      "line": 7
+    }
+]

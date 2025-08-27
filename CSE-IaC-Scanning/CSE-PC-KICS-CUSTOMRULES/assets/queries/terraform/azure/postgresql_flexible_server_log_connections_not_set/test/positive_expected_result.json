@@ -1,0 +1,17 @@
+[
+  {
+    "queryName": "postgresql flexible server log connection not set",
+    "severity": "MEDIUM",
+    "line": 4
+  },
+  {
+    "queryName": "postgresql flexible server log connection not set",
+    "severity": "MEDIUM",
+    "line": 10
+  },
+  {
+    "queryName": "postgresql flexible server log connection not set",
+    "severity": "MEDIUM",
+    "line": 16
+  }
+]

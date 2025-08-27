@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "redis instance intransit encryption is not enabled using tls",
+        "severity": "CRITICAL",
+        "line": 71,
+        "fileName": "positive.json"
+    },
+    {
+        "queryName": "redis instance intransit encryption is not enabled using tls",
+        "severity": "CRITICAL",
+        "line": 71,
+        "fileName": "positive.json"
+    }
+]

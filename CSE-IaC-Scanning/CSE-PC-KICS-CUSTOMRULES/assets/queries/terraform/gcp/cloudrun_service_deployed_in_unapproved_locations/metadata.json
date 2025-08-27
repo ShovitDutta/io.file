@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDRUNSVC-23352",
+    "queryName": "cloudrun service deployed in unapproved locations",
+    "severity": "HIGH",
+    "category": "Governance",
+    "descriptionText": "All Cloudrun Services should be deployed in valid regions.",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloud_run_v2_service#location",
+    "platform": "Terraform",
+    "descriptionID": "2.33.5.2",
+    "cloudProvider": "gcp"
+}

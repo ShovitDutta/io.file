@@ -1,0 +1,38 @@
+[
+  {
+    "queryName": "gke cluster is missing labels",
+    "severity": "LOW",
+    "line": 114,
+    "filename": "positive1.json"
+  },
+  {
+    "queryName": "gke cluster is missing labels",
+    "severity": "LOW",
+    "line": 114,
+    "filename": "positive2.json"
+  },
+  {
+    "queryName": "gke cluster is missing labels",
+    "severity": "LOW",
+    "line": 114,
+    "filename": "positive3.json"
+  },
+  {
+    "queryName": "gke cluster is missing labels",
+    "severity": "LOW",
+    "line": 114,
+    "filename": "positive4.json"
+  },
+  {
+    "queryName": "gke cluster is missing labels",
+    "severity": "LOW",
+    "line": 114,
+    "filename": "positive5.json"
+  },
+  {
+    "queryName": "gke cluster is missing labels",
+    "severity": "LOW",
+    "line": 114,
+    "filename": "positive6.json"
+  }
+]

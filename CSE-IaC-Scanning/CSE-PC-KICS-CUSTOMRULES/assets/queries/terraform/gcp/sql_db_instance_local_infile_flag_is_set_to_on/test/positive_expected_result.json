@@ -1,0 +1,16 @@
+[
+    {
+      "queryName": "sql db instance local infile flag is set to on",
+      "severity": "MEDIUM",
+      "line": 22,
+      "filename": "positive1.json"
+    },
+    {
+      "queryName": "sql db instance local infile flag is set to on",
+      "severity": "MEDIUM",
+      "line": 22,
+      "filename": "positive2.json"
+    }
+
+]
+

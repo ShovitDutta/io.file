@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "azure custom vision resource has public network access enabled",
+        "severity": "CRITICAL",
+        "line": 44,
+        "fileName": "positive.json"
+    },
+    {
+        "queryName": "azure custom vision resource has public network access enabled",
+        "severity": "CRITICAL",
+        "line": 111,
+        "fileName": "positive.json"
+    }
+]

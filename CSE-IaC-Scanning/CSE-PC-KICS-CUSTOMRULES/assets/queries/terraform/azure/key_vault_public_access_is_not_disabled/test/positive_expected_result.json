@@ -1,0 +1,12 @@
+[
+    {
+      "queryName": "key vault public access is not disbaled",
+      "severity": "CRITICAL",
+      "line": 1
+    },
+    {
+      "queryName": "key vault public access is not disbaled",
+      "severity": "CRITICAL",
+      "line": 7
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-VERTEXAI-24327",
+    "queryName": "vertex ai dataset is not encrypted with cmek",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Ensure CMEK is enforced for Vertex AI datasets",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/vertex_ai_dataset#kms_key_name-3",
+    "platform": "Terraform",
+    "descriptionID": "2.43.2.7",
+    "cloudProvider": "gcp"
+}

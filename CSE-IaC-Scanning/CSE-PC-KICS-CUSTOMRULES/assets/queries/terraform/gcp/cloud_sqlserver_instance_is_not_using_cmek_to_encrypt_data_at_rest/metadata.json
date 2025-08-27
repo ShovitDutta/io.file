@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDSQLSERVER-28121",
+    "queryName": "cloud sqlserver instance is not using cmek to encrypt data at rest",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "CMEK required on all instances for data-at-rest",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/sql_database_instance#encryption_key_name",
+    "platform": "Terraform",
+    "descriptionID": "2.81.2.1",
+    "cloudProvider": "gcp"
+}  

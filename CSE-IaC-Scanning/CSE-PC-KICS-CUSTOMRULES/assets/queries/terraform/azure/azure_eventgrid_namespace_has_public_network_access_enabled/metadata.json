@@ -1,0 +1,11 @@
+{
+    "id": "CSE-AZURE-PC-EVENTGRIDNAMESPACE-13032",
+    "queryName": "azure eventgrid namespace has public network access enabled",
+    "severity": "CRITICAL",
+    "category": "Network Security",
+    "descriptionText": "Azure Event Grid namespaces should disable public network access",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/eventgrid_namespace#public_network_access-1",
+    "platform": "Terraform",
+    "descriptionID": "1.30.3.2",
+    "cloudProvider": "azure"
+}

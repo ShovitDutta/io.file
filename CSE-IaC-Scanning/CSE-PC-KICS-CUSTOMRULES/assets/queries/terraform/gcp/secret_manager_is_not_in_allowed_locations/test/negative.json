@@ -1,0 +1,160 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_secret_manager_regional_secret.regional-secret-basic",
+                    "mode": "managed",
+                    "type": "google_secret_manager_regional_secret",
+                    "name": "regional-secret-basic",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "annotations": null,
+                        "customer_managed_encryption": [],
+                        "effective_labels": {
+                            "goog-terraform-provisioned": "true",
+                            "label": "my-label"
+                        },
+                        "labels": {
+                            "label": "my-label"
+                        },
+                        "location": "us-central1",
+                        "project": "security-controls-sandbox",
+                        "rotation": [],
+                        "secret_id": "tf-reg-secret",
+                        "terraform_labels": {
+                            "goog-terraform-provisioned": "true",
+                            "label": "my-label"
+                        },
+                        "timeouts": null,
+                        "topics": [],
+                        "ttl": null,
+                        "version_aliases": null,
+                        "version_destroy_ttl": null
+                    },
+                    "sensitive_values": {
+                        "customer_managed_encryption": [],
+                        "effective_annotations": {},
+                        "effective_labels": {},
+                        "labels": {},
+                        "rotation": [],
+                        "terraform_labels": {},
+                        "topics": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_secret_manager_regional_secret.regional-secret-basic",
+            "mode": "managed",
+            "type": "google_secret_manager_regional_secret",
+            "name": "regional-secret-basic",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "annotations": null,
+                    "customer_managed_encryption": [],
+                    "effective_labels": {
+                        "goog-terraform-provisioned": "true",
+                        "label": "my-label"
+                    },
+                    "labels": {
+                        "label": "my-label"
+                    },
+                    "location": "us-central1",
+                    "project": "security-controls-sandbox",
+                    "rotation": [],
+                    "secret_id": "tf-reg-secret",
+                    "terraform_labels": {
+                        "goog-terraform-provisioned": "true",
+                        "label": "my-label"
+                    },
+                    "timeouts": null,
+                    "topics": [],
+                    "ttl": null,
+                    "version_aliases": null,
+                    "version_destroy_ttl": null
+                },
+                "after_unknown": {
+                    "create_time": true,
+                    "customer_managed_encryption": [],
+                    "effective_annotations": true,
+                    "effective_labels": {},
+                    "expire_time": true,
+                    "id": true,
+                    "labels": {},
+                    "name": true,
+                    "rotation": [],
+                    "terraform_labels": {},
+                    "topics": []
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "customer_managed_encryption": [],
+                    "effective_annotations": {},
+                    "effective_labels": {},
+                    "labels": {},
+                    "rotation": [],
+                    "terraform_labels": {},
+                    "topics": []
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.15.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    },
+                    "zone": {
+                        "constant_value": "us-central1-c"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_secret_manager_regional_secret.regional-secret-basic",
+                    "mode": "managed",
+                    "type": "google_secret_manager_regional_secret",
+                    "name": "regional-secret-basic",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "labels": {
+                            "constant_value": {
+                                "label": "my-label"
+                            }
+                        },
+                        "location": {
+                            "constant_value": "us-central1"
+                        },
+                        "secret_id": {
+                            "constant_value": "tf-reg-secret"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-14T21:16:58Z",
+    "errored": false
+}
