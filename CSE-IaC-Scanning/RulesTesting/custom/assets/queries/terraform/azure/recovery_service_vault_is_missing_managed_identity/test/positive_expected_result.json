@@ -1,0 +1,9 @@
+[
+  {
+    "queryName": "recovery service vault is missing managed identity",
+    "severity": "HIGH",
+    "line": 25,
+    "fileName": "positive.json"
+  }
+]
+

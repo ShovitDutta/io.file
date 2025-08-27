@@ -1,0 +1,15 @@
+[
+  {
+    "queryName": "recovery service vault immutability is not enabled",
+    "severity": "HIGH",
+    "line": 33,
+    "fileName": "positive.json"
+  },
+  {
+    "queryName": "recovery service vault immutability is not enabled",
+    "severity": "HIGH",
+    "line": 33,
+    "fileName": "positive2.json"
+  }
+]
+

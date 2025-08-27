@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-MYSQLFLEXIBLESERVER-12751",
+  "queryName": "mysql flexible server is missing tags",
+  "severity": "LOW",
+  "category": "Governance",
+  "descriptionText": "IT Hygiene:Function must be tagged per standards",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mysql_flexible_server#tags",
+  "platform": "Terraform",
+  "descriptionID": "1.27.5.1",
+  "cloudProvider": "azure"
+}

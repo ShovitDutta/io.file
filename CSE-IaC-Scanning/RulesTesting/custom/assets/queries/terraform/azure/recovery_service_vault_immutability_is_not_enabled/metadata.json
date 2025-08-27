@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-RECOVERYSERVICEVAULT-14822",
+  "queryName": "recovery service vault immutability is not enabled",
+  "severity": "HIGH",
+  "category": "Data Protection",
+  "descriptionText": "Enable immutability",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/recovery_services_vault.html#immutability",
+  "platform": "Terraform",
+  "descriptionID": "1.48.2.2",
+  "cloudProvider": "azure"
+}

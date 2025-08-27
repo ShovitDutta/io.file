@@ -1,0 +1,9 @@
+[
+  {
+    "queryName": "recovery service vault is not limit access with private endpoint",
+    "severity": "HIGH",
+    "line": 64,
+    "fileName": "positive.json"
+  }
+]
+
