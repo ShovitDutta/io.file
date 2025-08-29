@@ -9,7 +9,7 @@ git pull origin main
 git config user.name "Shovit Dutta"
 git config user.email "shovitdutta1@gmail.com"
 git add .
-git commit -m "commit_message"
+git commit -m "updated-by-updater"
 git push origin main
 =======================================| root-push |=========================================
 |
@@ -27,7 +27,7 @@ git pull origin main
 git config user.name "Nishant Sethi"
 git config user.email "nishant.sethi@cvshealth.com"
 git add .
-git commit -m "commit_message"
+git commit -m "updated-by-updater"
 git subtree push --prefix=CSE-IaC-Scanning cse_private main
 git push origin main
 =================================| CSE-IaC-Scanning-push |===================================
