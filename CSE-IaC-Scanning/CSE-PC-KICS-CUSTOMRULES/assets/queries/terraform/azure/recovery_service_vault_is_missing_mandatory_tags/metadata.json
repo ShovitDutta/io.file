@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-RECOVERYSERVICEVAULT-14851",
+  "queryName": "recovery service vault is missing mandatory tags",
+  "severity": "LOW",
+  "category": "Governance",
+  "descriptionText": "IT Hygiene: Recovery Service Vault must be tagged per standards",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/recovery_services_vault.html#tags",
+  "platform": "Terraform",
+  "descriptionID": "1.48.5.1",
+  "cloudProvider": "azure"
+}

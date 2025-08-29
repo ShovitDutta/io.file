@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "postgresql instance private access is not configured to work within vpc",
+      "severity": "HIGH",
+      "line": 7
+    }
+  ]

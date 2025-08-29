@@ -1,0 +1,8 @@
+[
+   {
+    "queryName": "windows function app is not using tls1 2 or higher",
+    "severity": "HIGH",
+    "line": 61,
+    "fileName": "positive.json"
+   }
+]

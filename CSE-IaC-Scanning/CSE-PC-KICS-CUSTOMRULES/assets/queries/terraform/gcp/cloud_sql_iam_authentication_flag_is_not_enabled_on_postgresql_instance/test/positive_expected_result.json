@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "cloudsql.iam_authentication database flag must be defined and set to on",
+      "severity": "HIGH",
+      "line": 6
+    }
+]

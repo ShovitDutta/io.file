@@ -1,0 +1,833 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_windows_function_app.example-windows-function-app",
+                    "mode": "managed",
+                    "type": "azurerm_windows_function_app",
+                    "name": "example-windows-function-app",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 1,
+                    "values": {
+                        "app_settings": null,
+                        "auth_settings": [],
+                        "auth_settings_v2": [],
+                        "backup": [],
+                        "builtin_logging_enabled": true,
+                        "client_certificate_enabled": false,
+                        "client_certificate_exclusion_paths": null,
+                        "client_certificate_mode": "Optional",
+                        "connection_string": [],
+                        "content_share_force_disabled": false,
+                        "daily_memory_time_quota": 0,
+                        "enabled": true,
+                        "ftp_publish_basic_authentication_enabled": true,
+                        "functions_extension_version": "~4",
+                        "https_only": true,
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                                ],
+                                "type": "UserAssigned"
+                            }
+                        ],
+                        "location": "eastus2",
+                        "name": "example-windows-function-app",
+                        "public_network_access_enabled": false,
+                        "resource_group_name": "security-poc-yogeshd-rg",
+                        "service_plan_id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-suhasu-rg/providers/Microsoft.Web/serverFarms/ASP-securitypocsuhasurg-8c6d",
+                        "site_config": [
+                            {
+                                "always_on": false,
+                                "api_definition_url": null,
+                                "api_management_api_id": null,
+                                "app_command_line": null,
+                                "app_service_logs": [],
+                                "application_insights_connection_string": "InstrumentationKey=0f1eb2ea-bd18-4323-87ea-e856f617cfd5;IngestionEndpoint=https://eastus2-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus2.livediagnostics.monitor.azure.com/;ApplicationId=69a13573-9d20-4e89-820c-a1ea94fd8e29",
+                                "application_insights_key": "0f1eb2ea-bd18-4323-87ea-e856f617cfd5",
+                                "cors": [],
+                                "ftps_state": "Disabled",
+                                "health_check_eviction_time_in_min": null,
+                                "health_check_path": null,
+                                "http2_enabled": false,
+                                "ip_restriction": [],
+                                "ip_restriction_default_action": "Allow",
+                                "load_balancing_mode": "LeastRequests",
+                                "managed_pipeline_mode": "Integrated",
+                                "minimum_tls_version": "1.1",
+                                "remote_debugging_enabled": false,
+                                "runtime_scale_monitoring_enabled": null,
+                                "scm_ip_restriction": [],
+                                "scm_ip_restriction_default_action": "Allow",
+                                "scm_minimum_tls_version": "1.1",
+                                "scm_use_main_ip_restriction": false,
+                                "use_32_bit_worker": true,
+                                "vnet_route_all_enabled": false,
+                                "websockets_enabled": false
+                            }
+                        ],
+                        "sticky_settings": [],
+                        "storage_account": [],
+                        "storage_account_access_key": "7cPFGpaZk9+rf53tEmnbopC036xD6DuuB5NC8NTV8clqMoHlV3suK0a8808dQX0X0iWA1b3U5qOG+AStSBUP5w==",
+                        "storage_account_name": "securitypoccssstg01",
+                        "storage_key_vault_secret_id": null,
+                        "storage_uses_managed_identity": false,
+                        "tags": {
+                            "costcenter": "02045",
+                            "dataclassification": "confidential",
+                            "environmenttype": "dev",
+                            "itpmid": "12345",
+                            "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                        },
+                        "timeouts": null,
+                        "virtual_network_subnet_id": null,
+                        "vnet_image_pull_enabled": false,
+                        "webdeploy_publish_basic_authentication_enabled": true
+                    },
+                    "sensitive_values": {
+                        "auth_settings": [],
+                        "auth_settings_v2": [],
+                        "backup": [],
+                        "connection_string": [],
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    false
+                                ]
+                            }
+                        ],
+                        "outbound_ip_address_list": [],
+                        "possible_outbound_ip_address_list": [],
+                        "site_config": [
+                            {
+                                "app_service_logs": [],
+                                "application_insights_connection_string": true,
+                                "application_stack": [],
+                                "cors": [],
+                                "default_documents": [],
+                                "ip_restriction": [],
+                                "scm_ip_restriction": []
+                            }
+                        ],
+                        "site_credential": [],
+                        "sticky_settings": [],
+                        "storage_account": [],
+                        "storage_account_access_key": true,
+                        "tags": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_windows_function_app.example-windows-function-app",
+            "mode": "managed",
+            "type": "azurerm_windows_function_app",
+            "name": "example-windows-function-app",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "app_settings": null,
+                    "auth_settings": [],
+                    "auth_settings_v2": [],
+                    "backup": [],
+                    "builtin_logging_enabled": true,
+                    "client_certificate_enabled": false,
+                    "client_certificate_exclusion_paths": null,
+                    "client_certificate_mode": "Optional",
+                    "connection_string": [],
+                    "content_share_force_disabled": false,
+                    "daily_memory_time_quota": 0,
+                    "enabled": true,
+                    "ftp_publish_basic_authentication_enabled": true,
+                    "functions_extension_version": "~4",
+                    "https_only": true,
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                            ],
+                            "type": "UserAssigned"
+                        }
+                    ],
+                    "location": "eastus2",
+                    "name": "example-windows-function-app",
+                    "public_network_access_enabled": false,
+                    "resource_group_name": "security-poc-yogeshd-rg",
+                    "service_plan_id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-suhasu-rg/providers/Microsoft.Web/serverFarms/ASP-securitypocsuhasurg-8c6d",
+                    "site_config": [
+                        {
+                            "always_on": false,
+                            "api_definition_url": null,
+                            "api_management_api_id": null,
+                            "app_command_line": null,
+                            "app_service_logs": [],
+                            "application_insights_connection_string": "InstrumentationKey=0f1eb2ea-bd18-4323-87ea-e856f617cfd5;IngestionEndpoint=https://eastus2-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus2.livediagnostics.monitor.azure.com/;ApplicationId=69a13573-9d20-4e89-820c-a1ea94fd8e29",
+                            "application_insights_key": "0f1eb2ea-bd18-4323-87ea-e856f617cfd5",
+                            "cors": [],
+                            "ftps_state": "Disabled",
+                            "health_check_eviction_time_in_min": null,
+                            "health_check_path": null,
+                            "http2_enabled": false,
+                            "ip_restriction": [],
+                            "ip_restriction_default_action": "Allow",
+                            "load_balancing_mode": "LeastRequests",
+                            "managed_pipeline_mode": "Integrated",
+                            "minimum_tls_version": "1.1",
+                            "remote_debugging_enabled": false,
+                            "runtime_scale_monitoring_enabled": null,
+                            "scm_ip_restriction": [],
+                            "scm_ip_restriction_default_action": "Allow",
+                            "scm_minimum_tls_version": "1.1",
+                            "scm_use_main_ip_restriction": false,
+                            "use_32_bit_worker": true,
+                            "vnet_route_all_enabled": false,
+                            "websockets_enabled": false
+                        }
+                    ],
+                    "sticky_settings": [],
+                    "storage_account": [],
+                    "storage_account_access_key": "7cPFGpaZk9+rf53tEmnbopC036xD6DuuB5NC8NTV8clqMoHlV3suK0a8808dQX0X0iWA1b3U5qOG+AStSBUP5w==",
+                    "storage_account_name": "securitypoccssstg01",
+                    "storage_key_vault_secret_id": null,
+                    "storage_uses_managed_identity": false,
+                    "tags": {
+                        "costcenter": "02045",
+                        "dataclassification": "confidential",
+                        "environmenttype": "dev",
+                        "itpmid": "12345",
+                        "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                    },
+                    "timeouts": null,
+                    "virtual_network_subnet_id": null,
+                    "vnet_image_pull_enabled": false,
+                    "webdeploy_publish_basic_authentication_enabled": true
+                },
+                "after_unknown": {
+                    "auth_settings": [],
+                    "auth_settings_v2": [],
+                    "backup": [],
+                    "connection_string": [],
+                    "custom_domain_verification_id": true,
+                    "default_hostname": true,
+                    "hosting_environment_id": true,
+                    "id": true,
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ],
+                            "principal_id": true,
+                            "tenant_id": true
+                        }
+                    ],
+                    "key_vault_reference_identity_id": true,
+                    "kind": true,
+                    "outbound_ip_address_list": true,
+                    "outbound_ip_addresses": true,
+                    "possible_outbound_ip_address_list": true,
+                    "possible_outbound_ip_addresses": true,
+                    "site_config": [
+                        {
+                            "app_scale_limit": true,
+                            "app_service_logs": [],
+                            "application_stack": true,
+                            "cors": [],
+                            "default_documents": true,
+                            "detailed_error_logging_enabled": true,
+                            "elastic_instance_minimum": true,
+                            "ip_restriction": [],
+                            "pre_warmed_instance_count": true,
+                            "remote_debugging_version": true,
+                            "scm_ip_restriction": [],
+                            "scm_type": true,
+                            "windows_fx_version": true,
+                            "worker_count": true
+                        }
+                    ],
+                    "site_credential": true,
+                    "sticky_settings": [],
+                    "storage_account": [],
+                    "tags": {},
+                    "zip_deploy_file": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "auth_settings": [],
+                    "auth_settings_v2": [],
+                    "backup": [],
+                    "connection_string": [],
+                    "custom_domain_verification_id": true,
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ]
+                        }
+                    ],
+                    "outbound_ip_address_list": [],
+                    "possible_outbound_ip_address_list": [],
+                    "site_config": [
+                        {
+                            "app_service_logs": [],
+                            "application_insights_connection_string": true,
+                            "application_insights_key": true,
+                            "application_stack": [],
+                            "cors": [],
+                            "default_documents": [],
+                            "ip_restriction": [],
+                            "scm_ip_restriction": []
+                        }
+                    ],
+                    "site_credential": true,
+                    "sticky_settings": [],
+                    "storage_account": [],
+                    "storage_account_access_key": true,
+                    "tags": {}
+                }
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.azurerm_app_service_plan.windows_app_service_plan",
+                        "mode": "data",
+                        "type": "azurerm_app_service_plan",
+                        "name": "windows_app_service_plan",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "app_service_environment_id": null,
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-suhasu-rg/providers/Microsoft.Web/serverFarms/ASP-securitypocsuhasurg-8c6d",
+                            "is_xenon": false,
+                            "kind": "elastic",
+                            "location": "eastus2",
+                            "maximum_elastic_worker_count": 20,
+                            "maximum_number_of_workers": 20,
+                            "name": "ASP-securitypocsuhasurg-8c6d",
+                            "per_site_scaling": false,
+                            "reserved": false,
+                            "resource_group_name": "security-poc-suhasu-rg",
+                            "sku": [
+                                {
+                                    "capacity": 1,
+                                    "size": "WS1",
+                                    "tier": "WorkflowStandard"
+                                }
+                            ],
+                            "tags": {
+                                "createdondate": "2024-09-25",
+                                "dataclassification": "restrictedD",
+                                "environmenttype": "NonProd",
+                                "itpmid": "87DB880C626F02E3"
+                            },
+                            "timeouts": null,
+                            "zone_redundant": false
+                        },
+                        "sensitive_values": {
+                            "sku": [
+                                {}
+                            ],
+                            "tags": {}
+                        }
+                    },
+                    {
+                        "address": "data.azurerm_application_insights.application_insight",
+                        "mode": "data",
+                        "type": "azurerm_application_insights",
+                        "name": "application_insight",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "app_id": "69a13573-9d20-4e89-820c-a1ea94fd8e29",
+                            "application_type": "web",
+                            "connection_string": "InstrumentationKey=0f1eb2ea-bd18-4323-87ea-e856f617cfd5;IngestionEndpoint=https://eastus2-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus2.livediagnostics.monitor.azure.com/;ApplicationId=69a13573-9d20-4e89-820c-a1ea94fd8e29",
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.Insights/components/security-poc-appinsight-01",
+                            "instrumentation_key": "0f1eb2ea-bd18-4323-87ea-e856f617cfd5",
+                            "location": "eastus2",
+                            "name": "security-poc-appinsight-01",
+                            "resource_group_name": "security-poc-yogeshd-rg",
+                            "retention_in_days": 90,
+                            "tags": {
+                                "createdondate": "2024-07-31",
+                                "dataclassification": "restrictedD",
+                                "environmenttype": "NonProd",
+                                "itpmid": "87DB880C626F02E3"
+                            },
+                            "timeouts": null,
+                            "workspace_id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.OperationalInsights/workspaces/securitypocazu7868437692"
+                        },
+                        "sensitive_values": {
+                            "connection_string": true,
+                            "tags": {}
+                        }
+                    },
+                    {
+                        "address": "data.azurerm_resource_group.resource_group",
+                        "mode": "data",
+                        "type": "azurerm_resource_group",
+                        "name": "resource_group",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg",
+                            "location": "eastus2",
+                            "managed_by": "",
+                            "name": "security-poc-yogeshd-rg",
+                            "tags": {
+                                "createdondate": "2024-06-26",
+                                "dataclassification": "restrictedD",
+                                "environmentsubtype": "POC",
+                                "environmenttype": "NonProd"
+                            },
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    },
+                    {
+                        "address": "data.azurerm_storage_account.storage_account",
+                        "mode": "data",
+                        "type": "azurerm_storage_account",
+                        "name": "storage_account",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "access_tier": "Hot",
+                            "account_kind": "StorageV2",
+                            "account_replication_type": "LRS",
+                            "account_tier": "Standard",
+                            "allow_nested_items_to_be_public": false,
+                            "azure_files_authentication": [
+                                {
+                                    "active_directory": [
+                                        {
+                                            "domain_guid": "",
+                                            "domain_name": "cvshaadds.com",
+                                            "domain_sid": "",
+                                            "forest_name": "",
+                                            "netbios_domain_name": "",
+                                            "storage_sid": ""
+                                        }
+                                    ],
+                                    "default_share_level_permission": "",
+                                    "directory_type": "AADDS"
+                                }
+                            ],
+                            "custom_domain": [],
+                            "dns_endpoint_type": "Standard",
+                            "https_traffic_only_enabled": true,
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.Storage/storageAccounts/securitypoccssstg01",
+                            "identity": [
+                                {
+                                    "identity_ids": [],
+                                    "principal_id": "daf499e3-9303-4a35-a771-86620e88d45c",
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                                    "type": "SystemAssigned"
+                                }
+                            ],
+                            "infrastructure_encryption_enabled": false,
+                            "is_hns_enabled": false,
+                            "location": "eastus2",
+                            "min_tls_version": "TLS1_2",
+                            "name": "securitypoccssstg01",
+                            "nfsv3_enabled": false,
+                            "primary_access_key": "7cPFGpaZk9+rf53tEmnbopC036xD6DuuB5NC8NTV8clqMoHlV3suK0a8808dQX0X0iWA1b3U5qOG+AStSBUP5w==",
+                            "primary_blob_connection_string": "DefaultEndpointsProtocol=https;BlobEndpoint=https://securitypoccssstg01.blob.core.windows.net/;AccountName=securitypoccssstg01;AccountKey=7cPFGpaZk9+rf53tEmnbopC036xD6DuuB5NC8NTV8clqMoHlV3suK0a8808dQX0X0iWA1b3U5qOG+AStSBUP5w==",
+                            "primary_blob_endpoint": "https://securitypoccssstg01.blob.core.windows.net/",
+                            "primary_blob_host": "securitypoccssstg01.blob.core.windows.net",
+                            "primary_blob_internet_endpoint": "",
+                            "primary_blob_internet_host": "",
+                            "primary_blob_microsoft_endpoint": "",
+                            "primary_blob_microsoft_host": "",
+                            "primary_connection_string": "DefaultEndpointsProtocol=https;AccountName=securitypoccssstg01;AccountKey=7cPFGpaZk9+rf53tEmnbopC036xD6DuuB5NC8NTV8clqMoHlV3suK0a8808dQX0X0iWA1b3U5qOG+AStSBUP5w==;EndpointSuffix=core.windows.net",
+                            "primary_dfs_endpoint": "https://securitypoccssstg01.dfs.core.windows.net/",
+                            "primary_dfs_host": "securitypoccssstg01.dfs.core.windows.net",
+                            "primary_dfs_internet_endpoint": "",
+                            "primary_dfs_internet_host": "",
+                            "primary_dfs_microsoft_endpoint": "",
+                            "primary_dfs_microsoft_host": "",
+                            "primary_file_endpoint": "https://securitypoccssstg01.file.core.windows.net/",
+                            "primary_file_host": "securitypoccssstg01.file.core.windows.net",
+                            "primary_file_internet_endpoint": "",
+                            "primary_file_internet_host": "",
+                            "primary_file_microsoft_endpoint": "",
+                            "primary_file_microsoft_host": "",
+                            "primary_location": "eastus2",
+                            "primary_queue_endpoint": "https://securitypoccssstg01.queue.core.windows.net/",
+                            "primary_queue_host": "securitypoccssstg01.queue.core.windows.net",
+                            "primary_queue_microsoft_endpoint": "",
+                            "primary_queue_microsoft_host": "",
+                            "primary_table_endpoint": "https://securitypoccssstg01.table.core.windows.net/",
+                            "primary_table_host": "securitypoccssstg01.table.core.windows.net",
+                            "primary_table_microsoft_endpoint": "",
+                            "primary_table_microsoft_host": "",
+                            "primary_web_endpoint": "https://securitypoccssstg01.z20.web.core.windows.net/",
+                            "primary_web_host": "securitypoccssstg01.z20.web.core.windows.net",
+                            "primary_web_internet_endpoint": "",
+                            "primary_web_internet_host": "",
+                            "primary_web_microsoft_endpoint": "",
+                            "primary_web_microsoft_host": "",
+                            "queue_encryption_key_type": "Service",
+                            "resource_group_name": "security-poc-yogeshd-rg",
+                            "secondary_access_key": "/bn9pfZgKMjz5nO5b6/7uTFcx3qA6GMjzkfznaKGzsuu28WYnON8n2DdmWW+vPpmSJzppdF+qS1y+AStgzSKSg==",
+                            "secondary_blob_connection_string": "",
+                            "secondary_blob_endpoint": "",
+                            "secondary_blob_host": "",
+                            "secondary_blob_internet_endpoint": "",
+                            "secondary_blob_internet_host": "",
+                            "secondary_blob_microsoft_endpoint": "",
+                            "secondary_blob_microsoft_host": "",
+                            "secondary_connection_string": "DefaultEndpointsProtocol=https;AccountName=securitypoccssstg01;AccountKey=/bn9pfZgKMjz5nO5b6/7uTFcx3qA6GMjzkfznaKGzsuu28WYnON8n2DdmWW+vPpmSJzppdF+qS1y+AStgzSKSg==;EndpointSuffix=core.windows.net",
+                            "secondary_dfs_endpoint": "",
+                            "secondary_dfs_host": "",
+                            "secondary_dfs_internet_endpoint": "",
+                            "secondary_dfs_internet_host": "",
+                            "secondary_dfs_microsoft_endpoint": "",
+                            "secondary_dfs_microsoft_host": "",
+                            "secondary_file_endpoint": "",
+                            "secondary_file_host": "",
+                            "secondary_file_internet_endpoint": "",
+                            "secondary_file_internet_host": "",
+                            "secondary_file_microsoft_endpoint": "",
+                            "secondary_file_microsoft_host": "",
+                            "secondary_location": "",
+                            "secondary_queue_endpoint": "",
+                            "secondary_queue_host": "",
+                            "secondary_queue_microsoft_endpoint": "",
+                            "secondary_queue_microsoft_host": "",
+                            "secondary_table_endpoint": "",
+                            "secondary_table_host": "",
+                            "secondary_table_microsoft_endpoint": "",
+                            "secondary_table_microsoft_host": "",
+                            "secondary_web_endpoint": "",
+                            "secondary_web_host": "",
+                            "secondary_web_internet_endpoint": "",
+                            "secondary_web_internet_host": "",
+                            "secondary_web_microsoft_endpoint": "",
+                            "secondary_web_microsoft_host": "",
+                            "table_encryption_key_type": "Service",
+                            "tags": {
+                                "createdondate": "2024-07-31",
+                                "dataclassification": "restrictedD",
+                                "environmenttype": "NonProd",
+                                "itpmid": "87DB880C626F02E3"
+                            },
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "azure_files_authentication": [
+                                {
+                                    "active_directory": [
+                                        {}
+                                    ]
+                                }
+                            ],
+                            "custom_domain": [],
+                            "identity": [
+                                {
+                                    "identity_ids": []
+                                }
+                            ],
+                            "primary_access_key": true,
+                            "primary_blob_connection_string": true,
+                            "primary_connection_string": true,
+                            "secondary_access_key": true,
+                            "secondary_blob_connection_string": true,
+                            "secondary_connection_string": true,
+                            "tags": {}
+                        }
+                    },
+                    {
+                        "address": "data.azurerm_user_assigned_identity.user_assigned_identity",
+                        "mode": "data",
+                        "type": "azurerm_user_assigned_identity",
+                        "name": "user_assigned_identity",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "client_id": "860e8e4f-6052-4dc5-b3f9-feef98bf1a12",
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi",
+                            "location": "eastus2",
+                            "name": "security-poc-css-mi",
+                            "principal_id": "7e9254ab-e4e6-4fd3-845e-17810afb5f58",
+                            "resource_group_name": "security-poc-yogeshd-rg",
+                            "tags": {
+                                "createdondate": "2024-07-31",
+                                "dataclassification": "restrictedD",
+                                "environmenttype": "NonProd",
+                                "itpmid": "87DB880C626F02E3"
+                            },
+                            "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.20.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_windows_function_app.example-windows-function-app",
+                    "mode": "managed",
+                    "type": "azurerm_windows_function_app",
+                    "name": "example-windows-function-app",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "enabled": {
+                            "constant_value": true
+                        },
+                        "https_only": {
+                            "constant_value": true
+                        },
+                        "identity": [
+                            {
+                                "identity_ids": {
+                                    "references": [
+                                        "data.azurerm_user_assigned_identity.user_assigned_identity.id",
+                                        "data.azurerm_user_assigned_identity.user_assigned_identity"
+                                    ]
+                                },
+                                "type": {
+                                    "constant_value": "UserAssigned"
+                                }
+                            }
+                        ],
+                        "location": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.location",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "example-windows-function-app"
+                        },
+                        "public_network_access_enabled": {
+                            "constant_value": false
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.name",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "service_plan_id": {
+                            "references": [
+                                "data.azurerm_app_service_plan.windows_app_service_plan.id",
+                                "data.azurerm_app_service_plan.windows_app_service_plan"
+                            ]
+                        },
+                        "site_config": [
+                            {
+                                "always_on": {
+                                    "constant_value": false
+                                },
+                                "application_insights_connection_string": {
+                                    "references": [
+                                        "data.azurerm_application_insights.application_insight.connection_string",
+                                        "data.azurerm_application_insights.application_insight"
+                                    ]
+                                },
+                                "application_insights_key": {
+                                    "references": [
+                                        "data.azurerm_application_insights.application_insight.instrumentation_key",
+                                        "data.azurerm_application_insights.application_insight"
+                                    ]
+                                },
+                                "minimum_tls_version": {
+                                    "constant_value": "1.1"
+                                }
+                            }
+                        ],
+                        "storage_account_access_key": {
+                            "references": [
+                                "data.azurerm_storage_account.storage_account.primary_access_key",
+                                "data.azurerm_storage_account.storage_account"
+                            ]
+                        },
+                        "storage_account_name": {
+                            "references": [
+                                "data.azurerm_storage_account.storage_account.name",
+                                "data.azurerm_storage_account.storage_account"
+                            ]
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "costcenter": "02045",
+                                "dataclassification": "confidential",
+                                "environmenttype": "dev",
+                                "itpmid": "12345",
+                                "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                            }
+                        }
+                    },
+                    "schema_version": 1
+                },
+                {
+                    "address": "data.azurerm_app_service_plan.windows_app_service_plan",
+                    "mode": "data",
+                    "type": "azurerm_app_service_plan",
+                    "name": "windows_app_service_plan",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "ASP-securitypocsuhasurg-8c6d"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-suhasu-rg"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_application_insights.application_insight",
+                    "mode": "data",
+                    "type": "azurerm_application_insights",
+                    "name": "application_insight",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-appinsight-01"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_resource_group.resource_group",
+                    "mode": "data",
+                    "type": "azurerm_resource_group",
+                    "name": "resource_group",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_storage_account.storage_account",
+                    "mode": "data",
+                    "type": "azurerm_storage_account",
+                    "name": "storage_account",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "securitypoccssstg01"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_user_assigned_identity.user_assigned_identity",
+                    "mode": "data",
+                    "type": "azurerm_user_assigned_identity",
+                    "name": "user_assigned_identity",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-css-mi"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "data.azurerm_user_assigned_identity.user_assigned_identity",
+            "attribute": [
+                "id"
+            ]
+        },
+        {
+            "resource": "data.azurerm_application_insights.application_insight",
+            "attribute": [
+                "connection_string"
+            ]
+        },
+        {
+            "resource": "data.azurerm_application_insights.application_insight",
+            "attribute": [
+                "instrumentation_key"
+            ]
+        },
+        {
+            "resource": "data.azurerm_storage_account.storage_account",
+            "attribute": [
+                "primary_access_key"
+            ]
+        },
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "name"
+            ]
+        },
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "location"
+            ]
+        },
+        {
+            "resource": "data.azurerm_storage_account.storage_account",
+            "attribute": [
+                "name"
+            ]
+        },
+        {
+            "resource": "data.azurerm_app_service_plan.windows_app_service_plan",
+            "attribute": [
+                "id"
+            ]
+        }
+    ],
+    "timestamp": "2025-03-21T16:46:58Z",
+    "errored": false
+}

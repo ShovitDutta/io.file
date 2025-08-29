@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "service bus namespace is not using tls version 1_2 or higher",
+      "severity": "LOW",
+      "line": 26,
+      "fileName": "positive.json"
+    }
+]

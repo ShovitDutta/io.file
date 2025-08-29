@@ -1,0 +1,14 @@
+[
+   {
+      "queryName": "app gateway does not have waf enabled",
+      "severity": "LOW",
+      "line": 141,
+      "filename": "positive1.json"
+   },
+   {
+      "queryName": "app gateway does not have waf enabled",
+      "severity": "LOW",
+      "line": 141,
+      "filename": "positive2.json"
+   }
+]

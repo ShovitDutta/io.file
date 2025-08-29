@@ -1,0 +1,1824 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_kubernetes_cluster.aks_cluster",
+                    "mode": "managed",
+                    "type": "azurerm_kubernetes_cluster",
+                    "name": "aks_cluster",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 2,
+                    "values": {
+                        "aci_connector_linux": [],
+                        "api_server_access_profile": [],
+                        "automatic_upgrade_channel": "stable",
+                        "azure_active_directory_role_based_access_control": [
+                            {
+                                "admin_group_object_ids": [
+                                    "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+                                ],
+                                "azure_rbac_enabled": true
+                            }
+                        ],
+                        "azure_policy_enabled": null,
+                        "confidential_computing": [],
+                        "cost_analysis_enabled": null,
+                        "default_node_pool": [
+                            {
+                                "auto_scaling_enabled": null,
+                                "capacity_reservation_group_id": null,
+                                "fips_enabled": null,
+                                "gpu_instance": null,
+                                "host_encryption_enabled": true,
+                                "host_group_id": null,
+                                "kubelet_config": [],
+                                "linux_os_config": [],
+                                "max_count": null,
+                                "min_count": null,
+                                "name": "default",
+                                "node_count": 1,
+                                "node_network_profile": [],
+                                "node_public_ip_enabled": null,
+                                "node_public_ip_prefix_id": null,
+                                "only_critical_addons_enabled": null,
+                                "os_disk_type": "Managed",
+                                "pod_subnet_id": null,
+                                "proximity_placement_group_id": null,
+                                "scale_down_mode": "Delete",
+                                "snapshot_id": null,
+                                "tags": null,
+                                "temporary_name_for_rotation": null,
+                                "type": "VirtualMachineScaleSets",
+                                "ultra_ssd_enabled": false,
+                                "upgrade_settings": [],
+                                "vm_size": "Standard_D2_v2",
+                                "vnet_subnet_id": null,
+                                "zones": null
+                            }
+                        ],
+                        "disk_encryption_set_id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.Compute/diskEncryptionSets/security-poc-dec",
+                        "dns_prefix": "exampleaks1",
+                        "dns_prefix_private_cluster": null,
+                        "edge_zone": null,
+                        "http_application_routing_enabled": null,
+                        "http_proxy_config": [],
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi "
+                                ],
+                                "type": "UserAssigned"
+                            }
+                        ],
+                        "image_cleaner_enabled": null,
+                        "image_cleaner_interval_hours": null,
+                        "ingress_application_gateway": [],
+                        "key_management_service": [
+                            {
+                                "key_vault_key_id": "https://security-poc-akv-01.vault.azure.net/keys/securitypoccsscmk/7e7b204cd4a240ca880991658dc3ad14",
+                                "key_vault_network_access": "Private"
+                            }
+                        ],
+                        "key_vault_secrets_provider": [],
+                        "linux_profile": [],
+                        "local_account_disabled": true,
+                        "location": "eastus2",
+                        "maintenance_window": [],
+                        "maintenance_window_auto_upgrade": [],
+                        "maintenance_window_node_os": [],
+                        "microsoft_defender": [],
+                        "monitor_metrics": [],
+                        "name": "cvs-aks-cluster",
+                        "network_profile": [
+                            {
+                                "ip_versions": [
+                                    "IPv4"
+                                ],
+                                "load_balancer_sku": "standard",
+                                "network_data_plane": "azure",
+                                "network_plugin": "azure",
+                                "network_plugin_mode": null,
+                                "network_policy": "azure",
+                                "outbound_type": "loadBalancer"
+                            }
+                        ],
+                        "node_os_upgrade_channel": "None",
+                        "oidc_issuer_enabled": null,
+                        "oms_agent": [],
+                        "open_service_mesh_enabled": null,
+                        "private_cluster_enabled": true,
+                        "private_cluster_public_fqdn_enabled": false,
+                        "resource_group_name": "security-poc-yogeshd-rg",
+                        "role_based_access_control_enabled": true,
+                        "run_command_enabled": true,
+                        "service_mesh_profile": [],
+                        "service_principal": [],
+                        "sku_tier": "Free",
+                        "storage_profile": [],
+                        "support_plan": "KubernetesOfficial",
+                        "tags": {
+                            "costcenter": "190294",
+                            "dataclassification": "Restricted",
+                            "environment": "NonProd",
+                            "itpmid": "ITPMID123456",
+                            "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                        },
+                        "timeouts": null,
+                        "upgrade_override": [],
+                        "web_app_routing": [],
+                        "workload_autoscaler_profile": [],
+                        "workload_identity_enabled": false
+                    },
+                    "sensitive_values": {
+                        "aci_connector_linux": [],
+                        "api_server_access_profile": [],
+                        "auto_scaler_profile": [],
+                        "azure_active_directory_role_based_access_control": [
+                            {
+                                "admin_group_object_ids": [
+                                    false
+                                ]
+                            }
+                        ],
+                        "confidential_computing": [],
+                        "default_node_pool": [
+                            {
+                                "kubelet_config": [],
+                                "linux_os_config": [],
+                                "node_labels": {},
+                                "node_network_profile": [],
+                                "upgrade_settings": []
+                            }
+                        ],
+                        "http_proxy_config": [],
+                        "identity": [
+                            {
+                                "identity_ids": [
+                                    false
+                                ]
+                            }
+                        ],
+                        "ingress_application_gateway": [],
+                        "key_management_service": [
+                            {}
+                        ],
+                        "key_vault_secrets_provider": [],
+                        "kube_admin_config": [],
+                        "kube_config": [],
+                        "kubelet_identity": [],
+                        "linux_profile": [],
+                        "maintenance_window": [],
+                        "maintenance_window_auto_upgrade": [],
+                        "maintenance_window_node_os": [],
+                        "microsoft_defender": [],
+                        "monitor_metrics": [],
+                        "network_profile": [
+                            {
+                                "ip_versions": [
+                                    false
+                                ],
+                                "load_balancer_profile": [],
+                                "nat_gateway_profile": [],
+                                "pod_cidrs": [],
+                                "service_cidrs": []
+                            }
+                        ],
+                        "oms_agent": [],
+                        "service_mesh_profile": [],
+                        "service_principal": [],
+                        "storage_profile": [],
+                        "tags": {},
+                        "upgrade_override": [],
+                        "web_app_routing": [],
+                        "windows_profile": [],
+                        "workload_autoscaler_profile": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_kubernetes_cluster.aks_cluster",
+            "mode": "managed",
+            "type": "azurerm_kubernetes_cluster",
+            "name": "aks_cluster",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "aci_connector_linux": [],
+                    "api_server_access_profile": [],
+                    "automatic_upgrade_channel": "stable",
+                    "azure_active_directory_role_based_access_control": [
+                        {
+                            "admin_group_object_ids": [
+                                "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+                            ],
+                            "azure_rbac_enabled": true
+                        }
+                    ],
+                    "azure_policy_enabled": null,
+                    "confidential_computing": [],
+                    "cost_analysis_enabled": null,
+                    "default_node_pool": [
+                        {
+                            "auto_scaling_enabled": null,
+                            "capacity_reservation_group_id": null,
+                            "fips_enabled": null,
+                            "gpu_instance": null,
+                            "host_encryption_enabled": true,
+                            "host_group_id": null,
+                            "kubelet_config": [],
+                            "linux_os_config": [],
+                            "max_count": null,
+                            "min_count": null,
+                            "name": "default",
+                            "node_count": 1,
+                            "node_network_profile": [],
+                            "node_public_ip_enabled": null,
+                            "node_public_ip_prefix_id": null,
+                            "only_critical_addons_enabled": null,
+                            "os_disk_type": "Managed",
+                            "pod_subnet_id": null,
+                            "proximity_placement_group_id": null,
+                            "scale_down_mode": "Delete",
+                            "snapshot_id": null,
+                            "tags": null,
+                            "temporary_name_for_rotation": null,
+                            "type": "VirtualMachineScaleSets",
+                            "ultra_ssd_enabled": false,
+                            "upgrade_settings": [],
+                            "vm_size": "Standard_D2_v2",
+                            "vnet_subnet_id": null,
+                            "zones": null
+                        }
+                    ],
+                    "disk_encryption_set_id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.Compute/diskEncryptionSets/security-poc-dec",
+                    "dns_prefix": "exampleaks1",
+                    "dns_prefix_private_cluster": null,
+                    "edge_zone": null,
+                    "http_application_routing_enabled": null,
+                    "http_proxy_config": [],
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi "
+                            ],
+                            "type": "UserAssigned"
+                        }
+                    ],
+                    "image_cleaner_enabled": null,
+                    "image_cleaner_interval_hours": null,
+                    "ingress_application_gateway": [],
+                    "key_management_service": [
+                        {
+                            "key_vault_key_id": "https://security-poc-akv-01.vault.azure.net/keys/securitypoccsscmk/7e7b204cd4a240ca880991658dc3ad14",
+                            "key_vault_network_access": "Private"
+                        }
+                    ],
+                    "key_vault_secrets_provider": [],
+                    "linux_profile": [],
+                    "local_account_disabled": true,
+                    "location": "eastus2",
+                    "maintenance_window": [],
+                    "maintenance_window_auto_upgrade": [],
+                    "maintenance_window_node_os": [],
+                    "microsoft_defender": [],
+                    "monitor_metrics": [],
+                    "name": "cvs-aks-cluster",
+                    "network_profile": [
+                        {
+                            "ip_versions": [
+                                "IPv4"
+                            ],
+                            "load_balancer_sku": "standard",
+                            "network_data_plane": "azure",
+                            "network_plugin": "azure",
+                            "network_plugin_mode": null,
+                            "network_policy": "azure",
+                            "outbound_type": "loadBalancer"
+                        }
+                    ],
+                    "node_os_upgrade_channel": "None",
+                    "oidc_issuer_enabled": null,
+                    "oms_agent": [],
+                    "open_service_mesh_enabled": null,
+                    "private_cluster_enabled": true,
+                    "private_cluster_public_fqdn_enabled": false,
+                    "resource_group_name": "security-poc-yogeshd-rg",
+                    "role_based_access_control_enabled": true,
+                    "run_command_enabled": true,
+                    "service_mesh_profile": [],
+                    "service_principal": [],
+                    "sku_tier": "Free",
+                    "storage_profile": [],
+                    "support_plan": "KubernetesOfficial",
+                    "tags": {
+                        "costcenter": "190294",
+                        "dataclassification": "Restricted",
+                        "environment": "NonProd",
+                        "itpmid": "ITPMID123456",
+                        "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                    },
+                    "timeouts": null,
+                    "upgrade_override": [],
+                    "web_app_routing": [],
+                    "workload_autoscaler_profile": [],
+                    "workload_identity_enabled": false
+                },
+                "after_unknown": {
+                    "aci_connector_linux": [],
+                    "api_server_access_profile": [],
+                    "auto_scaler_profile": true,
+                    "azure_active_directory_role_based_access_control": [
+                        {
+                            "admin_group_object_ids": [
+                                false
+                            ],
+                            "tenant_id": true
+                        }
+                    ],
+                    "confidential_computing": [],
+                    "current_kubernetes_version": true,
+                    "default_node_pool": [
+                        {
+                            "kubelet_config": [],
+                            "kubelet_disk_type": true,
+                            "linux_os_config": [],
+                            "max_pods": true,
+                            "node_labels": true,
+                            "node_network_profile": [],
+                            "orchestrator_version": true,
+                            "os_disk_size_gb": true,
+                            "os_sku": true,
+                            "upgrade_settings": [],
+                            "workload_runtime": true
+                        }
+                    ],
+                    "fqdn": true,
+                    "http_application_routing_zone_name": true,
+                    "http_proxy_config": [],
+                    "id": true,
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ],
+                            "principal_id": true,
+                            "tenant_id": true
+                        }
+                    ],
+                    "ingress_application_gateway": [],
+                    "key_management_service": [
+                        {}
+                    ],
+                    "key_vault_secrets_provider": [],
+                    "kube_admin_config": true,
+                    "kube_admin_config_raw": true,
+                    "kube_config": true,
+                    "kube_config_raw": true,
+                    "kubelet_identity": true,
+                    "kubernetes_version": true,
+                    "linux_profile": [],
+                    "maintenance_window": [],
+                    "maintenance_window_auto_upgrade": [],
+                    "maintenance_window_node_os": [],
+                    "microsoft_defender": [],
+                    "monitor_metrics": [],
+                    "network_profile": [
+                        {
+                            "dns_service_ip": true,
+                            "ip_versions": [
+                                false
+                            ],
+                            "load_balancer_profile": true,
+                            "nat_gateway_profile": true,
+                            "network_mode": true,
+                            "pod_cidr": true,
+                            "pod_cidrs": true,
+                            "service_cidr": true,
+                            "service_cidrs": true
+                        }
+                    ],
+                    "node_resource_group": true,
+                    "node_resource_group_id": true,
+                    "oidc_issuer_url": true,
+                    "oms_agent": [],
+                    "portal_fqdn": true,
+                    "private_dns_zone_id": true,
+                    "private_fqdn": true,
+                    "service_mesh_profile": [],
+                    "service_principal": [],
+                    "storage_profile": [],
+                    "tags": {},
+                    "upgrade_override": [],
+                    "web_app_routing": [],
+                    "windows_profile": true,
+                    "workload_autoscaler_profile": []
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "aci_connector_linux": [],
+                    "api_server_access_profile": [],
+                    "auto_scaler_profile": [],
+                    "azure_active_directory_role_based_access_control": [
+                        {
+                            "admin_group_object_ids": [
+                                false
+                            ]
+                        }
+                    ],
+                    "confidential_computing": [],
+                    "default_node_pool": [
+                        {
+                            "kubelet_config": [],
+                            "linux_os_config": [],
+                            "node_labels": {},
+                            "node_network_profile": [],
+                            "upgrade_settings": []
+                        }
+                    ],
+                    "http_proxy_config": [],
+                    "identity": [
+                        {
+                            "identity_ids": [
+                                false
+                            ]
+                        }
+                    ],
+                    "ingress_application_gateway": [],
+                    "key_management_service": [
+                        {}
+                    ],
+                    "key_vault_secrets_provider": [],
+                    "kube_admin_config": true,
+                    "kube_admin_config_raw": true,
+                    "kube_config": true,
+                    "kube_config_raw": true,
+                    "kubelet_identity": [],
+                    "linux_profile": [],
+                    "maintenance_window": [],
+                    "maintenance_window_auto_upgrade": [],
+                    "maintenance_window_node_os": [],
+                    "microsoft_defender": [],
+                    "monitor_metrics": [],
+                    "network_profile": [
+                        {
+                            "ip_versions": [
+                                false
+                            ],
+                            "load_balancer_profile": [],
+                            "nat_gateway_profile": [],
+                            "pod_cidrs": [],
+                            "service_cidrs": []
+                        }
+                    ],
+                    "oms_agent": [],
+                    "service_mesh_profile": [],
+                    "service_principal": [],
+                    "storage_profile": [],
+                    "tags": {},
+                    "upgrade_override": [],
+                    "web_app_routing": [],
+                    "windows_profile": [],
+                    "workload_autoscaler_profile": []
+                }
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.azurerm_disk_encryption_set.disk_encryption_set",
+                        "mode": "data",
+                        "type": "azurerm_disk_encryption_set",
+                        "name": "disk_encryption_set",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "auto_key_rotation_enabled": false,
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.Compute/diskEncryptionSets/security-poc-dec",
+                            "identity": [
+                                {
+                                    "identity_ids": [
+                                        "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi"
+                                    ],
+                                    "principal_id": "",
+                                    "tenant_id": "",
+                                    "type": "UserAssigned"
+                                }
+                            ],
+                            "key_vault_key_url": "https://security-poc-akv-01.vault.azure.net/keys/securitypoccsscmk/7e7b204cd4a240ca880991658dc3ad14",
+                            "location": "eastus2",
+                            "name": "security-poc-dec",
+                            "resource_group_name": "security-poc-yogeshd-rg",
+                            "tags": {
+                                "createdondate": "2025-05-01",
+                                "dataclassification": "restrictedD",
+                                "environmenttype": "NonProd",
+                                "itpmid": "87DB880C626F02E3"
+                            },
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "identity": [
+                                {
+                                    "identity_ids": [
+                                        false
+                                    ]
+                                }
+                            ],
+                            "tags": {}
+                        }
+                    },
+                    {
+                        "address": "data.azurerm_key_vault.key_vault",
+                        "mode": "data",
+                        "type": "azurerm_key_vault",
+                        "name": "key_vault",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "access_policy": [
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        "Get",
+                                        "WrapKey",
+                                        "UnwrapKey"
+                                    ],
+                                    "object_id": "6398c932-d085-438b-92f2-bf549e79835a",
+                                    "secret_permissions": [],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        "Get",
+                                        "WrapKey",
+                                        "UnwrapKey"
+                                    ],
+                                    "object_id": "7b4b6789-a588-4838-b64e-26e3f05fa890",
+                                    "secret_permissions": [],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        "Get",
+                                        "WrapKey",
+                                        "UnwrapKey"
+                                    ],
+                                    "object_id": "26097c96-5317-4df4-a018-4fee9229c8cf",
+                                    "secret_permissions": [],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        "Get",
+                                        "WrapKey",
+                                        "UnwrapKey"
+                                    ],
+                                    "object_id": "8fea6a3b-2e89-45e7-8dc7-d2bf22f9d54e",
+                                    "secret_permissions": [],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        "Get",
+                                        "WrapKey",
+                                        "UnwrapKey"
+                                    ],
+                                    "object_id": "6ca86747-f3a4-4f27-824d-80e33f51194d",
+                                    "secret_permissions": [],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "ManageContacts",
+                                        "ManageIssuers",
+                                        "GetIssuers",
+                                        "ListIssuers",
+                                        "SetIssuers",
+                                        "DeleteIssuers",
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "ManageContacts",
+                                        "ManageIssuers",
+                                        "GetIssuers",
+                                        "ListIssuers",
+                                        "SetIssuers",
+                                        "DeleteIssuers"
+                                    ],
+                                    "key_permissions": [
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "Decrypt",
+                                        "Encrypt",
+                                        "UnwrapKey",
+                                        "WrapKey",
+                                        "Verify",
+                                        "Sign",
+                                        "Release",
+                                        "Rotate",
+                                        "GetRotationPolicy",
+                                        "SetRotationPolicy",
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "Decrypt",
+                                        "Encrypt",
+                                        "UnwrapKey",
+                                        "WrapKey",
+                                        "Verify",
+                                        "Sign",
+                                        "Release",
+                                        "Rotate",
+                                        "GetRotationPolicy",
+                                        "SetRotationPolicy"
+                                    ],
+                                    "object_id": "ee2ea2d5-3084-4b48-9879-5f6654b20b8c",
+                                    "secret_permissions": [
+                                        "Get",
+                                        "List",
+                                        "Set",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "Get",
+                                        "List",
+                                        "Set",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore"
+                                    ],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "ManageContacts",
+                                        "ManageIssuers",
+                                        "GetIssuers",
+                                        "ListIssuers",
+                                        "SetIssuers",
+                                        "DeleteIssuers",
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "ManageContacts",
+                                        "ManageIssuers",
+                                        "GetIssuers",
+                                        "ListIssuers",
+                                        "SetIssuers",
+                                        "DeleteIssuers"
+                                    ],
+                                    "key_permissions": [
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "Decrypt",
+                                        "Encrypt",
+                                        "UnwrapKey",
+                                        "WrapKey",
+                                        "Verify",
+                                        "Sign",
+                                        "Release",
+                                        "Rotate",
+                                        "GetRotationPolicy",
+                                        "SetRotationPolicy",
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "Decrypt",
+                                        "Encrypt",
+                                        "UnwrapKey",
+                                        "WrapKey",
+                                        "Verify",
+                                        "Sign",
+                                        "Release",
+                                        "Rotate",
+                                        "GetRotationPolicy",
+                                        "SetRotationPolicy"
+                                    ],
+                                    "object_id": "8dcf5f70-cee1-4e3e-a70e-1db0ebb994aa",
+                                    "secret_permissions": [
+                                        "Get",
+                                        "List",
+                                        "Set",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "Get",
+                                        "List",
+                                        "Set",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore"
+                                    ],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "ManageContacts",
+                                        "ManageIssuers",
+                                        "GetIssuers",
+                                        "ListIssuers",
+                                        "SetIssuers",
+                                        "DeleteIssuers",
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "ManageContacts",
+                                        "ManageIssuers",
+                                        "GetIssuers",
+                                        "ListIssuers",
+                                        "SetIssuers",
+                                        "DeleteIssuers"
+                                    ],
+                                    "key_permissions": [
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "Decrypt",
+                                        "Encrypt",
+                                        "UnwrapKey",
+                                        "WrapKey",
+                                        "Verify",
+                                        "Sign",
+                                        "Release",
+                                        "Rotate",
+                                        "GetRotationPolicy",
+                                        "SetRotationPolicy",
+                                        "Get",
+                                        "List",
+                                        "Update",
+                                        "Create",
+                                        "Import",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "Decrypt",
+                                        "Encrypt",
+                                        "UnwrapKey",
+                                        "WrapKey",
+                                        "Verify",
+                                        "Sign",
+                                        "Release",
+                                        "Rotate",
+                                        "GetRotationPolicy",
+                                        "SetRotationPolicy"
+                                    ],
+                                    "object_id": "352e6c63-b44d-4e93-8f25-dda6d21be0f7",
+                                    "secret_permissions": [
+                                        "Get",
+                                        "List",
+                                        "Set",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore",
+                                        "Get",
+                                        "List",
+                                        "Set",
+                                        "Delete",
+                                        "Recover",
+                                        "Backup",
+                                        "Restore"
+                                    ],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        "Get",
+                                        "WrapKey",
+                                        "UnwrapKey"
+                                    ],
+                                    "object_id": "faff23ad-10a5-4250-8af6-09e642dc61c6",
+                                    "secret_permissions": [],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        "Get",
+                                        "WrapKey",
+                                        "UnwrapKey"
+                                    ],
+                                    "object_id": "7b8a316d-376e-4fef-8a36-ff56c2076a98",
+                                    "secret_permissions": [],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        "Get",
+                                        "WrapKey",
+                                        "UnwrapKey"
+                                    ],
+                                    "object_id": "7e9254ab-e4e6-4fd3-845e-17810afb5f58",
+                                    "secret_permissions": [],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [
+                                        "all"
+                                    ],
+                                    "key_permissions": [
+                                        "all"
+                                    ],
+                                    "object_id": "cf309b37-09a3-4881-af92-50adc6709dfa",
+                                    "secret_permissions": [
+                                        "all"
+                                    ],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [
+                                        "all"
+                                    ],
+                                    "key_permissions": [
+                                        "all"
+                                    ],
+                                    "object_id": "b677ab0d-7190-4461-b293-373d6b8705de",
+                                    "secret_permissions": [
+                                        "all"
+                                    ],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [
+                                        "all"
+                                    ],
+                                    "key_permissions": [
+                                        "all"
+                                    ],
+                                    "object_id": "32dc243e-2806-4c1f-baeb-2dca7e44d709",
+                                    "secret_permissions": [
+                                        "all"
+                                    ],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [
+                                        "all"
+                                    ],
+                                    "key_permissions": [
+                                        "all"
+                                    ],
+                                    "object_id": "9d5033be-f57d-4cd4-8cd9-5afb381cadac",
+                                    "secret_permissions": [
+                                        "all"
+                                    ],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [
+                                        "all"
+                                    ],
+                                    "key_permissions": [
+                                        "all"
+                                    ],
+                                    "object_id": "944222b1-1a9c-4850-9047-3afd0babc269",
+                                    "secret_permissions": [
+                                        "all"
+                                    ],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [
+                                        "all"
+                                    ],
+                                    "key_permissions": [
+                                        "all"
+                                    ],
+                                    "object_id": "dd1c8f3a-9608-4f2e-9ee8-f12640fc1baa",
+                                    "secret_permissions": [
+                                        "all"
+                                    ],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                },
+                                {
+                                    "application_id": "",
+                                    "certificate_permissions": [
+                                        "all"
+                                    ],
+                                    "key_permissions": [
+                                        "all"
+                                    ],
+                                    "object_id": "d48dc46c-3f38-4c91-9f1f-7a961a6ff88e",
+                                    "secret_permissions": [
+                                        "all"
+                                    ],
+                                    "storage_permissions": [],
+                                    "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7"
+                                }
+                            ],
+                            "enable_rbac_authorization": true,
+                            "enabled_for_deployment": false,
+                            "enabled_for_disk_encryption": true,
+                            "enabled_for_template_deployment": true,
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.KeyVault/vaults/security-poc-akv-01",
+                            "location": "eastus2",
+                            "name": "security-poc-akv-01",
+                            "network_acls": [],
+                            "public_network_access_enabled": true,
+                            "purge_protection_enabled": true,
+                            "resource_group_name": "security-poc-yogeshd-rg",
+                            "sku_name": "premium",
+                            "tags": {
+                                "createdondate": "2024-07-31",
+                                "dataclassification": "restrictedD",
+                                "environmenttype": "NonProd",
+                                "itpmid": "87DB880C626F02E3"
+                            },
+                            "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                            "timeouts": null,
+                            "vault_uri": "https://security-poc-akv-01.vault.azure.net/"
+                        },
+                        "sensitive_values": {
+                            "access_policy": [
+                                {
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "secret_permissions": [],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "secret_permissions": [],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "secret_permissions": [],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "secret_permissions": [],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "secret_permissions": [],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "key_permissions": [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "secret_permissions": [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "key_permissions": [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "secret_permissions": [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "key_permissions": [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "secret_permissions": [
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "secret_permissions": [],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "secret_permissions": [],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [],
+                                    "key_permissions": [
+                                        false,
+                                        false,
+                                        false
+                                    ],
+                                    "secret_permissions": [],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [
+                                        false
+                                    ],
+                                    "key_permissions": [
+                                        false
+                                    ],
+                                    "secret_permissions": [
+                                        false
+                                    ],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [
+                                        false
+                                    ],
+                                    "key_permissions": [
+                                        false
+                                    ],
+                                    "secret_permissions": [
+                                        false
+                                    ],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [
+                                        false
+                                    ],
+                                    "key_permissions": [
+                                        false
+                                    ],
+                                    "secret_permissions": [
+                                        false
+                                    ],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [
+                                        false
+                                    ],
+                                    "key_permissions": [
+                                        false
+                                    ],
+                                    "secret_permissions": [
+                                        false
+                                    ],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [
+                                        false
+                                    ],
+                                    "key_permissions": [
+                                        false
+                                    ],
+                                    "secret_permissions": [
+                                        false
+                                    ],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [
+                                        false
+                                    ],
+                                    "key_permissions": [
+                                        false
+                                    ],
+                                    "secret_permissions": [
+                                        false
+                                    ],
+                                    "storage_permissions": []
+                                },
+                                {
+                                    "certificate_permissions": [
+                                        false
+                                    ],
+                                    "key_permissions": [
+                                        false
+                                    ],
+                                    "secret_permissions": [
+                                        false
+                                    ],
+                                    "storage_permissions": []
+                                }
+                            ],
+                            "network_acls": [],
+                            "tags": {}
+                        }
+                    },
+                    {
+                        "address": "data.azurerm_key_vault_key.key_vault_key",
+                        "mode": "data",
+                        "type": "azurerm_key_vault_key",
+                        "name": "key_vault_key",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "curve": "",
+                            "e": "AQAB",
+                            "id": "https://security-poc-akv-01.vault.azure.net/keys/securitypoccsscmk/7e7b204cd4a240ca880991658dc3ad14",
+                            "key_opts": [
+                                "sign",
+                                "verify",
+                                "wrapKey",
+                                "unwrapKey",
+                                "encrypt",
+                                "decrypt"
+                            ],
+                            "key_size": null,
+                            "key_type": "RSA-HSM",
+                            "key_vault_id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.KeyVault/vaults/security-poc-akv-01",
+                            "n": "mRiQ2SX6x7jUpaAl1vAeI6B0NyMsfeCcfmsRBZTLqEUXlUm0LyZo732xhCzWvoBt-KXHfVnUjLhgDjfy1UFMQ65FNXQcKlS-mjvGjQ5yXV8d-De1zgzTyDo96HAflYPApfVPBup20Tz9KEcw7BwkNddiMRuaYud_85-ngxj4EFf8ph60-5Sr5O2T5b8kfkRcjGBBvOgZUPXiDOdNfUqgcVRqLZwCB3fKvaR8WF4n7jsU5GaiV6K1c8YpOTi-jU2NcUx91Vll2-o-_AXOhUEaXvjR83LMHc5mWI-54FYbNiu8nxNYdyhBZfkux9WFVsfiI8UvyrXE_hiSaBH4yHjnNw",
+                            "name": "securitypoccsscmk",
+                            "public_key_openssh": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCZGJDZJfrHuNSloCXW8B4joHQ3Iyx94Jx+axEFlMuoRReVSbQvJmjvfbGELNa+gG34pcd9WdSMuGAON/LVQUxDrkU1dBwqVL6aO8aNDnJdXx34N7XODNPIOj3ocB+Vg8Cl9U8G6nbRPP0oRzDsHCQ112IxG5pi53/zn6eDGPgQV/ymHrT7lKvk7ZPlvyR+RFyMYEG86BlQ9eIM5019SqBxVGotnAIHd8q9pHxYXifuOxTkZqJXorVzxik5OL6NTY1xTH3VWWXb6j78Bc6FQRpe+NHzcswdzmZYj7ngVhs2K7yfE1h3KEFl+S7H1YVWx+IjxS/KtcT+GJJoEfjIeOc3\n",
+                            "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmRiQ2SX6x7jUpaAl1vAe\nI6B0NyMsfeCcfmsRBZTLqEUXlUm0LyZo732xhCzWvoBt+KXHfVnUjLhgDjfy1UFM\nQ65FNXQcKlS+mjvGjQ5yXV8d+De1zgzTyDo96HAflYPApfVPBup20Tz9KEcw7Bwk\nNddiMRuaYud/85+ngxj4EFf8ph60+5Sr5O2T5b8kfkRcjGBBvOgZUPXiDOdNfUqg\ncVRqLZwCB3fKvaR8WF4n7jsU5GaiV6K1c8YpOTi+jU2NcUx91Vll2+o+/AXOhUEa\nXvjR83LMHc5mWI+54FYbNiu8nxNYdyhBZfkux9WFVsfiI8UvyrXE/hiSaBH4yHjn\nNwIDAQAB\n-----END PUBLIC KEY-----\n",
+                            "resource_id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.KeyVault/vaults/security-poc-akv-01/keys/securitypoccsscmk/versions/7e7b204cd4a240ca880991658dc3ad14",
+                            "resource_versionless_id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.KeyVault/vaults/security-poc-akv-01/keys/securitypoccsscmk",
+                            "tags": {},
+                            "timeouts": null,
+                            "version": "7e7b204cd4a240ca880991658dc3ad14",
+                            "versionless_id": "https://security-poc-akv-01.vault.azure.net/keys/securitypoccsscmk",
+                            "x": "",
+                            "y": ""
+                        },
+                        "sensitive_values": {
+                            "key_opts": [
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false
+                            ],
+                            "tags": {}
+                        }
+                    },
+                    {
+                        "address": "data.azurerm_user_assigned_identity.user_assigned_identity",
+                        "mode": "data",
+                        "type": "azurerm_user_assigned_identity",
+                        "name": "user_assigned_identity",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "client_id": "860e8e4f-6052-4dc5-b3f9-feef98bf1a12",
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/security-poc-css-mi ",
+                            "location": "eastus2",
+                            "name": "security-poc-css-mi ",
+                            "principal_id": "7e9254ab-e4e6-4fd3-845e-17810afb5f58",
+                            "resource_group_name": "security-poc-yogeshd-rg",
+                            "tags": {
+                                "createdondate": "2024-07-31",
+                                "dataclassification": "restrictedD",
+                                "environmenttype": "NonProd",
+                                "itpmid": "87DB880C626F02E3"
+                            },
+                            "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.27.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_kubernetes_cluster.aks_cluster",
+                    "mode": "managed",
+                    "type": "azurerm_kubernetes_cluster",
+                    "name": "aks_cluster",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "automatic_upgrade_channel": {
+                            "constant_value": "stable"
+                        },
+                        "azure_active_directory_role_based_access_control": [
+                            {
+                                "admin_group_object_ids": {
+                                    "constant_value": [
+                                        "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+                                    ]
+                                },
+                                "azure_rbac_enabled": {
+                                    "constant_value": true
+                                }
+                            }
+                        ],
+                        "default_node_pool": [
+                            {
+                                "host_encryption_enabled": {
+                                    "constant_value": true
+                                },
+                                "name": {
+                                    "constant_value": "default"
+                                },
+                                "node_count": {
+                                    "constant_value": 1
+                                },
+                                "vm_size": {
+                                    "constant_value": "Standard_D2_v2"
+                                }
+                            }
+                        ],
+                        "disk_encryption_set_id": {
+                            "references": [
+                                "data.azurerm_disk_encryption_set.disk_encryption_set.id",
+                                "data.azurerm_disk_encryption_set.disk_encryption_set"
+                            ]
+                        },
+                        "dns_prefix": {
+                            "constant_value": "exampleaks1"
+                        },
+                        "identity": [
+                            {
+                                "identity_ids": {
+                                    "references": [
+                                        "data.azurerm_user_assigned_identity.user_assigned_identity.id",
+                                        "data.azurerm_user_assigned_identity.user_assigned_identity"
+                                    ]
+                                },
+                                "type": {
+                                    "constant_value": "UserAssigned"
+                                }
+                            }
+                        ],
+                        "key_management_service": [
+                            {
+                                "key_vault_key_id": {
+                                    "references": [
+                                        "data.azurerm_key_vault_key.key_vault_key.id",
+                                        "data.azurerm_key_vault_key.key_vault_key"
+                                    ]
+                                },
+                                "key_vault_network_access": {
+                                    "constant_value": "Private"
+                                }
+                            }
+                        ],
+                        "local_account_disabled": {
+                            "constant_value": true
+                        },
+                        "location": {
+                            "constant_value": "eastus2"
+                        },
+                        "name": {
+                            "constant_value": "cvs-aks-cluster"
+                        },
+                        "network_profile": [
+                            {
+                                "ip_versions": {
+                                    "constant_value": [
+                                        "IPv4"
+                                    ]
+                                },
+                                "network_plugin": {
+                                    "constant_value": "azure"
+                                },
+                                "network_policy": {
+                                    "constant_value": "azure"
+                                }
+                            }
+                        ],
+                        "node_os_upgrade_channel": {
+                            "constant_value": "None"
+                        },
+                        "private_cluster_enabled": {
+                            "constant_value": true
+                        },
+                        "private_cluster_public_fqdn_enabled": {
+                            "constant_value": false
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        },
+                        "role_based_access_control_enabled": {
+                            "constant_value": true
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "costcenter": "190294",
+                                "dataclassification": "Restricted",
+                                "environment": "NonProd",
+                                "itpmid": "ITPMID123456",
+                                "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                            }
+                        }
+                    },
+                    "schema_version": 2
+                },
+                {
+                    "address": "data.azurerm_disk_encryption_set.disk_encryption_set",
+                    "mode": "data",
+                    "type": "azurerm_disk_encryption_set",
+                    "name": "disk_encryption_set",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-dec"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_key_vault.key_vault",
+                    "mode": "data",
+                    "type": "azurerm_key_vault",
+                    "name": "key_vault",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-akv-01"
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_key_vault_key.key_vault_key",
+                    "mode": "data",
+                    "type": "azurerm_key_vault_key",
+                    "name": "key_vault_key",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "key_vault_id": {
+                            "references": [
+                                "data.azurerm_key_vault.key_vault.id",
+                                "data.azurerm_key_vault.key_vault"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "securitypoccsscmk"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_user_assigned_identity.user_assigned_identity",
+                    "mode": "data",
+                    "type": "azurerm_user_assigned_identity",
+                    "name": "user_assigned_identity",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-css-mi "
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "data.azurerm_disk_encryption_set.disk_encryption_set",
+            "attribute": [
+                "id"
+            ]
+        },
+        {
+            "resource": "data.azurerm_user_assigned_identity.user_assigned_identity",
+            "attribute": [
+                "id"
+            ]
+        },
+        {
+            "resource": "data.azurerm_key_vault_key.key_vault_key",
+            "attribute": [
+                "id"
+            ]
+        }
+    ],
+    "timestamp": "2025-06-24T19:52:30Z",
+    "errored": false
+}

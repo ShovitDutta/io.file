@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "service bus namespace is missing mandatory tags",
+      "severity": "LOW",
+      "line": 32,
+      "fileName": "positive.json"
+    }
+]

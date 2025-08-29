@@ -1,0 +1,8 @@
+[
+	{
+		"queryName": "API Gateway Without SSL Certificate",
+		"severity": "MEDIUM",
+		"line": 19,
+		"fileName": "positive.json"
+	}
+]

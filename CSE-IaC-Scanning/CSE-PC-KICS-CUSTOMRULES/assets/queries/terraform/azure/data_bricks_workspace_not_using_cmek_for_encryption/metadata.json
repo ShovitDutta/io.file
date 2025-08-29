@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-DATABRICKS-11121",
+  "queryName": "data bricks workspace not using cmek for encryption",
+  "severity": "HIGH",
+  "category": "Data Protection",
+  "descriptionText": "Encryption at-rest: Use customer managed keys (CMK) to comply with CVS encryption standards",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/databricks_workspace.html#customer_managed_key_enabled-1",
+  "platform": "Terraform",
+  "descriptionID": "1.11.2.1",
+  "cloudProvider": "azure"
+}

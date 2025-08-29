@@ -1,0 +1,483 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_api_management.example",
+                    "mode": "managed",
+                    "type": "azurerm_api_management",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "additional_location": [],
+                        "certificate": [],
+                        "client_certificate_enabled": false,
+                        "gateway_disabled": false,
+                        "identity": [],
+                        "location": "westeurope",
+                        "min_api_version": null,
+                        "name": "example-apim",
+                        "public_ip_address_id": null,
+                        "public_network_access_enabled": true,
+                        "publisher_email": "company@terraform.io",
+                        "publisher_name": "My Company",
+                        "resource_group_name": "example-resources",
+                        "sku_name": "Developer_1",
+                        "tags": null,
+                        "timeouts": null,
+                        "virtual_network_configuration": [],
+                        "virtual_network_type": "None",
+                        "zones": null
+                    },
+                    "sensitive_values": {
+                        "additional_location": [],
+                        "certificate": [],
+                        "delegation": [],
+                        "hostname_configuration": [],
+                        "identity": [],
+                        "policy": [],
+                        "private_ip_addresses": [],
+                        "protocols": [],
+                        "public_ip_addresses": [],
+                        "security": [],
+                        "sign_in": [],
+                        "sign_up": [],
+                        "tenant_access": [],
+                        "virtual_network_configuration": []
+                    }
+                },
+                {
+                    "address": "azurerm_api_management_logger.example",
+                    "mode": "managed",
+                    "type": "azurerm_api_management_logger",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "api_management_name": "example-apim",
+                        "application_insights": [
+                            {}
+                        ],
+                        "buffered": true,
+                        "description": null,
+                        "eventhub": [],
+                        "name": "example-logger",
+                        "resource_group_name": "example-resources",
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "application_insights": [
+                            {
+                                "instrumentation_key": true
+                            }
+                        ],
+                        "eventhub": []
+                    }
+                },
+                {
+                    "address": "azurerm_application_insights.example",
+                    "mode": "managed",
+                    "type": "azurerm_application_insights",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 2,
+                    "values": {
+                        "application_type": "other",
+                        "disable_ip_masking": false,
+                        "force_customer_storage_for_profiler": false,
+                        "internet_ingestion_enabled": true,
+                        "internet_query_enabled": true,
+                        "local_authentication_disabled": false,
+                        "location": "westeurope",
+                        "name": "example-appinsights",
+                        "resource_group_name": "example-resources",
+                        "retention_in_days": 90,
+                        "sampling_percentage": 100,
+                        "tags": null,
+                        "timeouts": null,
+                        "workspace_id": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "location": "westeurope",
+                        "managed_by": null,
+                        "name": "example-resources",
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_api_management.example",
+            "mode": "managed",
+            "type": "azurerm_api_management",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "additional_location": [],
+                    "certificate": [],
+                    "client_certificate_enabled": false,
+                    "gateway_disabled": false,
+                    "identity": [],
+                    "location": "westeurope",
+                    "min_api_version": null,
+                    "name": "example-apim",
+                    "public_ip_address_id": null,
+                    "public_network_access_enabled": true,
+                    "publisher_email": "company@terraform.io",
+                    "publisher_name": "My Company",
+                    "resource_group_name": "example-resources",
+                    "sku_name": "Developer_1",
+                    "tags": null,
+                    "timeouts": null,
+                    "virtual_network_configuration": [],
+                    "virtual_network_type": "None",
+                    "zones": null
+                },
+                "after_unknown": {
+                    "additional_location": [],
+                    "certificate": [],
+                    "delegation": true,
+                    "developer_portal_url": true,
+                    "gateway_regional_url": true,
+                    "gateway_url": true,
+                    "hostname_configuration": true,
+                    "id": true,
+                    "identity": [],
+                    "management_api_url": true,
+                    "notification_sender_email": true,
+                    "policy": true,
+                    "portal_url": true,
+                    "private_ip_addresses": true,
+                    "protocols": true,
+                    "public_ip_addresses": true,
+                    "scm_url": true,
+                    "security": true,
+                    "sign_in": true,
+                    "sign_up": true,
+                    "tenant_access": true,
+                    "virtual_network_configuration": []
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "additional_location": [],
+                    "certificate": [],
+                    "delegation": [],
+                    "hostname_configuration": [],
+                    "identity": [],
+                    "policy": [],
+                    "private_ip_addresses": [],
+                    "protocols": [],
+                    "public_ip_addresses": [],
+                    "security": [],
+                    "sign_in": [],
+                    "sign_up": [],
+                    "tenant_access": [],
+                    "virtual_network_configuration": []
+                }
+            }
+        },
+        {
+            "address": "azurerm_api_management_logger.example",
+            "mode": "managed",
+            "type": "azurerm_api_management_logger",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "api_management_name": "example-apim",
+                    "application_insights": [
+                        {}
+                    ],
+                    "buffered": true,
+                    "description": null,
+                    "eventhub": [],
+                    "name": "example-logger",
+                    "resource_group_name": "example-resources",
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "application_insights": [
+                        {
+                            "instrumentation_key": true
+                        }
+                    ],
+                    "eventhub": [],
+                    "id": true,
+                    "resource_id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "application_insights": [
+                        {
+                            "instrumentation_key": true
+                        }
+                    ],
+                    "eventhub": []
+                }
+            }
+        },
+        {
+            "address": "azurerm_application_insights.example",
+            "mode": "managed",
+            "type": "azurerm_application_insights",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "application_type": "other",
+                    "disable_ip_masking": false,
+                    "force_customer_storage_for_profiler": false,
+                    "internet_ingestion_enabled": true,
+                    "internet_query_enabled": true,
+                    "local_authentication_disabled": false,
+                    "location": "westeurope",
+                    "name": "example-appinsights",
+                    "resource_group_name": "example-resources",
+                    "retention_in_days": 90,
+                    "sampling_percentage": 100,
+                    "tags": null,
+                    "timeouts": null,
+                    "workspace_id": null
+                },
+                "after_unknown": {
+                    "app_id": true,
+                    "connection_string": true,
+                    "daily_data_cap_in_gb": true,
+                    "daily_data_cap_notifications_disabled": true,
+                    "id": true,
+                    "instrumentation_key": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "connection_string": true,
+                    "instrumentation_key": true
+                }
+            }
+        },
+        {
+            "address": "azurerm_resource_group.example",
+            "mode": "managed",
+            "type": "azurerm_resource_group",
+            "name": "example",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "location": "westeurope",
+                    "managed_by": null,
+                    "name": "example-resources",
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "3.117.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ]
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_api_management.example",
+                    "mode": "managed",
+                    "type": "azurerm_api_management",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "location": {
+                            "references": [
+                                "azurerm_resource_group.example.location",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "example-apim"
+                        },
+                        "publisher_email": {
+                            "constant_value": "company@terraform.io"
+                        },
+                        "publisher_name": {
+                            "constant_value": "My Company"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.example.name",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "sku_name": {
+                            "constant_value": "Developer_1"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_api_management_logger.example",
+                    "mode": "managed",
+                    "type": "azurerm_api_management_logger",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "api_management_name": {
+                            "references": [
+                                "azurerm_api_management.example.name",
+                                "azurerm_api_management.example"
+                            ]
+                        },
+                        "application_insights": [
+                            {
+                                "instrumentation_key": {
+                                    "references": [
+                                        "azurerm_application_insights.example.instrumentation_key",
+                                        "azurerm_application_insights.example"
+                                    ]
+                                }
+                            }
+                        ],
+                        "name": {
+                            "constant_value": "example-logger"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.example.name",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "resource_id": {
+                            "references": [
+                                "azurerm_application_insights.example.id",
+                                "azurerm_application_insights.example"
+                            ]
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_application_insights.example",
+                    "mode": "managed",
+                    "type": "azurerm_application_insights",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "application_type": {
+                            "constant_value": "other"
+                        },
+                        "location": {
+                            "references": [
+                                "azurerm_resource_group.example.location",
+                                "azurerm_resource_group.example"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "example-appinsights"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "azurerm_resource_group.example.name",
+                                "azurerm_resource_group.example"
+                            ]
+                        }
+                    },
+                    "schema_version": 2
+                },
+                {
+                    "address": "azurerm_resource_group.example",
+                    "mode": "managed",
+                    "type": "azurerm_resource_group",
+                    "name": "example",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "location": {
+                            "constant_value": "West Europe"
+                        },
+                        "name": {
+                            "constant_value": "example-resources"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "azurerm_resource_group.example",
+            "attribute": [
+                "location"
+            ]
+        },
+        {
+            "resource": "azurerm_resource_group.example",
+            "attribute": [
+                "name"
+            ]
+        },
+        {
+            "resource": "azurerm_api_management.example",
+            "attribute": [
+                "name"
+            ]
+        },
+        {
+            "resource": "azurerm_application_insights.example",
+            "attribute": [
+                "id"
+            ]
+        },
+        {
+            "resource": "azurerm_application_insights.example",
+            "attribute": [
+                "instrumentation_key"
+            ]
+        }
+    ],
+    "timestamp": "2025-02-13T19:49:10Z",
+    "errored": false
+}

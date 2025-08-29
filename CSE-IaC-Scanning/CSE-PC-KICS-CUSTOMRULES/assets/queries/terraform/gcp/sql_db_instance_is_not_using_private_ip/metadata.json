@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDSQL-27931",
+    "queryName": "sql db instance is not using private ip",
+    "severity": "HIGH",
+    "category": "Network Security",
+    "descriptionText": "Private instances are required",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/sql_database_instance",
+    "platform": "Terraform",
+    "descriptionID": "2.79.3.1",
+    "cloudProvider": "gcp"
+}  

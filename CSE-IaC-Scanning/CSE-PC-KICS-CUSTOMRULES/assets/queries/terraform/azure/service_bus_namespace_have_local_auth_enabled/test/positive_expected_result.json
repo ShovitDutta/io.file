@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "service bus namespace have local auth enabled",
+      "severity": "HIGH",
+      "line": 24,
+      "fileName": "positive.json"
+    }
+]

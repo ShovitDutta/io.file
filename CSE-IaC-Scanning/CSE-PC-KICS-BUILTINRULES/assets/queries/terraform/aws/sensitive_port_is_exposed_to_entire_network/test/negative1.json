@@ -1,0 +1,892 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_security_group.different_cidr",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "different_cidr",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 1,
+                    "values": {
+                        "description": "Managed by Terraform",
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    "0.0.0.0/12"
+                                ],
+                                "description": "",
+                                "from_port": 443,
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "protocol": "tcp",
+                                "security_groups": [],
+                                "self": false,
+                                "to_port": 443
+                            },
+                            {
+                                "cidr_blocks": [
+                                    "0.0.0.0/16"
+                                ],
+                                "description": "",
+                                "from_port": 22,
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "protocol": "tcp",
+                                "security_groups": [],
+                                "self": false,
+                                "to_port": 22
+                            }
+                        ],
+                        "name": "different-cidr",
+                        "region": "us-east-1",
+                        "revoke_rules_on_delete": false,
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "egress": [],
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    false
+                                ],
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "security_groups": []
+                            },
+                            {
+                                "cidr_blocks": [
+                                    false
+                                ],
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "security_groups": []
+                            }
+                        ],
+                        "tags_all": {}
+                    }
+                },
+                {
+                    "address": "aws_security_group.icmp_allowed",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "icmp_allowed",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 1,
+                    "values": {
+                        "description": "Managed by Terraform",
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    "0.0.0.0/0"
+                                ],
+                                "description": "",
+                                "from_port": -1,
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "protocol": "icmp",
+                                "security_groups": [],
+                                "self": false,
+                                "to_port": -1
+                            }
+                        ],
+                        "name": "icmp-allowed",
+                        "region": "us-east-1",
+                        "revoke_rules_on_delete": false,
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "egress": [],
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    false
+                                ],
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "security_groups": []
+                            }
+                        ],
+                        "tags_all": {}
+                    }
+                },
+                {
+                    "address": "aws_security_group.multi_restricted",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "multi_restricted",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 1,
+                    "values": {
+                        "description": "Managed by Terraform",
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    "192.168.1.0/24",
+                                    "172.16.0.0/12"
+                                ],
+                                "description": "",
+                                "from_port": 3306,
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "protocol": "tcp",
+                                "security_groups": [],
+                                "self": false,
+                                "to_port": 3306
+                            }
+                        ],
+                        "name": "multi-restricted",
+                        "region": "us-east-1",
+                        "revoke_rules_on_delete": false,
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "egress": [],
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    false,
+                                    false
+                                ],
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "security_groups": []
+                            }
+                        ],
+                        "tags_all": {}
+                    }
+                },
+                {
+                    "address": "aws_security_group.non_sensitive",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "non_sensitive",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 1,
+                    "values": {
+                        "description": "Managed by Terraform",
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    "0.0.0.0/0"
+                                ],
+                                "description": "",
+                                "from_port": 8443,
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "protocol": "tcp",
+                                "security_groups": [],
+                                "self": false,
+                                "to_port": 8443
+                            },
+                            {
+                                "cidr_blocks": [
+                                    "0.0.0.0/0"
+                                ],
+                                "description": "",
+                                "from_port": 9999,
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "protocol": "udp",
+                                "security_groups": [],
+                                "self": false,
+                                "to_port": 9999
+                            }
+                        ],
+                        "name": "non-sensitive",
+                        "region": "us-east-1",
+                        "revoke_rules_on_delete": false,
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "egress": [],
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    false
+                                ],
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "security_groups": []
+                            },
+                            {
+                                "cidr_blocks": [
+                                    false
+                                ],
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "security_groups": []
+                            }
+                        ],
+                        "tags_all": {}
+                    }
+                },
+                {
+                    "address": "aws_security_group.ssh_restricted",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "ssh_restricted",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 1,
+                    "values": {
+                        "description": "Managed by Terraform",
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    "10.0.0.0/8"
+                                ],
+                                "description": "",
+                                "from_port": 22,
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "protocol": "tcp",
+                                "security_groups": [],
+                                "self": false,
+                                "to_port": 22
+                            }
+                        ],
+                        "name": "ssh-restricted",
+                        "region": "us-east-1",
+                        "revoke_rules_on_delete": false,
+                        "tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "egress": [],
+                        "ingress": [
+                            {
+                                "cidr_blocks": [
+                                    false
+                                ],
+                                "ipv6_cidr_blocks": [],
+                                "prefix_list_ids": [],
+                                "security_groups": []
+                            }
+                        ],
+                        "tags_all": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_security_group.different_cidr",
+            "mode": "managed",
+            "type": "aws_security_group",
+            "name": "different_cidr",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "Managed by Terraform",
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                "0.0.0.0/12"
+                            ],
+                            "description": "",
+                            "from_port": 443,
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "protocol": "tcp",
+                            "security_groups": [],
+                            "self": false,
+                            "to_port": 443
+                        },
+                        {
+                            "cidr_blocks": [
+                                "0.0.0.0/16"
+                            ],
+                            "description": "",
+                            "from_port": 22,
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "protocol": "tcp",
+                            "security_groups": [],
+                            "self": false,
+                            "to_port": 22
+                        }
+                    ],
+                    "name": "different-cidr",
+                    "region": "us-east-1",
+                    "revoke_rules_on_delete": false,
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "egress": true,
+                    "id": true,
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        },
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "name_prefix": true,
+                    "owner_id": true,
+                    "tags_all": true,
+                    "vpc_id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "egress": [],
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        },
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "tags_all": {}
+                }
+            }
+        },
+        {
+            "address": "aws_security_group.icmp_allowed",
+            "mode": "managed",
+            "type": "aws_security_group",
+            "name": "icmp_allowed",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "Managed by Terraform",
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "description": "",
+                            "from_port": -1,
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "protocol": "icmp",
+                            "security_groups": [],
+                            "self": false,
+                            "to_port": -1
+                        }
+                    ],
+                    "name": "icmp-allowed",
+                    "region": "us-east-1",
+                    "revoke_rules_on_delete": false,
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "egress": true,
+                    "id": true,
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "name_prefix": true,
+                    "owner_id": true,
+                    "tags_all": true,
+                    "vpc_id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "egress": [],
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "tags_all": {}
+                }
+            }
+        },
+        {
+            "address": "aws_security_group.multi_restricted",
+            "mode": "managed",
+            "type": "aws_security_group",
+            "name": "multi_restricted",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "Managed by Terraform",
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                "192.168.1.0/24",
+                                "172.16.0.0/12"
+                            ],
+                            "description": "",
+                            "from_port": 3306,
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "protocol": "tcp",
+                            "security_groups": [],
+                            "self": false,
+                            "to_port": 3306
+                        }
+                    ],
+                    "name": "multi-restricted",
+                    "region": "us-east-1",
+                    "revoke_rules_on_delete": false,
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "egress": true,
+                    "id": true,
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false,
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "name_prefix": true,
+                    "owner_id": true,
+                    "tags_all": true,
+                    "vpc_id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "egress": [],
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false,
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "tags_all": {}
+                }
+            }
+        },
+        {
+            "address": "aws_security_group.non_sensitive",
+            "mode": "managed",
+            "type": "aws_security_group",
+            "name": "non_sensitive",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "Managed by Terraform",
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "description": "",
+                            "from_port": 8443,
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "protocol": "tcp",
+                            "security_groups": [],
+                            "self": false,
+                            "to_port": 8443
+                        },
+                        {
+                            "cidr_blocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "description": "",
+                            "from_port": 9999,
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "protocol": "udp",
+                            "security_groups": [],
+                            "self": false,
+                            "to_port": 9999
+                        }
+                    ],
+                    "name": "non-sensitive",
+                    "region": "us-east-1",
+                    "revoke_rules_on_delete": false,
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "egress": true,
+                    "id": true,
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        },
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "name_prefix": true,
+                    "owner_id": true,
+                    "tags_all": true,
+                    "vpc_id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "egress": [],
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        },
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "tags_all": {}
+                }
+            }
+        },
+        {
+            "address": "aws_security_group.ssh_restricted",
+            "mode": "managed",
+            "type": "aws_security_group",
+            "name": "ssh_restricted",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "description": "Managed by Terraform",
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                "10.0.0.0/8"
+                            ],
+                            "description": "",
+                            "from_port": 22,
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "protocol": "tcp",
+                            "security_groups": [],
+                            "self": false,
+                            "to_port": 22
+                        }
+                    ],
+                    "name": "ssh-restricted",
+                    "region": "us-east-1",
+                    "revoke_rules_on_delete": false,
+                    "tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "arn": true,
+                    "egress": true,
+                    "id": true,
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "name_prefix": true,
+                    "owner_id": true,
+                    "tags_all": true,
+                    "vpc_id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "egress": [],
+                    "ingress": [
+                        {
+                            "cidr_blocks": [
+                                false
+                            ],
+                            "ipv6_cidr_blocks": [],
+                            "prefix_list_ids": [],
+                            "security_groups": []
+                        }
+                    ],
+                    "tags_all": {}
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "full_name": "registry.terraform.io/hashicorp/aws",
+                "version_constraint": "6.4.0",
+                "expressions": {
+                    "profile": {
+                        "constant_value": "saurabh-eis-dev"
+                    },
+                    "region": {
+                        "constant_value": "us-east-1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_security_group.different_cidr",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "different_cidr",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "ingress": {
+                            "constant_value": [
+                                {
+                                    "cidr_blocks": [
+                                        "0.0.0.0/12"
+                                    ],
+                                    "description": null,
+                                    "from_port": 443,
+                                    "ipv6_cidr_blocks": null,
+                                    "prefix_list_ids": null,
+                                    "protocol": "tcp",
+                                    "security_groups": null,
+                                    "self": null,
+                                    "to_port": 443
+                                },
+                                {
+                                    "cidr_blocks": [
+                                        "0.0.0.0/16"
+                                    ],
+                                    "description": null,
+                                    "from_port": 22,
+                                    "ipv6_cidr_blocks": null,
+                                    "prefix_list_ids": null,
+                                    "protocol": "tcp",
+                                    "security_groups": null,
+                                    "self": null,
+                                    "to_port": 22
+                                }
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "different-cidr"
+                        }
+                    },
+                    "schema_version": 1
+                },
+                {
+                    "address": "aws_security_group.icmp_allowed",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "icmp_allowed",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "ingress": {
+                            "constant_value": [
+                                {
+                                    "cidr_blocks": [
+                                        "0.0.0.0/0"
+                                    ],
+                                    "description": null,
+                                    "from_port": -1,
+                                    "ipv6_cidr_blocks": null,
+                                    "prefix_list_ids": null,
+                                    "protocol": "icmp",
+                                    "security_groups": null,
+                                    "self": null,
+                                    "to_port": -1
+                                }
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "icmp-allowed"
+                        }
+                    },
+                    "schema_version": 1
+                },
+                {
+                    "address": "aws_security_group.multi_restricted",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "multi_restricted",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "ingress": {
+                            "constant_value": [
+                                {
+                                    "cidr_blocks": [
+                                        "192.168.1.0/24",
+                                        "172.16.0.0/12"
+                                    ],
+                                    "description": null,
+                                    "from_port": 3306,
+                                    "ipv6_cidr_blocks": null,
+                                    "prefix_list_ids": null,
+                                    "protocol": "tcp",
+                                    "security_groups": null,
+                                    "self": null,
+                                    "to_port": 3306
+                                }
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "multi-restricted"
+                        }
+                    },
+                    "schema_version": 1
+                },
+                {
+                    "address": "aws_security_group.non_sensitive",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "non_sensitive",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "ingress": {
+                            "constant_value": [
+                                {
+                                    "cidr_blocks": [
+                                        "0.0.0.0/0"
+                                    ],
+                                    "description": null,
+                                    "from_port": 8443,
+                                    "ipv6_cidr_blocks": null,
+                                    "prefix_list_ids": null,
+                                    "protocol": "tcp",
+                                    "security_groups": null,
+                                    "self": null,
+                                    "to_port": 8443
+                                },
+                                {
+                                    "cidr_blocks": [
+                                        "0.0.0.0/0"
+                                    ],
+                                    "description": null,
+                                    "from_port": 9999,
+                                    "ipv6_cidr_blocks": null,
+                                    "prefix_list_ids": null,
+                                    "protocol": "udp",
+                                    "security_groups": null,
+                                    "self": null,
+                                    "to_port": 9999
+                                }
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "non-sensitive"
+                        }
+                    },
+                    "schema_version": 1
+                },
+                {
+                    "address": "aws_security_group.ssh_restricted",
+                    "mode": "managed",
+                    "type": "aws_security_group",
+                    "name": "ssh_restricted",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "ingress": {
+                            "constant_value": [
+                                {
+                                    "cidr_blocks": [
+                                        "10.0.0.0/8"
+                                    ],
+                                    "description": null,
+                                    "from_port": 22,
+                                    "ipv6_cidr_blocks": null,
+                                    "prefix_list_ids": null,
+                                    "protocol": "tcp",
+                                    "security_groups": null,
+                                    "self": null,
+                                    "to_port": 22
+                                }
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "ssh-restricted"
+                        }
+                    },
+                    "schema_version": 1
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-08-14T11:39:24Z",
+    "errored": false
+}

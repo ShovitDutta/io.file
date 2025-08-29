@@ -1,0 +1,14 @@
+[
+    {
+      "queryName": "service bus namespace not using cmek for encryption",
+      "severity": "HIGH",
+      "line": 16,
+      "fileName": "positive.json"
+    },
+    {
+      "queryName": "service bus namespace not using cmek for encryption",
+      "severity": "HIGH",
+      "line": 20,
+      "fileName": "positive2.json"
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-BIGQUERY-21021",
+    "queryName": "bigquery cmek is not enforced for encryption",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "CMEK required on all instances for data-at-rest",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/bigquery_dataset#nested_default_encryption_configuration",
+    "platform": "Terraform",
+    "descriptionID": "2.10.2.1",
+    "cloudProvider": "gcp"
+}

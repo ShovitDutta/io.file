@@ -1,0 +1,14 @@
+[
+    {
+      "queryName": "azure ai contentsafety service not configured with cmek",
+      "severity": "HIGH",
+      "line": 18,
+      "fileName": "positive.json"
+    },
+    {
+      "queryName": "azure ai contentsafety service not configured with cmek",
+      "severity": "HIGH",
+      "line": 21,
+      "fileName": "positive1.json"
+    }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-POSTGRESQLFLEXIBLESERVER-12443",
+  "queryName": "postgresql flexible server log checkpoints disabled",
+  "severity": "MEDIUM",
+  "category": "Logging and Monitoring",
+  "descriptionText": "Ensure Server Parameter 'log_checkpoints' is set to 'ON' for PostgreSQL Database Server",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server_configuration",
+  "platform": "Terraform",
+  "descriptionID": "1.24.4.3",
+  "cloudProvider": "azure"
+}

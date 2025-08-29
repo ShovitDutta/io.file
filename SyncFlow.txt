@@ -1,0 +1,24 @@
+=======================================| root |=========================================
+git config user.name "lebip92427"
+git config user.email "psyc_ops.1@protonmail.com"
+git fetch origin
+git reset --hard origin/main
+git pull origin main
+git add .
+git commit -m "commit_message"
+git push origin main
+=======================================| root |=========================================
+
+
+==================================| cse-iac-scanning |===================================
+cd ./CSE-IaC-Scanning
+git config user.name "Nishant Sethi"
+git config user.email "nishant.sethi@cvshealth.com"
+git fetch origin
+git reset --hard origin/main
+git pull origin main
+git add .
+git commit -m "commit_message"
+git subtree push --prefix=CSE-IaC-Scanning cse_private main
+git push origin main
+==================================| cse-iac-scanning |===================================

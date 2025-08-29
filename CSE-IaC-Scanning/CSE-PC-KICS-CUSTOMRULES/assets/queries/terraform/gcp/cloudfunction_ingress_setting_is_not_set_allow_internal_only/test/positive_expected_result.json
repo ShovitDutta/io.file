@@ -1,0 +1,20 @@
+[
+    {
+        "queryName": "cloudfunction ingress setting is not set allow internal only",
+        "severity": "CRITICAL",
+        "line": 48,
+        "fileName": "positive.json"
+    },
+    {
+        "queryName": "cloudfunction ingress setting is not set allow internal only",
+        "severity": "CRITICAL",
+        "line": 58,
+        "fileName": "positive1.json"
+    },
+    {
+        "queryName": "cloudfunction ingress setting is not set allow internal only",
+        "severity": "CRITICAL",
+        "line": 58,
+        "fileName": "positive2.json"
+    }
+]

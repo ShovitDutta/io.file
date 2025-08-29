@@ -1,0 +1,159 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_s3_account_public_access_block.allow_public",
+                    "mode": "managed",
+                    "type": "aws_s3_account_public_access_block",
+                    "name": "allow_public",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "account_id": "250924516109",
+                        "block_public_acls": false,
+                        "block_public_policy": false,
+                        "ignore_public_acls": false,
+                        "restrict_public_buckets": true
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "aws_s3_bucket_public_access_block.bucket_public_access_block",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket_public_access_block",
+                    "name": "bucket_public_access_block",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "block_public_acls": true,
+                        "block_public_policy": false,
+                        "bucket": "cvs-s3-bucket",
+                        "ignore_public_acls": true,
+                        "region": "us-east-1",
+                        "restrict_public_buckets": true,
+                        "skip_destroy": null
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_s3_account_public_access_block.allow_public",
+            "mode": "managed",
+            "type": "aws_s3_account_public_access_block",
+            "name": "allow_public",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "account_id": "250924516109",
+                    "block_public_acls": false,
+                    "block_public_policy": false,
+                    "ignore_public_acls": false,
+                    "restrict_public_buckets": true
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "aws_s3_bucket_public_access_block.bucket_public_access_block",
+            "mode": "managed",
+            "type": "aws_s3_bucket_public_access_block",
+            "name": "bucket_public_access_block",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "block_public_acls": true,
+                    "block_public_policy": false,
+                    "bucket": "cvs-s3-bucket",
+                    "ignore_public_acls": true,
+                    "region": "us-east-1",
+                    "restrict_public_buckets": true,
+                    "skip_destroy": null
+                },
+                "after_unknown": {
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "full_name": "registry.terraform.io/hashicorp/aws",
+                "version_constraint": "6.4.0",
+                "expressions": {
+                    "profile": {
+                        "constant_value": "saurabh-eis-dev"
+                    },
+                    "region": {
+                        "constant_value": "us-east-1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_s3_account_public_access_block.allow_public",
+                    "mode": "managed",
+                    "type": "aws_s3_account_public_access_block",
+                    "name": "allow_public",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "account_id": {
+                            "constant_value": 250924516109
+                        },
+                        "restrict_public_buckets": {
+                            "constant_value": true
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_s3_bucket_public_access_block.bucket_public_access_block",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket_public_access_block",
+                    "name": "bucket_public_access_block",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "block_public_acls": {
+                            "constant_value": true
+                        },
+                        "bucket": {
+                            "constant_value": "cvs-s3-bucket"
+                        },
+                        "ignore_public_acls": {
+                            "constant_value": true
+                        },
+                        "restrict_public_buckets": {
+                            "constant_value": true
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-24T10:02:46Z",
+    "errored": false
+}

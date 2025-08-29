@@ -1,0 +1,9 @@
+[
+  {
+    "queryName": "MSSQL Server Public Network Access Enabled",
+    "severity": "CRITICAL",
+    "line": 41,
+    "fileName": "positive.json"
+  }
+]
+

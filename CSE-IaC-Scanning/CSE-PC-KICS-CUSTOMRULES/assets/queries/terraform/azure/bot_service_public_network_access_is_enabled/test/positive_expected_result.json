@@ -1,0 +1,9 @@
+[
+  {
+    "queryName": "bot service public network access is enabled",
+    "severity": "CRITICAL",
+    "line": 8,
+    "fileName": "positive.json"
+  }
+]
+

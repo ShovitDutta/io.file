@@ -1,0 +1,162 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_project.project",
+                    "mode": "managed",
+                    "type": "google_project",
+                    "name": "project",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 1,
+                    "values": {
+                        "auto_create_network": false,
+                        "billing_account": "abc123456789",
+                        "deletion_policy": "PREVENT",
+                        "effective_labels": {
+                            "cost_center": "1234567",
+                            "env": "staging",
+                            "goog-terraform-provisioned": "true",
+                            "owner": "devops"
+                        },
+                        "folder_id": null,
+                        "labels": {
+                            "cost_center": "1234567",
+                            "env": "staging",
+                            "owner": "devops"
+                        },
+                        "name": "sample-gcp-project",
+                        "org_id": "406991551802",
+                        "project_id": "456789456",
+                        "tags": null,
+                        "terraform_labels": {
+                            "cost_center": "1234567",
+                            "env": "staging",
+                            "goog-terraform-provisioned": "true",
+                            "owner": "devops"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "effective_labels": {},
+                        "labels": {},
+                        "terraform_labels": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_project.project",
+            "mode": "managed",
+            "type": "google_project",
+            "name": "project",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "auto_create_network": false,
+                    "billing_account": "abc123456789",
+                    "deletion_policy": "PREVENT",
+                    "effective_labels": {
+                        "cost_center": "1234567",
+                        "env": "staging",
+                        "goog-terraform-provisioned": "true",
+                        "owner": "devops"
+                    },
+                    "folder_id": null,
+                    "labels": {
+                        "cost_center": "1234567",
+                        "env": "staging",
+                        "owner": "devops"
+                    },
+                    "name": "sample-gcp-project",
+                    "org_id": "406991551802",
+                    "project_id": "456789456",
+                    "tags": null,
+                    "terraform_labels": {
+                        "cost_center": "1234567",
+                        "env": "staging",
+                        "goog-terraform-provisioned": "true",
+                        "owner": "devops"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "effective_labels": {},
+                    "id": true,
+                    "labels": {},
+                    "number": true,
+                    "terraform_labels": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "effective_labels": {},
+                    "labels": {},
+                    "terraform_labels": {}
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.35.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_project.project",
+                    "mode": "managed",
+                    "type": "google_project",
+                    "name": "project",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "auto_create_network": {
+                            "constant_value": false
+                        },
+                        "billing_account": {
+                            "constant_value": "abc123456789"
+                        },
+                        "labels": {
+                            "constant_value": {
+                                "cost_center": "1234567",
+                                "env": "staging",
+                                "owner": "devops"
+                            }
+                        },
+                        "name": {
+                            "constant_value": "sample-gcp-project"
+                        },
+                        "org_id": {
+                            "constant_value": "406991551802"
+                        },
+                        "project_id": {
+                            "constant_value": "456789456"
+                        }
+                    },
+                    "schema_version": 1
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-05-22T16:39:54Z",
+    "errored": false
+}

@@ -1,0 +1,254 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_s3_bucket.s3_bucket",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket",
+                    "name": "s3_bucket",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "bucket": "cvs-s3-bucket",
+                        "force_destroy": false,
+                        "logging": [
+                            {
+                                "target_bucket": "logs-bucket",
+                                "target_prefix": null
+                            }
+                        ],
+                        "region": "us-east-1",
+                        "tags": {
+                            "Environment": "Dev",
+                            "Name": "My bucket"
+                        },
+                        "tags_all": {
+                            "Environment": "Dev",
+                            "Name": "My bucket"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "cors_rule": [],
+                        "grant": [],
+                        "lifecycle_rule": [],
+                        "logging": [
+                            {}
+                        ],
+                        "object_lock_configuration": [],
+                        "replication_configuration": [],
+                        "server_side_encryption_configuration": [],
+                        "tags": {},
+                        "tags_all": {},
+                        "versioning": [],
+                        "website": []
+                    }
+                },
+                {
+                    "address": "aws_s3_bucket_logging.bucket_logging",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket_logging",
+                    "name": "bucket_logging",
+                    "provider_name": "registry.terraform.io/hashicorp/aws",
+                    "schema_version": 0,
+                    "values": {
+                        "bucket": "cvs-s3-bucket",
+                        "expected_bucket_owner": null,
+                        "region": "us-east-1",
+                        "target_bucket": "logs-bucket",
+                        "target_grant": [],
+                        "target_object_key_format": [],
+                        "target_prefix": "log/"
+                    },
+                    "sensitive_values": {
+                        "target_grant": [],
+                        "target_object_key_format": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "aws_s3_bucket.s3_bucket",
+            "mode": "managed",
+            "type": "aws_s3_bucket",
+            "name": "s3_bucket",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "bucket": "cvs-s3-bucket",
+                    "force_destroy": false,
+                    "logging": [
+                        {
+                            "target_bucket": "logs-bucket",
+                            "target_prefix": null
+                        }
+                    ],
+                    "region": "us-east-1",
+                    "tags": {
+                        "Environment": "Dev",
+                        "Name": "My bucket"
+                    },
+                    "tags_all": {
+                        "Environment": "Dev",
+                        "Name": "My bucket"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "acceleration_status": true,
+                    "acl": true,
+                    "arn": true,
+                    "bucket_domain_name": true,
+                    "bucket_prefix": true,
+                    "bucket_region": true,
+                    "bucket_regional_domain_name": true,
+                    "cors_rule": true,
+                    "grant": true,
+                    "hosted_zone_id": true,
+                    "id": true,
+                    "lifecycle_rule": true,
+                    "logging": [
+                        {}
+                    ],
+                    "object_lock_configuration": true,
+                    "object_lock_enabled": true,
+                    "policy": true,
+                    "replication_configuration": true,
+                    "request_payer": true,
+                    "server_side_encryption_configuration": true,
+                    "tags": {},
+                    "tags_all": {},
+                    "versioning": true,
+                    "website": true,
+                    "website_domain": true,
+                    "website_endpoint": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "cors_rule": [],
+                    "grant": [],
+                    "lifecycle_rule": [],
+                    "logging": [
+                        {}
+                    ],
+                    "object_lock_configuration": [],
+                    "replication_configuration": [],
+                    "server_side_encryption_configuration": [],
+                    "tags": {},
+                    "tags_all": {},
+                    "versioning": [],
+                    "website": []
+                }
+            }
+        },
+        {
+            "address": "aws_s3_bucket_logging.bucket_logging",
+            "mode": "managed",
+            "type": "aws_s3_bucket_logging",
+            "name": "bucket_logging",
+            "provider_name": "registry.terraform.io/hashicorp/aws",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "bucket": "cvs-s3-bucket",
+                    "expected_bucket_owner": null,
+                    "region": "us-east-1",
+                    "target_bucket": "logs-bucket",
+                    "target_grant": [],
+                    "target_object_key_format": [],
+                    "target_prefix": "log/"
+                },
+                "after_unknown": {
+                    "id": true,
+                    "target_grant": [],
+                    "target_object_key_format": []
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "target_grant": [],
+                    "target_object_key_format": []
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "aws": {
+                "name": "aws",
+                "full_name": "registry.terraform.io/hashicorp/aws",
+                "version_constraint": "6.4.0",
+                "expressions": {
+                    "profile": {
+                        "constant_value": "saurabh-eis-dev"
+                    },
+                    "region": {
+                        "constant_value": "us-east-1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "aws_s3_bucket.s3_bucket",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket",
+                    "name": "s3_bucket",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "bucket": {
+                            "constant_value": "cvs-s3-bucket"
+                        },
+                        "logging": [
+                            {
+                                "target_bucket": {
+                                    "constant_value": "logs-bucket"
+                                }
+                            }
+                        ],
+                        "tags": {
+                            "constant_value": {
+                                "Environment": "Dev",
+                                "Name": "My bucket"
+                            }
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "aws_s3_bucket_logging.bucket_logging",
+                    "mode": "managed",
+                    "type": "aws_s3_bucket_logging",
+                    "name": "bucket_logging",
+                    "provider_config_key": "aws",
+                    "expressions": {
+                        "bucket": {
+                            "constant_value": "cvs-s3-bucket"
+                        },
+                        "target_bucket": {
+                            "constant_value": "logs-bucket"
+                        },
+                        "target_prefix": {
+                            "constant_value": "log/"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-22T15:39:31Z",
+    "errored": false
+}

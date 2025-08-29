@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "Trusted Microsoft Services Not Enabled",
+    "severity": "HIGH",
+    "line": 3191,
+    "fileName": "positive1.json"
+  },
+  {
+    "queryName": "Trusted Microsoft Services Not Enabled",
+    "severity": "HIGH",
+    "line": 3245,
+    "fileName": "positive2.json"
+  }
+]

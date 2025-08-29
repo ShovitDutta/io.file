@@ -1,0 +1,62 @@
+[
+    {
+      "queryName": "loadbalancer is missing tags",
+      "severity": "LOW",
+      "line": 30,
+      "fileName": "positive1.json"
+    },
+    {
+      "queryName": "loadbalancer is missing tags",
+      "severity": "LOW",
+      "line": 31,
+      "fileName": "positive2.json"
+    },
+    {
+      "queryName": "loadbalancer is missing tags",
+      "severity": "LOW",
+      "line": 30,
+      "fileName": "positive3.json"
+    },
+    {
+      "queryName": "loadbalancer is missing tags",
+      "severity": "LOW",
+      "line": 32,
+      "fileName": "positive4.json"
+    },
+    {
+      "queryName": "loadbalancer is missing tags",
+      "severity": "LOW",
+      "line": 30,
+      "fileName": "positive5.json"
+    },
+    {
+      "queryName": "loadbalancer is missing tags",
+      "severity": "LOW",
+      "line": 33,
+      "fileName": "positive6.json"
+    },
+    {
+      "queryName": "loadbalancer is missing tags",
+      "severity": "LOW",
+      "line": 30,
+      "fileName": "positive7.json"
+    },
+    {
+      "queryName": "loadbalancer is missing tags",
+      "severity": "LOW",
+      "line": 34,
+      "fileName": "positive8.json"
+    },
+    {
+      "queryName": "loadbalancer is missing tags",
+      "severity": "LOW",
+      "line": 30,
+      "fileName": "positive9.json"
+    },
+    {
+      "queryName": "loadbalancer is missing tags",
+      "severity": "LOW",
+      "line": 35,
+      "fileName": "positive6.json"
+    }
+]

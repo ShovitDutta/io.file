@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "S3 Bucket Logging Disabled",
+    "severity": "MEDIUM",
+    "line": 14,
+    "fileName": "positive.json"
+  },
+  {
+    "queryName": "S3 Bucket Logging Disabled",
+    "severity": "MEDIUM",
+    "line": 14,
+    "fileName": "positive.json"
+  }
+]

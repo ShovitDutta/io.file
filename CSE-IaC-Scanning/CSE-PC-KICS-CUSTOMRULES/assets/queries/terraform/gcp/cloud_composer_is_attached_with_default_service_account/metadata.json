@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDCOMPOSER-22515",
+    "queryName": "cloud composer is attached with default service account",
+    "severity": "HIGH",
+    "category": "IAM",
+    "descriptionText": "Default service should not be used when deploying composer environments",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/composer_environment#service_account-1",
+    "platform": "Terraform",
+    "descriptionID": "2.25.1.5",
+    "cloudProvider": "gcp"
+}

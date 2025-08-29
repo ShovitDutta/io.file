@@ -1,0 +1,12 @@
+{
+    "id": "CSE-PC-AZURE-SQLSERVER-11651",
+    "queryName": "sql server must be tagged as per standards",
+    "severity": "LOW",
+    "category": "Governance",
+    "descriptionText": "Following standard tags must be present - ITPMID ; Environmenttype ; Sharedemailaddress; Costcenter; Dataclassification",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mssql_server#tags",
+    "platform": "Terraform",
+    "descriptionID": "1.16.5.1",
+    "cloudProvider": "azure",
+    "cwe": ""
+}

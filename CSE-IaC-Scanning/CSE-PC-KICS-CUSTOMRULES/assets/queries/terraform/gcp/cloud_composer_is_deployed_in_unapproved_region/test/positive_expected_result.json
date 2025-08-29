@@ -1,0 +1,7 @@
+[
+    {
+        "queryName": "cloud composer is deployed in unapproved region",
+        "severity": "HIGH",
+        "line": 2
+    }
+]

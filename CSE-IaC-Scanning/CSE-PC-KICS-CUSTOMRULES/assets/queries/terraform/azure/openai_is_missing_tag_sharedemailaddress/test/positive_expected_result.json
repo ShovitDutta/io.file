@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "OpenAI is missing tag sharedemailaddress",
+      "severity": "LOW",
+      "line": 9
+    }
+]

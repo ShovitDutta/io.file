@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "OpenAI is not using cmek for encryption at rest",
+      "severity": "HIGH",
+      "line": 1
+    },
+]

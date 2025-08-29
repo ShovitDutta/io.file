@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "OpenAI is missing tag environmenttype",
+      "severity": "LOW",
+      "line": 9
+    }
+]

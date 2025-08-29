@@ -1,0 +1,33 @@
+[
+	{
+	  "queryName": "Sensitive Port Is Exposed To Small Public Network",
+	  "severity": "MEDIUM",
+	  "line": 16,
+	  "fileName": "positive.json"
+	},
+	{
+	  "queryName": "Sensitive Port Is Exposed To Small Public Network",
+	  "severity": "MEDIUM",
+	  "line": 82,
+	  "fileName": "positive.json"
+	},
+	{
+	  "queryName": "Sensitive Port Is Exposed To Small Public Network",
+	  "severity": "MEDIUM",
+	  "line": 127,
+	  "fileName": "positive.json"
+	},
+	{
+	  "queryName": "Sensitive Port Is Exposed To Small Public Network",
+	  "severity": "MEDIUM",
+	  "line": 172,
+	  "fileName": "positive.json"
+	},
+	{
+	  "queryName": "Sensitive Port Is Exposed To Small Public Network",
+	  "severity": "MEDIUM",
+	  "line": 238,
+	  "fileName": "positive.json"
+	}
+  ]
+  

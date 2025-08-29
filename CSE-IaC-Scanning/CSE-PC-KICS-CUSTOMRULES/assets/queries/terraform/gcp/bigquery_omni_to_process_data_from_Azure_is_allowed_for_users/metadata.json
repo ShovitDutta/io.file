@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-BIGQUERY-21024",
+    "queryName": "bigquery omni to process data from Azure is allowed for users",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Ensure users are not allow to use Bigquery omni to process data from Azure",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/org_policy_policy",
+    "platform": "Terraform",
+    "descriptionID": "2.10.2.4",
+    "cloudProvider": "gcp"
+}

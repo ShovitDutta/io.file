@@ -1,0 +1,32 @@
+[
+  {
+    "queryName": "Sensitive Port Is Exposed To Wide Private Network",
+    "severity": "LOW",
+    "line": 16,
+    "filename": "positive.json"
+  },
+  {
+    "queryName": "Sensitive Port Is Exposed To Wide Private Network",
+    "severity": "LOW",
+    "line": 82,
+    "filename": "positive.json"
+  },
+  {
+    "queryName": "Sensitive Port Is Exposed To Wide Private Network",
+    "severity": "LOW",
+    "line": 127,
+    "filename": "positive.json"
+  },
+  {
+    "queryName": "Sensitive Port Is Exposed To Wide Private Network",
+    "severity": "LOW",
+    "line": 172,
+    "filename": "positive.json"
+  },
+  {
+    "queryName": "Sensitive Port Is Exposed To Wide Private Network",
+    "severity": "LOW",
+    "line": 238,
+    "filename": "positive.json"
+  }
+]

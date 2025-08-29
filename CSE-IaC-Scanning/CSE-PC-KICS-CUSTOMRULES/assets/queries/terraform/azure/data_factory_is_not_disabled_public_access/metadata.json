@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-DATAFACTORY-11531",
+    "queryName": "data factory is not disabled public access",
+    "severity": "CRITICAL",
+    "category": "Network Security",
+    "descriptionText": "Disable public access to Datafactory ",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/data_factory#public_network_enabled",
+    "platform": "Terraform",
+    "descriptionID": "1.15.3.1",
+    "cloudProvider": "azure"
+}

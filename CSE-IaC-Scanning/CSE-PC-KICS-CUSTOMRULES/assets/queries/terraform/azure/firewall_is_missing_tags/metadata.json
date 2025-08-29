@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-FIREWALL-13451",
+  "queryName": "firewall is missing tags",
+  "severity": "LOW",
+  "category": "Governance",
+  "descriptionText": "IT Hygiene: Azure Firewall must be tagged per standards",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/firewall#tags",
+  "platform": "Terraform",
+  "descriptionID": "1.34.5.1",
+  "cloudProvider": "azure"
+}

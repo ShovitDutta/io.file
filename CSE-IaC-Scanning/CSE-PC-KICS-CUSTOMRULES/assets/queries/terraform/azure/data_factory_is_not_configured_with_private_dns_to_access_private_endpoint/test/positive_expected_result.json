@@ -1,0 +1,7 @@
+[
+    {
+      "queryName": "data factory is not configured with private dns to access the private endpoint",
+      "severity": "HIGH",
+      "line": 28
+    }
+]

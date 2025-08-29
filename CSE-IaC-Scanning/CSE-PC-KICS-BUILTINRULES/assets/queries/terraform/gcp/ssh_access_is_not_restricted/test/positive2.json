@@ -1,0 +1,293 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.10.4",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_compute_firewall.default",
+                    "mode": "managed",
+                    "type": "google_compute_firewall",
+                    "name": "default",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 1,
+                    "values": {
+                        "allow": [
+                            {
+                                "ports": [
+                                    "80",
+                                    "8080",
+                                    "1000-2000",
+                                    "21-3390"
+                                ],
+                                "protocol": "udp"
+                            }
+                        ],
+                        "deny": [],
+                        "description": null,
+                        "disabled": null,
+                        "log_config": [],
+                        "name": "test-firewall",
+                        "network": "test-network",
+                        "priority": 1000,
+                        "project": "security-controls-sandbox",
+                        "source_ranges": ["::/0"],
+                        "source_service_accounts": null,
+                        "source_tags": [
+                            "web"
+                        ],
+                        "target_service_accounts": null,
+                        "target_tags": null,
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "allow": [
+                            {
+                                "ports": [
+                                    false,
+                                    false,
+                                    false,
+                                    false
+                                ]
+                            }
+                        ],
+                        "deny": [],
+                        "destination_ranges": [],
+                        "log_config": [],
+                        "source_tags": [
+                            false
+                        ]
+                    }
+                },
+                {
+                    "address": "google_compute_network.default",
+                    "mode": "managed",
+                    "type": "google_compute_network",
+                    "name": "default",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "auto_create_subnetworks": true,
+                        "delete_default_routes_on_create": false,
+                        "description": null,
+                        "enable_ula_internal_ipv6": null,
+                        "name": "test-network",
+                        "network_firewall_policy_enforcement_order": "AFTER_CLASSIC_FIREWALL",
+                        "project": "security-controls-sandbox",
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_compute_firewall.default",
+            "mode": "managed",
+            "type": "google_compute_firewall",
+            "name": "default",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "allow": [
+                        {
+                            "ports": [
+                                "80",
+                                "8080",
+                                "1000-2000",
+                                "21-3390"
+                            ],
+                            "protocol": "udp"
+                        }
+                    ],
+                    "deny": [],
+                    "description": null,
+                    "disabled": null,
+                    "log_config": [],
+                    "name": "test-firewall",
+                    "network": "test-network",
+                    "priority": 1000,
+                    "project": "security-controls-sandbox",
+                    "source_ranges": ["::/0"],
+                    "source_service_accounts": null,
+                    "source_tags": [
+                        "web"
+                    ],
+                    "target_service_accounts": null,
+                    "target_tags": null,
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "allow": [
+                        {
+                            "ports": [
+                                false,
+                                false,
+                                false,
+                                false
+                            ]
+                        }
+                    ],
+                    "creation_timestamp": true,
+                    "deny": [],
+                    "destination_ranges": true,
+                    "direction": true,
+                    "enable_logging": true,
+                    "id": true,
+                    "log_config": [],
+                    "self_link": true,
+                    "source_tags": [
+                        false
+                    ]
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "allow": [
+                        {
+                            "ports": [
+                                false,
+                                false,
+                                false,
+                                false
+                            ]
+                        }
+                    ],
+                    "deny": [],
+                    "destination_ranges": [],
+                    "log_config": [],
+                    "source_tags": [
+                        false
+                    ]
+                }
+            }
+        },
+        {
+            "address": "google_compute_network.default",
+            "mode": "managed",
+            "type": "google_compute_network",
+            "name": "default",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "auto_create_subnetworks": true,
+                    "delete_default_routes_on_create": false,
+                    "description": null,
+                    "enable_ula_internal_ipv6": null,
+                    "name": "test-network",
+                    "network_firewall_policy_enforcement_order": "AFTER_CLASSIC_FIREWALL",
+                    "project": "security-controls-sandbox",
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "gateway_ipv4": true,
+                    "id": true,
+                    "internal_ipv6_range": true,
+                    "mtu": true,
+                    "network_id": true,
+                    "numeric_id": true,
+                    "routing_mode": true,
+                    "self_link": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.15.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    },
+                    "zone": {
+                        "constant_value": "us-central1-c"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_compute_firewall.default",
+                    "mode": "managed",
+                    "type": "google_compute_firewall",
+                    "name": "default",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "allow": [
+                            {
+                                "ports": {
+                                    "constant_value": [
+                                        "80",
+                                        "8080",
+                                        "1000-2000",
+                                        "21-3390"
+                                    ]
+                                },
+                                "protocol": {
+                                    "constant_value": "udp"
+                                }
+                            }
+                        ],
+                        "name": {
+                            "constant_value": "test-firewall"
+                        },
+                        "network": {
+                            "references": [
+                                "google_compute_network.default.name",
+                                "google_compute_network.default"
+                            ]
+                        },
+                        "source_tags": {
+                            "constant_value": [
+                                "web"
+                            ]
+                        }
+                    },
+                    "schema_version": 1
+                },
+                {
+                    "address": "google_compute_network.default",
+                    "mode": "managed",
+                    "type": "google_compute_network",
+                    "name": "default",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "test-network"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "google_compute_network.default",
+            "attribute": [
+                "name"
+            ]
+        }
+    ],
+    "timestamp": "2025-05-27T20:56:02Z",
+    "applyable": true,
+    "complete": true,
+    "errored": false
+}

@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-LOADBALANCER-13632",
+  "queryName": "loadbalancer is exposed_with public ip",
+  "severity": "CRITICAL",
+  "category": "Network Security",
+  "descriptionText": "Use Internal Load Balancer only - no internet exposure with public IP",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/lb#public_ip_address_id",
+  "platform": "Terraform",
+  "descriptionID": "1.36.3.2",
+  "cloudProvider": "azure"
+}

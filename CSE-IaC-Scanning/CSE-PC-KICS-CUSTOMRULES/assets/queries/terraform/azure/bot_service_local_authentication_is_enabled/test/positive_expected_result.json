@@ -1,0 +1,15 @@
+[
+  {
+    "queryName": "bot service local authentication is enabled",
+    "severity": "HIGH",
+    "line": 8,
+    "fileName": "positive1.tf"
+  },
+  {
+    "queryName": "bot service local authentication is enabled",
+    "severity": "HIGH",
+    "line": 15,
+    "fileName": "positive2.tf"
+  }
+]
+

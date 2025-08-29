@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-STORAGEACCOUNT-13514",
+    "queryName": "storage account is missing tag costcenter",
+    "severity": "LOW",
+    "category": "Observability",
+    "descriptionText": "Azure Storage bucket must be configured with tags, which means the attribute 'tags' must be defined with an 'costcenter' key and value",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_container.html",
+    "platform": "Terraform",
+    "descriptionID": "1.3.5.1.4",
+    "cloudProvider": "azure"
+  }

@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-BOTSERVICE-14651",
+  "queryName": "bot service is missing tags",
+  "severity": "LOW",
+  "category": "Governance",
+  "descriptionText": "IT Hygiene: BOT Service must be tagged per standards",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/bot_service_azure_bot#tags",
+  "platform": "Terraform",
+  "descriptionID": "1.46.5.1",
+  "cloudProvider": "azure"
+}

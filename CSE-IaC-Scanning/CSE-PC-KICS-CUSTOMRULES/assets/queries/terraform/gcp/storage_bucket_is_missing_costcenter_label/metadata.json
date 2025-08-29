@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDSTORAGE-29514",
+    "queryName": "storage bucket is missing costcenter label",
+    "severity": "LOW",
+    "category": "Observability",
+    "descriptionText": "Google Storage Bucket must be configured with labels, which means the attribute 'labels' must be defined with an 'costcenter' key and value",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket",
+    "platform": "Terraform",
+    "descriptionID": "2.9.5.1.4",
+    "cloudProvider": "gcp"
+  }

@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-DATAPROC-21914",
+    "queryName": "dataproc cluster is using default service account",
+    "severity": "HIGH",
+    "category": "IAM",
+    "descriptionText": "In the DataProc Cluster, Default SA should not be used",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/dataproc_cluster",
+    "platform": "Terraform",
+    "descriptionID": "2.19.1.4",
+    "cloudProvider": "gcp"
+  }

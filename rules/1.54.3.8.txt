@@ -1,0 +1,4 @@
+ruleid: 1.54.3.8
+service: Network Security Controls
+security requirements: Configure private endpoints to Azure SignalR Service
+comment (how): Private endpoints connect your virtual network to Azure services without a public IP address at the source or destination.By mapping private endpoints to Azure SignalR Service resources, you can reduce data leakage risks

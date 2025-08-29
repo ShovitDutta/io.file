@@ -1,0 +1,170 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_postgresql_flexible_server.postgres_sql_flex",
+                    "mode": "managed",
+                    "type": "azurerm_postgresql_flexible_server",
+                    "name": "postgres_sql_flex",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "administrator_login": "psqladmin",
+                        "administrator_password": "H@Sh1CoR3!",
+                        "administrator_password_wo": null,
+                        "administrator_password_wo_version": null,
+                        "auto_grow_enabled": false,
+                        "create_mode": null,
+                        "customer_managed_key": [],
+                        "delegated_subnet_id": null,
+                        "geo_redundant_backup_enabled": false,
+                        "high_availability": [],
+                        "identity": [],
+                        "location": "eastus2",
+                        "maintenance_window": [],
+                        "name": "cvs-psqlflexibleserver",
+                        "point_in_time_restore_time_in_utc": null,
+                        "public_network_access_enabled": false,
+                        "replication_role": null,
+                        "resource_group_name": "security-poc-yogeshd-rg",
+                        "source_server_id": null,
+                        "tags": null,
+                        "timeouts": null,
+                        "version": "12",
+                        "zone": "1"
+                    },
+                    "sensitive_values": {
+                        "authentication": [],
+                        "customer_managed_key": [],
+                        "high_availability": [],
+                        "identity": [],
+                        "maintenance_window": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_postgresql_flexible_server.postgres_sql_flex",
+            "mode": "managed",
+            "type": "azurerm_postgresql_flexible_server",
+            "name": "postgres_sql_flex",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "administrator_login": "psqladmin",
+                    "administrator_password": "H@Sh1CoR3!",
+                    "administrator_password_wo": null,
+                    "administrator_password_wo_version": null,
+                    "auto_grow_enabled": false,
+                    "create_mode": null,
+                    "customer_managed_key": [],
+                    "delegated_subnet_id": null,
+                    "geo_redundant_backup_enabled": false,
+                    "high_availability": [],
+                    "identity": [],
+                    "location": "eastus2",
+                    "maintenance_window": [],
+                    "name": "cvs-psqlflexibleserver",
+                    "point_in_time_restore_time_in_utc": null,
+                    "public_network_access_enabled": false,
+                    "replication_role": null,
+                    "resource_group_name": "security-poc-yogeshd-rg",
+                    "source_server_id": null,
+                    "tags": null,
+                    "timeouts": null,
+                    "version": "12",
+                    "zone": "1"
+                },
+                "after_unknown": {
+                    "authentication": true,
+                    "backup_retention_days": true,
+                    "customer_managed_key": [],
+                    "fqdn": true,
+                    "high_availability": [],
+                    "id": true,
+                    "identity": [],
+                    "maintenance_window": [],
+                    "private_dns_zone_id": true,
+                    "sku_name": true,
+                    "storage_mb": true,
+                    "storage_tier": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "administrator_password": true,
+                    "authentication": [],
+                    "customer_managed_key": [],
+                    "high_availability": [],
+                    "identity": [],
+                    "maintenance_window": []
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.27.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_postgresql_flexible_server.postgres_sql_flex",
+                    "mode": "managed",
+                    "type": "azurerm_postgresql_flexible_server",
+                    "name": "postgres_sql_flex",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "administrator_login": {
+                            "constant_value": "psqladmin"
+                        },
+                        "administrator_password": {
+                            "constant_value": "H@Sh1CoR3!"
+                        },
+                        "location": {
+                            "constant_value": "eastus2"
+                        },
+                        "name": {
+                            "constant_value": "cvs-psqlflexibleserver"
+                        },
+                        "public_network_access_enabled": {
+                            "constant_value": false
+                        },
+                        "resource_group_name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        },
+                        "version": {
+                            "constant_value": "12"
+                        },
+                        "zone": {
+                            "constant_value": "1"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-11T11:03:19Z",
+    "errored": false
+}

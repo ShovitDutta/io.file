@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-REDISINSTANCE-23223",
+    "queryName": "redis instance intransit encryption is not enabled using tls",
+    "severity": "CRITICAL",
+    "category": "Data Protection",
+    "descriptionText": "Make sure Redis in-Transit encryption is enabled using TLS",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/redis_instance#transit_encryption_mode",
+    "platform": "Terraform",
+    "descriptionID": "2.32.2.3",
+    "cloudProvider": "gcp"
+}

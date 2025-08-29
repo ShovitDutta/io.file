@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDFUNCTION-22034",
+    "queryName": "vpc connector is not specified for deploying cloudfunction",
+    "severity": "HIGH",
+    "category": "Network Security",
+    "descriptionText": "Ensure that when creating a cloud function VPC connector is specified",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloudfunctions2_function#vpc_connector",
+    "platform": "Terraform",
+    "descriptionID": "2.20.3.4",
+    "cloudProvider": "gcp"
+}

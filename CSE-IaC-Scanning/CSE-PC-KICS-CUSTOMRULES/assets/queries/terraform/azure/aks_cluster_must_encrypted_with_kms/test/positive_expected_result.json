@@ -1,0 +1,14 @@
+[
+    {
+      "queryName": "aks cluster must encrypted with kms",
+      "severity": "HIGH",
+      "line": 79,
+      "fileName": "positive.json"
+    },
+    {
+      "queryName": "aks cluster must encrypted with kms",
+      "severity": "HIGH",
+      "line": 82,
+      "fileName": "positive1.json"
+    }
+]

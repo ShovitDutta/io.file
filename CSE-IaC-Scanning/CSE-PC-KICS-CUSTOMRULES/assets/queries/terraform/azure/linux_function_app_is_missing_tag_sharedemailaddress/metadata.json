@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-FUNCTIONAPP-18513",
+    "queryName": "linux function app is missing tag sharedemailaddress",
+    "severity": "LOW",
+    "category": "Governance",
+    "descriptionText": "IT Hygiene:  Function must be tagged per standards",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/function_app#tags",
+    "platform": "Terraform",
+    "descriptionID": "1.8.5.13",
+    "cloudProvider": "azure"
+  }

@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-MYSQLFLEXIBLESERVER-12743",
+  "queryName": "mysql flexible server audit log disabled",
+  "severity": "HIGH",
+  "category": "Logging and Monitoring",
+  "descriptionText": "Ensure server parameter 'audit_log_enabled' is set to 'ON' for MySQL Flexible Server",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mysql_flexible_server_configuration#value",
+  "platform": "Terraform",
+  "descriptionID": "1.27.4.3",
+  "cloudProvider": "azure"
+}

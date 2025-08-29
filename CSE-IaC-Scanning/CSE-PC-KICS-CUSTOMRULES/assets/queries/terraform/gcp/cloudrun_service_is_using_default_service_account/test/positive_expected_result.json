@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "cloudrun service is using default service account",
+        "severity": "HIGH",
+        "line": 14,
+		"fileName": "positive1.json"
+    },
+    {
+        "queryName": "cloudrun service is using default service account",
+        "severity": "HIGH",
+        "line": 47,
+        "fileName": "positive2.json"
+    }
+]

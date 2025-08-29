@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "IP Forwarding Enabled",
+    "severity": "MEDIUM",
+    "line": 41,
+    "filename": "positive.json"
+  }
+]

@@ -1,0 +1,12 @@
+[
+   {
+    "queryName": "linux function app is accessible with http",
+    "severity": "HIGH",
+    "line": 1
+   }, 
+   {
+      "queryName": "linux function app is accessible with http",
+      "severity": "HIGH",
+      "line": 27
+   }
+]

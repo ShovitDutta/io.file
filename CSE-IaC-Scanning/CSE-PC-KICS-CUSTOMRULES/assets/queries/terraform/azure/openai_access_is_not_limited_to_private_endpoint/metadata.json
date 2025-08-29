@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-OPENAI-14432",
+    "queryName": "openai access is not limited to private endpoint",
+    "severity": "HIGH",
+    "category": "Network Security",
+    "descriptionText": "Limit access through private endpoint",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_endpoint#private_service_connection",
+    "platform": "Terraform",
+    "descriptionID": "1.44.3.2",
+    "cloudProvider": "azure"
+}

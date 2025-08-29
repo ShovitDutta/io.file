@@ -1,0 +1,7 @@
+[
+  {
+    "queryName": "CMK on Storage Account not defined",
+    "severity": "HIGH",
+    "fileName": "positive.tf"
+  }
+]

@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-KEYVAULT-1452",
+    "queryName": "key vault is not using premium sku",
+    "severity": "HIGH",
+    "category": "Governance",
+    "descriptionText": "Only Premium tier is approved",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault#sku_name",
+    "platform": "Terraform",
+    "descriptionID": "1.4.5.2",
+    "cloudProvider": "azure"
+}

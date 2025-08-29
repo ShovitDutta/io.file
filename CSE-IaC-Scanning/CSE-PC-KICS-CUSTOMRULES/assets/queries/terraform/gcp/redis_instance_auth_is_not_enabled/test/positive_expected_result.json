@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "redis instance auth is not enabled",
+        "severity": "CRITICAL",
+        "line": 15,
+        "fileName": "positive.json"
+    },
+    {
+        "queryName": "redis instance auth is not enabled",
+        "severity": "CRITICAL",
+        "line": 6,
+        "fileName": "positive.json"
+    }
+]

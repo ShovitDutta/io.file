@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-LOADBALANCER-13631",
+  "queryName": "loadbalancer is not configured with network security group",
+  "severity": "HIGH",
+  "category": "Network Security",
+  "descriptionText": "Use NSG rules to control access to Load Balancer",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/subnet_network_security_group_association",
+  "platform": "Terraform",
+  "descriptionID": "1.36.3.1",
+  "cloudProvider": "azure"
+}

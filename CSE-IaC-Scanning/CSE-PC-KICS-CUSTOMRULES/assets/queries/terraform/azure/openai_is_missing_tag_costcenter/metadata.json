@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-OPENAI-144514",
+    "queryName": "openai is missing tag costcenter",
+    "severity": "LOW",
+    "category": "Governance",
+    "descriptionText": "IT Hygiene: Azure OpenAI must be tagged per standards",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cognitive_account",
+    "platform": "Terraform",
+    "descriptionID": "1.44.5.14",
+    "cloudProvider": "azure"
+}

@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-STORAGEACCOUNT-1312",
+    "queryName": "configure sas key expiration policy to set limits of expiration while creation",
+    "severity": "HIGH",
+    "category": "IAM",
+    "descriptionText": "SAS Key Expiration policy to set minimum limit of 7 days expiration",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/storage_account_sas#expiry",
+    "platform": "Terraform",
+    "descriptionID": "1.3.1.2",
+    "cloudProvider": "azure"
+  }

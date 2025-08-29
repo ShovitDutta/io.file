@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "ALB Not Dropping Invalid Headers",
+    "severity": "MEDIUM",
+    "line": 55,
+    "filename": "positive.json"
+  }
+]

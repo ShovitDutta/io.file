@@ -1,0 +1,119 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.10.4",
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_project_iam_binding.positive1",
+          "mode": "managed",
+          "type": "google_project_iam_binding",
+          "name": "positive1",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 0,
+          "values": {
+            "condition": [],
+            "members": [
+              "user:jane@gmail.com"
+            ],
+            "project": "your-project-id",
+            "role": "roles/editor"
+          },
+          "sensitive_values": {
+            "condition": [],
+            "members": [
+              false
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "resource_changes": [
+    {
+      "address": "google_project_iam_binding.positive1",
+      "mode": "managed",
+      "type": "google_project_iam_binding",
+      "name": "positive1",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "create"
+        ],
+        "before": null,
+        "after": {
+          "condition": [],
+          "members": [
+            "user:jane@gmail.com"
+          ],
+          "project": "your-project-id",
+          "role": "roles/editor"
+        },
+        "after_unknown": {
+          "condition": [],
+          "etag": true,
+          "id": true,
+          "members": [
+            false
+          ]
+        },
+        "before_sensitive": false,
+        "after_sensitive": {
+          "condition": [],
+          "members": [
+            false
+          ]
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "provider_config": {
+      "google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google",
+        "version_constraint": "6.15.0",
+        "expressions": {
+          "project": {
+            "constant_value": "security-controls-sandbox"
+          },
+          "region": {
+            "constant_value": "us-central1"
+          },
+          "zone": {
+            "constant_value": "us-central1-c"
+          }
+        }
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_project_iam_binding.positive1",
+          "mode": "managed",
+          "type": "google_project_iam_binding",
+          "name": "positive1",
+          "provider_config_key": "google",
+          "expressions": {
+            "members": {
+              "constant_value": [
+                "user:jane@gmail.com"
+              ]
+            },
+            "project": {
+              "constant_value": "your-project-id"
+            },
+            "role": {
+              "constant_value": "roles/editor"
+            }
+          },
+          "schema_version": 0
+        }
+      ]
+    }
+  },
+  "timestamp": "2025-06-02T20:26:55Z",
+  "applyable": true,
+  "complete": true,
+  "errored": false
+}

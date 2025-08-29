@@ -1,0 +1,14 @@
+[
+  {
+    "queryName": "AKS Uses Azure Policies Add-On Disabled",
+    "severity": "LOW",
+    "line": 19,
+    "fileName": "positive.json"
+  },
+  {
+    "queryName": "AKS Uses Azure Policies Add-On Disabled",
+    "severity": "LOW",
+    "line": 26,
+    "fileName": "positive1.json"
+  }
+]

@@ -1,0 +1,454 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_compute_global_address.private_ip_alloc",
+                    "mode": "managed",
+                    "type": "google_compute_global_address",
+                    "name": "private_ip_alloc",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "address_type": "INTERNAL",
+                        "description": null,
+                        "effective_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "ip_version": null,
+                        "labels": null,
+                        "name": "datafusion-ip-alloc",
+                        "prefix_length": 22,
+                        "project": "security-controls-sandbox",
+                        "purpose": "VPC_PEERING",
+                        "terraform_labels": {
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "effective_labels": {},
+                        "terraform_labels": {}
+                    }
+                },
+                {
+                    "address": "google_compute_network.network",
+                    "mode": "managed",
+                    "type": "google_compute_network",
+                    "name": "network",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "auto_create_subnetworks": true,
+                        "delete_default_routes_on_create": false,
+                        "description": null,
+                        "enable_ula_internal_ipv6": null,
+                        "name": "datafusion-full-network",
+                        "network_firewall_policy_enforcement_order": "AFTER_CLASSIC_FIREWALL",
+                        "project": "security-controls-sandbox",
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "google_data_fusion_instance.extended_instance",
+                    "mode": "managed",
+                    "type": "google_data_fusion_instance",
+                    "name": "extended_instance",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "accelerators": [
+                            {
+                                "accelerator_type": "CDC",
+                                "state": "ENABLED"
+                            }
+                        ],
+                        "crypto_key_config": [],
+                        "dataproc_service_account": null,
+                        "description": "My Data Fusion instance",
+                        "display_name": "My Data Fusion instance",
+                        "effective_labels": {
+                            "example_key": "example_value",
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "enable_rbac": true,
+                        "enable_stackdriver_logging": true,
+                        "enable_stackdriver_monitoring": true,
+                        "event_publish_config": [],
+                        "labels": {
+                            "example_key": "example_value"
+                        },
+                        "name": "my-instance",
+                        "network_config": [
+                            {
+                                "connection_type": null,
+                                "network": "default",
+                                "private_service_connect_config": []
+                            }
+                        ],
+                        "private_instance": true,
+                        "project": "security-controls-sandbox",
+                        "region": "us-central1",
+                        "terraform_labels": {
+                            "example_key": "example_value",
+                            "goog-terraform-provisioned": "true"
+                        },
+                        "timeouts": null,
+                        "type": "BASIC"
+                    },
+                    "sensitive_values": {
+                        "accelerators": [
+                            {}
+                        ],
+                        "crypto_key_config": [],
+                        "effective_labels": {},
+                        "event_publish_config": [],
+                        "labels": {},
+                        "network_config": [
+                            {
+                                "private_service_connect_config": []
+                            }
+                        ],
+                        "options": {},
+                        "terraform_labels": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_compute_global_address.private_ip_alloc",
+            "mode": "managed",
+            "type": "google_compute_global_address",
+            "name": "private_ip_alloc",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "address_type": "INTERNAL",
+                    "description": null,
+                    "effective_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "ip_version": null,
+                    "labels": null,
+                    "name": "datafusion-ip-alloc",
+                    "prefix_length": 22,
+                    "project": "security-controls-sandbox",
+                    "purpose": "VPC_PEERING",
+                    "terraform_labels": {
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "address": true,
+                    "creation_timestamp": true,
+                    "effective_labels": {},
+                    "id": true,
+                    "label_fingerprint": true,
+                    "network": true,
+                    "self_link": true,
+                    "terraform_labels": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "effective_labels": {},
+                    "terraform_labels": {}
+                }
+            }
+        },
+        {
+            "address": "google_compute_network.network",
+            "mode": "managed",
+            "type": "google_compute_network",
+            "name": "network",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "auto_create_subnetworks": true,
+                    "delete_default_routes_on_create": false,
+                    "description": null,
+                    "enable_ula_internal_ipv6": null,
+                    "name": "datafusion-full-network",
+                    "network_firewall_policy_enforcement_order": "AFTER_CLASSIC_FIREWALL",
+                    "project": "security-controls-sandbox",
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "gateway_ipv4": true,
+                    "id": true,
+                    "internal_ipv6_range": true,
+                    "mtu": true,
+                    "network_id": true,
+                    "numeric_id": true,
+                    "routing_mode": true,
+                    "self_link": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "google_data_fusion_instance.extended_instance",
+            "mode": "managed",
+            "type": "google_data_fusion_instance",
+            "name": "extended_instance",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "accelerators": [
+                        {
+                            "accelerator_type": "CDC",
+                            "state": "ENABLED"
+                        }
+                    ],
+                    "crypto_key_config": [],
+                    "dataproc_service_account": null,
+                    "description": "My Data Fusion instance",
+                    "display_name": "My Data Fusion instance",
+                    "effective_labels": {
+                        "example_key": "example_value",
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "enable_rbac": null,
+                    "enable_stackdriver_logging": true,
+                    "enable_stackdriver_monitoring": true,
+                    "event_publish_config": [],
+                    "labels": {
+                        "example_key": "example_value"
+                    },
+                    "name": "my-instance",
+                    "network_config": [
+                        {
+                            "connection_type": null,
+                            "network": "default",
+                            "private_service_connect_config": []
+                        }
+                    ],
+                    "private_instance": true,
+                    "project": "security-controls-sandbox",
+                    "region": "us-central1",
+                    "terraform_labels": {
+                        "example_key": "example_value",
+                        "goog-terraform-provisioned": "true"
+                    },
+                    "timeouts": null,
+                    "type": "BASIC"
+                },
+                "after_unknown": {
+                    "accelerators": [
+                        {}
+                    ],
+                    "api_endpoint": true,
+                    "create_time": true,
+                    "crypto_key_config": [],
+                    "effective_labels": {},
+                    "event_publish_config": [],
+                    "gcs_bucket": true,
+                    "id": true,
+                    "labels": {},
+                    "network_config": [
+                        {
+                            "ip_allocation": true,
+                            "private_service_connect_config": []
+                        }
+                    ],
+                    "options": true,
+                    "p4_service_account": true,
+                    "service_endpoint": true,
+                    "state": true,
+                    "state_message": true,
+                    "tenant_project_id": true,
+                    "terraform_labels": {},
+                    "update_time": true,
+                    "version": true,
+                    "zone": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "accelerators": [
+                        {}
+                    ],
+                    "crypto_key_config": [],
+                    "effective_labels": {},
+                    "event_publish_config": [],
+                    "labels": {},
+                    "network_config": [
+                        {
+                            "private_service_connect_config": []
+                        }
+                    ],
+                    "options": {},
+                    "terraform_labels": {}
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.15.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    },
+                    "zone": {
+                        "constant_value": "us-central1-c"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_compute_global_address.private_ip_alloc",
+                    "mode": "managed",
+                    "type": "google_compute_global_address",
+                    "name": "private_ip_alloc",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "address_type": {
+                            "constant_value": "INTERNAL"
+                        },
+                        "name": {
+                            "constant_value": "datafusion-ip-alloc"
+                        },
+                        "network": {
+                            "references": [
+                                "google_compute_network.network.id",
+                                "google_compute_network.network"
+                            ]
+                        },
+                        "prefix_length": {
+                            "constant_value": 22
+                        },
+                        "purpose": {
+                            "constant_value": "VPC_PEERING"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "google_compute_network.network",
+                    "mode": "managed",
+                    "type": "google_compute_network",
+                    "name": "network",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "datafusion-full-network"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "google_data_fusion_instance.extended_instance",
+                    "mode": "managed",
+                    "type": "google_data_fusion_instance",
+                    "name": "extended_instance",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "accelerators": [
+                            {
+                                "accelerator_type": {
+                                    "constant_value": "CDC"
+                                },
+                                "state": {
+                                    "constant_value": "ENABLED"
+                                }
+                            }
+                        ],
+                        "description": {
+                            "constant_value": "My Data Fusion instance"
+                        },
+                        "display_name": {
+                            "constant_value": "My Data Fusion instance"
+                        },
+                        "enable_stackdriver_logging": {
+                            "constant_value": true
+                        },
+                        "enable_stackdriver_monitoring": {
+                            "constant_value": true
+                        },
+                        "labels": {
+                            "constant_value": {
+                                "example_key": "example_value"
+                            }
+                        },
+                        "name": {
+                            "constant_value": "my-instance"
+                        },
+                        "network_config": [
+                            {
+                                "ip_allocation": {
+                                    "references": [
+                                        "google_compute_global_address.private_ip_alloc.address",
+                                        "google_compute_global_address.private_ip_alloc",
+                                        "google_compute_global_address.private_ip_alloc.prefix_length",
+                                        "google_compute_global_address.private_ip_alloc"
+                                    ]
+                                },
+                                "network": {
+                                    "constant_value": "default"
+                                }
+                            }
+                        ],
+                        "private_instance": {
+                            "constant_value": true
+                        },
+                        "region": {
+                            "constant_value": "us-central1"
+                        },
+                        "type": {
+                            "constant_value": "BASIC"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "google_compute_network.network",
+            "attribute": [
+                "id"
+            ]
+        },
+        {
+            "resource": "google_compute_global_address.private_ip_alloc",
+            "attribute": [
+                "address"
+            ]
+        },
+        {
+            "resource": "google_compute_global_address.private_ip_alloc",
+            "attribute": [
+                "prefix_length"
+            ]
+        }
+    ],
+    "timestamp": "2025-07-18T15:13:50Z",
+    "errored": false
+}

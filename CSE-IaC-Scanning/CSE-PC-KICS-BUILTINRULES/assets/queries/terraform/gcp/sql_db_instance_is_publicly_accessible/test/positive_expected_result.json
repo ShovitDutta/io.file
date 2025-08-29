@@ -1,0 +1,26 @@
+[
+  {
+    "queryName": "SQL DB Instance Publicly Accessible",
+    "severity": "CRITICAL",
+    "line": 23,
+    "fileName": "positive.json"
+  },
+  {
+    "queryName": "SQL DB Instance Publicly Accessible",
+    "severity": "CRITICAL",
+    "line": 51,
+    "fileName": "positive1.json"
+  },
+  {
+    "queryName": "SQL DB Instance Publicly Accessible",
+    "severity": "CRITICAL",
+    "line": 52,
+    "fileName": "positive2.json"
+  },
+  {
+    "queryName": "SQL DB Instance Publicly Accessible",
+    "severity": "CRITICAL",
+    "line": 48,
+    "fileName": "positive3.json"
+  }
+]

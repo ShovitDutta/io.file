@@ -1,0 +1,356 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_role_assignment.role_assignment",
+                    "mode": "managed",
+                    "type": "azurerm_role_assignment",
+                    "name": "role_assignment",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "condition": null,
+                        "delegated_managed_identity_resource_id": null,
+                        "description": null,
+                        "name": "ec8dc618-46dd-43e2-8506-3007f304d884",
+                        "principal_id": "eb03ec31-d923-47af-93b5-4de8b9e26414",
+                        "role_definition_name": "Administrator",
+                        "scope": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884",
+                        "timeouts": null
+                    },
+                    "sensitive_values": {}
+                },
+                {
+                    "address": "azurerm_role_definition.my-custom-role",
+                    "mode": "managed",
+                    "type": "azurerm_role_definition",
+                    "name": "my-custom-role",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 1,
+                    "values": {
+                        "assignable_scopes": [
+                            "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884"
+                        ],
+                        "description": "This is a custom role created via Terraform",
+                        "name": "my-custom-role",
+                        "permissions": [
+                            {
+                                "actions": [
+                                    "*"
+                                ],
+                                "data_actions": null,
+                                "not_actions": [],
+                                "not_data_actions": null
+                            }
+                        ],
+                        "scope": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884",
+                        "timeouts": null
+                    },
+                    "sensitive_values": {
+                        "assignable_scopes": [
+                            false
+                        ],
+                        "permissions": [
+                            {
+                                "actions": [
+                                    false
+                                ],
+                                "not_actions": []
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_role_assignment.role_assignment",
+            "mode": "managed",
+            "type": "azurerm_role_assignment",
+            "name": "role_assignment",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "condition": null,
+                    "delegated_managed_identity_resource_id": null,
+                    "description": null,
+                    "name": "ec8dc618-46dd-43e2-8506-3007f304d884",
+                    "principal_id": "eb03ec31-d923-47af-93b5-4de8b9e26414",
+                    "role_definition_name": "Guest",
+                    "scope": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884",
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "condition_version": true,
+                    "id": true,
+                    "principal_type": true,
+                    "role_definition_id": true,
+                    "skip_service_principal_aad_check": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {}
+            }
+        },
+        {
+            "address": "azurerm_role_definition.my-custom-role",
+            "mode": "managed",
+            "type": "azurerm_role_definition",
+            "name": "my-custom-role",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "assignable_scopes": [
+                        "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884"
+                    ],
+                    "description": "This is a custom role created via Terraform",
+                    "name": "my-custom-role",
+                    "permissions": [
+                        {
+                            "actions": [
+                                "*"
+                            ],
+                            "data_actions": null,
+                            "not_actions": [],
+                            "not_data_actions": null
+                        }
+                    ],
+                    "scope": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884",
+                    "timeouts": null
+                },
+                "after_unknown": {
+                    "assignable_scopes": [
+                        false
+                    ],
+                    "id": true,
+                    "permissions": [
+                        {
+                            "actions": [
+                                false
+                            ],
+                            "not_actions": []
+                        }
+                    ],
+                    "role_definition_id": true,
+                    "role_definition_resource_id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "assignable_scopes": [
+                        false
+                    ],
+                    "permissions": [
+                        {
+                            "actions": [
+                                false
+                            ],
+                            "not_actions": []
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.azurerm_client_config.current",
+                        "mode": "data",
+                        "type": "azurerm_client_config",
+                        "name": "current",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "client_id": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+                            "id": "Y2xpZW50Q29uZmlncy9jbGllbnRJZD0wNGIwNzc5NS04ZGRiLTQ2MWEtYmJlZS0wMmY5ZTFiZjdiNDY7b2JqZWN0SWQ9ZWIwM2VjMzEtZDkyMy00N2FmLTkzYjUtNGRlOGI5ZTI2NDE0O3N1YnNjcmlwdGlvbklkPWVjOGRjNjE4LTQ2ZGQtNDNlMi04NTA2LTMwMDdmMzA0ZDg4NDt0ZW5hbnRJZD1mYWJiNjFiOC0zYWZlLTRlNzUtYjkzNC1hNDdmNzgyYjhjZDc=",
+                            "object_id": "eb03ec31-d923-47af-93b5-4de8b9e26414",
+                            "subscription_id": "ec8dc618-46dd-43e2-8506-3007f304d884",
+                            "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                            "timeouts": null
+                        },
+                        "sensitive_values": {}
+                    },
+                    {
+                        "address": "data.azurerm_subscription.subscription",
+                        "mode": "data",
+                        "type": "azurerm_subscription",
+                        "name": "subscription",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "display_name": "SUB-CORP-CSS-LAB",
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884",
+                            "location_placement_id": "Public_2014-09-01",
+                            "quota_id": "EnterpriseAgreement_2014-09-01",
+                            "spending_limit": "Off",
+                            "state": "Enabled",
+                            "subscription_id": "ec8dc618-46dd-43e2-8506-3007f304d884",
+                            "tags": {
+                                "applicationname": "Cloud Security Services",
+                                "businessunit": "NA",
+                                "costcenter": "190294",
+                                "createdondate": "2024-06-18",
+                                "dataclassification": "confidential",
+                                "environmentsubtype": "POC",
+                                "environmenttype": "NonProd",
+                                "itpmid": "87DB880C626F02E3",
+                                "itpr": "NA",
+                                "migration": "No",
+                                "reportingsegment": "Corporate_Other",
+                                "resourceowner": "Udai Varshney",
+                                "responsible_svp": "Alan Rosa",
+                                "sharedemailaddress": "CloudSecurityServices@CVSHealth.com"
+                            },
+                            "tenant_id": "fabb61b8-3afe-4e75-b934-a47f782b8cd7",
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.26.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_role_assignment.role_assignment",
+                    "mode": "managed",
+                    "type": "azurerm_role_assignment",
+                    "name": "role_assignment",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                        },
+                        "principal_id": {
+                            "references": [
+                                "data.azurerm_client_config.current.object_id",
+                                "data.azurerm_client_config.current"
+                            ]
+                        },
+                        "role_definition_name": {
+                            "constant_value": "Guest"
+                        },
+                        "scope": {
+                            "references": [
+                                "data.azurerm_subscription.subscription.id",
+                                "data.azurerm_subscription.subscription"
+                            ]
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "azurerm_role_definition.my-custom-role",
+                    "mode": "managed",
+                    "type": "azurerm_role_definition",
+                    "name": "my-custom-role",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "assignable_scopes": {
+                            "references": [
+                                "data.azurerm_subscription.subscription.id",
+                                "data.azurerm_subscription.subscription"
+                            ]
+                        },
+                        "description": {
+                            "constant_value": "This is a custom role created via Terraform"
+                        },
+                        "name": {
+                            "constant_value": "my-custom-role"
+                        },
+                        "permissions": [
+                            {
+                                "actions": {
+                                    "constant_value": [
+                                        "*"
+                                    ]
+                                },
+                                "not_actions": {
+                                    "constant_value": []
+                                }
+                            }
+                        ],
+                        "scope": {
+                            "references": [
+                                "data.azurerm_subscription.subscription.id",
+                                "data.azurerm_subscription.subscription"
+                            ]
+                        }
+                    },
+                    "schema_version": 1
+                },
+                {
+                    "address": "data.azurerm_client_config.current",
+                    "mode": "data",
+                    "type": "azurerm_client_config",
+                    "name": "current",
+                    "provider_config_key": "azurerm",
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_subscription.subscription",
+                    "mode": "data",
+                    "type": "azurerm_subscription",
+                    "name": "subscription",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "subscription_id": {
+                            "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "data.azurerm_subscription.subscription",
+            "attribute": [
+                "id"
+            ]
+        },
+        {
+            "resource": "data.azurerm_client_config.current",
+            "attribute": [
+                "object_id"
+            ]
+        }
+    ],
+    "timestamp": "2025-04-07T03:19:18Z",
+    "errored": false
+}

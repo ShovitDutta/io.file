@@ -1,0 +1,7 @@
+[
+    {
+        "queryName": "vpc connector is not specified for deploying cloudfunction",
+        "severity": "HIGH",
+        "line": 55
+    }
+]

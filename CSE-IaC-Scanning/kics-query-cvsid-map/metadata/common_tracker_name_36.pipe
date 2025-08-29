@@ -1,0 +1,36 @@
+CN-0001:Generic Password
+CN-0002:Generic Secret
+CN-0003:Asymmetric private key
+CN-0004:Putty User Key File Content
+CN-0005:Password in URL
+CN-0006:AWS Access Key
+CN-0007:AWS Context-specific credential
+CN-0008:AWS Certificate
+CN-0009:AWS Secret Key
+CN-0010:K8s Environment Variable Password
+CN-0011:Google OAuth
+CN-0012:Slack Webhook
+CN-0013:MSTeams Webhook
+CN-0014:Slack Token
+CN-0015:Stripe API Key
+CN-0016:Square Access Token
+CN-0017:MailChimp API Key
+CN-0018:Google API Key
+CN-0019:Heroku API Key
+CN-0020:Square OAuth Secret
+CN-0021:Amazon MWS Auth Token
+CN-0022:Google OAuth Access Token
+CN-0023:PayPal Braintree Access Token
+CN-0024:Stripe Restricted API Key
+CN-0025:Facebook Access Token
+CN-0026:Generic API Key
+CN-0027:Mailgun API Key
+CN-0028:Picatic API Key
+CN-0029:Twilio API Key
+CN-0030:Generic Access Key
+CN-0031:Generic Private Key
+CN-0032:Generic Token
+CN-0033:CloudFormation Secret Template
+CN-0034:Encryption Key
+CN-0035:SendGrid API Key
+CN-0036:Generic Password on YAML files when value in tuple

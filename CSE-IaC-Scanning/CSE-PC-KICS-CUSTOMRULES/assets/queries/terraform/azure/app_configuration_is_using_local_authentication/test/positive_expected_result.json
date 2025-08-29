@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "app configuration is Using local authentication",
+      "severity": "HIGH",
+      "line": 6,
+      "fileName": "positive1.tf"
+    }
+]

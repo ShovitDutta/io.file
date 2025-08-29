@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-TRAFFICMANAGER-13751",
+  "queryName": "traffic manager is missing mandatory tags",
+  "severity": "LOW",
+  "category": "Governance",
+  "descriptionText": "IT Hygiene:Function must be tagged per standards",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/traffic_manager_profile#tags",
+  "platform": "Terraform",
+  "descriptionID": "1.37.5.1",
+  "cloudProvider": "azure"
+}

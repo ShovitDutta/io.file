@@ -1,0 +1,221 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_firewall.cvsfirewall",
+                    "mode": "managed",
+                    "type": "azurerm_firewall",
+                    "name": "cvsfirewall",
+                    "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                    "schema_version": 0,
+                    "values": {
+                        "dns_servers": null,
+                        "firewall_policy_id": null,
+                        "ip_configuration": [],
+                        "location": "eastus2",
+                        "management_ip_configuration": [],
+                        "name": "cvsfirewall",
+                        "private_ip_ranges": null,
+                        "resource_group_name": "security-poc-yogeshd-rg",
+                        "sku_name": "AZFW_VNet",
+                        "sku_tier": "Premium",
+                        "tags": {},
+                        "threat_intel_mode": "Deny",
+                        "timeouts": null,
+                        "virtual_hub": [],
+                        "zones": null
+                    },
+                    "sensitive_values": {
+                        "ip_configuration": [],
+                        "management_ip_configuration": [],
+                        "tags": {},
+                        "virtual_hub": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "azurerm_firewall.cvsfirewall",
+            "mode": "managed",
+            "type": "azurerm_firewall",
+            "name": "cvsfirewall",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "dns_servers": null,
+                    "firewall_policy_id": null,
+                    "ip_configuration": [],
+                    "location": "eastus2",
+                    "management_ip_configuration": [],
+                    "name": "cvsfirewall",
+                    "private_ip_ranges": null,
+                    "resource_group_name": "security-poc-yogeshd-rg",
+                    "sku_name": "AZFW_VNet",
+                    "sku_tier": "Premium",
+                    "tags": {
+                        "costcenter": "02045",
+                        "dataclassification": "confidential",
+                        "environmenttype": "dev",
+                        "itpmid": "12345",
+                        "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                    },
+                    "threat_intel_mode": "Deny",
+                    "timeouts": null,
+                    "virtual_hub": [],
+                    "zones": null
+                },
+                "after_unknown": {
+                    "dns_proxy_enabled": true,
+                    "id": true,
+                    "ip_configuration": [],
+                    "management_ip_configuration": [],
+                    "tags": {},
+                    "virtual_hub": []
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "ip_configuration": [],
+                    "management_ip_configuration": [],
+                    "tags": {},
+                    "virtual_hub": []
+                }
+            }
+        }
+    ],
+    "prior_state": {
+        "format_version": "1.0",
+        "terraform_version": "1.7.5",
+        "values": {
+            "root_module": {
+                "resources": [
+                    {
+                        "address": "data.azurerm_resource_group.resource_group",
+                        "mode": "data",
+                        "type": "azurerm_resource_group",
+                        "name": "resource_group",
+                        "provider_name": "registry.terraform.io/hashicorp/azurerm",
+                        "schema_version": 0,
+                        "values": {
+                            "id": "/subscriptions/ec8dc618-46dd-43e2-8506-3007f304d884/resourceGroups/security-poc-yogeshd-rg",
+                            "location": "eastus2",
+                            "managed_by": "",
+                            "name": "security-poc-yogeshd-rg",
+                            "tags": {
+                                "createdondate": "2024-06-26",
+                                "dataclassification": "restrictedD",
+                                "environmentsubtype": "POC",
+                                "environmenttype": "NonProd"
+                            },
+                            "timeouts": null
+                        },
+                        "sensitive_values": {
+                            "tags": {}
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "configuration": {
+        "provider_config": {
+            "azurerm": {
+                "name": "azurerm",
+                "full_name": "registry.terraform.io/hashicorp/azurerm",
+                "version_constraint": "4.20.0",
+                "expressions": {
+                    "features": [
+                        {}
+                    ],
+                    "subscription_id": {
+                        "constant_value": "ec8dc618-46dd-43e2-8506-3007f304d884"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "azurerm_firewall.cvsfirewall",
+                    "mode": "managed",
+                    "type": "azurerm_firewall",
+                    "name": "cvsfirewall",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "location": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.location",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "name": {
+                            "constant_value": "cvsfirewall"
+                        },
+                        "resource_group_name": {
+                            "references": [
+                                "data.azurerm_resource_group.resource_group.name",
+                                "data.azurerm_resource_group.resource_group"
+                            ]
+                        },
+                        "sku_name": {
+                            "constant_value": "AZFW_VNet"
+                        },
+                        "sku_tier": {
+                            "constant_value": "Premium"
+                        },
+                        "tags": {
+                            "constant_value": {
+                                "costcenter": "02045",
+                                "dataclassification": "confidential",
+                                "environmenttype": "dev",
+                                "itpmid": "12345",
+                                "sharedemailaddress": "CloudSecurityServices@cvshealth.com"
+                            }
+                        },
+                        "threat_intel_mode": {
+                            "constant_value": "Deny"
+                        }
+                    },
+                    "schema_version": 0
+                },
+                {
+                    "address": "data.azurerm_resource_group.resource_group",
+                    "mode": "data",
+                    "type": "azurerm_resource_group",
+                    "name": "resource_group",
+                    "provider_config_key": "azurerm",
+                    "expressions": {
+                        "name": {
+                            "constant_value": "security-poc-yogeshd-rg"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "relevant_attributes": [
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "location"
+            ]
+        },
+        {
+            "resource": "data.azurerm_resource_group.resource_group",
+            "attribute": [
+                "name"
+            ]
+        }
+    ],
+    "timestamp": "2025-03-23T07:07:12Z",
+    "errored": false
+}

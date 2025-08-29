@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "redis cache is missing required tags",
+      "severity": "LOW",
+      "line": 54,
+      "fileName": "positive.json"
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDSPANNER-24021",
+    "queryName": "cloud spanner db is not using cmek",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "CMEK should be used in place of GMEK",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/spanner_database#kms_key_name-2",
+    "platform": "Terraform",
+    "descriptionID": "2.40.2.1",
+    "cloudProvider": "gcp"
+}

@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "azure ai speech service has local authentication enabled",
+      "severity": "HIGH",
+      "line": 35,
+      "fileName": "positive.json"
+    }
+]

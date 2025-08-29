@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "storage account is missing tag dataclassification",
+      "severity": "HIGH",
+      "line": 57,
+      "filename": "positive.json"
+    }
+  ]

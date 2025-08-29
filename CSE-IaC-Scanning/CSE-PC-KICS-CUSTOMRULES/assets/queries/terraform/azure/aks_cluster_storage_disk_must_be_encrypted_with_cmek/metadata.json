@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-AKS-11323",
+    "queryName": "aks cluster storage disk must be encrypted with cmek",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Azure Kubernetes Service cluster storage disks and all agent nodes at host must be encrypted using Customer managed encryption key.",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster#disk_encryption_set_id-1",
+    "platform": "Terraform",
+    "descriptionID": "1.13.2.3",
+    "cloudProvider": "azure"
+}

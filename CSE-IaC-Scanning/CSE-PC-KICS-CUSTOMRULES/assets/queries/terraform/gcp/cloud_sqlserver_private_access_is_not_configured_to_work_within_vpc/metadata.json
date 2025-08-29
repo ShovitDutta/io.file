@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDSQLSERVER-28133",
+    "queryName": "cloud sqlserver private access is not configured to work within vpc",
+    "severity": "HIGH",
+    "category": "Network Security",
+    "descriptionText": "Google Private Service Access must be configured to allow private instance to work within the VPC",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/sql_database_instance#private_network",
+    "platform": "Terraform",
+    "descriptionID": "2.81.3.3",
+    "cloudProvider": "gcp"
+}  

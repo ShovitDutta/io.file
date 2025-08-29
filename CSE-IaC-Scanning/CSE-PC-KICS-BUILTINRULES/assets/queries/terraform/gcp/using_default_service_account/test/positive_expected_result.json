@@ -1,0 +1,14 @@
+[
+	{
+		"queryName": "Using Default Service Account",
+		"severity": "MEDIUM",
+		"line": 424,
+		"fileName": "positive5.json"
+	},
+	{
+		"queryName": "Using Default Service Account",
+		"severity": "MEDIUM",
+		"line": 83,
+		"fileName": "positive8.json"
+	}
+]

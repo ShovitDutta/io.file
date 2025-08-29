@@ -1,0 +1,99 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_storage_bucket_iam_member.member",
+                    "mode": "managed",
+                    "type": "google_storage_bucket_iam_member",
+                    "name": "member",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "bucket": "csetest",
+                        "condition": [],
+                        "member": "user:jane@example.com",
+                        "role": "roles/storage.admin"
+                    },
+                    "sensitive_values": {
+                        "condition": []
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_storage_bucket_iam_member.member",
+            "mode": "managed",
+            "type": "google_storage_bucket_iam_member",
+            "name": "member",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "bucket": "csetest",
+                    "condition": [],
+                    "member": "user:jane@example.com",
+                    "role": "roles/storage.admin"
+                },
+                "after_unknown": {
+                    "condition": [],
+                    "etag": true,
+                    "id": true
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "condition": []
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.35.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_storage_bucket_iam_member.member",
+                    "mode": "managed",
+                    "type": "google_storage_bucket_iam_member",
+                    "name": "member",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "bucket": {
+                            "constant_value": "csetest"
+                        },
+                        "member": {
+                            "constant_value": "user:jane@example.com"
+                        },
+                        "role": {
+                            "constant_value": "roles/storage.admin"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-05-22T20:16:22Z",
+    "errored": false
+}

@@ -1,0 +1,271 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.7.5",
+    "planned_values": {
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_redis_instance.redis_instance",
+                    "mode": "managed",
+                    "type": "google_redis_instance",
+                    "name": "redis_instance",
+                    "provider_name": "registry.terraform.io/hashicorp/google",
+                    "schema_version": 0,
+                    "values": {
+                        "auth_enabled": false,
+                        "connect_mode": "PRIVATE_SERVICE_ACCESS",
+                        "customer_managed_key": "projects/security-controls-sandbox/locations/us-east5/keyRings/cse-key-test/cryptoKeys/cse-test-keyy",
+                        "display_name": null,
+                        "effective_labels": {
+                            "applicationid": "apm0016360",
+                            "costcenter": "190320",
+                            "cvsappid": "apm0016360",
+                            "dataclassification": "internal",
+                            "environmentsubtype": "lab",
+                            "environmenttype": "nonprod",
+                            "goog-terraform-provisioned": "true",
+                            "itpmid": "16627",
+                            "managed_by": "taxi",
+                            "owner": "sean.taylor@cvshealth.com",
+                            "sharedemailaddress": "sean.taylor@cvshealth.com",
+                            "taxi_resource_id": "taxi-spt-rhel9-uu6xyetmagp",
+                            "ttl_hour": "120"
+                        },
+                        "labels": {
+                            "applicationid": "apm0016360",
+                            "costcenter": "190320",
+                            "cvsappid": "apm0016360",
+                            "dataclassification": "internal",
+                            "environmentsubtype": "lab",
+                            "environmenttype": "nonprod",
+                            "itpmid": "16627",
+                            "managed_by": "taxi",
+                            "owner": "sean.taylor@cvshealth.com",
+                            "sharedemailaddress": "sean.taylor@cvshealth.com",
+                            "taxi_resource_id": "taxi-spt-rhel9-uu6xyetmagp",
+                            "ttl_hour": "120"
+                        },
+                        "location_id": "us-east4",
+                        "maintenance_policy": [],
+                        "memory_size_gb": 1,
+                        "name": "redis-instance",
+                        "project": "security-controls-sandbox",
+                        "redis_configs": null,
+                        "terraform_labels": {
+                            "applicationid": "apm0016360",
+                            "costcenter": "190320",
+                            "cvsappid": "apm0016360",
+                            "dataclassification": "internal",
+                            "environmentsubtype": "lab",
+                            "environmenttype": "nonprod",
+                            "goog-terraform-provisioned": "true",
+                            "itpmid": "16627",
+                            "managed_by": "taxi",
+                            "owner": "sean.taylor@cvshealth.com",
+                            "sharedemailaddress": "sean.taylor@cvshealth.com",
+                            "taxi_resource_id": "taxi-spt-rhel9-uu6xyetmagp",
+                            "ttl_hour": "120"
+                        },
+                        "tier": "BASIC",
+                        "timeouts": null,
+                        "transit_encryption_mode": "SERVER_AUTHENTICATION"
+                    },
+                    "sensitive_values": {
+                        "effective_labels": {},
+                        "labels": {},
+                        "maintenance_policy": [],
+                        "maintenance_schedule": [],
+                        "nodes": [],
+                        "persistence_config": [],
+                        "server_ca_certs": [],
+                        "terraform_labels": {}
+                    }
+                }
+            ]
+        }
+    },
+    "resource_changes": [
+        {
+            "address": "google_redis_instance.redis_instance",
+            "mode": "managed",
+            "type": "google_redis_instance",
+            "name": "redis_instance",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "change": {
+                "actions": [
+                    "create"
+                ],
+                "before": null,
+                "after": {
+                    "auth_enabled": false,
+                    "connect_mode": "PRIVATE_SERVICE_ACCESS",
+                    "customer_managed_key": "projects/security-controls-sandbox/locations/us-east5/keyRings/cse-key-test/cryptoKeys/cse-test-keyy",
+                    "display_name": null,
+                    "effective_labels": {
+                        "applicationid": "apm0016360",
+                        "costcenter": "190320",
+                        "cvsappid": "apm0016360",
+                        "dataclassification": "internal",
+                        "environmentsubtype": "lab",
+                        "environmenttype": "nonprod",
+                        "goog-terraform-provisioned": "true",
+                        "itpmid": "16627",
+                        "managed_by": "taxi",
+                        "owner": "sean.taylor@cvshealth.com",
+                        "sharedemailaddress": "sean.taylor@cvshealth.com",
+                        "taxi_resource_id": "taxi-spt-rhel9-uu6xyetmagp",
+                        "ttl_hour": "120"
+                    },
+                    "labels": {
+                        "applicationid": "apm0016360",
+                        "costcenter": "190320",
+                        "cvsappid": "apm0016360",
+                        "dataclassification": "internal",
+                        "environmentsubtype": "lab",
+                        "environmenttype": "nonprod",
+                        "itpmid": "16627",
+                        "managed_by": "taxi",
+                        "owner": "sean.taylor@cvshealth.com",
+                        "sharedemailaddress": "sean.taylor@cvshealth.com",
+                        "taxi_resource_id": "taxi-spt-rhel9-uu6xyetmagp",
+                        "ttl_hour": "120"
+                    },
+                    "location_id": "us-east4",
+                    "maintenance_policy": [],
+                    "memory_size_gb": 1,
+                    "name": "redis-instance",
+                    "project": "security-controls-sandbox",
+                    "redis_configs": null,
+                    "terraform_labels": {
+                        "applicationid": "apm0016360",
+                        "costcenter": "190320",
+                        "cvsappid": "apm0016360",
+                        "dataclassification": "internal",
+                        "environmentsubtype": "lab",
+                        "environmenttype": "nonprod",
+                        "goog-terraform-provisioned": "true",
+                        "itpmid": "16627",
+                        "managed_by": "taxi",
+                        "owner": "sean.taylor@cvshealth.com",
+                        "sharedemailaddress": "sean.taylor@cvshealth.com",
+                        "taxi_resource_id": "taxi-spt-rhel9-uu6xyetmagp",
+                        "ttl_hour": "120"
+                    },
+                    "tier": "BASIC",
+                    "timeouts": null,
+                    "transit_encryption_mode": "SERVER_AUTHENTICATION"
+                },
+                "after_unknown": {
+                    "alternative_location_id": true,
+                    "auth_string": true,
+                    "authorized_network": true,
+                    "create_time": true,
+                    "current_location_id": true,
+                    "effective_labels": {},
+                    "host": true,
+                    "id": true,
+                    "labels": {},
+                    "maintenance_policy": [],
+                    "maintenance_schedule": true,
+                    "maintenance_version": true,
+                    "nodes": true,
+                    "persistence_config": true,
+                    "persistence_iam_identity": true,
+                    "port": true,
+                    "read_endpoint": true,
+                    "read_endpoint_port": true,
+                    "read_replicas_mode": true,
+                    "redis_version": true,
+                    "region": true,
+                    "replica_count": true,
+                    "reserved_ip_range": true,
+                    "secondary_ip_range": true,
+                    "server_ca_certs": true,
+                    "terraform_labels": {}
+                },
+                "before_sensitive": false,
+                "after_sensitive": {
+                    "auth_string": true,
+                    "effective_labels": {},
+                    "labels": {},
+                    "maintenance_policy": [],
+                    "maintenance_schedule": [],
+                    "nodes": [],
+                    "persistence_config": [],
+                    "server_ca_certs": [],
+                    "terraform_labels": {}
+                }
+            }
+        }
+    ],
+    "configuration": {
+        "provider_config": {
+            "google": {
+                "name": "google",
+                "full_name": "registry.terraform.io/hashicorp/google",
+                "version_constraint": "6.35.0",
+                "expressions": {
+                    "project": {
+                        "constant_value": "security-controls-sandbox"
+                    },
+                    "region": {
+                        "constant_value": "us-central1"
+                    }
+                }
+            }
+        },
+        "root_module": {
+            "resources": [
+                {
+                    "address": "google_redis_instance.redis_instance",
+                    "mode": "managed",
+                    "type": "google_redis_instance",
+                    "name": "redis_instance",
+                    "provider_config_key": "google",
+                    "expressions": {
+                        "auth_enabled": {
+                            "constant_value": false
+                        },
+                        "connect_mode": {
+                            "constant_value": "PRIVATE_SERVICE_ACCESS"
+                        },
+                        "customer_managed_key": {
+                            "constant_value": "projects/security-controls-sandbox/locations/us-east5/keyRings/cse-key-test/cryptoKeys/cse-test-keyy"
+                        },
+                        "labels": {
+                            "constant_value": {
+                                "applicationid": "apm0016360",
+                                "costcenter": "190320",
+                                "cvsappid": "apm0016360",
+                                "dataclassification": "internal",
+                                "environmentsubtype": "lab",
+                                "environmenttype": "nonprod",
+                                "itpmid": "16627",
+                                "managed_by": "taxi",
+                                "owner": "sean.taylor@cvshealth.com",
+                                "sharedemailaddress": "sean.taylor@cvshealth.com",
+                                "taxi_resource_id": "taxi-spt-rhel9-uu6xyetmagp",
+                                "ttl_hour": "120"
+                            }
+                        },
+                        "location_id": {
+                            "constant_value": "us-east4"
+                        },
+                        "memory_size_gb": {
+                            "constant_value": 1
+                        },
+                        "name": {
+                            "constant_value": "redis-instance"
+                        },
+                        "transit_encryption_mode": {
+                            "constant_value": "SERVER_AUTHENTICATION"
+                        }
+                    },
+                    "schema_version": 0
+                }
+            ]
+        }
+    },
+    "timestamp": "2025-07-14T10:07:11Z",
+    "errored": false
+}

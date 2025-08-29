@@ -1,0 +1,18 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['pull', 'paulchak/rhl9-x86_64-kics-snyk-opa:V25']
+  - name: 'paulchak/rhl9-x86_64-kics-snyk-opa:V25'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        mkdir -p /scan/tfutExample
+        cp -r /yourfilelocation/tfplan.json /scan/tfutExample
+        cp /workspace/.env /scan/.env
+  - name: 'paulchak/rhl9-x86_64-kics-snyk-opa:V25'
+    entrypoint: '/apps/bin/iac_srv.sh'
+    env: ['PIPELINE_NM=SOMENAME', 'APP_NM=SOMENAME', 'SCAN_VERBOSE_LEVEL=ERR', 'SCAN_RULE_SEVERITY=HIGH']
+options:
+  logging: YOURLOGSETUP
+  pool: 
+    name:  yourpoolname/location

@@ -1,0 +1,7 @@
+[
+   {
+    "queryName": "linux function app is not using tls1 2 or higher",
+    "severity": "HIGH",
+    "line": 11
+   }
+]

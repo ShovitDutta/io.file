@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-TRAFFICMANAGER-13731",
+  "queryName": "traffic manager is missing protocol port path",
+  "severity": "HIGH",
+  "category": "Network Security",
+  "descriptionText": "Specify the protocol, the port, and the relative path",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/traffic_manager_profile#monitor_config",
+  "platform": "Terraform",
+  "descriptionID": "1.37.3.1",
+  "cloudProvider": "azure"
+}

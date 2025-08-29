@@ -1,0 +1,14 @@
+[
+    {
+      "queryName": "key vault public access is not limited to private endpoint",
+      "severity": "HIGH",
+      "line": 1212,
+      "fileName": "positive1.json"
+    },
+    {
+      "queryName": "key vault public access is not limited to private endpoint",
+      "severity": "HIGH",
+      "line": 1212,
+      "fileName": "positive2.json"
+    }
+]

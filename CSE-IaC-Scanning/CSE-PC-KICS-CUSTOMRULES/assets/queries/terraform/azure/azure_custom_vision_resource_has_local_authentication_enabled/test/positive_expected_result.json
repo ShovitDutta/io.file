@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "azure custom vision resource has local authentication enabled",
+        "severity": "HIGH",
+        "line": 35,
+        "fileName": "positive.json"
+    },
+    {
+        "queryName": "azure custom vision resource has local authentication enabled",
+        "severity": "HIGH",
+        "line": 102,
+        "fileName": "positive.json"
+    }
+]

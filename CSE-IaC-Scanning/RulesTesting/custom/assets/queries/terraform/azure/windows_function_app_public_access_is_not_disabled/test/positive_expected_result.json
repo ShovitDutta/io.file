@@ -1,0 +1,8 @@
+[
+   {
+    "queryName": "windows function app public access is not disabled",
+    "severity": "CRITICAL",
+    "line": 40,
+    "filename": "positive.json"
+   }
+]

@@ -1,0 +1,8 @@
+[
+   {
+    "queryName": "redis cache public access is not disabled",
+    "severity": "CRITICAL",
+    "line": 31,
+    "filename": "positive,json"
+   }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "S3 Bucket Without Ignore Public ACL",
+    "severity": "MEDIUM",
+    "line": 18,
+    "filename": "positive.json"
+  }
+]

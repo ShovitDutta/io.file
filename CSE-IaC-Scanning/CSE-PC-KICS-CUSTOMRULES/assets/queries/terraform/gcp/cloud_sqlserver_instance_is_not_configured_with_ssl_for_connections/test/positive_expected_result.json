@@ -1,0 +1,14 @@
+[
+    {
+      "queryName": "cloud sqlserver instance is not configured with ssl for connections",
+      "severity": "HIGH",
+      "line": 38,
+      "fileName": "positive.json"
+    },
+    {
+      "queryName": "cloud sqlserver instance is not configured with ssl for connections",
+      "severity": "HIGH",
+      "line": 48,
+      "fileName": "positive1.json"
+    }
+  ]

@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-FIREWALL-13431",
+    "queryName": "firewall policy idps mode is not deny",
+    "severity": "HIGH",
+    "category": "Network Security",
+    "descriptionText": "Enable IDPS to monitor our network for malicious activity and block it",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/firewall_policy#mode",
+    "platform": "Terraform",
+    "descriptionID": "1.34.3.1",
+    "cloudProvider": "azure"
+  }

@@ -1,0 +1,265 @@
+# KICS & CSE-IaC-Scanning Project Overview
+
+## Project Structure
+
+### Root Directory (D:\File.IO)
+- `kics/` - Main KICS project repository
+- `CSE-IaC-Scanning/` - Custom rules and configurations for CISS (IaC Scan)
+- `rules/` - Directory for new rules to be implemented
+- `win/` - Contains terraform.exe and kics.exe binaries (hidden due to .gitignore)
+- `context.py` - Python script with API keys
+- `SyncFlow.txt` - Git synchronization commands
+
+### KICS Project (D:\File.IO\kics)
+- Standard KICS repository structure with assets, queries, etc.
+- Contains built-in rules for multiple IaC technologies including Terraform
+- Query structure organized by provider (AWS, Azure, GCP, etc.)
+
+### CSE-IaC-Scanning Project (D:\File.IO\CSE-IaC-Scanning)
+- Custom implementation of KICS for CISS (IaC Scan)
+- Contains custom rules in `CSE-PC-KICS-CUSTOMRULES/assets/queries/`
+- Custom rules organized by provider (terraform/azure/, terraform/gcp/)
+- Extensive collection of custom Azure and GCP rules
+
+## KICS Overview
+
+KICS (Keeping Infrastructure as Code Secure) is an open-source solution for static code analysis of Infrastructure as Code.
+
+### Key Features:
+- 1000+ ready-to-use queries covering AWS, GCP, Azure, and other providers
+- Supports scanning multiple technologies: Terraform, Kubernetes, Ansible, CloudFormation, etc.
+- Pluggable architecture with extensible pipeline for parsing IaC languages
+
+### Installation Options:
+1. Build from sources (requires Go 1.6+)
+2. Docker image (checkmarx/kics:latest)
+
+### Scanning with Custom Queries:
+- Default queries path: `./assets/queries`
+- Custom queries path can be specified with `-q` CLI option
+
+## CSE-IaC-Scanning (CISS) Overview
+
+CISS is a product that offers scanning of Terraform plan files using the KICS engine. It's packaged as a Docker image for use in CI/CD pipelines.
+
+### Custom Rules Structure:
+- Located in `CSE-IaC-Scanning/CSE-PC-KICS-CUSTOMRULES/assets/queries/`
+- Organized by provider and technology (e.g., terraform/azure/, terraform/gcp/)
+- Each rule has its own directory with:
+  - `metadata.json` - Rule metadata (ID, name, severity, description, etc.)
+  - `query.rego` - Rule logic written in Rego (OPA policy language)
+  - `test/` directory with test cases:
+    - `positive.json` - Examples that should trigger the rule
+    - `negative.json` - Examples that should not trigger the rule
+    - `positive_expected_result.json` - Expected results for positive test cases
+
+### Rule Implementation Details:
+Example rule: `aks_cluster_authentication_must_set_to_rbac`
+
+#### metadata.json:
+```json
+{
+    "id": "CSE-PC-AZURE-AKS-11312",
+    "queryName": "aks cluster authentication must set to rbac",
+    "severity": "HIGH",
+    "category": "IAM Protection",
+    "descriptionText": "Azure Kubernetes Service Authentication must set to Azure RBAC",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster#role_based_access_control_enabled-1",
+    "platform": "Terraform",
+    "descriptionID": "1.13.1.2",
+    "cloudProvider": "azure"
+}
+```
+
+#### query.rego structure:
+- Uses `package Cx` and imports common libraries
+- Implements `CxPolicy[result]` rules to detect violations
+- Checks for specific resource attributes and values
+- Provides detailed result information including:
+  - Resource type and name
+  - Issue type (Missing Attribute or Incorrect Value)
+  - Expected vs actual values
+  - Search key and line information
+  - Remediation advice
+
+## Available Binaries
+
+### Windows Binaries (D:\File.IO\win)
+- `terraform.exe` - Terraform binary for plan generation (version 1.7.5 based on test files)
+- `kics.exe` - KICS scanner binary (126MB)
+
+Binaries can be used directly since they're not accessible through git due to .gitignore.
+
+## Rules Development Folder
+
+The `rules/` folder is where new rules will be provided for implementation:
+- Currently contains `1.54.3.8.txt` with basic rule information:
+  - Rule ID: 1.54.3.8
+  - Service: Network Security Controls
+  - Security requirement: Configure private endpoints to Azure SignalR Service
+  - Comment: Private endpoints connect your virtual network to Azure services without a public IP address at the source or destination. By mapping private endpoints to Azure SignalR Service resources, you can reduce data leakage risks.
+
+## Azure SignalR Service Information
+
+Based on Terraform azurerm provider documentation, the Azure SignalR Service resource is defined as:
+- Resource type: `azurerm_signalr_service`
+- Key attributes include:
+  - `name` - The name of the SignalR Service
+  - `resource_group_name` - The name of the resource group
+  - `location` - The Azure region
+  - `sku` - The SKU of the SignalR Service
+  - `features` - List of features to enable
+  - `cors` - Cross-Origin Resource Sharing configuration
+  - `upstream_endpoints` - Upstream endpoint configurations
+  - `public_network_access_enabled` - Whether public network access is enabled
+  - `serverless_connection_timeout_in_seconds` - Serverless connection timeout
+  
+Private endpoint configuration would typically be handled through separate `azurerm_private_endpoint` resources that reference the SignalR service.
+
+## Development Workflow
+
+The workflow for implementing new rules follows this iterative process:
+
+1. **Research Phase**
+   - Analyze the rule requirements from the specification file
+   - Examine existing similar rules in the codebase
+   - Research the Terraform resource documentation
+   - Understand the expected behavior and violation conditions
+
+2. **Update Documentation**
+   - Document findings in the copilot.txt memory file
+   - Update with technical details, resource structures, and implementation approach
+   - Record any important insights or considerations for the implementation
+
+3. **Implementation Phase**
+   - Create the rule directory structure following established patterns
+   - Write the metadata.json with rule details
+   - Implement the Rego policy logic in query.rego
+   - Create test cases (positive.json, negative.json)
+   - Define expected results in positive_expected_result.json
+
+4. **Testing Phase**
+   - Use kics.exe to test the rule against test cases
+   - Verify positive cases trigger violations
+   - Verify negative cases do not trigger violations
+   - Debug and refine the rule as needed
+
+5. **Validation Phase**
+   - Confirm the rule works as expected
+   - Validate against the original requirements
+   - Ensure proper remediation guidance is provided
+
+This Research-Update-Implement-Test workflow ensures systematic development and high-quality rules.
+
+## Terraform + KICS Workflow (When Azure CLI is Available)
+
+Once Azure CLI is installed and configured, the optimal workflow for rule development is:
+
+### Prerequisites:
+1. Azure CLI installed and added to PATH
+2. Authenticated to Azure with `az login`
+3. Proper subscription and resource group permissions
+
+### Workflow Steps:
+
+1. **Create Terraform Configuration**
+   - Write HCL files defining the infrastructure scenarios to test
+   - Include both positive (violation) and negative (compliant) cases
+
+2. **Initialize Terraform**
+   ```bash
+   terraform init
+   ```
+
+3. **Generate Terraform Plan**
+   ```bash
+   terraform plan -out=tfplan
+   ```
+
+4. **Convert Plan to JSON (if needed)**
+   ```bash
+   terraform show -json tfplan > plan.json
+   ```
+
+5. **Test with KICS**
+   ```bash
+   kics.exe scan -p "plan.json" -q "path/to/custom/rule" --report-formats json -o "output"
+   ```
+
+### Benefits of This Approach:
+- More accurate test files that match real-world scenarios
+- Easier to maintain and modify test cases in HCL format
+- Automated generation of complex JSON structures
+- Better validation against actual Azure resource schemas
+
+## Implemented Rule: Azure SignalR Service Private Endpoint Configuration
+
+### Rule Details
+- **Rule ID**: CSE-PC-AZURE-SIGNALR-15438 (to be created)
+- **Rule Name**: signalr service is not limited to private endpoint
+- **Severity**: CRITICAL
+- **Category**: Network Security
+- **Description**: Limit access to Azure SignalR Service through private endpoint
+- **Requirement**: Rule 1.54.3.8 from the rules specification
+
+### Planned Implementation
+The rule needs to be implemented with the following components:
+1. **metadata.json** - Rule metadata following the established format
+2. **query.rego** - Rego policy that checks for:
+   - Azure SignalR Service resources with `public_network_access_enabled` set to `true`
+   - Absence of corresponding `azurerm_private_endpoint` resources
+3. **Test Cases**:
+   - `positive.json` - Tests violation detection when public access is enabled without private endpoint
+   - `negative.json` - Tests no violation when either public access is disabled OR private endpoint is defined
+   - `positive_expected_result.json` - Expected results for positive test cases
+
+### Rule Logic
+The rule should check for:
+- Azure SignalR Service resources (`azurerm_signalr_service`) with `public_network_access_enabled` set to `true`
+- Absence of corresponding `azurerm_private_endpoint` resources
+- When both conditions are met, it should flag a security violation
+
+## Workflow for Implementing New Rules
+
+1. Create a new rule directory in `CSE-IaC-Scanning/CSE-PC-KICS-CUSTOMRULES/assets/queries/terraform/{provider}/` following the existing structure
+2. Create `metadata.json` with rule details following the established format
+3. Create `query.rego` with Rego policy logic to detect violations
+4. Create test cases in `test/` directory:
+   - `positive.json` - Examples that should trigger the rule
+   - `negative.json` - Examples that should not trigger the rule
+   - `positive_expected_result.json` - Expected results for positive cases
+5. Test the rule using kics.exe binary
+6. Validate with test cases
+
+## Git Operations
+
+SyncFlow.txt contains git commands for synchronizing with repositories.
+
+## Key Concepts
+
+### Rego Policy Language
+- Used for writing KICS rules
+- Declarative language for defining policies
+- Pattern matching against Terraform plan structures
+- Provides detailed violation information
+
+### Terraform Plan Files
+- JSON format containing resource definitions
+- Used as input for KICS scanning
+- Contain "planned_values", "resource_changes", and "configuration" sections
+
+### Rule Testing
+- Positive tests: Cases that should trigger violations
+- Negative tests: Cases that should not trigger violations
+- Expected results: JSON files defining expected violations
+
+## Next Steps When Azure CLI is Ready
+
+1. Install Azure CLI and add to PATH
+2. Authenticate with `az login`
+3. Select appropriate subscription with `az account set --subscription "SUBSCRIPTION_ID"`
+4. Create Terraform configuration files for test scenarios
+5. Generate plan files using `terraform plan -out=tfplan`
+6. Convert to JSON if needed with `terraform show -json tfplan > plan.json`
+7. Test custom rules with KICS using the generated plan files
+8. Iterate on rule development based on test results

@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-FUNCTIONAPP-1831",
+    "queryName": "linux function app public access is not disabled",
+    "severity": "LOW",
+    "category": "Network Security",
+    "descriptionText": "Disable public access to Azure Function",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_function_app#public_network_access_enabled",
+    "platform": "Terraform",
+    "descriptionID": "1.8.3.1",
+    "cloudProvider": "azure"
+}

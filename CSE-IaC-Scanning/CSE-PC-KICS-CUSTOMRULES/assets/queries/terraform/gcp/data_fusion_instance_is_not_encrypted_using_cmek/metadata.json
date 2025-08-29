@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-DATAFUSION-23821",
+    "queryName": "data fusion instance is not encrypted using cmek",
+    "severity": "HIGH",
+    "category": "Data Protection",
+    "descriptionText": "Ensure CMEK is required for Data Fusion instances",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/data_fusion_instance#crypto_key_config-1",
+    "platform": "Terraform",
+    "descriptionID": "2.38.2.1",
+    "cloudProvider": "gcp"
+}

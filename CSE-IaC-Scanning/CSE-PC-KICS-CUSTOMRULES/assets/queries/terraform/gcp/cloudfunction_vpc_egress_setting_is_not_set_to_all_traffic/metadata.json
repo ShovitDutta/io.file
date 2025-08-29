@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-GCP-CLOUDFUNCTION-22032",
+    "queryName": "cloudfunction vpc egress setting is not set to all traffic",
+    "severity": "HIGH",
+    "category": "Network Security",
+    "descriptionText": "Egress VPC connectors should be built in host VPC and shared where there is a need for the function to access resources within the VPC for ALL traffic",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloudfunctions2_function#vpc_connector_egress_settings",
+    "platform": "Terraform",
+    "descriptionID": "2.20.3.2",
+    "cloudProvider": "gcp"
+}

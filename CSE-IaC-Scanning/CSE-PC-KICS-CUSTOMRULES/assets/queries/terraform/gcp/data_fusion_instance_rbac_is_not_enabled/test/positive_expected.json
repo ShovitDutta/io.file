@@ -1,0 +1,14 @@
+[
+    {
+        "queryName": "data fusion instance rbac is not enabled",
+        "severity": "HIGH",
+        "line": 77,
+        "fileName": "positive1.json"
+    },
+    {
+        "queryName": "data fusion instance rbac is not enabled",
+        "severity": "HIGH",
+        "line": 77,
+        "fileName": "positive2.json"
+    }
+]

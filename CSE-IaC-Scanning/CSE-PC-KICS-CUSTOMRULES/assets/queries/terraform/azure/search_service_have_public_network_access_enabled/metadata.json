@@ -1,0 +1,11 @@
+{
+    "id": "CSE-PC-AZURE-SEARCHSERVICE-16231",
+    "queryName": "search service have public network access enabled",
+    "severity": "CRITICAL",
+    "category": "Network Security",
+    "descriptionText": "Disable public access to Azure Search Service",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/search_service.html#public_network_access_enabled-1",
+    "platform": "Terraform",
+    "descriptionID": "1.62.3.1",
+    "cloudProvider": "azure"
+  }

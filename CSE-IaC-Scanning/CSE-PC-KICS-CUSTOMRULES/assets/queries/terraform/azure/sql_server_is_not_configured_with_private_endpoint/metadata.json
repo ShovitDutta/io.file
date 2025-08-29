@@ -1,0 +1,12 @@
+{
+    "id": "CSE-PC-AZURE-SQLSERVER-11631",
+    "queryName": "sql server is not configured with private endpoint",
+    "severity": "CRITICAL",
+    "category": "Network Security Controls",
+    "descriptionText": "In Azure Portal - Azure SQL Server - Security - Networking - Private access - Create private endpoint",
+    "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_endpoint",
+    "platform": "Terraform",
+    "descriptionID": "1.16.3.1",
+    "cloudProvider": "azure",
+    "cwe": ""
+}

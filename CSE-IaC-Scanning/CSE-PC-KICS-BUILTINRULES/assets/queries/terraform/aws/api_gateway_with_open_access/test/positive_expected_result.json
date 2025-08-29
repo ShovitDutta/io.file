@@ -1,0 +1,8 @@
+[
+  {
+    "queryName": "API Gateway With Open Access",
+    "severity": "MEDIUM",
+    "line": 19,
+    "filename": "positive.json"
+  }
+]

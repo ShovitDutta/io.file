@@ -1,0 +1,7 @@
+[
+	{
+		"queryName": "pubsub topic is missing cmek",
+		"severity": "HIGH",
+		"line": 1
+	}
+]

@@ -1,0 +1,8 @@
+[
+    {
+      "queryName": "app configuration is not limited to private endpoint",
+      "severity": "CRITICAL",
+      "line": 6,
+      "fileName": "positive.json"
+    }
+]

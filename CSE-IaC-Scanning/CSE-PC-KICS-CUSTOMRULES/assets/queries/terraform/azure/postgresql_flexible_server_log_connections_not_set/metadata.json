@@ -1,0 +1,11 @@
+{
+  "id": "CSE-PC-AZURE-POSTGRESQLFLEXIBLESERVER-12444",
+  "queryName": "postgresql flexible server log connections not set",
+  "severity": "MEDIUM",
+  "category": "Logging and Monitoring",
+  "descriptionText": "Ensure server parameter 'log_connections' is set to 'ON' for PostgreSQL Database Server",
+  "descriptionUrl": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server_configuration",
+  "platform": "Terraform",
+  "descriptionID": "1.24.4.4",
+  "cloudProvider": "azure"
+}

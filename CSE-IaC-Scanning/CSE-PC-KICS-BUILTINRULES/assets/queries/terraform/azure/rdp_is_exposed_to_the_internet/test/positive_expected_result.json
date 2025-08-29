@@ -1,0 +1,8 @@
+[
+	{
+		"queryName": "RDP Is Exposed To The Internet",
+		"severity": "CRITICAL",
+		"line": 20,
+		"filename": "positive.json"
+	}
+]
