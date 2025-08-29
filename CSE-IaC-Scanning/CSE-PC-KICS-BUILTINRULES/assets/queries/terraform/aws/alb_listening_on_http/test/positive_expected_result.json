@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "ALB Listening on HTTP",
-    "severity": "MEDIUM",
-    "line": 109,
-    "fileName": "positive.json"
-  }
-]

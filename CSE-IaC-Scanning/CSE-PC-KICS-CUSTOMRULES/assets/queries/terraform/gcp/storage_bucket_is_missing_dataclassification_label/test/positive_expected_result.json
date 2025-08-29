@@ -1,8 +1,0 @@
-[
-	{
-	  "queryName": "storage bucket is missing dataclassification label",
-	  "severity": "LOW",
-	  "line": 14,
-	  "filename": "positive7.json"
-	}
-]

@@ -1,8 +1,0 @@
-[
-   {
-    "queryName": "sql server must be tagged as per standards",
-    "severity": "LOW",
-    "line": 40,
-    "filename": "positive.json"
-   }
-]

@@ -1,7 +1,0 @@
-[
-    {
-        "queryName": "cloud spanner is not deployed in valid us region",
-        "severity": "HIGH",
-        "line": 47
-    }
-]

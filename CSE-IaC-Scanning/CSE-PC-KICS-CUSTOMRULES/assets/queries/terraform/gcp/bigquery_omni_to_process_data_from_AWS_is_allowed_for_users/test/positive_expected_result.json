@@ -1,7 +1,0 @@
-[
-    {
-        "queryName": "bigquery omni to process data from AWS is allowed for users",
-        "severity": "HIGH",
-        "line": 7
-    }
-]

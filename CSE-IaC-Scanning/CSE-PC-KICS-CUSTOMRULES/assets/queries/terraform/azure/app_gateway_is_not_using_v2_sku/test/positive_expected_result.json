@@ -1,8 +1,0 @@
-[
-   {
-      "queryName": "app gateway is not using v2 sku",
-      "severity": "HIGH",
-      "line": 105,
-      "filename": "positive.json"
-   }
-]

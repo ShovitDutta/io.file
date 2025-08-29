@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "RDS DB Instance Publicly Accessible",
-    "severity": "CRITICAL",
-    "line": 10,
-    "fileName": "positive.json"
-  }
-]

@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "S3 Bucket Without Restriction Of Public Bucket",
-    "severity": "MEDIUM",
-    "line": 36,
-    "filename": "positive.json"
-  }
-]

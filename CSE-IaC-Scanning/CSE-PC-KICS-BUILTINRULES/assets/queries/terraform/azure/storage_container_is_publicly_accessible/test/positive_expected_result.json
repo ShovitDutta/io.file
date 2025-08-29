@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Storage Container Is Publicly Accessible",
-    "severity": "CRITICAL",
-    "line": 15,
-    "filename": "positive.json"
-  }
-]

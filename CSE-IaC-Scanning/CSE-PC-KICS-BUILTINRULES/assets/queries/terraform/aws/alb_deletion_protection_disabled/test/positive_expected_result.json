@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "ALB Deletion Protection Disabled",
-    "severity": "MEDIUM",
-    "line": 57,
-    "fileName": "positive.json"
-  }
-]

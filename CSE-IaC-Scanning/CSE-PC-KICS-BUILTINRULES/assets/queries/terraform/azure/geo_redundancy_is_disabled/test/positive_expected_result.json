@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Geo Redundancy Is Disabled",
-    "severity": "LOW",
-    "line": 23,
-    "fileName": "positive.json"
-  }
-]

@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "postgresql flexible server is accessible to public network",
-      "severity": "CRITICAL",
-      "line": 6,
-      "fileName": "positive.json"
-    }
-]

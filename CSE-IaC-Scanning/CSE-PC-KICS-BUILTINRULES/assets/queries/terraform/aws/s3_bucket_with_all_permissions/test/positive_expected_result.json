@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "S3 Bucket With All Permissions",
-    "severity": "CRITICAL",
-    "line": 51,
-    "fileName": "positive1.json"
-  }
-]

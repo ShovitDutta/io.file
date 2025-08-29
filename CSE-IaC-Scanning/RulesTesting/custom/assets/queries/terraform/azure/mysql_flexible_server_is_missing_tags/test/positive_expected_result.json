@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "mysql flexible server is missing tags",
-      "severity": "LOW",
-      "line": 47,
-      "fileName": "positive.json"
-    }
-]

@@ -1,8 +1,0 @@
-[
-    {
-        "queryName": "compute engine is missing labels",
-        "severity": "LOW",
-        "line": 338,
-        "filename": "positive.json"
-    }
-]

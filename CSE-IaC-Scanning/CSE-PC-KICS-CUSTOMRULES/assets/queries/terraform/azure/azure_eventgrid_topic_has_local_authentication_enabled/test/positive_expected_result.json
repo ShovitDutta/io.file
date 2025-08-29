@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "azure eventgrid topic has local authentication enabled",
-      "severity": "HIGH",
-      "line": 27,
-      "fileName": "positive.json"
-    }
-]

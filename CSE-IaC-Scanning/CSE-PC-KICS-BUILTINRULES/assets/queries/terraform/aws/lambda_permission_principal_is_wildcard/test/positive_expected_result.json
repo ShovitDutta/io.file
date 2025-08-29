@@ -1,9 +1,0 @@
-[
-  {
-    
-    "queryName": "Lambda Permission Principal Is Wildcard",
-    "severity": "MEDIUM",
-    "line": 19,
-    "filename":"positive.json"
-  }
-]

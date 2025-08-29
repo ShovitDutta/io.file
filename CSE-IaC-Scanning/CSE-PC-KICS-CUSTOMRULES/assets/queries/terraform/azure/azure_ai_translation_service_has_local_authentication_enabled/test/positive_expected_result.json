@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "azure ai translation service has local authentication enabled",
-      "severity": "HIGH",
-      "line": 35,
-      "fileName": "positive.json"
-    }
-]

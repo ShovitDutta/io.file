@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Email Alerts Disabled",
-    "severity": "MEDIUM",
-    "line": 15,
-    "filename" : "positive.json"
-  }
-]

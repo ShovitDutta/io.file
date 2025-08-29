@@ -1,9 +1,0 @@
-[
-  {
-    "queryName": "traffic manager is missing protocol port path",
-    "severity": "HIGH",
-    "line": 22,
-    "fileName": "positive.json"
-  }
-]
-

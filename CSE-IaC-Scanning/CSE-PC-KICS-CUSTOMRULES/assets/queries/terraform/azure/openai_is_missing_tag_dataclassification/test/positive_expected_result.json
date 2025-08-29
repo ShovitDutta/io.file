@@ -1,7 +1,0 @@
-[
-    {
-      "queryName": "OpenAI is missing tag dataclassification",
-      "severity": "LOW",
-      "line": 9
-    }
-]

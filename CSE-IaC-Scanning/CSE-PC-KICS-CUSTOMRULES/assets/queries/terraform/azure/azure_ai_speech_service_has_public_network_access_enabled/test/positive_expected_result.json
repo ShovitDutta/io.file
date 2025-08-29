@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "azure ai speech service has public network access enabled",
-      "severity": "CRITICAL",
-      "line": 51,
-      "fileName": "positive.json"
-    }
-]

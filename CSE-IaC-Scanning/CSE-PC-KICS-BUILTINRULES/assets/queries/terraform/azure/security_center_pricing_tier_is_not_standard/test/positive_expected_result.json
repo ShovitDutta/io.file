@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Security Center Pricing Tier Is Not Standard",
-    "severity": "MEDIUM",
-    "line": 37,
-    "filename": "positive.json"
-  }
-]

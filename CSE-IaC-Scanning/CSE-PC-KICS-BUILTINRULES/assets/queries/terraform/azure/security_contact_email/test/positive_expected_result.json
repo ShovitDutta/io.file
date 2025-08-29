@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Security Contact Email",
-    "severity": "MEDIUM",
-    "line":  17,
-    "filename" : "positive.json"
-  }
-]

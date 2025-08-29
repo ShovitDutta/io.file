@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "search service is not enforcing cmek for encryption",
-      "severity": "HIGH",
-      "line": 17,
-      "fileName": "positive.json"
-    }
-]

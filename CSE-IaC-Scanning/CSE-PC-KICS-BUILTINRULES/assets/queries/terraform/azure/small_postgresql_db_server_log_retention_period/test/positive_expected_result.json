@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Small PostgreSQL DB Server Log Retention Period",
-    "severity": "LOW",
-    "line": 19,
-    "filename": "positive.json"
-  }
-]

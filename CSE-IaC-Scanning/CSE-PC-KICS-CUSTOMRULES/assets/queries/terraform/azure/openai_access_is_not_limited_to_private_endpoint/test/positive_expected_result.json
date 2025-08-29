@@ -1,7 +1,0 @@
-[
-    {
-      "queryName": "OpenAI access is not limited to private endpoint",
-      "severity": "HIGH",
-      "line": 32
-    },
-]

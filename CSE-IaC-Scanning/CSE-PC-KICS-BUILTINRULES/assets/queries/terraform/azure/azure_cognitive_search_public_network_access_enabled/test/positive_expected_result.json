@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Azure Cognitive Search Public Network Access Enabled",
-    "severity": "CRITICAL",
-    "line": 32,
-    "fileName": "positive.json"
-  }
-]

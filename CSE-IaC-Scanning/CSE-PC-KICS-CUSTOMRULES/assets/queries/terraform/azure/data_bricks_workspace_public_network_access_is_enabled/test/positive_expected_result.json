@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "data bricks workspace public network access is enabled",
-      "severity": "CRITICAL",
-      "line": 41,
-      "fileName": "positive.json"
-    }
-]

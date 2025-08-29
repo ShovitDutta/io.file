@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Redis Entirely Accessible",
-    "severity": "CRITICAL",
-    "line": 14,
-    "file": "positive.json"
-  }
-]

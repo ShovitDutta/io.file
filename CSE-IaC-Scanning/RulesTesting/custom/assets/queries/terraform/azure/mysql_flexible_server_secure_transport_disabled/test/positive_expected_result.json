@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "mysql flexible server secure transport disabled",
-    "severity": "HIGH",
-    "line": 35,
-    "fileName": "positive.json"
-  }
-]

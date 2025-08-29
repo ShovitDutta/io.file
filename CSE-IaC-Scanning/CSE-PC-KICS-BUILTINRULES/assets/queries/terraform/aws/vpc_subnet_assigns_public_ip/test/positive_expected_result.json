@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "VPC Subnet Assigns Public IP",
-    "severity": "MEDIUM",
-    "line": 25,
-    "fileName": "positive.json"
-  }
-]

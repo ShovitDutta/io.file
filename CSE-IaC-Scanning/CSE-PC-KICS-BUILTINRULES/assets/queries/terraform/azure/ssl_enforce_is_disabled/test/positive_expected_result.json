@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "SSL Enforce Disabled",
-    "severity": "HIGH",
-    "line": 32,
-    "filename": "positive.json"
-  }
-]

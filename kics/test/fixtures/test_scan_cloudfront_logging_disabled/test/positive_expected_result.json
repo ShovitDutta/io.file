@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "CloudFront Logging Disabled",
-    "severity": "MEDIUM",
-    "line": 5,
-    "fileName": "positive1.yaml"
-  }
-]

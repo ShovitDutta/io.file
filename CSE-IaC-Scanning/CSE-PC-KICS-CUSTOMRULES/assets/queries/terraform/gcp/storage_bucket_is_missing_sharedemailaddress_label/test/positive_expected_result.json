@@ -1,8 +1,0 @@
-[
-	{
-	  "queryName": "storage bucket is missing sharedemailaddress label",
-	  "severity": "LOW",
-	  "line": 14,
-	  "filename": "positive4.json"
-	}
-  ]

@@ -1,3 +1,0 @@
----
-# group_vars/web_servers.yml
-apache_port: 80

@@ -1,8 +1,0 @@
-[
-	{
-		"queryName": "Encryption Provider Not Properly Configured",
-		"severity": "MEDIUM",
-		"line": 6,
-        "fileName": "positive1.yaml"
-	}
-]

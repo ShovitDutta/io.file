@@ -1,7 +1,0 @@
-[
-    {
-      "queryName": "key vault soft delete retention days is not within the limit",
-      "severity": "HIGH",
-      "line": 7
-    }
-]

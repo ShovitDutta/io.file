@@ -1,8 +1,0 @@
-[
-   {
-    "queryName": "sql server is not configured with tls 1_2",
-    "severity": "LOW",
-    "line": 34,
-    "filename" : "positive.json"
-   }
-]

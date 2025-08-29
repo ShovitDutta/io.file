@@ -1,7 +1,0 @@
-[
-    {
-      "queryName": "OpenAI is not restricting outbound network access and fqdn",
-      "severity": "MEDIUM",
-      "line": 8
-    }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "queryName": "Redis Publicly Accessible",
-    "severity": "CRITICAL",
-    "line": 22
-  }
-]

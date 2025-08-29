@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "S3 Bucket ACL Grants WRITE_ACP Permission",
-    "severity": "CRITICAL",
-    "line": 63,
-    "filename": "positive1.json"
-  }
-]

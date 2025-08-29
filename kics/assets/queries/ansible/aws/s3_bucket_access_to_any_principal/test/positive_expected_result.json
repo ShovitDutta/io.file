@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "S3 Bucket Access to Any Principal",
-    "severity": "CRITICAL",
-    "line": 4,
-    "fileName": "positive.yaml"
-  }
-]

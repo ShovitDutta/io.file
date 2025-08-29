@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Node Auto Upgrade Disabled",
-    "severity": "HIGH",
-    "line": 21,
-    "fileName": "positive1.json"
-  }
-]

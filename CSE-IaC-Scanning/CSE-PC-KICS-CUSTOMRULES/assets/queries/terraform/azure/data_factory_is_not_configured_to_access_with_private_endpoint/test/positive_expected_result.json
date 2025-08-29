@@ -1,7 +1,0 @@
-[
-    {
-      "queryName": "data factory is not configured to access with private endpoint",
-      "severity": "HIGH",
-      "line": 28
-    }
-]

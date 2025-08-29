@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "Kubelet Certificate Authority Not Set",
-    "severity": "MEDIUM",
-    "line": 11,
-    "filename": "positive1.yaml"
-  }
-]

@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "api management is not configured app insight for app level monitoring",
-      "severity": "HIGH",
-      "line": 59,
-      "fileName": "positive.json"
-    }
-]

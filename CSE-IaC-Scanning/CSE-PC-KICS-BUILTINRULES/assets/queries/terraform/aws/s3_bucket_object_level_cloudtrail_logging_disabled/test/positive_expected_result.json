@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "S3 Bucket Object Level CloudTrail Logging Disabled",
-    "severity": "MEDIUM",
-    "line": 32,
-    "fileName": "positive2.json"
-  }
-]

@@ -1,8 +1,0 @@
-[
-    {
-      "queryName": "postgresql flexible server is missing tags",
-      "severity": "LOW",
-      "line": 34,
-      "fileName": "positive.json"
-    }
-]

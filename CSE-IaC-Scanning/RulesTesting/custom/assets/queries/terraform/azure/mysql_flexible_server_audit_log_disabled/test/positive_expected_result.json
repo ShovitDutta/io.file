@@ -1,8 +1,0 @@
-[
-  {
-    "queryName": "mysql flexible server audit log disabled",
-    "severity": "HIGH",
-    "line": 19,
-    "filename": "positive.json"
-  }
-]
